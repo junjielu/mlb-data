@@ -1,0 +1,1439 @@
+{
+  "ARI": [
+    {
+      "role": "sp1",
+      "name": "Zac Gallen",
+      "url": "https://www.fangraphs.com/players/zac-gallen/19291/stats/pitching",
+      "k9": "8.20",
+      "bb9": "3.09",
+      "stuff_plus": "93",
+      "location_plus": "105"
+    },
+    {
+      "role": "sp2",
+      "name": "Ryne Nelson",
+      "url": "https://www.fangraphs.com/players/ryne-nelson/26253/stats/pitching",
+      "k9": "7.71",
+      "bb9": "2.40",
+      "stuff_plus": "108",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp3",
+      "name": "Eduardo Rodriguez",
+      "url": "https://www.fangraphs.com/players/eduardo-rodriguez/13164/stats/pitching",
+      "k9": "8.34",
+      "bb9": "3.50",
+      "stuff_plus": "91",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp4",
+      "name": "Brandon Pfaadt",
+      "url": "https://www.fangraphs.com/players/brandon-pfaadt/27782/stats/pitching",
+      "k9": "7.49",
+      "bb9": "1.88",
+      "stuff_plus": "97",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp5",
+      "name": "Michael Soroka",
+      "url": "https://www.fangraphs.com/players/michael-soroka/18383/stats/pitching",
+      "k9": "9.54",
+      "bb9": "2.91",
+      "stuff_plus": "95",
+      "location_plus": "97"
+    }
+  ],
+  "ATL": [
+    {
+      "role": "sp1",
+      "name": "Chris Sale",
+      "url": "https://www.fangraphs.com/players/chris-sale/10603/stats/pitching",
+      "k9": "11.82",
+      "bb9": "2.29",
+      "stuff_plus": "107",
+      "location_plus": "105"
+    },
+    {
+      "role": "sp2",
+      "name": "Spencer Strider",
+      "url": "https://www.fangraphs.com/players/spencer-strider/27498/stats/pitching",
+      "k9": "9.41",
+      "bb9": "3.66",
+      "stuff_plus": "96",
+      "location_plus": "93"
+    },
+    {
+      "role": "sp3",
+      "name": "Reynaldo López",
+      "url": "https://www.fangraphs.com/players/reynaldo-lopez/16400/stats/pitching",
+      "k9": "1.80",
+      "bb9": "3.60",
+      "stuff_plus": "99",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp4",
+      "name": "Grant Holmes",
+      "url": "https://www.fangraphs.com/players/grant-holmes/16944/stats/pitching",
+      "k9": "9.63",
+      "bb9": "4.23",
+      "stuff_plus": "91",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp5",
+      "name": "Bryce Elder",
+      "url": "https://www.fangraphs.com/players/bryce-elder/27779/stats/pitching",
+      "k9": "7.54",
+      "bb9": "2.94",
+      "stuff_plus": "90",
+      "location_plus": "108"
+    }
+  ],
+  "BAL": [
+    {
+      "role": "sp1",
+      "name": "Trevor Rogers",
+      "url": "https://www.fangraphs.com/players/trevor-rogers/22286/stats/pitching",
+      "k9": "8.45",
+      "bb9": "2.38",
+      "stuff_plus": "92",
+      "location_plus": "105"
+    },
+    {
+      "role": "sp2",
+      "name": "Kyle Bradish",
+      "url": "https://www.fangraphs.com/players/kyle-bradish/24586/stats/pitching",
+      "k9": "13.22",
+      "bb9": "2.81",
+      "stuff_plus": "95",
+      "location_plus": "111"
+    },
+    {
+      "role": "sp3",
+      "name": "Chris Bassitt",
+      "url": "https://www.fangraphs.com/players/chris-bassitt/12304/stats/pitching",
+      "k9": "8.77",
+      "bb9": "2.75",
+      "stuff_plus": "96",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp4",
+      "name": "Shane Baz",
+      "url": "https://www.fangraphs.com/players/shane-baz/22264/stats/pitching",
+      "k9": "9.52",
+      "bb9": "3.46",
+      "stuff_plus": "107",
+      "location_plus": "98"
+    },
+    {
+      "role": "sp5",
+      "name": "Zach Eflin",
+      "url": "https://www.fangraphs.com/players/zach-eflin/13774/stats/pitching",
+      "k9": "6.31",
+      "bb9": "1.64",
+      "stuff_plus": "93",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp6",
+      "name": "Dean Kremer",
+      "url": "https://www.fangraphs.com/players/dean-kremer/19350/stats/pitching",
+      "k9": "7.44",
+      "bb9": "2.36",
+      "stuff_plus": "95",
+      "location_plus": "101"
+    }
+  ],
+  "BOS": [
+    {
+      "role": "sp1",
+      "name": "Garrett Crochet",
+      "url": "https://www.fangraphs.com/players/garrett-crochet/27463/stats/pitching",
+      "k9": "11.18",
+      "bb9": "2.02",
+      "stuff_plus": "116",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp2",
+      "name": "Sonny Gray",
+      "url": "https://www.fangraphs.com/players/sonny-gray/12768/stats/pitching",
+      "k9": "10.01",
+      "bb9": "1.89",
+      "stuff_plus": "96",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp3",
+      "name": "Ranger Suarez",
+      "url": "https://www.fangraphs.com/players/ranger-suarez/17277/stats/pitching",
+      "k9": "8.64",
+      "bb9": "2.17",
+      "stuff_plus": "96",
+      "location_plus": "113"
+    },
+    {
+      "role": "sp4",
+      "name": "Brayan Bello",
+      "url": "https://www.fangraphs.com/players/brayan-bello/23920/stats/pitching",
+      "k9": "6.70",
+      "bb9": "3.19",
+      "stuff_plus": "96",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp5",
+      "name": "Johan Oviedo",
+      "url": "https://www.fangraphs.com/players/johan-oviedo/22487/stats/pitching",
+      "k9": "9.37",
+      "bb9": "5.13",
+      "stuff_plus": "102",
+      "location_plus": "91"
+    }
+  ],
+  "CHC": [
+    {
+      "role": "sp1",
+      "name": "Matthew Boyd",
+      "url": "https://www.fangraphs.com/players/matthew-boyd/15440/stats/pitching",
+      "k9": "7.71",
+      "bb9": "2.10",
+      "stuff_plus": "94",
+      "location_plus": "107"
+    },
+    {
+      "role": "sp2",
+      "name": "Cade Horton",
+      "url": "https://www.fangraphs.com/players/cade-horton/31872/stats/pitching",
+      "k9": "7.40",
+      "bb9": "2.52",
+      "stuff_plus": "96",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp3",
+      "name": "Shota Imanaga",
+      "url": "https://www.fangraphs.com/players/shota-imanaga/33829/stats/pitching",
+      "k9": "7.28",
+      "bb9": "1.62",
+      "stuff_plus": "94",
+      "location_plus": "108"
+    },
+    {
+      "role": "sp4",
+      "name": "Edward Cabrera",
+      "url": "https://www.fangraphs.com/players/edward-cabrera/21690/stats/pitching",
+      "k9": "9.81",
+      "bb9": "3.14",
+      "stuff_plus": "105",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp5",
+      "name": "Jameson Taillon",
+      "url": "https://www.fangraphs.com/players/jameson-taillon/11674/stats/pitching",
+      "k9": "6.80",
+      "bb9": "1.87",
+      "stuff_plus": "94",
+      "location_plus": "109"
+    }
+  ],
+  "CHW": [
+    {
+      "role": "sp1",
+      "name": "Shane Smith",
+      "url": "https://www.fangraphs.com/players/shane-smith/31687/stats/pitching",
+      "k9": "8.92",
+      "bb9": "3.57",
+      "stuff_plus": "95",
+      "location_plus": "98"
+    },
+    {
+      "role": "sp2",
+      "name": "Davis Martin",
+      "url": "https://www.fangraphs.com/players/davis-martin/21448/stats/pitching",
+      "k9": "6.56",
+      "bb9": "3.03",
+      "stuff_plus": "97",
+      "location_plus": "96"
+    },
+    {
+      "role": "sp3",
+      "name": "Sean Burke",
+      "url": "https://www.fangraphs.com/players/sean-burke/29878/stats/pitching",
+      "k9": "8.91",
+      "bb9": "4.22",
+      "stuff_plus": "92",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp4",
+      "name": "Anthony Kay",
+      "url": "https://www.fangraphs.com/players/anthony-kay/20387/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp5",
+      "name": "Erick Fedde",
+      "url": "https://www.fangraphs.com/players/erick-fedde/17425/stats/pitching",
+      "k9": "5.30",
+      "bb9": "4.28",
+      "stuff_plus": "91",
+      "location_plus": "103"
+    }
+  ],
+  "CIN": [
+    {
+      "role": "sp1",
+      "name": "Andrew Abbott",
+      "url": "https://www.fangraphs.com/players/andrew-abbott/29911/stats/pitching",
+      "k9": "8.06",
+      "bb9": "2.33",
+      "stuff_plus": "97",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp2",
+      "name": "Nick Lodolo",
+      "url": "https://www.fangraphs.com/players/nick-lodolo/26378/stats/pitching",
+      "k9": "8.96",
+      "bb9": "1.78",
+      "stuff_plus": "102",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp3",
+      "name": "Brady Singer",
+      "url": "https://www.fangraphs.com/players/brady-singer/25377/stats/pitching",
+      "k9": "8.65",
+      "bb9": "3.18",
+      "stuff_plus": "95",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp4",
+      "name": "Rhett Lowder",
+      "url": "https://www.fangraphs.com/players/rhett-lowder/33876/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp5",
+      "name": "Brandon Williamson",
+      "url": "https://www.fangraphs.com/players/brandon-williamson/25463/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    }
+  ],
+  "CLE": [
+    {
+      "role": "sp1",
+      "name": "Gavin Williams",
+      "url": "https://www.fangraphs.com/players/gavin-williams/30122/stats/pitching",
+      "k9": "9.29",
+      "bb9": "4.46",
+      "stuff_plus": "103",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp2",
+      "name": "Tanner Bibee",
+      "url": "https://www.fangraphs.com/players/tanner-bibee/30134/stats/pitching",
+      "k9": "8.00",
+      "bb9": "2.67",
+      "stuff_plus": "102",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp3",
+      "name": "Slade Cecconi",
+      "url": "https://www.fangraphs.com/players/slade-cecconi/27500/stats/pitching",
+      "k9": "7.43",
+      "bb9": "2.18",
+      "stuff_plus": "93",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp4",
+      "name": "Logan Allen",
+      "url": "https://www.fangraphs.com/players/logan-allen/27589/stats/pitching",
+      "k9": "7.01",
+      "bb9": "3.56",
+      "stuff_plus": "92",
+      "location_plus": "97"
+    },
+    {
+      "role": "sp5",
+      "name": "Joey Cantillo",
+      "url": "https://www.fangraphs.com/players/joey-cantillo/23335/stats/pitching",
+      "k9": "10.20",
+      "bb9": "3.97",
+      "stuff_plus": "89",
+      "location_plus": "104"
+    }
+  ],
+  "COL": [
+    {
+      "role": "sp1",
+      "name": "Kyle Freeland",
+      "url": "https://www.fangraphs.com/players/kyle-freeland/16256/stats/pitching",
+      "k9": "6.86",
+      "bb9": "2.10",
+      "stuff_plus": "95",
+      "location_plus": "103"
+    },
+    {
+      "role": "sp2",
+      "name": "Michael Lorenzen",
+      "url": "https://www.fangraphs.com/players/michael-lorenzen/14843/stats/pitching",
+      "k9": "8.07",
+      "bb9": "2.48",
+      "stuff_plus": "92",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp3",
+      "name": "Jose Quintana",
+      "url": "https://www.fangraphs.com/players/jose-quintana/11423/stats/pitching",
+      "k9": "6.08",
+      "bb9": "3.42",
+      "stuff_plus": "85",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp4",
+      "name": "Chase Dollander",
+      "url": "https://www.fangraphs.com/players/chase-dollander/33482/stats/pitching",
+      "k9": "7.53",
+      "bb9": "4.50",
+      "stuff_plus": "102",
+      "location_plus": "92"
+    },
+    {
+      "role": "sp5",
+      "name": "Tomoyuki Sugano",
+      "url": "https://www.fangraphs.com/players/tomoyuki-sugano/35321/stats/pitching",
+      "k9": "6.08",
+      "bb9": "2.06",
+      "stuff_plus": "92",
+      "location_plus": "106"
+    }
+  ],
+  "DET": [
+    {
+      "role": "sp1",
+      "name": "Tarik Skubal",
+      "url": "https://www.fangraphs.com/players/tarik-skubal/22267/stats/pitching",
+      "k9": "11.10",
+      "bb9": "1.52",
+      "stuff_plus": "116",
+      "location_plus": "105"
+    },
+    {
+      "role": "sp2",
+      "name": "Framber Valdez",
+      "url": "https://www.fangraphs.com/players/framber-valdez/17295/stats/pitching",
+      "k9": "8.77",
+      "bb9": "3.19",
+      "stuff_plus": "108",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp3",
+      "name": "Jack Flaherty",
+      "url": "https://www.fangraphs.com/players/jack-flaherty/17479/stats/pitching",
+      "k9": "10.51",
+      "bb9": "3.30",
+      "stuff_plus": "98",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp4",
+      "name": "Justin Verlander",
+      "url": "https://www.fangraphs.com/players/justin-verlander/8700/stats/pitching",
+      "k9": "8.11",
+      "bb9": "3.08",
+      "stuff_plus": "106",
+      "location_plus": "93"
+    },
+    {
+      "role": "sp5",
+      "name": "Casey Mize",
+      "url": "https://www.fangraphs.com/players/casey-mize/20492/stats/pitching",
+      "k9": "8.40",
+      "bb9": "2.17",
+      "stuff_plus": "96",
+      "location_plus": "107"
+    }
+  ],
+  "HOU": [
+    {
+      "role": "sp1",
+      "name": "Hunter Brown",
+      "url": "https://www.fangraphs.com/players/hunter-brown/25880/stats/pitching",
+      "k9": "10.00",
+      "bb9": "2.77",
+      "stuff_plus": "107",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp2",
+      "name": "Cristian Javier",
+      "url": "https://www.fangraphs.com/players/cristian-javier/17606/stats/pitching",
+      "k9": "8.27",
+      "bb9": "3.65",
+      "stuff_plus": "95",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp3",
+      "name": "Tatsuya Imai",
+      "url": "https://www.fangraphs.com/players/tatsuya-imai/sa3062955/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp4",
+      "name": "Mike Burrows",
+      "url": "https://www.fangraphs.com/players/mike-burrows/24728/stats/pitching",
+      "k9": "9.09",
+      "bb9": "2.91",
+      "stuff_plus": "95",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp5",
+      "name": "Lance McCullers Jr.",
+      "url": "https://www.fangraphs.com/players/lance-mccullers-jr/14120/stats/pitching",
+      "k9": "9.92",
+      "bb9": "6.34",
+      "stuff_plus": "102",
+      "location_plus": "90"
+    },
+    {
+      "role": "sp6",
+      "name": "Ryan Weiss",
+      "url": "https://www.fangraphs.com/players/ryan-weiss/sa3007778/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    }
+  ],
+  "KCR": [
+    {
+      "role": "sp1",
+      "name": "Cole Ragans",
+      "url": "https://www.fangraphs.com/players/cole-ragans/21846/stats/pitching",
+      "k9": "14.30",
+      "bb9": "2.92",
+      "stuff_plus": "109",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp2",
+      "name": "Michael Wacha",
+      "url": "https://www.fangraphs.com/players/michael-wacha/14078/stats/pitching",
+      "k9": "6.57",
+      "bb9": "2.35",
+      "stuff_plus": "98",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp3",
+      "name": "Kris Bubic",
+      "url": "https://www.fangraphs.com/players/kris-bubic/21455/stats/pitching",
+      "k9": "8.97",
+      "bb9": "3.02",
+      "stuff_plus": "93",
+      "location_plus": "103"
+    },
+    {
+      "role": "sp4",
+      "name": "Seth Lugo",
+      "url": "https://www.fangraphs.com/players/seth-lugo/12447/stats/pitching",
+      "k9": "7.74",
+      "bb9": "3.41",
+      "stuff_plus": "94",
+      "location_plus": "94"
+    },
+    {
+      "role": "sp5",
+      "name": "Noah Cameron",
+      "url": "https://www.fangraphs.com/players/noah-cameron/30184/stats/pitching",
+      "k9": "7.42",
+      "bb9": "2.80",
+      "stuff_plus": "94",
+      "location_plus": "101"
+    }
+  ],
+  "LAA": [
+    {
+      "role": "sp1",
+      "name": "Yusei Kikuchi",
+      "url": "https://www.fangraphs.com/players/yusei-kikuchi/20633/stats/pitching",
+      "k9": "8.78",
+      "bb9": "3.73",
+      "stuff_plus": "95",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp2",
+      "name": "José Soriano",
+      "url": "https://www.fangraphs.com/players/jose-soriano/22100/stats/pitching",
+      "k9": "8.09",
+      "bb9": "4.15",
+      "stuff_plus": "95",
+      "location_plus": "111"
+    },
+    {
+      "role": "sp3",
+      "name": "Reid Detmers",
+      "url": "https://www.fangraphs.com/players/reid-detmers/27468/stats/pitching",
+      "k9": "11.31",
+      "bb9": "3.53",
+      "stuff_plus": "112",
+      "location_plus": "112"
+    },
+    {
+      "role": "sp4",
+      "name": "Grayson Rodriguez",
+      "url": "https://www.fangraphs.com/players/grayson-rodriguez/24492/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp5",
+      "name": "Alek Manoah",
+      "url": "https://www.fangraphs.com/players/alek-manoah/26410/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    }
+  ],
+  "LAD": [
+    {
+      "role": "sp1",
+      "name": "Yoshinobu Yamamoto",
+      "url": "https://www.fangraphs.com/players/yoshinobu-yamamoto/33825/stats/pitching",
+      "k9": "10.42",
+      "bb9": "3.06",
+      "stuff_plus": "98",
+      "location_plus": "110"
+    },
+    {
+      "role": "sp2",
+      "name": "Tyler Glasnow",
+      "url": "https://www.fangraphs.com/players/tyler-glasnow/14374/stats/pitching",
+      "k9": "10.56",
+      "bb9": "4.28",
+      "stuff_plus": "98",
+      "location_plus": "91"
+    },
+    {
+      "role": "sp3",
+      "name": "Shohei Ohtani",
+      "url": "https://www.fangraphs.com/players/shohei-ohtani/19755/stats/batting",
+      "k9": "11.87",
+      "bb9": "1.72",
+      "stuff_plus": "119",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp4",
+      "name": "Emmet Sheehan",
+      "url": "https://www.fangraphs.com/players/emmet-sheehan/29839/stats/pitching",
+      "k9": "10.92",
+      "bb9": "2.70",
+      "stuff_plus": "102",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp5",
+      "name": "Roki Sasaki",
+      "url": "https://www.fangraphs.com/players/roki-sasaki/35323/stats/pitching",
+      "k9": "6.94",
+      "bb9": "5.45",
+      "stuff_plus": "91",
+      "location_plus": "92"
+    }
+  ],
+  "MIA": [
+    {
+      "role": "sp1",
+      "name": "Sandy Alcantara",
+      "url": "https://www.fangraphs.com/players/sandy-alcantara/18684/stats/pitching",
+      "k9": "7.32",
+      "bb9": "2.94",
+      "stuff_plus": "108",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp2",
+      "name": "Eury Pérez",
+      "url": "https://www.fangraphs.com/players/eury-perez/27768/stats/pitching",
+      "k9": "9.91",
+      "bb9": "3.02",
+      "stuff_plus": "118",
+      "location_plus": "94"
+    },
+    {
+      "role": "sp3",
+      "name": "Chris Paddack",
+      "url": "https://www.fangraphs.com/players/chris-paddack/20099/stats/pitching",
+      "k9": "6.38",
+      "bb9": "2.11",
+      "stuff_plus": "92",
+      "location_plus": "112"
+    },
+    {
+      "role": "sp4",
+      "name": "Max Meyer",
+      "url": "https://www.fangraphs.com/players/max-meyer/27474/stats/pitching",
+      "k9": "9.46",
+      "bb9": "2.78",
+      "stuff_plus": "97",
+      "location_plus": "107"
+    },
+    {
+      "role": "sp5",
+      "name": "Braxton Garrett",
+      "url": "https://www.fangraphs.com/players/braxton-garrett/21844/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    }
+  ],
+  "MIL": [
+    {
+      "role": "sp1",
+      "name": "Brandon Woodruff",
+      "url": "https://www.fangraphs.com/players/brandon-woodruff/16162/stats/pitching",
+      "k9": "11.55",
+      "bb9": "1.95",
+      "stuff_plus": "96",
+      "location_plus": "107"
+    },
+    {
+      "role": "sp2",
+      "name": "Jacob Misiorowski",
+      "url": "https://www.fangraphs.com/players/jacob-misiorowski/31623/stats/pitching",
+      "k9": "11.86",
+      "bb9": "4.23",
+      "stuff_plus": "119",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp3",
+      "name": "Chad Patrick",
+      "url": "https://www.fangraphs.com/players/chad-patrick/30113/stats/pitching",
+      "k9": "9.55",
+      "bb9": "3.01",
+      "stuff_plus": "105",
+      "location_plus": "98"
+    },
+    {
+      "role": "sp4",
+      "name": "Kyle Harrison",
+      "url": "https://www.fangraphs.com/players/kyle-harrison/27758/stats/pitching",
+      "k9": "9.59",
+      "bb9": "3.53",
+      "stuff_plus": "97",
+      "location_plus": "112"
+    },
+    {
+      "role": "sp5",
+      "name": "Brandon Sproat",
+      "url": "https://www.fangraphs.com/players/brandon-sproat/33850/stats/pitching",
+      "k9": "7.40",
+      "bb9": "3.05",
+      "stuff_plus": "112",
+      "location_plus": "85"
+    }
+  ],
+  "MIN": [
+    {
+      "role": "sp1",
+      "name": "Joe Ryan",
+      "url": "https://www.fangraphs.com/players/joe-ryan/21390/stats/pitching",
+      "k9": "10.21",
+      "bb9": "2.05",
+      "stuff_plus": "103",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp2",
+      "name": "Bailey Ober",
+      "url": "https://www.fangraphs.com/players/bailey-ober/21224/stats/pitching",
+      "k9": "7.38",
+      "bb9": "1.91",
+      "stuff_plus": "94",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp3",
+      "name": "Simeon Woods Richardson",
+      "url": "https://www.fangraphs.com/players/simeon-woods-richardson/24494/stats/pitching",
+      "k9": "8.65",
+      "bb9": "3.72",
+      "stuff_plus": "88",
+      "location_plus": "98"
+    },
+    {
+      "role": "sp4",
+      "name": "Taj Bradley",
+      "url": "https://www.fangraphs.com/players/taj-bradley/22543/stats/pitching",
+      "k9": "8.01",
+      "bb9": "3.53",
+      "stuff_plus": "102",
+      "location_plus": "90"
+    },
+    {
+      "role": "sp5",
+      "name": "Mick Abel",
+      "url": "https://www.fangraphs.com/players/mick-abel/27756/stats/pitching",
+      "k9": "9.00",
+      "bb9": "3.69",
+      "stuff_plus": "109",
+      "location_plus": "96"
+    }
+  ],
+  "NYM": [
+    {
+      "role": "sp1",
+      "name": "Freddy Peralta",
+      "url": "https://www.fangraphs.com/players/freddy-peralta/18679/stats/pitching",
+      "k9": "10.39",
+      "bb9": "3.36",
+      "stuff_plus": "102",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp2",
+      "name": "Nolan McLean",
+      "url": "https://www.fangraphs.com/players/nolan-mclean/33703/stats/pitching",
+      "k9": "10.69",
+      "bb9": "3.00",
+      "stuff_plus": "117",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp3",
+      "name": "David Peterson",
+      "url": "https://www.fangraphs.com/players/david-peterson/20302/stats/pitching",
+      "k9": "8.00",
+      "bb9": "3.47",
+      "stuff_plus": "90",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp4",
+      "name": "Clay Holmes",
+      "url": "https://www.fangraphs.com/players/clay-holmes/13649/stats/pitching",
+      "k9": "7.01",
+      "bb9": "3.59",
+      "stuff_plus": "104",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp5",
+      "name": "Sean Manaea",
+      "url": "https://www.fangraphs.com/players/sean-manaea/15873/stats/pitching",
+      "k9": "11.13",
+      "bb9": "1.78",
+      "stuff_plus": "103",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp6",
+      "name": "Kodai Senga",
+      "url": "https://www.fangraphs.com/players/kodai-senga/31838/stats/pitching",
+      "k9": "8.66",
+      "bb9": "4.37",
+      "stuff_plus": "94",
+      "location_plus": "95"
+    }
+  ],
+  "NYY": [
+    {
+      "role": "sp1",
+      "name": "Max Fried",
+      "url": "https://www.fangraphs.com/players/max-fried/13743/stats/pitching",
+      "k9": "8.71",
+      "bb9": "2.35",
+      "stuff_plus": "111",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp2",
+      "name": "Cam Schlittler",
+      "url": "https://www.fangraphs.com/players/cameron-schlittler/32095/stats/pitching",
+      "k9": "10.36",
+      "bb9": "3.82",
+      "stuff_plus": "114",
+      "location_plus": "97"
+    },
+    {
+      "role": "sp3",
+      "name": "Will Warren",
+      "url": "https://www.fangraphs.com/players/will-warren/30182/stats/pitching",
+      "k9": "9.48",
+      "bb9": "3.60",
+      "stuff_plus": "100",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp4",
+      "name": "Ryan Weathers",
+      "url": "https://www.fangraphs.com/players/ryan-weathers/23796/stats/pitching",
+      "k9": "8.69",
+      "bb9": "2.82",
+      "stuff_plus": "103",
+      "location_plus": "103"
+    },
+    {
+      "role": "sp5",
+      "name": "Luis Gil",
+      "url": "https://www.fangraphs.com/players/luis-gil/21052/stats/pitching",
+      "k9": "6.47",
+      "bb9": "5.21",
+      "stuff_plus": "100",
+      "location_plus": "93"
+    }
+  ],
+  "PHI": [
+    {
+      "role": "sp1",
+      "name": "Cristopher Sánchez",
+      "url": "https://www.fangraphs.com/players/cristopher-sanchez/20778/stats/pitching",
+      "k9": "9.45",
+      "bb9": "1.96",
+      "stuff_plus": "114",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp2",
+      "name": "Jesús Luzardo",
+      "url": "https://www.fangraphs.com/players/jesus-luzardo/19959/stats/pitching",
+      "k9": "10.58",
+      "bb9": "2.79",
+      "stuff_plus": "102",
+      "location_plus": "112"
+    },
+    {
+      "role": "sp3",
+      "name": "Aaron Nola",
+      "url": "https://www.fangraphs.com/players/aaron-nola/16149/stats/pitching",
+      "k9": "9.25",
+      "bb9": "2.67",
+      "stuff_plus": "105",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp4",
+      "name": "Taijuan Walker",
+      "url": "https://www.fangraphs.com/players/taijuan-walker/11836/stats/pitching",
+      "k9": "6.26",
+      "bb9": "3.06",
+      "stuff_plus": "90",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp5",
+      "name": "Andrew Painter",
+      "url": "https://www.fangraphs.com/players/andrew-painter/sa3017880/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    }
+  ],
+  "PIT": [
+    {
+      "role": "sp1",
+      "name": "Paul Skenes",
+      "url": "https://www.fangraphs.com/players/paul-skenes/33677/stats/pitching",
+      "k9": "10.36",
+      "bb9": "2.01",
+      "stuff_plus": "107",
+      "location_plus": "111"
+    },
+    {
+      "role": "sp2",
+      "name": "Mitch Keller",
+      "url": "https://www.fangraphs.com/players/mitch-keller/17594/stats/pitching",
+      "k9": "7.66",
+      "bb9": "2.60",
+      "stuff_plus": "95",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp3",
+      "name": "Braxton Ashcraft",
+      "url": "https://www.fangraphs.com/players/braxton-ashcraft/23793/stats/pitching",
+      "k9": "9.17",
+      "bb9": "3.10",
+      "stuff_plus": "105",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp4",
+      "name": "Bubba Chandler",
+      "url": "https://www.fangraphs.com/players/bubba-chandler/29868/stats/pitching",
+      "k9": "8.90",
+      "bb9": "1.15",
+      "stuff_plus": "109",
+      "location_plus": "104"
+    },
+    {
+      "role": "sp5",
+      "name": "José Urquidy",
+      "url": "https://www.fangraphs.com/players/jose-urquidy/18413/stats/pitching",
+      "k9": "11.57",
+      "bb9": "11.57",
+      "stuff_plus": "92",
+      "location_plus": "90"
+    }
+  ],
+  "SDP": [
+    {
+      "role": "sp1",
+      "name": "Michael King",
+      "url": "https://www.fangraphs.com/players/michael-king/19853/stats/pitching",
+      "k9": "9.33",
+      "bb9": "3.19",
+      "stuff_plus": "99",
+      "location_plus": "102"
+    },
+    {
+      "role": "sp2",
+      "name": "Nick Pivetta",
+      "url": "https://www.fangraphs.com/players/nick-pivetta/15454/stats/pitching",
+      "k9": "9.41",
+      "bb9": "2.48",
+      "stuff_plus": "98",
+      "location_plus": "109"
+    },
+    {
+      "role": "sp3",
+      "name": "Randy Vásquez",
+      "url": "https://www.fangraphs.com/players/randy-vasquez/24719/stats/pitching",
+      "k9": "5.25",
+      "bb9": "3.50",
+      "stuff_plus": "97",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp4",
+      "name": "Germán Márquez",
+      "url": "https://www.fangraphs.com/players/german-marquez/15038/stats/pitching",
+      "k9": "5.91",
+      "bb9": "3.42",
+      "stuff_plus": "88",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp5",
+      "name": "Walker Buehler",
+      "url": "https://www.fangraphs.com/players/walker-buehler/19374/stats/pitching",
+      "k9": "6.57",
+      "bb9": "4.36",
+      "stuff_plus": "97",
+      "location_plus": "92"
+    }
+  ],
+  "SFG": [
+    {
+      "role": "sp1",
+      "name": "Logan Webb",
+      "url": "https://www.fangraphs.com/players/logan-webb/17995/stats/pitching",
+      "k9": "9.74",
+      "bb9": "2.00",
+      "stuff_plus": "105",
+      "location_plus": "107"
+    },
+    {
+      "role": "sp2",
+      "name": "Robbie Ray",
+      "url": "https://www.fangraphs.com/players/robbie-ray/11486/stats/pitching",
+      "k9": "9.18",
+      "bb9": "3.60",
+      "stuff_plus": "97",
+      "location_plus": "95"
+    },
+    {
+      "role": "sp3",
+      "name": "Tyler Mahle",
+      "url": "https://www.fangraphs.com/players/tyler-mahle/16358/stats/pitching",
+      "k9": "6.85",
+      "bb9": "3.01",
+      "stuff_plus": "91",
+      "location_plus": "111"
+    },
+    {
+      "role": "sp4",
+      "name": "Adrian Houser",
+      "url": "https://www.fangraphs.com/players/adrian-houser/12718/stats/pitching",
+      "k9": "6.62",
+      "bb9": "2.74",
+      "stuff_plus": "93",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp5",
+      "name": "Landen Roupp",
+      "url": "https://www.fangraphs.com/players/landen-roupp/30076/stats/pitching",
+      "k9": "8.61",
+      "bb9": "3.80",
+      "stuff_plus": "97",
+      "location_plus": "106"
+    }
+  ],
+  "SEA": [
+    {
+      "role": "sp1",
+      "name": "Bryan Woo",
+      "url": "https://www.fangraphs.com/players/bryan-woo/30279/stats/pitching",
+      "k9": "9.55",
+      "bb9": "1.74",
+      "stuff_plus": "105",
+      "location_plus": "110"
+    },
+    {
+      "role": "sp2",
+      "name": "Logan Gilbert",
+      "url": "https://www.fangraphs.com/players/logan-gilbert/22250/stats/pitching",
+      "k9": "11.89",
+      "bb9": "2.13",
+      "stuff_plus": "96",
+      "location_plus": "110"
+    },
+    {
+      "role": "sp3",
+      "name": "Luis Castillo",
+      "url": "https://www.fangraphs.com/players/luis-castillo/15689/stats/pitching",
+      "k9": "8.07",
+      "bb9": "2.29",
+      "stuff_plus": "96",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp4",
+      "name": "George Kirby",
+      "url": "https://www.fangraphs.com/players/george-kirby/25436/stats/pitching",
+      "k9": "9.79",
+      "bb9": "2.07",
+      "stuff_plus": "98",
+      "location_plus": "112"
+    },
+    {
+      "role": "sp5",
+      "name": "Emerson Hancock",
+      "url": "https://www.fangraphs.com/players/emerson-hancock/27470/stats/pitching",
+      "k9": "6.40",
+      "bb9": "3.10",
+      "stuff_plus": "89",
+      "location_plus": "99"
+    }
+  ],
+  "STL": [
+    {
+      "role": "sp1",
+      "name": "Matthew Liberatore",
+      "url": "https://www.fangraphs.com/players/matthew-liberatore/22294/stats/pitching",
+      "k9": "7.24",
+      "bb9": "2.37",
+      "stuff_plus": "96",
+      "location_plus": "99"
+    },
+    {
+      "role": "sp2",
+      "name": "Dustin May",
+      "url": "https://www.fangraphs.com/players/dustin-may/19716/stats/pitching",
+      "k9": "8.37",
+      "bb9": "3.81",
+      "stuff_plus": "101",
+      "location_plus": "96"
+    },
+    {
+      "role": "sp3",
+      "name": "Andre Pallante",
+      "url": "https://www.fangraphs.com/players/andre-pallante/26108/stats/pitching",
+      "k9": "6.14",
+      "bb9": "3.43",
+      "stuff_plus": "94",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp4",
+      "name": "Michael McGreevy",
+      "url": "https://www.fangraphs.com/players/michael-mcgreevy/29869/stats/pitching",
+      "k9": "5.46",
+      "bb9": "1.88",
+      "stuff_plus": "90",
+      "location_plus": "110"
+    },
+    {
+      "role": "sp5",
+      "name": "Kyle Leahy",
+      "url": "https://www.fangraphs.com/players/kyle-leahy/24763/stats/pitching",
+      "k9": "8.18",
+      "bb9": "2.86",
+      "stuff_plus": "101",
+      "location_plus": "105"
+    }
+  ],
+  "TBR": [
+    {
+      "role": "sp1",
+      "name": "Drew Rasmussen",
+      "url": "https://www.fangraphs.com/players/drew-rasmussen/25385/stats/pitching",
+      "k9": "7.62",
+      "bb9": "2.22",
+      "stuff_plus": "112",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp2",
+      "name": "Ryan Pepiot",
+      "url": "https://www.fangraphs.com/players/ryan-pepiot/26221/stats/pitching",
+      "k9": "8.96",
+      "bb9": "3.27",
+      "stuff_plus": "109",
+      "location_plus": "97"
+    },
+    {
+      "role": "sp3",
+      "name": "Shane McClanahan",
+      "url": "https://www.fangraphs.com/players/shane-mcclanahan/21483/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp4",
+      "name": "Nick Martinez",
+      "url": "https://www.fangraphs.com/players/nick-martinez/12730/stats/pitching",
+      "k9": "6.30",
+      "bb9": "2.28",
+      "stuff_plus": "91",
+      "location_plus": "108"
+    },
+    {
+      "role": "sp5",
+      "name": "Steven Matz",
+      "url": "https://www.fangraphs.com/players/steven-matz/13361/stats/pitching",
+      "k9": "6.93",
+      "bb9": "1.29",
+      "stuff_plus": "103",
+      "location_plus": "111"
+    }
+  ],
+  "TEX": [
+    {
+      "role": "sp1",
+      "name": "Nathan Eovaldi",
+      "url": "https://www.fangraphs.com/players/nathan-eovaldi/9132/stats/pitching",
+      "k9": "8.93",
+      "bb9": "1.45",
+      "stuff_plus": "97",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp2",
+      "name": "Jacob deGrom",
+      "url": "https://www.fangraphs.com/players/jacob-degrom/10954/stats/pitching",
+      "k9": "9.64",
+      "bb9": "1.93",
+      "stuff_plus": "111",
+      "location_plus": "106"
+    },
+    {
+      "role": "sp3",
+      "name": "MacKenzie Gore",
+      "url": "https://www.fangraphs.com/players/mackenzie-gore/22201/stats/pitching",
+      "k9": "10.43",
+      "bb9": "3.61",
+      "stuff_plus": "98",
+      "location_plus": "98"
+    },
+    {
+      "role": "sp4",
+      "name": "Jack Leiter",
+      "url": "https://www.fangraphs.com/players/jack-leiter/30146/stats/pitching",
+      "k9": "8.78",
+      "bb9": "3.98",
+      "stuff_plus": "107",
+      "location_plus": "91"
+    },
+    {
+      "role": "sp5",
+      "name": "Jacob Latz",
+      "url": "https://www.fangraphs.com/players/jacob-latz/21306/stats/pitching",
+      "k9": "7.98",
+      "bb9": "3.89",
+      "stuff_plus": "103",
+      "location_plus": "102"
+    }
+  ],
+  "TOR": [
+    {
+      "role": "sp1",
+      "name": "Kevin Gausman",
+      "url": "https://www.fangraphs.com/players/kevin-gausman/14107/stats/pitching",
+      "k9": "8.81",
+      "bb9": "2.33",
+      "stuff_plus": "100",
+      "location_plus": "103"
+    },
+    {
+      "role": "sp2",
+      "name": "Dylan Cease",
+      "url": "https://www.fangraphs.com/players/dylan-cease/18525/stats/pitching",
+      "k9": "11.52",
+      "bb9": "3.80",
+      "stuff_plus": "108",
+      "location_plus": "100"
+    },
+    {
+      "role": "sp3",
+      "name": "Cody Ponce",
+      "url": "https://www.fangraphs.com/players/cody-ponce/17920/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp4",
+      "name": "Max Scherzer",
+      "url": "https://www.fangraphs.com/players/max-scherzer/3137/stats/pitching",
+      "k9": "8.68",
+      "bb9": "2.44",
+      "stuff_plus": "96",
+      "location_plus": "108"
+    },
+    {
+      "role": "sp5",
+      "name": "Trey Yesavage",
+      "url": "https://www.fangraphs.com/players/trey-yesavage/35456/stats/pitching",
+      "k9": "10.29",
+      "bb9": "4.50",
+      "stuff_plus": "106",
+      "location_plus": "93"
+    }
+  ],
+  "WSN": [
+    {
+      "role": "sp1",
+      "name": "Cade Cavalli",
+      "url": "https://www.fangraphs.com/players/cade-cavalli/27473/stats/pitching",
+      "k9": "7.40",
+      "bb9": "2.77",
+      "stuff_plus": "108",
+      "location_plus": "94"
+    },
+    {
+      "role": "sp2",
+      "name": "Miles Mikolas",
+      "url": "https://www.fangraphs.com/players/miles-mikolas/9803/stats/pitching",
+      "k9": "5.76",
+      "bb9": "2.13",
+      "stuff_plus": "89",
+      "location_plus": "107"
+    },
+    {
+      "role": "sp3",
+      "name": "Foster Griffin",
+      "url": "https://www.fangraphs.com/players/foster-griffin/16432/stats/pitching",
+      "k9": "",
+      "bb9": "",
+      "stuff_plus": "",
+      "location_plus": ""
+    },
+    {
+      "role": "sp4",
+      "name": "Jake Irvin",
+      "url": "https://www.fangraphs.com/players/jake-irvin/21504/stats/pitching",
+      "k9": "6.20",
+      "bb9": "3.10",
+      "stuff_plus": "94",
+      "location_plus": "103"
+    },
+    {
+      "role": "sp5",
+      "name": "Zack Littell",
+      "url": "https://www.fangraphs.com/players/zack-littell/15823/stats/pitching",
+      "k9": "6.27",
+      "bb9": "1.54",
+      "stuff_plus": "85",
+      "location_plus": "104"
+    }
+  ],
+  "ATH": [
+    {
+      "role": "sp1",
+      "name": "Luis Severino",
+      "url": "https://www.fangraphs.com/players/luis-severino/15890/stats/pitching",
+      "k9": "6.86",
+      "bb9": "2.77",
+      "stuff_plus": "110",
+      "location_plus": "97"
+    },
+    {
+      "role": "sp2",
+      "name": "Jeffrey Springs",
+      "url": "https://www.fangraphs.com/players/jeffrey-springs/17677/stats/pitching",
+      "k9": "7.26",
+      "bb9": "2.84",
+      "stuff_plus": "94",
+      "location_plus": "98"
+    },
+    {
+      "role": "sp3",
+      "name": "Aaron Civale",
+      "url": "https://www.fangraphs.com/players/aaron-civale/19479/stats/pitching",
+      "k9": "7.76",
+      "bb9": "2.91",
+      "stuff_plus": "98",
+      "location_plus": "89"
+    },
+    {
+      "role": "sp4",
+      "name": "Jacob Lopez",
+      "url": "https://www.fangraphs.com/players/jacob-lopez/25098/stats/pitching",
+      "k9": "10.97",
+      "bb9": "3.59",
+      "stuff_plus": "93",
+      "location_plus": "101"
+    },
+    {
+      "role": "sp5",
+      "name": "Luis Morales",
+      "url": "https://www.fangraphs.com/players/luis-morales/32227/stats/pitching",
+      "k9": "7.95",
+      "bb9": "3.33",
+      "stuff_plus": "103",
+      "location_plus": "100"
+    }
+  ]
+}

@@ -1,0 +1,2442 @@
+{
+  "ARI": [
+    {
+      "role": "CL",
+      "name": "Paul Sewald",
+      "url": "https://www.fangraphs.com/players/paul-sewald/13892/stats/pitching",
+      "era": "4.58",
+      "k9": "9.15",
+      "bb9": "2.75",
+      "k_pct": "24.7%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "SU8",
+      "name": "Taylor Clarke",
+      "url": "https://www.fangraphs.com/players/taylor-clarke/17611/stats/pitching",
+      "era": "3.25",
+      "k9": "7.16",
+      "bb9": "1.46",
+      "k_pct": "21.4%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU7",
+      "name": "Ryan Thompson",
+      "url": "https://www.fangraphs.com/players/ryan-thompson/16647/stats/pitching",
+      "era": "3.92",
+      "k9": "7.84",
+      "bb9": "2.83",
+      "k_pct": "20.6%",
+      "stuff_plus": "116"
+    },
+    {
+      "role": "MID",
+      "name": "Kevin Ginkel",
+      "url": "https://www.fangraphs.com/players/kevin-ginkel/19876/stats/pitching",
+      "era": "7.36",
+      "k9": "10.17",
+      "bb9": "4.56",
+      "k_pct": "24.0%",
+      "stuff_plus": "90"
+    },
+    {
+      "role": "MID",
+      "name": "Jonathan Loaisiga",
+      "url": "https://www.fangraphs.com/players/jonathan-loaisiga/stats/pitching",
+      "era": "4.25",
+      "k9": "7.58",
+      "bb9": "3.03",
+      "k_pct": "18.5%",
+      "stuff_plus": "114"
+    },
+    {
+      "role": "MID",
+      "name": "Philip Abner",
+      "url": "https://www.fangraphs.com/players/philip-abner/33821/stats/pitching",
+      "era": "4.91",
+      "k9": "12.27",
+      "bb9": "7.36",
+      "k_pct": "27.8%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Juan Morillo",
+      "url": "https://www.fangraphs.com/players/juan-morillo/21924/stats/pitching",
+      "era": "4.19",
+      "k9": "9.44",
+      "bb9": "5.24",
+      "k_pct": "23.7%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "LR",
+      "name": "Andrew Hoffmann",
+      "url": "https://www.fangraphs.com/players/andrew-hoffmann/29633/stats/pitching",
+      "era": "6.00",
+      "k9": "9.00",
+      "bb9": "7.50",
+      "k_pct": "19.7%",
+      "stuff_plus": "92"
+    }
+  ],
+  "ATL": [
+    {
+      "role": "CL",
+      "name": "Raisel Iglesias",
+      "url": "https://www.fangraphs.com/players/raisel-iglesias/17130/stats/pitching",
+      "era": "3.21",
+      "k9": "9.76",
+      "bb9": "2.14",
+      "k_pct": "27.4%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU8",
+      "name": "Robert Suarez",
+      "url": "https://www.fangraphs.com/players/robert-suarez/30115/stats/pitching",
+      "era": "2.97",
+      "k9": "9.69",
+      "bb9": "2.07",
+      "k_pct": "27.9%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "SU7",
+      "name": "Dylan Lee",
+      "url": "https://www.fangraphs.com/players/dylan-lee/19996/stats/pitching",
+      "era": "3.29",
+      "k9": "10.01",
+      "bb9": "1.84",
+      "k_pct": "28.6%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Tyler Kinley",
+      "url": "https://www.fangraphs.com/players/tyler-kinley/18297/stats/pitching",
+      "era": "3.96",
+      "k9": "9.04",
+      "bb9": "4.09",
+      "k_pct": "23.7%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "MID",
+      "name": "Aaron Bummer",
+      "url": "https://www.fangraphs.com/players/aaron-bummer/16258/stats/pitching",
+      "era": "3.81",
+      "k9": "8.45",
+      "bb9": "2.82",
+      "k_pct": "21.7%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "MID",
+      "name": "Joel Payamps",
+      "url": "https://www.fangraphs.com/players/joel-payamps/14332/stats/pitching",
+      "era": "6.84",
+      "k9": "8.20",
+      "bb9": "3.08",
+      "k_pct": "20.5%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Dylan Dodd",
+      "url": "https://www.fangraphs.com/players/dylan-dodd/29928/stats/pitching",
+      "era": "3.60",
+      "k9": "7.71",
+      "bb9": "1.29",
+      "k_pct": "22.1%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "LR",
+      "name": "Jose Suarez",
+      "url": "https://www.fangraphs.com/players/jose-suarez/stats/pitching",
+      "era": "1.86",
+      "k9": "7.45",
+      "bb9": "4.66",
+      "k_pct": "19.8%",
+      "stuff_plus": "99"
+    }
+  ],
+  "BAL": [
+    {
+      "role": "CL",
+      "name": "Ryan Helsley",
+      "url": "https://www.fangraphs.com/players/ryan-helsley/18138/stats/pitching",
+      "era": "4.50",
+      "k9": "10.13",
+      "bb9": "4.02",
+      "k_pct": "25.0%",
+      "stuff_plus": "127"
+    },
+    {
+      "role": "SU8",
+      "name": "Keegan Akin",
+      "url": "https://www.fangraphs.com/players/keegan-akin/19362/stats/pitching",
+      "era": "3.41",
+      "k9": "8.38",
+      "bb9": "4.69",
+      "k_pct": "22.0%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "SU7",
+      "name": "Yennier Cano",
+      "url": "https://www.fangraphs.com/players/yennier-cano/25911/stats/pitching",
+      "era": "5.12",
+      "k9": "8.22",
+      "bb9": "3.72",
+      "k_pct": "21.1%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Dietrich Enns",
+      "url": "https://www.fangraphs.com/players/dietrich-enns/13932/stats/pitching",
+      "era": "4.08",
+      "k9": "9.52",
+      "bb9": "2.91",
+      "k_pct": "24.5%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "MID",
+      "name": "Rico Garcia",
+      "url": "https://www.fangraphs.com/players/rico-garcia/20023/stats/pitching",
+      "era": "3.15",
+      "k9": "9.96",
+      "bb9": "2.62",
+      "k_pct": "26.8%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Grant Wolfram",
+      "url": "https://www.fangraphs.com/players/grant-wolfram/21623/stats/pitching",
+      "era": "5.40",
+      "k9": "10.46",
+      "bb9": "5.06",
+      "k_pct": "23.3%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "LR",
+      "name": "Tyler Wells",
+      "url": "https://www.fangraphs.com/players/tyler-wells/20000/stats/pitching",
+      "era": "2.91",
+      "k9": "7.48",
+      "bb9": "0.83",
+      "k_pct": "22.0%",
+      "stuff_plus": "96"
+    }
+  ],
+  "BOS": [
+    {
+      "role": "CL",
+      "name": "Aroldis Chapman",
+      "url": "https://www.fangraphs.com/players/aroldis-chapman/10233/stats/pitching",
+      "era": "1.17",
+      "k9": "12.47",
+      "bb9": "2.20",
+      "k_pct": "37.3%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "SU8",
+      "name": "Garrett Whitlock",
+      "url": "https://www.fangraphs.com/players/garrett-whitlock/20191/stats/pitching",
+      "era": "2.25",
+      "k9": "11.38",
+      "bb9": "3.00",
+      "k_pct": "31.1%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "SU7",
+      "name": "Justin Slaten",
+      "url": "https://www.fangraphs.com/players/justin-slaten/25648/stats/pitching",
+      "era": "4.24",
+      "k9": "6.62",
+      "bb9": "2.65",
+      "k_pct": "18.2%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Greg Weissert",
+      "url": "https://www.fangraphs.com/players/greg-weissert/20375/stats/pitching",
+      "era": "2.82",
+      "k9": "7.66",
+      "bb9": "2.82",
+      "k_pct": "20.5%",
+      "stuff_plus": "98"
+    },
+    {
+      "role": "MID",
+      "name": "Danny Coulombe",
+      "url": "https://www.fangraphs.com/players/danny-coulombe/13293/stats/pitching",
+      "era": "2.30",
+      "k9": "9.00",
+      "bb9": "3.77",
+      "k_pct": "24.4%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "MID",
+      "name": "Zack Kelly",
+      "url": "https://www.fangraphs.com/players/zack-kelly/20349/stats/pitching",
+      "era": "4.58",
+      "k9": "8.92",
+      "bb9": "3.06",
+      "k_pct": "23.0%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "MID",
+      "name": "Jovani Moran",
+      "url": "https://www.fangraphs.com/players/jovani-moran/stats/pitching",
+      "era": "6.75",
+      "k9": "11.25",
+      "bb9": "6.75",
+      "k_pct": "25.0%",
+      "stuff_plus": "94"
+    },
+    {
+      "role": "LR",
+      "name": "Ryan Watson",
+      "url": "https://www.fangraphs.com/players/ryan-watson/sa3015070/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "CHC": [
+    {
+      "role": "CL",
+      "name": "Daniel Palencia",
+      "url": "https://www.fangraphs.com/players/daniel-palencia/27914/stats/pitching",
+      "era": "2.91",
+      "k9": "10.42",
+      "bb9": "2.73",
+      "k_pct": "28.4%",
+      "stuff_plus": "116"
+    },
+    {
+      "role": "SU8",
+      "name": "Phil Maton",
+      "url": "https://www.fangraphs.com/players/phil-maton/18064/stats/pitching",
+      "era": "2.79",
+      "k9": "11.89",
+      "bb9": "3.38",
+      "k_pct": "32.7%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "SU7",
+      "name": "Hunter Harvey",
+      "url": "https://www.fangraphs.com/players/hunter-harvey/15507/stats/pitching",
+      "era": "0.00",
+      "k9": "9.28",
+      "bb9": "0.84",
+      "k_pct": "28.2%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "MID",
+      "name": "Caleb Thielbar",
+      "url": "https://www.fangraphs.com/players/caleb-thielbar/10078/stats/pitching",
+      "era": "2.64",
+      "k9": "8.69",
+      "bb9": "2.02",
+      "k_pct": "25.5%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "MID",
+      "name": "Jacob Webb",
+      "url": "https://www.fangraphs.com/players/jacob-webb/19274/stats/pitching",
+      "era": "3.00",
+      "k9": "7.91",
+      "bb9": "2.59",
+      "k_pct": "21.7%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "MID",
+      "name": "Hoby Milner",
+      "url": "https://www.fangraphs.com/players/hoby-milner/13346/stats/pitching",
+      "era": "3.84",
+      "k9": "7.42",
+      "bb9": "2.69",
+      "k_pct": "19.8%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "MID",
+      "name": "Javier Assad",
+      "url": "https://www.fangraphs.com/players/javier-assad/21741/stats/pitching",
+      "era": "3.65",
+      "k9": "5.59",
+      "bb9": "2.92",
+      "k_pct": "15.0%",
+      "stuff_plus": "94"
+    },
+    {
+      "role": "LR",
+      "name": "Colin Rea",
+      "url": "https://www.fangraphs.com/players/colin-rea/12317/stats/pitching",
+      "era": "3.95",
+      "k9": "7.17",
+      "bb9": "2.49",
+      "k_pct": "19.2%",
+      "stuff_plus": "95"
+    }
+  ],
+  "CHW": [
+    {
+      "role": "CL",
+      "name": "Seranthony Dominguez",
+      "url": "https://www.fangraphs.com/players/seranthony-dominguez/stats/pitching",
+      "era": "3.16",
+      "k9": "11.35",
+      "bb9": "5.17",
+      "k_pct": "30.3%",
+      "stuff_plus": "114"
+    },
+    {
+      "role": "SU8",
+      "name": "Jordan Leasure",
+      "url": "https://www.fangraphs.com/players/jordan-leasure/29950/stats/pitching",
+      "era": "3.92",
+      "k9": "11.33",
+      "bb9": "4.20",
+      "k_pct": "30.1%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "SU7",
+      "name": "Grant Taylor",
+      "url": "https://www.fangraphs.com/players/grant-taylor/33927/stats/pitching",
+      "era": "4.91",
+      "k9": "13.25",
+      "bb9": "3.68",
+      "k_pct": "34.4%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "MID",
+      "name": "Sean Newcomb",
+      "url": "https://www.fangraphs.com/players/sean-newcomb/16943/stats/pitching",
+      "era": "2.73",
+      "k9": "8.87",
+      "bb9": "3.02",
+      "k_pct": "23.3%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Chris Murphy",
+      "url": "https://www.fangraphs.com/players/chris-murphy/26214/stats/pitching",
+      "era": "3.12",
+      "k9": "7.79",
+      "bb9": "5.19",
+      "k_pct": "20.3%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "MID",
+      "name": "Jordan Hicks",
+      "url": "https://www.fangraphs.com/players/jordan-hicks/19618/stats/pitching",
+      "era": "6.95",
+      "k9": "7.75",
+      "bb9": "4.28",
+      "k_pct": "18.5%",
+      "stuff_plus": "110"
+    },
+    {
+      "role": "MID",
+      "name": "Ryan Borucki",
+      "url": "https://www.fangraphs.com/players/ryan-borucki/16350/stats/pitching",
+      "era": "4.63",
+      "k9": "8.23",
+      "bb9": "4.11",
+      "k_pct": "22.1%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "LR",
+      "name": "Jedixson Paez",
+      "url": "https://www.fangraphs.com/players/jedixson-paez/sa3016264/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "CIN": [
+    {
+      "role": "CL",
+      "name": "Emilio Pagan",
+      "url": "https://www.fangraphs.com/players/emilio-pagan/stats/pitching",
+      "era": "2.88",
+      "k9": "10.62",
+      "bb9": "2.88",
+      "k_pct": "30.0%",
+      "stuff_plus": "112"
+    },
+    {
+      "role": "SU8",
+      "name": "Tony Santillan",
+      "url": "https://www.fangraphs.com/players/tony-santillan/19926/stats/pitching",
+      "era": "2.44",
+      "k9": "9.16",
+      "bb9": "3.54",
+      "k_pct": "24.9%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU7",
+      "name": "Graham Ashcraft",
+      "url": "https://www.fangraphs.com/players/graham-ashcraft/27552/stats/pitching",
+      "era": "3.99",
+      "k9": "8.82",
+      "bb9": "3.44",
+      "k_pct": "22.5%",
+      "stuff_plus": "122"
+    },
+    {
+      "role": "MID",
+      "name": "Pierce Johnson",
+      "url": "https://www.fangraphs.com/players/pierce-johnson/13435/stats/pitching",
+      "era": "3.05",
+      "k9": "9.00",
+      "bb9": "2.90",
+      "k_pct": "24.8%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "Brock Burke",
+      "url": "https://www.fangraphs.com/players/brock-burke/17968/stats/pitching",
+      "era": "3.36",
+      "k9": "7.59",
+      "bb9": "2.63",
+      "k_pct": "20.2%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "MID",
+      "name": "Connor Phillips",
+      "url": "https://www.fangraphs.com/players/connor-phillips/27649/stats/pitching",
+      "era": "2.88",
+      "k9": "11.52",
+      "bb9": "4.32",
+      "k_pct": "32.7%",
+      "stuff_plus": "117"
+    },
+    {
+      "role": "MID",
+      "name": "Sam Moll",
+      "url": "https://www.fangraphs.com/players/sam-moll/14874/stats/pitching",
+      "era": "6.38",
+      "k9": "10.80",
+      "bb9": "4.91",
+      "k_pct": "27.2%",
+      "stuff_plus": "98"
+    },
+    {
+      "role": "LR",
+      "name": "Brandon Williamson",
+      "url": "https://www.fangraphs.com/players/brandon-williamson/25463/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "CLE": [
+    {
+      "role": "CL",
+      "name": "Cade Smith",
+      "url": "https://www.fangraphs.com/players/cade-smith/27867/stats/pitching",
+      "era": "2.93",
+      "k9": "12.71",
+      "bb9": "2.32",
+      "k_pct": "34.7%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "SU8",
+      "name": "Hunter Gaddis",
+      "url": "https://www.fangraphs.com/players/hunter-gaddis/25636/stats/pitching",
+      "era": "3.11",
+      "k9": "9.86",
+      "bb9": "2.84",
+      "k_pct": "26.6%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "SU7",
+      "name": "Shawn Armstrong",
+      "url": "https://www.fangraphs.com/players/shawn-armstrong/12857/stats/pitching",
+      "era": "2.31",
+      "k9": "9.00",
+      "bb9": "2.43",
+      "k_pct": "26.1%",
+      "stuff_plus": "105"
+    },
+    {
+      "role": "MID",
+      "name": "Erik Sabrowski",
+      "url": "https://www.fangraphs.com/players/erik-sabrowski/24978/stats/pitching",
+      "era": "1.84",
+      "k9": "12.89",
+      "bb9": "6.44",
+      "k_pct": "34.7%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "MID",
+      "name": "Matt Festa",
+      "url": "https://www.fangraphs.com/players/matt-festa/19330/stats/pitching",
+      "era": "4.12",
+      "k9": "9.22",
+      "bb9": "2.47",
+      "k_pct": "24.8%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "Tim Herrin",
+      "url": "https://www.fangraphs.com/players/tim-herrin/25139/stats/pitching",
+      "era": "4.85",
+      "k9": "9.49",
+      "bb9": "6.33",
+      "k_pct": "23.2%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "MID",
+      "name": "Connor Brogdon",
+      "url": "https://www.fangraphs.com/players/connor-brogdon/21205/stats/pitching",
+      "era": "5.55",
+      "k9": "9.38",
+      "bb9": "3.45",
+      "k_pct": "24.6%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "LR",
+      "name": "Peyton Pallette",
+      "url": "https://www.fangraphs.com/players/peyton-pallette/sa3020742/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "COL": [
+    {
+      "role": "CL",
+      "name": "Victor Vodnik",
+      "url": "https://www.fangraphs.com/players/victor-vodnik/24614/stats/pitching",
+      "era": "3.02",
+      "k9": "8.70",
+      "bb9": "4.62",
+      "k_pct": "22.8%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU8",
+      "name": "Jimmy Herget",
+      "url": "https://www.fangraphs.com/players/jimmy-herget/17556/stats/pitching",
+      "era": "2.48",
+      "k9": "8.75",
+      "bb9": "2.81",
+      "k_pct": "23.3%",
+      "stuff_plus": "93"
+    },
+    {
+      "role": "SU7",
+      "name": "Juan M. Mejia",
+      "url": "https://www.fangraphs.com/players/juan-m.-mejia/stats/pitching",
+      "era": "3.96",
+      "k9": "9.98",
+      "bb9": "3.67",
+      "k_pct": "26.1%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Zach Agnos",
+      "url": "https://www.fangraphs.com/players/zach-agnos/31552/stats/pitching",
+      "era": "6.61",
+      "k9": "5.46",
+      "bb9": "4.88",
+      "k_pct": "13.8%",
+      "stuff_plus": "91"
+    },
+    {
+      "role": "MID",
+      "name": "Brennan Bernardino",
+      "url": "https://www.fangraphs.com/players/brennan-bernardino/16835/stats/pitching",
+      "era": "3.14",
+      "k9": "7.49",
+      "bb9": "4.53",
+      "k_pct": "19.2%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "John Brebbia",
+      "url": "https://www.fangraphs.com/players/john-brebbia/12777/stats/pitching",
+      "era": "7.71",
+      "k9": "10.03",
+      "bb9": "4.63",
+      "k_pct": "22.6%",
+      "stuff_plus": "93"
+    },
+    {
+      "role": "MID",
+      "name": "Keegan Thompson",
+      "url": "https://www.fangraphs.com/players/keegan-thompson/19795/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "LR",
+      "name": "Antonio Senzatela",
+      "url": "https://www.fangraphs.com/players/antonio-senzatela/15488/stats/pitching",
+      "era": "6.65",
+      "k9": "5.05",
+      "bb9": "3.25",
+      "k_pct": "11.8%",
+      "stuff_plus": "85"
+    }
+  ],
+  "DET": [
+    {
+      "role": "CL",
+      "name": "Kenley Jansen",
+      "url": "https://www.fangraphs.com/players/kenley-jansen/3096/stats/pitching",
+      "era": "2.59",
+      "k9": "8.69",
+      "bb9": "2.90",
+      "k_pct": "24.4%",
+      "stuff_plus": "114"
+    },
+    {
+      "role": "SU8",
+      "name": "Will Vest",
+      "url": "https://www.fangraphs.com/players/will-vest/19769/stats/pitching",
+      "era": "3.01",
+      "k9": "9.83",
+      "bb9": "2.88",
+      "k_pct": "26.4%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "SU7",
+      "name": "Kyle Finnegan",
+      "url": "https://www.fangraphs.com/players/kyle-finnegan/15009/stats/pitching",
+      "era": "3.47",
+      "k9": "8.68",
+      "bb9": "2.84",
+      "k_pct": "24.0%",
+      "stuff_plus": "105"
+    },
+    {
+      "role": "MID",
+      "name": "Tyler Holton",
+      "url": "https://www.fangraphs.com/players/tyler-holton/26231/stats/pitching",
+      "era": "3.66",
+      "k9": "7.32",
+      "bb9": "1.94",
+      "k_pct": "20.5%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Drew Anderson",
+      "url": "https://www.fangraphs.com/players/drew-anderson/15130/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "MID",
+      "name": "Brenan Hanifee",
+      "url": "https://www.fangraphs.com/players/brenan-hanifee/22304/stats/pitching",
+      "era": "3.00",
+      "k9": "6.00",
+      "bb9": "2.10",
+      "k_pct": "15.4%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "MID",
+      "name": "Brant Hurter",
+      "url": "https://www.fangraphs.com/players/brant-hurter/30133/stats/pitching",
+      "era": "2.43",
+      "k9": "9.71",
+      "bb9": "3.86",
+      "k_pct": "24.5%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "LR",
+      "name": "Enmanuel De Jesus",
+      "url": "https://www.fangraphs.com/players/enmanuel-de-jesus/18554/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "HOU": [
+    {
+      "role": "CL",
+      "name": "Bryan Abreu",
+      "url": "https://www.fangraphs.com/players/bryan-abreu/16609/stats/pitching",
+      "era": "2.28",
+      "k9": "13.31",
+      "bb9": "3.93",
+      "k_pct": "35.5%",
+      "stuff_plus": "110"
+    },
+    {
+      "role": "SU8",
+      "name": "Bryan King",
+      "url": "https://www.fangraphs.com/players/bryan-king/25890/stats/pitching",
+      "era": "2.78",
+      "k9": "9.13",
+      "bb9": "1.46",
+      "k_pct": "25.1%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU7",
+      "name": "Enyel De Los Santos",
+      "url": "https://www.fangraphs.com/players/enyel-de-los-santos/18403/stats/pitching",
+      "era": "4.36",
+      "k9": "8.45",
+      "bb9": "3.27",
+      "k_pct": "22.1%",
+      "stuff_plus": "93"
+    },
+    {
+      "role": "MID",
+      "name": "Steven Okert",
+      "url": "https://www.fangraphs.com/players/steven-okert/13580/stats/pitching",
+      "era": "3.01",
+      "k9": "10.55",
+      "bb9": "2.39",
+      "k_pct": "30.4%",
+      "stuff_plus": "115"
+    },
+    {
+      "role": "MID",
+      "name": "Bennett Sousa",
+      "url": "https://www.fangraphs.com/players/bennett-sousa/21345/stats/pitching",
+      "era": "2.84",
+      "k9": "10.48",
+      "bb9": "2.66",
+      "k_pct": "29.6%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "MID",
+      "name": "Roddery Munoz",
+      "url": "https://www.fangraphs.com/players/roddery-munoz/stats/pitching",
+      "era": "8.18",
+      "k9": "11.45",
+      "bb9": "7.36",
+      "k_pct": "27.5%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "LR",
+      "name": "Kai-Wei Teng",
+      "url": "https://www.fangraphs.com/players/kai-wei-teng/24282/stats/pitching",
+      "era": "6.37",
+      "k9": "11.83",
+      "bb9": "5.16",
+      "k_pct": "28.1%",
+      "stuff_plus": "94"
+    }
+  ],
+  "KCR": [
+    {
+      "role": "CL",
+      "name": "Carlos Estevez",
+      "url": "https://www.fangraphs.com/players/carlos-estevez/stats/pitching",
+      "era": "2.45",
+      "k9": "7.36",
+      "bb9": "3.00",
+      "k_pct": "20.1%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "SU8",
+      "name": "Lucas Erceg",
+      "url": "https://www.fangraphs.com/players/lucas-erceg/19360/stats/pitching",
+      "era": "2.64",
+      "k9": "7.04",
+      "bb9": "2.64",
+      "k_pct": "19.3%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "SU7",
+      "name": "Matt Strahm",
+      "url": "https://www.fangraphs.com/players/matt-strahm/13799/stats/pitching",
+      "era": "2.74",
+      "k9": "10.11",
+      "bb9": "2.89",
+      "k_pct": "27.3%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "MID",
+      "name": "John Schreiber",
+      "url": "https://www.fangraphs.com/players/john-schreiber/20020/stats/pitching",
+      "era": "3.80",
+      "k9": "8.72",
+      "bb9": "2.67",
+      "k_pct": "23.4%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Nick Mears",
+      "url": "https://www.fangraphs.com/players/nick-mears/25376/stats/pitching",
+      "era": "3.49",
+      "k9": "7.31",
+      "bb9": "2.06",
+      "k_pct": "20.8%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "Daniel Lynch",
+      "url": "https://www.fangraphs.com/players/daniel-lynch/stats/pitching",
+      "era": "3.06",
+      "k9": "5.99",
+      "bb9": "3.46",
+      "k_pct": "15.6%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "MID",
+      "name": "Alex Lange",
+      "url": "https://www.fangraphs.com/players/alex-lange/19883/stats/pitching",
+      "era": "0.00",
+      "k9": "9.00",
+      "bb9": "9.00",
+      "k_pct": "16.7%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "LR",
+      "name": "Bailey Falter",
+      "url": "https://www.fangraphs.com/players/bailey-falter/20070/stats/pitching",
+      "era": "4.45",
+      "k9": "5.82",
+      "bb9": "3.30",
+      "k_pct": "15.6%",
+      "stuff_plus": "96"
+    }
+  ],
+  "LAA": [
+    {
+      "role": "CL",
+      "name": "Kirby Yates",
+      "url": "https://www.fangraphs.com/players/kirby-yates/9073/stats/pitching",
+      "era": "5.23",
+      "k9": "11.32",
+      "bb9": "3.70",
+      "k_pct": "29.2%",
+      "stuff_plus": "94"
+    },
+    {
+      "role": "CL",
+      "name": "Drew Pomeranz",
+      "url": "https://www.fangraphs.com/players/drew-pomeranz/11426/stats/pitching",
+      "era": "2.17",
+      "k9": "10.33",
+      "bb9": "2.72",
+      "k_pct": "28.1%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "CL",
+      "name": "Jordan Romano",
+      "url": "https://www.fangraphs.com/players/jordan-romano/16122/stats/pitching",
+      "era": "8.23",
+      "k9": "9.91",
+      "bb9": "3.59",
+      "k_pct": "25.1%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Ryan Zeferjahn",
+      "url": "https://www.fangraphs.com/players/ryan-zeferjahn/25420/stats/pitching",
+      "era": "4.74",
+      "k9": "11.53",
+      "bb9": "5.53",
+      "k_pct": "28.4%",
+      "stuff_plus": "121"
+    },
+    {
+      "role": "MID",
+      "name": "Brent Suter",
+      "url": "https://www.fangraphs.com/players/brent-suter/13942/stats/pitching",
+      "era": "4.52",
+      "k9": "7.05",
+      "bb9": "2.39",
+      "k_pct": "18.2%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Sam Bachman",
+      "url": "https://www.fangraphs.com/players/sam-bachman/29754/stats/pitching",
+      "era": "6.20",
+      "k9": "7.97",
+      "bb9": "4.43",
+      "k_pct": "19.1%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Nick Sandlin",
+      "url": "https://www.fangraphs.com/players/nick-sandlin/20517/stats/pitching",
+      "era": "2.20",
+      "k9": "8.82",
+      "bb9": "4.41",
+      "k_pct": "23.2%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "LR",
+      "name": "Chase Silseth",
+      "url": "https://www.fangraphs.com/players/chase-silseth/30074/stats/pitching",
+      "era": "1.64",
+      "k9": "10.64",
+      "bb9": "4.91",
+      "k_pct": "26.5%",
+      "stuff_plus": "102"
+    }
+  ],
+  "LAD": [
+    {
+      "role": "CL",
+      "name": "Edwin Diaz",
+      "url": "https://www.fangraphs.com/players/edwin-diaz/stats/pitching",
+      "era": "1.63",
+      "k9": "13.30",
+      "bb9": "2.85",
+      "k_pct": "38.0%",
+      "stuff_plus": "110"
+    },
+    {
+      "role": "SU8",
+      "name": "Tanner Scott",
+      "url": "https://www.fangraphs.com/players/tanner-scott/17586/stats/pitching",
+      "era": "4.74",
+      "k9": "9.47",
+      "bb9": "2.84",
+      "k_pct": "25.2%",
+      "stuff_plus": "117"
+    },
+    {
+      "role": "SU7",
+      "name": "Alex Vesia",
+      "url": "https://www.fangraphs.com/players/alex-vesia/25007/stats/pitching",
+      "era": "3.02",
+      "k9": "12.07",
+      "bb9": "3.32",
+      "k_pct": "33.8%",
+      "stuff_plus": "119"
+    },
+    {
+      "role": "MID",
+      "name": "Will Klein",
+      "url": "https://www.fangraphs.com/players/will-klein/27787/stats/pitching",
+      "era": "2.35",
+      "k9": "12.33",
+      "bb9": "5.87",
+      "k_pct": "30.0%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "MID",
+      "name": "Blake Treinen",
+      "url": "https://www.fangraphs.com/players/blake-treinen/12572/stats/pitching",
+      "era": "5.40",
+      "k9": "12.15",
+      "bb9": "6.41",
+      "k_pct": "27.9%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "MID",
+      "name": "Jack Dreyer",
+      "url": "https://www.fangraphs.com/players/jack-dreyer/30249/stats/pitching",
+      "era": "2.95",
+      "k9": "8.72",
+      "bb9": "2.83",
+      "k_pct": "24.1%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "MID",
+      "name": "Edgardo Henriquez",
+      "url": "https://www.fangraphs.com/players/edgardo-henriquez/26944/stats/pitching",
+      "era": "2.37",
+      "k9": "8.53",
+      "bb9": "2.37",
+      "k_pct": "23.1%",
+      "stuff_plus": "131"
+    },
+    {
+      "role": "MID",
+      "name": "Justin Wrobleski",
+      "url": "https://www.fangraphs.com/players/justin-wrobleski/31204/stats/pitching",
+      "era": "4.32",
+      "k9": "10.26",
+      "bb9": "2.30",
+      "k_pct": "27.1%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "LR",
+      "name": "Ben Casparius",
+      "url": "https://www.fangraphs.com/players/ben-casparius/30085/stats/pitching",
+      "era": "4.64",
+      "k9": "8.23",
+      "bb9": "2.43",
+      "k_pct": "21.3%",
+      "stuff_plus": "116"
+    }
+  ],
+  "MIA": [
+    {
+      "role": "CL",
+      "name": "Peter Fairbanks",
+      "url": "https://www.fangraphs.com/players/peter-fairbanks/stats/pitching",
+      "era": "2.83",
+      "k9": "8.80",
+      "bb9": "2.69",
+      "k_pct": "24.2%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "SU8",
+      "name": "Calvin Faucher",
+      "url": "https://www.fangraphs.com/players/calvin-faucher/20116/stats/pitching",
+      "era": "3.28",
+      "k9": "8.80",
+      "bb9": "3.58",
+      "k_pct": "23.1%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "SU7",
+      "name": "Tyler Phillips",
+      "url": "https://www.fangraphs.com/players/tyler-phillips/20629/stats/pitching",
+      "era": "2.78",
+      "k9": "6.03",
+      "bb9": "2.78",
+      "k_pct": "16.6%",
+      "stuff_plus": "98"
+    },
+    {
+      "role": "MID",
+      "name": "Anthony Bender",
+      "url": "https://www.fangraphs.com/players/anthony-bender/19742/stats/pitching",
+      "era": "2.16",
+      "k9": "7.56",
+      "bb9": "3.78",
+      "k_pct": "20.6%",
+      "stuff_plus": "115"
+    },
+    {
+      "role": "MID",
+      "name": "Cade Gibson",
+      "url": "https://www.fangraphs.com/players/cade-gibson/31815/stats/pitching",
+      "era": "2.63",
+      "k9": "7.08",
+      "bb9": "3.46",
+      "k_pct": "18.7%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "Andrew Nardi",
+      "url": "https://www.fangraphs.com/players/andrew-nardi/25942/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "MID",
+      "name": "John King",
+      "url": "https://www.fangraphs.com/players/john-king/22051/stats/pitching",
+      "era": "4.66",
+      "k9": "5.21",
+      "bb9": "2.61",
+      "k_pct": "12.6%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "LR",
+      "name": "Janson Junk",
+      "url": "https://www.fangraphs.com/players/janson-junk/23301/stats/pitching",
+      "era": "4.17",
+      "k9": "6.30",
+      "bb9": "1.06",
+      "k_pct": "17.2%",
+      "stuff_plus": "94"
+    }
+  ],
+  "MIL": [
+    {
+      "role": "CL",
+      "name": "Abner Uribe",
+      "url": "https://www.fangraphs.com/players/abner-uribe/25327/stats/pitching",
+      "era": "1.67",
+      "k9": "10.75",
+      "bb9": "3.23",
+      "k_pct": "30.2%",
+      "stuff_plus": "117"
+    },
+    {
+      "role": "CL",
+      "name": "Trevor Megill",
+      "url": "https://www.fangraphs.com/players/trevor-megill/17722/stats/pitching",
+      "era": "2.49",
+      "k9": "11.49",
+      "bb9": "3.26",
+      "k_pct": "31.2%",
+      "stuff_plus": "128"
+    },
+    {
+      "role": "SU8",
+      "name": "Jared Koenig",
+      "url": "https://www.fangraphs.com/players/jared-koenig/27517/stats/pitching",
+      "era": "2.86",
+      "k9": "9.27",
+      "bb9": "2.73",
+      "k_pct": "25.4%",
+      "stuff_plus": "105"
+    },
+    {
+      "role": "SU7",
+      "name": "Aaron Ashby",
+      "url": "https://www.fangraphs.com/players/aaron-ashby/23550/stats/pitching",
+      "era": "2.16",
+      "k9": "10.26",
+      "bb9": "3.24",
+      "k_pct": "28.1%",
+      "stuff_plus": "123"
+    },
+    {
+      "role": "MID",
+      "name": "Angel Zerpa",
+      "url": "https://www.fangraphs.com/players/angel-zerpa/22717/stats/pitching",
+      "era": "4.18",
+      "k9": "8.07",
+      "bb9": "3.06",
+      "k_pct": "21.1%",
+      "stuff_plus": "117"
+    },
+    {
+      "role": "MID",
+      "name": "Grant Anderson",
+      "url": "https://www.fangraphs.com/players/grant-anderson/20546/stats/pitching",
+      "era": "3.23",
+      "k9": "9.56",
+      "bb9": "3.75",
+      "k_pct": "24.7%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "DL Hall",
+      "url": "https://www.fangraphs.com/players/dl-hall/22207/stats/pitching",
+      "era": "3.49",
+      "k9": "6.28",
+      "bb9": "3.96",
+      "k_pct": "17.4%",
+      "stuff_plus": "94"
+    },
+    {
+      "role": "LR",
+      "name": "Easton McGee",
+      "url": "https://www.fangraphs.com/players/easton-mcgee/22176/stats/pitching",
+      "era": "5.52",
+      "k9": "7.98",
+      "bb9": "3.07",
+      "k_pct": "21.0%",
+      "stuff_plus": "100"
+    }
+  ],
+  "MIN": [
+    {
+      "role": "CL",
+      "name": "Taylor Rogers",
+      "url": "https://www.fangraphs.com/players/taylor-rogers/13449/stats/pitching",
+      "era": "3.38",
+      "k9": "9.41",
+      "bb9": "4.09",
+      "k_pct": "24.0%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "SU8",
+      "name": "Kody Funderburk",
+      "url": "https://www.fangraphs.com/players/kody-funderburk/24993/stats/pitching",
+      "era": "3.51",
+      "k9": "8.78",
+      "bb9": "3.95",
+      "k_pct": "21.9%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "SU7",
+      "name": "Cole Sands",
+      "url": "https://www.fangraphs.com/players/cole-sands/21461/stats/pitching",
+      "era": "4.50",
+      "k9": "8.00",
+      "bb9": "2.38",
+      "k_pct": "21.4%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "MID",
+      "name": "Anthony Banda",
+      "url": "https://www.fangraphs.com/players/anthony-banda/14706/stats/pitching",
+      "era": "3.18",
+      "k9": "8.45",
+      "bb9": "4.71",
+      "k_pct": "22.8%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "MID",
+      "name": "Justin Topa",
+      "url": "https://www.fangraphs.com/players/justin-topa/15145/stats/pitching",
+      "era": "3.90",
+      "k9": "7.35",
+      "bb9": "2.70",
+      "k_pct": "18.3%",
+      "stuff_plus": "98"
+    },
+    {
+      "role": "MID",
+      "name": "Eric Orze",
+      "url": "https://www.fangraphs.com/players/eric-orze/27626/stats/pitching",
+      "era": "3.02",
+      "k9": "8.64",
+      "bb9": "4.10",
+      "k_pct": "22.5%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Andrew Chafin",
+      "url": "https://www.fangraphs.com/players/andrew-chafin/12988/stats/pitching",
+      "era": "2.41",
+      "k9": "9.62",
+      "bb9": "5.08",
+      "k_pct": "25.2%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "LR",
+      "name": "Travis Adams",
+      "url": "https://www.fangraphs.com/players/travis-adams/30180/stats/pitching",
+      "era": "7.49",
+      "k9": "8.29",
+      "bb9": "4.54",
+      "k_pct": "19.6%",
+      "stuff_plus": "99"
+    }
+  ],
+  "NYM": [
+    {
+      "role": "CL",
+      "name": "Devin Williams",
+      "url": "https://www.fangraphs.com/players/devin-williams/15816/stats/pitching",
+      "era": "4.79",
+      "k9": "13.06",
+      "bb9": "3.63",
+      "k_pct": "34.7%",
+      "stuff_plus": "114"
+    },
+    {
+      "role": "SU8",
+      "name": "Luke Weaver",
+      "url": "https://www.fangraphs.com/players/luke-weaver/16918/stats/pitching",
+      "era": "3.62",
+      "k9": "10.02",
+      "bb9": "2.78",
+      "k_pct": "27.5%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU7",
+      "name": "Brooks Raley",
+      "url": "https://www.fangraphs.com/players/brooks-raley/10061/stats/pitching",
+      "era": "2.45",
+      "k9": "8.77",
+      "bb9": "2.10",
+      "k_pct": "25.3%",
+      "stuff_plus": "118"
+    },
+    {
+      "role": "MID",
+      "name": "Luis Garcia",
+      "url": "https://www.fangraphs.com/players/luis-garcia/stats/pitching",
+      "era": "3.52",
+      "k9": "8.22",
+      "bb9": "1.17",
+      "k_pct": "25.0%",
+      "stuff_plus": "89"
+    },
+    {
+      "role": "MID",
+      "name": "Huascar Brazoban",
+      "url": "https://www.fangraphs.com/players/huascar-brazoban/stats/pitching",
+      "era": "3.57",
+      "k9": "8.14",
+      "bb9": "3.86",
+      "k_pct": "21.8%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Bryan M. Hudson",
+      "url": "https://www.fangraphs.com/players/bryan-m.-hudson/stats/pitching",
+      "era": "4.80",
+      "k9": "11.40",
+      "bb9": "7.80",
+      "k_pct": "25.3%",
+      "stuff_plus": "93"
+    },
+    {
+      "role": "LR",
+      "name": "Tobias Myers",
+      "url": "https://www.fangraphs.com/players/tobias-myers/22191/stats/pitching",
+      "era": "3.55",
+      "k9": "6.75",
+      "bb9": "2.66",
+      "k_pct": "17.3%",
+      "stuff_plus": "94"
+    }
+  ],
+  "NYY": [
+    {
+      "role": "CL",
+      "name": "David Bednar",
+      "url": "https://www.fangraphs.com/players/david-bednar/19569/stats/pitching",
+      "era": "2.30",
+      "k9": "12.35",
+      "bb9": "2.73",
+      "k_pct": "34.3%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "SU8",
+      "name": "Camilo Doval",
+      "url": "https://www.fangraphs.com/players/camilo-doval/21992/stats/pitching",
+      "era": "3.58",
+      "k9": "9.92",
+      "bb9": "4.82",
+      "k_pct": "25.9%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "SU7",
+      "name": "Fernando E. Cruz",
+      "url": "https://www.fangraphs.com/players/fernando-e.-cruz/stats/pitching",
+      "era": "3.56",
+      "k9": "13.50",
+      "bb9": "4.50",
+      "k_pct": "36.0%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Tim Hill",
+      "url": "https://www.fangraphs.com/players/tim-hill/16814/stats/pitching",
+      "era": "3.09",
+      "k9": "4.97",
+      "bb9": "2.15",
+      "k_pct": "13.8%",
+      "stuff_plus": "122"
+    },
+    {
+      "role": "MID",
+      "name": "Jake Bird",
+      "url": "https://www.fangraphs.com/players/jake-bird/21267/stats/pitching",
+      "era": "5.53",
+      "k9": "10.73",
+      "bb9": "4.07",
+      "k_pct": "26.6%",
+      "stuff_plus": "117"
+    },
+    {
+      "role": "MID",
+      "name": "Paul Blackburn",
+      "url": "https://www.fangraphs.com/players/paul-blackburn/14739/stats/pitching",
+      "era": "6.23",
+      "k9": "7.85",
+      "bb9": "2.77",
+      "k_pct": "19.4%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "MID",
+      "name": "Ryan Yarbrough",
+      "url": "https://www.fangraphs.com/players/ryan-yarbrough/16502/stats/pitching",
+      "era": "4.36",
+      "k9": "7.73",
+      "bb9": "2.67",
+      "k_pct": "20.8%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "LR",
+      "name": "Cade Winquest",
+      "url": "https://www.fangraphs.com/players/cade-winquest/sa3020805/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "PHI": [
+    {
+      "role": "CL",
+      "name": "Jhoan Duran",
+      "url": "https://www.fangraphs.com/players/jhoan-duran/21029/stats/pitching",
+      "era": "2.06",
+      "k9": "10.29",
+      "bb9": "2.44",
+      "k_pct": "27.9%",
+      "stuff_plus": "125"
+    },
+    {
+      "role": "SU8",
+      "name": "Jose Alvarado",
+      "url": "https://www.fangraphs.com/players/jose-alvarado/stats/pitching",
+      "era": "3.81",
+      "k9": "11.08",
+      "bb9": "2.42",
+      "k_pct": "28.1%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "SU7",
+      "name": "Brad Keller",
+      "url": "https://www.fangraphs.com/players/brad-keller/15734/stats/pitching",
+      "era": "2.07",
+      "k9": "9.69",
+      "bb9": "2.84",
+      "k_pct": "27.2%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "MID",
+      "name": "Orion Kerkering",
+      "url": "https://www.fangraphs.com/players/orion-kerkering/31776/stats/pitching",
+      "era": "3.30",
+      "k9": "9.75",
+      "bb9": "4.05",
+      "k_pct": "24.4%",
+      "stuff_plus": "122"
+    },
+    {
+      "role": "MID",
+      "name": "Tanner Banks",
+      "url": "https://www.fangraphs.com/players/tanner-banks/16990/stats/pitching",
+      "era": "3.07",
+      "k9": "8.15",
+      "bb9": "1.60",
+      "k_pct": "22.8%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "MID",
+      "name": "Jonathan Bowlan",
+      "url": "https://www.fangraphs.com/players/jonathan-bowlan/24607/stats/pitching",
+      "era": "3.86",
+      "k9": "9.34",
+      "bb9": "3.45",
+      "k_pct": "25.6%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Kyle Backhus",
+      "url": "https://www.fangraphs.com/players/kyle-backhus/29615/stats/pitching",
+      "era": "4.62",
+      "k9": "7.82",
+      "bb9": "2.84",
+      "k_pct": "19.1%",
+      "stuff_plus": "105"
+    },
+    {
+      "role": "LR",
+      "name": "Zach McCambley",
+      "url": "https://www.fangraphs.com/players/zachary-mccambley/sa3014478/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ],
+  "PIT": [
+    {
+      "role": "CL",
+      "name": "Dennis Santana",
+      "url": "https://www.fangraphs.com/players/dennis-santana/17878/stats/pitching",
+      "era": "2.18",
+      "k9": "7.68",
+      "bb9": "2.18",
+      "k_pct": "22.2%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "SU8",
+      "name": "Gregory Soto",
+      "url": "https://www.fangraphs.com/players/gregory-soto/19677/stats/pitching",
+      "era": "4.18",
+      "k9": "10.44",
+      "bb9": "3.58",
+      "k_pct": "25.1%",
+      "stuff_plus": "116"
+    },
+    {
+      "role": "SU7",
+      "name": "Isaac Mattson",
+      "url": "https://www.fangraphs.com/players/isaac-mattson/20385/stats/pitching",
+      "era": "2.45",
+      "k9": "8.50",
+      "bb9": "3.59",
+      "k_pct": "22.7%",
+      "stuff_plus": "96"
+    },
+    {
+      "role": "MID",
+      "name": "Justin Lawrence",
+      "url": "https://www.fangraphs.com/players/justin-lawrence/17639/stats/pitching",
+      "era": "0.51",
+      "k9": "11.72",
+      "bb9": "4.08",
+      "k_pct": "33.3%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "MID",
+      "name": "Mason Montgomery",
+      "url": "https://www.fangraphs.com/players/mason-montgomery/29770/stats/pitching",
+      "era": "5.67",
+      "k9": "12.33",
+      "bb9": "5.28",
+      "k_pct": "30.1%",
+      "stuff_plus": "125"
+    },
+    {
+      "role": "MID",
+      "name": "Yohan Ramirez",
+      "url": "https://www.fangraphs.com/players/yohan-ramirez/stats/pitching",
+      "era": "5.40",
+      "k9": "12.15",
+      "bb9": "4.32",
+      "k_pct": "29.0%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Cam Sanders",
+      "url": "https://www.fangraphs.com/players/cam-sanders/23479/stats/pitching",
+      "era": "8.10",
+      "k9": "5.40",
+      "bb9": "6.75",
+      "k_pct": "11.8%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "LR",
+      "name": "Carmen Mlodzinski",
+      "url": "https://www.fangraphs.com/players/carmen-mlodzinski/27572/stats/pitching",
+      "era": "3.55",
+      "k9": "8.09",
+      "bb9": "2.45",
+      "k_pct": "21.2%",
+      "stuff_plus": "104"
+    }
+  ],
+  "SDP": [
+    {
+      "role": "CL",
+      "name": "Mason Miller",
+      "url": "https://www.fangraphs.com/players/mason-miller/31757/stats/pitching",
+      "era": "2.63",
+      "k9": "15.18",
+      "bb9": "4.09",
+      "k_pct": "44.4%",
+      "stuff_plus": "123"
+    },
+    {
+      "role": "SU8",
+      "name": "Adrian Morejon",
+      "url": "https://www.fangraphs.com/players/adrian-morejon/20039/stats/pitching",
+      "era": "2.08",
+      "k9": "8.55",
+      "bb9": "2.08",
+      "k_pct": "24.5%",
+      "stuff_plus": "120"
+    },
+    {
+      "role": "SU7",
+      "name": "Jeremiah Estrada",
+      "url": "https://www.fangraphs.com/players/jeremiah-estrada/22210/stats/pitching",
+      "era": "3.45",
+      "k9": "13.32",
+      "bb9": "3.33",
+      "k_pct": "35.5%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "MID",
+      "name": "David Morgan",
+      "url": "https://www.fangraphs.com/players/david-morgan/31616/stats/pitching",
+      "era": "2.66",
+      "k9": "9.51",
+      "bb9": "4.37",
+      "k_pct": "25.9%",
+      "stuff_plus": "115"
+    },
+    {
+      "role": "MID",
+      "name": "Wandy Peralta",
+      "url": "https://www.fangraphs.com/players/wandy-peralta/14295/stats/pitching",
+      "era": "3.14",
+      "k9": "7.91",
+      "bb9": "3.77",
+      "k_pct": "20.1%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "MID",
+      "name": "Bradgley Rodriguez",
+      "url": "https://www.fangraphs.com/players/bradgley-rodriguez/29107/stats/pitching",
+      "era": "1.17",
+      "k9": "10.57",
+      "bb9": "3.52",
+      "k_pct": "29.0%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "MID",
+      "name": "Kyle Hart",
+      "url": "https://www.fangraphs.com/players/kyle-hart/19646/stats/pitching",
+      "era": "5.86",
+      "k9": "7.74",
+      "bb9": "2.72",
+      "k_pct": "20.7%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "LR",
+      "name": "Ron Marinaccio",
+      "url": "https://www.fangraphs.com/players/ron-marinaccio/23488/stats/pitching",
+      "era": "0.84",
+      "k9": "10.13",
+      "bb9": "3.38",
+      "k_pct": "28.6%",
+      "stuff_plus": "104"
+    }
+  ],
+  "SFG": [
+    {
+      "role": "CL",
+      "name": "Ryan Walker",
+      "url": "https://www.fangraphs.com/players/ryan-walker/20423/stats/pitching",
+      "era": "4.11",
+      "k9": "8.80",
+      "bb9": "2.64",
+      "k_pct": "22.6%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "SU8",
+      "name": "Erik Miller",
+      "url": "https://www.fangraphs.com/players/erik-miller/26252/stats/pitching",
+      "era": "1.50",
+      "k9": "6.60",
+      "bb9": "6.00",
+      "k_pct": "17.2%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "SU7",
+      "name": "Jose Butto",
+      "url": "https://www.fangraphs.com/players/jose-butto/stats/pitching",
+      "era": "3.90",
+      "k9": "7.79",
+      "bb9": "4.30",
+      "k_pct": "20.4%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "Spencer Bivens",
+      "url": "https://www.fangraphs.com/players/spencer-bivens/30226/stats/pitching",
+      "era": "4.00",
+      "k9": "6.78",
+      "bb9": "2.78",
+      "k_pct": "17.8%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "MID",
+      "name": "Matt Gage",
+      "url": "https://www.fangraphs.com/players/matt-gage/17381/stats/pitching",
+      "era": "3.19",
+      "k9": "7.84",
+      "bb9": "3.48",
+      "k_pct": "19.7%",
+      "stuff_plus": "98"
+    },
+    {
+      "role": "MID",
+      "name": "Trevor McDonald",
+      "url": "https://www.fangraphs.com/players/trevor-mcdonald/26448/stats/pitching",
+      "era": "1.80",
+      "k9": "8.40",
+      "bb9": "1.20",
+      "k_pct": "23.3%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "MID",
+      "name": "Keaton Winn",
+      "url": "https://www.fangraphs.com/players/keaton-winn/23499/stats/pitching",
+      "era": "4.50",
+      "k9": "8.10",
+      "bb9": "1.80",
+      "k_pct": "21.4%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "LR",
+      "name": "JT Brubaker",
+      "url": "https://www.fangraphs.com/players/jt-brubaker/17578/stats/pitching",
+      "era": "3.77",
+      "k9": "6.91",
+      "bb9": "3.77",
+      "k_pct": "18.8%",
+      "stuff_plus": "94"
+    }
+  ],
+  "SEA": [
+    {
+      "role": "CL",
+      "name": "Andres Muñoz",
+      "url": "https://www.fangraphs.com/players/andres-muñoz/stats/pitching",
+      "era": "1.73",
+      "k9": "11.98",
+      "bb9": "4.04",
+      "k_pct": "32.7%",
+      "stuff_plus": "120"
+    },
+    {
+      "role": "SU8",
+      "name": "Matt Brash",
+      "url": "https://www.fangraphs.com/players/matt-brash/25756/stats/pitching",
+      "era": "2.47",
+      "k9": "11.03",
+      "bb9": "3.42",
+      "k_pct": "29.1%",
+      "stuff_plus": "112"
+    },
+    {
+      "role": "SU7",
+      "name": "Jose A. Ferrer",
+      "url": "https://www.fangraphs.com/players/jose-a-ferrer/24017/stats/pitching",
+      "era": "4.48",
+      "k9": "8.37",
+      "bb9": "1.89",
+      "k_pct": "21.9%",
+      "stuff_plus": "110"
+    },
+    {
+      "role": "MID",
+      "name": "Eduard Bazardo",
+      "url": "https://www.fangraphs.com/players/eduard-bazardo/20997/stats/pitching",
+      "era": "2.52",
+      "k9": "9.38",
+      "bb9": "3.09",
+      "k_pct": "26.2%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Gabe Speier",
+      "url": "https://www.fangraphs.com/players/gabe-speier/17170/stats/pitching",
+      "era": "2.61",
+      "k9": "11.90",
+      "bb9": "1.60",
+      "k_pct": "33.7%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "MID",
+      "name": "Carlos M. Vargas",
+      "url": "https://www.fangraphs.com/players/carlos-m.-vargas/stats/pitching",
+      "era": "3.97",
+      "k9": "6.31",
+      "bb9": "2.69",
+      "k_pct": "16.3%",
+      "stuff_plus": "115"
+    },
+    {
+      "role": "MID",
+      "name": "Casey Legumina",
+      "url": "https://www.fangraphs.com/players/casey-legumina/25921/stats/pitching",
+      "era": "5.62",
+      "k9": "9.97",
+      "bb9": "4.53",
+      "k_pct": "25.1%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "LR",
+      "name": "Cooper Criswell",
+      "url": "https://www.fangraphs.com/players/cooper-criswell/24975/stats/pitching",
+      "era": "3.57",
+      "k9": "4.58",
+      "bb9": "2.55",
+      "k_pct": "11.2%",
+      "stuff_plus": "103"
+    }
+  ],
+  "STL": [
+    {
+      "role": "CL",
+      "name": "Riley O'Brien",
+      "url": "https://www.fangraphs.com/players/riley-obrien/20348/stats/pitching",
+      "era": "2.06",
+      "k9": "8.44",
+      "bb9": "4.13",
+      "k_pct": "22.6%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "CL",
+      "name": "JoJo Romero",
+      "url": "https://www.fangraphs.com/players/jojo-romero/19574/stats/pitching",
+      "era": "2.07",
+      "k9": "8.11",
+      "bb9": "4.28",
+      "k_pct": "21.6%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "CL",
+      "name": "Matt Svanson",
+      "url": "https://www.fangraphs.com/players/matt-svanson/29629/stats/pitching",
+      "era": "1.94",
+      "k9": "10.14",
+      "bb9": "2.98",
+      "k_pct": "29.1%",
+      "stuff_plus": "110"
+    },
+    {
+      "role": "CL",
+      "name": "Ryne Stanek",
+      "url": "https://www.fangraphs.com/players/ryne-stanek/15947/stats/pitching",
+      "era": "5.30",
+      "k9": "9.32",
+      "bb9": "5.14",
+      "k_pct": "22.7%",
+      "stuff_plus": "116"
+    },
+    {
+      "role": "MID",
+      "name": "Justin Bruihl",
+      "url": "https://www.fangraphs.com/players/justin-bruihl/23779/stats/pitching",
+      "era": "5.27",
+      "k9": "11.85",
+      "bb9": "4.61",
+      "k_pct": "27.7%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "MID",
+      "name": "Matt Pushard",
+      "url": "https://www.fangraphs.com/players/matthew-pushard/sa3019955/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "MID",
+      "name": "George Soriano",
+      "url": "https://www.fangraphs.com/players/george-soriano/21863/stats/pitching",
+      "era": "8.35",
+      "k9": "8.84",
+      "bb9": "4.66",
+      "k_pct": "20.8%",
+      "stuff_plus": "99"
+    },
+    {
+      "role": "LR",
+      "name": "Gordon Graceffo",
+      "url": "https://www.fangraphs.com/players/gordon-graceffo/29519/stats/pitching",
+      "era": "6.28",
+      "k9": "8.37",
+      "bb9": "2.72",
+      "k_pct": "20.7%",
+      "stuff_plus": "93"
+    }
+  ],
+  "TBR": [
+    {
+      "role": "CL",
+      "name": "Griffin Jax",
+      "url": "https://www.fangraphs.com/players/griffin-jax/20253/stats/pitching",
+      "era": "4.23",
+      "k9": "13.50",
+      "bb9": "2.86",
+      "k_pct": "35.0%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "CL",
+      "name": "Garrett Cleavinger",
+      "url": "https://www.fangraphs.com/players/garrett-cleavinger/17897/stats/pitching",
+      "era": "2.35",
+      "k9": "12.03",
+      "bb9": "2.64",
+      "k_pct": "33.7%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "CL",
+      "name": "Bryan Baker",
+      "url": "https://www.fangraphs.com/players/bryan-baker/19804/stats/pitching",
+      "era": "4.06",
+      "k9": "10.88",
+      "bb9": "2.23",
+      "k_pct": "30.3%",
+      "stuff_plus": "108"
+    },
+    {
+      "role": "MID",
+      "name": "Mason Englert",
+      "url": "https://www.fangraphs.com/players/mason-englert/22288/stats/pitching",
+      "era": "3.83",
+      "k9": "8.87",
+      "bb9": "2.22",
+      "k_pct": "23.8%",
+      "stuff_plus": "98"
+    },
+    {
+      "role": "MID",
+      "name": "Hunter Bigge",
+      "url": "https://www.fangraphs.com/players/hunter-bigge/26259/stats/pitching",
+      "era": "2.40",
+      "k9": "7.20",
+      "bb9": "3.00",
+      "k_pct": "20.0%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "MID",
+      "name": "Ian Seymour",
+      "url": "https://www.fangraphs.com/players/ian-seymour/27932/stats/pitching",
+      "era": "3.63",
+      "k9": "10.11",
+      "bb9": "3.00",
+      "k_pct": "26.4%",
+      "stuff_plus": "94"
+    },
+    {
+      "role": "MID",
+      "name": "Cole Sulser",
+      "url": "https://www.fangraphs.com/players/cole-sulser/15256/stats/pitching",
+      "era": "1.99",
+      "k9": "8.74",
+      "bb9": "2.78",
+      "k_pct": "24.4%",
+      "stuff_plus": "97"
+    },
+    {
+      "role": "LR",
+      "name": "Yoendrys Gomez",
+      "url": "https://www.fangraphs.com/players/yoendrys-gomez/stats/pitching",
+      "era": "5.17",
+      "k9": "8.33",
+      "bb9": "3.88",
+      "k_pct": "20.9%",
+      "stuff_plus": "99"
+    }
+  ],
+  "TEX": [
+    {
+      "role": "CL",
+      "name": "Robert Garcia",
+      "url": "https://www.fangraphs.com/players/robert-garcia/23363/stats/pitching",
+      "era": "2.95",
+      "k9": "9.56",
+      "bb9": "3.09",
+      "k_pct": "25.3%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "SU8",
+      "name": "Chris Martin",
+      "url": "https://www.fangraphs.com/players/chris-martin/11847/stats/pitching",
+      "era": "2.98",
+      "k9": "9.14",
+      "bb9": "1.70",
+      "k_pct": "24.7%",
+      "stuff_plus": "113"
+    },
+    {
+      "role": "SU7",
+      "name": "Cole Winn",
+      "url": "https://www.fangraphs.com/players/cole-winn/22113/stats/pitching",
+      "era": "1.51",
+      "k9": "7.56",
+      "bb9": "3.67",
+      "k_pct": "21.6%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "MID",
+      "name": "Josh Sborz",
+      "url": "https://www.fangraphs.com/players/josh-sborz/18323/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "MID",
+      "name": "Jakob Junis",
+      "url": "https://www.fangraphs.com/players/jakob-junis/13619/stats/pitching",
+      "era": "2.97",
+      "k9": "7.43",
+      "bb9": "2.43",
+      "k_pct": "20.1%",
+      "stuff_plus": "94"
+    },
+    {
+      "role": "MID",
+      "name": "Jalen Beeks",
+      "url": "https://www.fangraphs.com/players/jalen-beeks/17192/stats/pitching",
+      "era": "3.77",
+      "k9": "7.38",
+      "bb9": "3.14",
+      "k_pct": "20.3%",
+      "stuff_plus": "95"
+    },
+    {
+      "role": "MID",
+      "name": "Carter Baumler",
+      "url": "https://www.fangraphs.com/players/carter-baumler/sa3014480/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "LR",
+      "name": "Tyler Alexander",
+      "url": "https://www.fangraphs.com/players/tyler-alexander/17735/stats/pitching",
+      "era": "4.98",
+      "k9": "7.56",
+      "bb9": "2.76",
+      "k_pct": "19.4%",
+      "stuff_plus": "100"
+    }
+  ],
+  "TOR": [
+    {
+      "role": "CL",
+      "name": "Jeff Hoffman",
+      "url": "https://www.fangraphs.com/players/jeff-hoffman/17432/stats/pitching",
+      "era": "4.37",
+      "k9": "11.12",
+      "bb9": "3.57",
+      "k_pct": "29.3%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "SU8",
+      "name": "Tyler Rogers",
+      "url": "https://www.fangraphs.com/players/tyler-rogers/15541/stats/pitching",
+      "era": "1.98",
+      "k9": "5.59",
+      "bb9": "0.81",
+      "k_pct": "16.1%",
+      "stuff_plus": "128"
+    },
+    {
+      "role": "SU7",
+      "name": "Louie Varland",
+      "url": "https://www.fangraphs.com/players/louie-varland/stats/pitching",
+      "era": "2.97",
+      "k9": "9.29",
+      "bb9": "2.72",
+      "k_pct": "25.3%",
+      "stuff_plus": "111"
+    },
+    {
+      "role": "MID",
+      "name": "Brendon Little",
+      "url": "https://www.fangraphs.com/players/brendon-little/21574/stats/pitching",
+      "era": "3.03",
+      "k9": "11.99",
+      "bb9": "5.93",
+      "k_pct": "30.8%",
+      "stuff_plus": "117"
+    },
+    {
+      "role": "MID",
+      "name": "Braydon Fisher",
+      "url": "https://www.fangraphs.com/players/braydon-fisher/24609/stats/pitching",
+      "era": "2.70",
+      "k9": "11.16",
+      "bb9": "3.42",
+      "k_pct": "30.7%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "MID",
+      "name": "Tommy Nance",
+      "url": "https://www.fangraphs.com/players/tommy-nance/19178/stats/pitching",
+      "era": "1.99",
+      "k9": "9.09",
+      "bb9": "1.99",
+      "k_pct": "25.4%",
+      "stuff_plus": "100"
+    },
+    {
+      "role": "MID",
+      "name": "Mason Fluharty",
+      "url": "https://www.fangraphs.com/players/mason-fluharty/31553/stats/pitching",
+      "era": "4.44",
+      "k9": "9.57",
+      "bb9": "4.10",
+      "k_pct": "26.0%",
+      "stuff_plus": "118"
+    },
+    {
+      "role": "LR",
+      "name": "Eric Lauer",
+      "url": "https://www.fangraphs.com/players/eric-lauer/19316/stats/pitching",
+      "era": "3.18",
+      "k9": "8.77",
+      "bb9": "2.24",
+      "k_pct": "23.9%",
+      "stuff_plus": "92"
+    }
+  ],
+  "WSN": [
+    {
+      "role": "CL",
+      "name": "Clayton Beeter",
+      "url": "https://www.fangraphs.com/players/clayton-beeter/27494/stats/pitching",
+      "era": "4.26",
+      "k9": "11.72",
+      "bb9": "6.39",
+      "k_pct": "31.7%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "CL",
+      "name": "Cole Henry",
+      "url": "https://www.fangraphs.com/players/cole-henry/27570/stats/pitching",
+      "era": "4.27",
+      "k9": "8.89",
+      "bb9": "5.47",
+      "k_pct": "21.6%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "SU7",
+      "name": "PJ Poulin",
+      "url": "https://www.fangraphs.com/players/pj-poulin/23394/stats/pitching",
+      "era": "3.65",
+      "k9": "9.85",
+      "bb9": "4.74",
+      "k_pct": "24.5%",
+      "stuff_plus": "101"
+    },
+    {
+      "role": "MID",
+      "name": "Jackson Rutledge",
+      "url": "https://www.fangraphs.com/players/jackson-rutledge/26215/stats/pitching",
+      "era": "5.77",
+      "k9": "7.98",
+      "bb9": "2.95",
+      "k_pct": "19.7%",
+      "stuff_plus": "103"
+    },
+    {
+      "role": "MID",
+      "name": "Cionel Perez",
+      "url": "https://www.fangraphs.com/players/cionel-perez/stats/pitching",
+      "era": "8.31",
+      "k9": "8.72",
+      "bb9": "7.48",
+      "k_pct": "19.1%",
+      "stuff_plus": "106"
+    },
+    {
+      "role": "MID",
+      "name": "Orlando Ribalta",
+      "url": "https://www.fangraphs.com/players/orlando-ribalta/26247/stats/pitching",
+      "era": "7.03",
+      "k9": "9.25",
+      "bb9": "6.29",
+      "k_pct": "20.8%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Griff McGarry",
+      "url": "https://www.fangraphs.com/players/griffin-mcgarry/sa3017130/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    },
+    {
+      "role": "LR",
+      "name": "Brad Lord",
+      "url": "https://www.fangraphs.com/players/brad-lord/31972/stats/pitching",
+      "era": "4.34",
+      "k9": "7.44",
+      "bb9": "2.96",
+      "k_pct": "19.8%",
+      "stuff_plus": "86"
+    }
+  ],
+  "ATH": [
+    {
+      "role": "CL",
+      "name": "Hogan Harris",
+      "url": "https://www.fangraphs.com/players/hogan-harris/21520/stats/pitching",
+      "era": "3.20",
+      "k9": "9.05",
+      "bb9": "4.59",
+      "k_pct": "23.5%",
+      "stuff_plus": "96"
+    },
+    {
+      "role": "CL",
+      "name": "Justin Sterner",
+      "url": "https://www.fangraphs.com/players/justin-sterner/27694/stats/pitching",
+      "era": "3.18",
+      "k9": "9.69",
+      "bb9": "2.91",
+      "k_pct": "26.3%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "CL",
+      "name": "Mark Leiter Jr.",
+      "url": "https://www.fangraphs.com/players/mark-leiter-jr/15551/stats/pitching",
+      "era": "4.84",
+      "k9": "10.06",
+      "bb9": "3.17",
+      "k_pct": "24.7%",
+      "stuff_plus": "88"
+    },
+    {
+      "role": "MID",
+      "name": "Scott Barlow",
+      "url": "https://www.fangraphs.com/players/scott-barlow/14993/stats/pitching",
+      "era": "4.21",
+      "k9": "9.88",
+      "bb9": "5.93",
+      "k_pct": "24.8%",
+      "stuff_plus": "102"
+    },
+    {
+      "role": "MID",
+      "name": "Michael J. Kelly",
+      "url": "https://www.fangraphs.com/players/michael-j.-kelly/stats/pitching",
+      "era": "3.18",
+      "k9": "6.58",
+      "bb9": "4.31",
+      "k_pct": "17.5%",
+      "stuff_plus": "107"
+    },
+    {
+      "role": "MID",
+      "name": "Elvis Alvarado",
+      "url": "https://www.fangraphs.com/players/elvis-alvarado/21662/stats/pitching",
+      "era": "3.19",
+      "k9": "10.63",
+      "bb9": "4.68",
+      "k_pct": "27.3%",
+      "stuff_plus": "104"
+    },
+    {
+      "role": "MID",
+      "name": "Tyler Ferguson",
+      "url": "https://www.fangraphs.com/players/tyler-ferguson/19481/stats/pitching",
+      "era": "4.66",
+      "k9": "8.38",
+      "bb9": "5.28",
+      "k_pct": "22.0%",
+      "stuff_plus": "109"
+    },
+    {
+      "role": "LR",
+      "name": "Luis Medina",
+      "url": "https://www.fangraphs.com/players/luis-medina/21649/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": ""
+    }
+  ]
+}
