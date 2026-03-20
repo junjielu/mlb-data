@@ -15,19 +15,11 @@ async function loadData() {
   snapshot = await res.json();
 }
 
-function statusBadge(status) {
-  const cls = status || "warn";
-  const text = cls === "ok" ? "OK" : cls === "critical" ? "Critical" : "Warning";
-  return `<span class="badge ${cls}">${text}</span>`;
-}
-
-function statusBar(meta) {
+function snapshotSummary(meta) {
   return `
     <section class="status-bar">
       <div><strong>Season:</strong> ${meta.season}</div>
-      <div><strong>Updated:</strong> ${meta.generatedAt}</div>
-      <div><strong>Build:</strong> ${meta.buildStatus}</div>
-      <div><strong>Schema:</strong> ${meta.schemaVersion}</div>
+      <div><strong>Source:</strong> Fangraphs depth charts snapshot</div>
     </section>
   `;
 }
@@ -76,12 +68,10 @@ function renderTeamsPage() {
   const params = new URLSearchParams(location.search);
   const season = Number(params.get("season") || snapshot.meta.season);
   const division = params.get("division") || "all";
-  const status = params.get("status") || "all";
   const q = (params.get("q") || "").toLowerCase();
 
   let teams = snapshot.teams.filter((t) => String(season) === String(snapshot.meta.season));
   if (division !== "all") teams = teams.filter((t) => t.division === division);
-  if (status !== "all") teams = teams.filter((t) => t.status === status);
   if (q) {
     teams = teams.filter((t) => {
       if (t.abbr.toLowerCase().includes(q) || t.name.toLowerCase().includes(q)) return true;
@@ -94,18 +84,12 @@ function renderTeamsPage() {
   for (const t of teams) grouped[t.division].push(t);
 
   app.innerHTML = `
-    ${statusBar(snapshot.meta)}
+    ${snapshotSummary(snapshot.meta)}
     <section class="filters">
       <select id="seasonSel"><option value="${snapshot.meta.season}">${snapshot.meta.season}</option></select>
       <select id="divisionSel">
         <option value="all">All Divisions</option>
         ${DIVISION_ORDER.map((d) => `<option value="${d}" ${d === division ? "selected" : ""}>${d}</option>`).join("")}
-      </select>
-      <select id="statusSel">
-        <option value="all" ${status === "all" ? "selected" : ""}>All Status</option>
-        <option value="ok" ${status === "ok" ? "selected" : ""}>OK</option>
-        <option value="warn" ${status === "warn" ? "selected" : ""}>Warning</option>
-        <option value="critical" ${status === "critical" ? "selected" : ""}>Critical</option>
       </select>
       <input id="qInput" placeholder="Search teams or players" value="${params.get("q") || ""}">
     </section>
@@ -119,10 +103,9 @@ function renderTeamsPage() {
                 <img src="${t.logoUrl}" alt="${t.abbr} logo" />
                 <div>
                   <div><strong>${t.abbr}</strong> ${t.name}</div>
-                  <div class="meta">Warnings: ${t.warningCount}</div>
+                  <div class="meta">${t.batter.length} batters · ${t.sp.length} SP · ${t.rp.length} RP</div>
                 </div>
               </div>
-              ${statusBadge(t.status)}
             </a>
           `).join("") : `<div class="meta">No teams match filters</div>`}
         </div>
@@ -134,16 +117,14 @@ function renderTeamsPage() {
     const next = new URLSearchParams();
     next.set("season", document.getElementById("seasonSel").value);
     const d = document.getElementById("divisionSel").value;
-    const s = document.getElementById("statusSel").value;
     const qq = document.getElementById("qInput").value.trim();
     if (d !== "all") next.set("division", d);
-    if (s !== "all") next.set("status", s);
     if (qq) next.set("q", qq);
     history.replaceState({}, "", `/teams?${next.toString()}`);
     renderTeamsPage();
   }
 
-  ["seasonSel", "divisionSel", "statusSel"].forEach((id) => {
+  ["seasonSel", "divisionSel"].forEach((id) => {
     document.getElementById(id).addEventListener("change", updateQuery);
   });
   document.getElementById("qInput").addEventListener("input", updateQuery);
@@ -180,23 +161,11 @@ function renderTeamPage(abbr) {
   const team = snapshot.teams.find((t) => t.abbr === abbr);
   if (!team) return renderNotFound();
 
-  const warningLines = team.warnings || [];
-
   app.innerHTML = `
-    ${statusBar(snapshot.meta)}
+    ${snapshotSummary(snapshot.meta)}
     <section class="team-header">
       <h1><img src="${team.logoUrl}" alt="${team.abbr} logo" style="width:34px;height:34px;vertical-align:middle;margin-right:8px;"/>${team.abbr} · ${team.name}</h1>
-      <div class="meta">${team.division} · Updated ${snapshot.meta.generatedAt} · ${statusBadge(team.status)}</div>
-    </section>
-
-    <section class="warning-panel">
-      <strong>Data Warnings:</strong> ${team.warningCount}
-      <details>
-        <summary>Show details</summary>
-        <ul>
-          ${warningLines.length ? warningLines.map((w) => `<li>[${w.section}] ${w.code} - ${w.message}${w.rowKey ? ` (${w.rowKey})` : ""}</li>`).join("") : "<li>No warnings</li>"}
-        </ul>
-      </details>
+      <div class="meta">${team.division}</div>
     </section>
 
     <nav class="section-nav">
@@ -248,7 +217,7 @@ function renderTeamPage(abbr) {
 
 function renderAbout() {
   app.innerHTML = `
-    ${statusBar(snapshot.meta)}
+    ${snapshotSummary(snapshot.meta)}
     <section class="about">
       <h1>About Data</h1>
       <p><strong>Source:</strong> Fangraphs roster resource and leaders API.</p>
