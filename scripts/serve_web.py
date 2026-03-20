@@ -13,7 +13,7 @@ class AppHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         path = self.path.split("?", 1)[0]
-        if path in {"/", "/teams", "/about-data"} or path.startswith("/team/"):
+        if path in {"/", "/teams"} or path.startswith("/team/"):
             self.path = "/index.html"
         return super().do_GET()
 

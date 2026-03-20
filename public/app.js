@@ -15,31 +15,10 @@ async function loadData() {
   snapshot = await res.json();
 }
 
-function snapshotSummary(meta) {
-  const generated = meta.generatedAt ? new Date(meta.generatedAt).toLocaleString() : "--";
-  return `
-    <section class="status-bar">
-      <div><strong>Season:</strong> ${meta.season}</div>
-      <div><strong>Source:</strong> Fangraphs depth charts snapshot</div>
-      <div><strong>Updated:</strong> ${generated}</div>
-      <div><strong>Build:</strong> ${meta.buildId || "--"}</div>
-    </section>
-  `;
-}
-
-function setUrl(path, params = null) {
-  const q = params && [...params.keys()].length ? `?${params.toString()}` : "";
-  history.pushState({}, "", `${path}${q}${location.hash}`);
-}
-
 function safeMetric(value) {
   const v = String(value ?? "").trim();
   if (!v) return `<span class="missing-cell" title="No 2025 value">--</span>`;
   return v;
-}
-
-function rowMissing(row, section) {
-  return METRIC_KEYS[section].every((k) => !String(row[k] ?? "").trim());
 }
 
 function sortRows(rows, section, key, dir) {
@@ -61,76 +40,39 @@ function sortRows(rows, section, key, dir) {
 function parseRoute() {
   const p = location.pathname.replace(/\/+$/, "") || "/";
   if (p === "/" || p === "/teams") return { page: "teams" };
-  if (p === "/about-data") return { page: "about" };
   const m = p.match(/^\/team\/([A-Za-z]{3})$/);
   if (m) return { page: "team", abbr: m[1].toUpperCase() };
   return { page: "notfound" };
 }
 
 function renderTeamsPage() {
-  const params = new URLSearchParams(location.search);
-  const season = Number(params.get("season") || snapshot.meta.season);
-  const division = params.get("division") || "all";
-  const q = (params.get("q") || "").toLowerCase();
-
-  let teams = snapshot.teams.filter((t) => String(season) === String(snapshot.meta.season));
-  if (division !== "all") teams = teams.filter((t) => t.division === division);
-  if (q) {
-    teams = teams.filter((t) => {
-      if (t.abbr.toLowerCase().includes(q) || t.name.toLowerCase().includes(q)) return true;
-      const pool = [...t.batter, ...t.sp, ...t.rp].map((r) => String(r.name || "").toLowerCase());
-      return pool.some((name) => name.includes(q));
-    });
-  }
-
   const grouped = Object.fromEntries(DIVISION_ORDER.map((d) => [d, []]));
-  for (const t of teams) grouped[t.division].push(t);
+  for (const t of snapshot.teams) grouped[t.division].push(t);
 
   app.innerHTML = `
-    ${snapshotSummary(snapshot.meta)}
-    <section class="filters">
-      <select id="seasonSel"><option value="${snapshot.meta.season}">${snapshot.meta.season}</option></select>
-      <select id="divisionSel">
-        <option value="all">All Divisions</option>
-        ${DIVISION_ORDER.map((d) => `<option value="${d}" ${d === division ? "selected" : ""}>${d}</option>`).join("")}
-      </select>
-      <input id="qInput" placeholder="Search teams or players" value="${params.get("q") || ""}">
+    <section class="page-intro">
+      <p class="eyebrow">Approved MLB Depth Charts</p>
+      <h1>Teams</h1>
+      <p class="lede">Browse the current depth chart for every club, grouped by division.</p>
     </section>
     <section class="division-grid">
       ${DIVISION_ORDER.map((d) => `
         <div class="division">
           <h3>${d}</h3>
           ${grouped[d].length ? grouped[d].map((t) => `
-            <a class="team-card" href="/team/${t.abbr}?season=${snapshot.meta.season}" data-link>
+            <a class="team-card" href="/team/${t.abbr}" data-link>
               <div class="team-id">
                 <img src="${t.logoUrl}" alt="${t.abbr} logo" />
                 <div>
                   <div><strong>${t.abbr}</strong> ${t.name}</div>
-                  <div class="meta">${t.batter.length} batters · ${t.sp.length} SP · ${t.rp.length} RP</div>
                 </div>
               </div>
             </a>
-          `).join("") : `<div class="meta">No teams match filters</div>`}
+          `).join("") : `<div class="meta">No teams available</div>`}
         </div>
       `).join("")}
     </section>
   `;
-
-  function updateQuery() {
-    const next = new URLSearchParams();
-    next.set("season", document.getElementById("seasonSel").value);
-    const d = document.getElementById("divisionSel").value;
-    const qq = document.getElementById("qInput").value.trim();
-    if (d !== "all") next.set("division", d);
-    if (qq) next.set("q", qq);
-    history.replaceState({}, "", `/teams?${next.toString()}`);
-    renderTeamsPage();
-  }
-
-  ["seasonSel", "divisionSel"].forEach((id) => {
-    document.getElementById(id).addEventListener("change", updateQuery);
-  });
-  document.getElementById("qInput").addEventListener("input", updateQuery);
 }
 
 function renderTable(sectionId, title, rows, columns) {
@@ -162,12 +104,13 @@ function renderTable(sectionId, title, rows, columns) {
 function renderTeamPage(abbr) {
   const team = snapshot.teams.find((t) => t.abbr === abbr);
   if (!team) return renderNotFound();
+  const updated = snapshot.meta.generatedAt ? new Date(snapshot.meta.generatedAt).toLocaleString() : "--";
 
   app.innerHTML = `
-    ${snapshotSummary(snapshot.meta)}
     <section class="team-header">
       <h1><img src="${team.logoUrl}" alt="${team.abbr} logo" style="width:34px;height:34px;vertical-align:middle;margin-right:8px;"/>${team.abbr} · ${team.name}</h1>
       <div class="meta">${team.division}</div>
+      <p class="updated-note">Updated ${updated}</p>
     </section>
 
     <nav class="section-nav">
@@ -217,19 +160,6 @@ function renderTeamPage(abbr) {
   });
 }
 
-function renderAbout() {
-  app.innerHTML = `
-    ${snapshotSummary(snapshot.meta)}
-    <section class="about">
-      <h1>About Data</h1>
-      <p><strong>Source:</strong> Fangraphs roster resource and leaders API.</p>
-      <p><strong>Matching strategy:</strong> exact name -> playerid -> normalized name.</p>
-      <p><strong>Publication policy:</strong> Only approved snapshots are promoted to the production site.</p>
-      <p><strong>Schema version:</strong> ${snapshot.meta.schemaVersion}</p>
-    </section>
-  `;
-}
-
 function renderNotFound() {
   app.innerHTML = `<section class="about"><h1>Not Found</h1><p>Unknown route. Go back to <a href="/teams" data-link>Teams</a>.</p></section>`;
 }
@@ -250,7 +180,6 @@ function render() {
   const route = parseRoute();
   if (route.page === "teams") renderTeamsPage();
   else if (route.page === "team") renderTeamPage(route.abbr);
-  else if (route.page === "about") renderAbout();
   else renderNotFound();
   attachRouterHandlers();
 }

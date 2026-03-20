@@ -7,10 +7,6 @@
       "destination": "/index.html"
     },
     {
-      "source": "/about-data",
-      "destination": "/index.html"
-    },
-    {
       "source": "/team/:abbr",
       "destination": "/index.html"
     }

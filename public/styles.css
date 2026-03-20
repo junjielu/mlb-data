@@ -36,29 +36,27 @@ body {
 
 .container { max-width: 1280px; margin: 20px auto; padding: 0 16px 32px; }
 
-.status-bar {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 12px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 14px;
+.page-intro {
+  margin: 12px 0 18px;
+  padding: 8px 2px;
 }
-
-.filters {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-bottom: 14px;
+.page-intro h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  letter-spacing: -0.03em;
 }
-.filters input, .filters select {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.lede {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--muted);
 }
 
 .division-grid {
@@ -72,7 +70,10 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
-.division h3 { margin: 4px 0 10px; font-size: 16px; }
+.division h3 {
+  margin: 4px 0 10px;
+  font-size: 16px;
+}
 
 .team-card {
   display: flex;
@@ -86,12 +87,18 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.team-card:hover {
+  border-color: #b8c6d4;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 29, 43, 0.05);
+}
 .team-id {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 .team-id img { width: 24px; height: 24px; object-fit: contain; }
+.team-id strong { margin-right: 6px; }
 .team-header {
   background: var(--card);
   border: 1px solid var(--line);
@@ -101,6 +108,11 @@ body {
 }
 .team-header h1 { margin: 0 0 6px; font-size: 24px; }
 .team-header .meta { color: var(--muted); font-size: 14px; }
+.updated-note {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
 
 .section-nav {
   display: flex;
@@ -152,6 +164,5 @@ a.ext::after { content: " ↗"; font-size: 12px; color: #678; }
 }
 
 @media (max-width: 1000px) {
-  .filters { grid-template-columns: 1fr 1fr; }
   .division-grid { grid-template-columns: 1fr; }
 }
