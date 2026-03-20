@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": "1.0.0",
     "season": 2025,
-    "generatedAt": "2026-03-20T13:17:14Z",
-    "buildId": "20260320-131714",
+    "generatedAt": "2026-03-20T14:59:54Z",
+    "buildId": "20260320-145954",
     "buildStatus": "success",
     "source": "fangraphs"
   },
@@ -13,7 +13,7 @@
       "name": "Arizona Diamondbacks",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -244,7 +244,7 @@
       "name": "Atlanta Braves",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -475,7 +475,7 @@
       "name": "Baltimore Orioles",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/bal.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -705,7 +705,7 @@
       "name": "Boston Red Sox",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -819,15 +819,6 @@
         },
         {
           "role": "sp3",
-          "name": "Ranger Suarez",
-          "url": "https://www.fangraphs.com/players/ranger-suarez/17277/stats/pitching",
-          "k9": "8.64",
-          "bb9": "2.17",
-          "stuff_plus": "96",
-          "location_plus": "113"
-        },
-        {
-          "role": "sp4",
           "name": "Brayan Bello",
           "url": "https://www.fangraphs.com/players/brayan-bello/23920/stats/pitching",
           "k9": "6.70",
@@ -836,13 +827,22 @@
           "location_plus": "101"
         },
         {
-          "role": "sp5",
+          "role": "sp4",
           "name": "Johan Oviedo",
           "url": "https://www.fangraphs.com/players/johan-oviedo/22487/stats/pitching",
           "k9": "9.37",
           "bb9": "5.13",
           "stuff_plus": "102",
           "location_plus": "91"
+        },
+        {
+          "role": "sp5",
+          "name": "Ranger Suarez",
+          "url": "https://www.fangraphs.com/players/ranger-suarez/17277/stats/pitching",
+          "k9": "8.64",
+          "bb9": "2.17",
+          "stuff_plus": "96",
+          "location_plus": "113"
         }
       ],
       "rp": [
@@ -945,7 +945,7 @@
       "name": "Chicago Cubs",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -1176,7 +1176,7 @@
       "name": "Chicago White Sox",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -1281,6 +1281,15 @@
         },
         {
           "role": "sp2",
+          "name": "Anthony Kay",
+          "url": "https://www.fangraphs.com/players/anthony-kay/20387/stats/pitching",
+          "k9": "",
+          "bb9": "",
+          "stuff_plus": "",
+          "location_plus": ""
+        },
+        {
+          "role": "sp3",
           "name": "Davis Martin",
           "url": "https://www.fangraphs.com/players/davis-martin/21448/stats/pitching",
           "k9": "6.56",
@@ -1289,22 +1298,13 @@
           "location_plus": "96"
         },
         {
-          "role": "sp3",
+          "role": "sp4",
           "name": "Sean Burke",
           "url": "https://www.fangraphs.com/players/sean-burke/29878/stats/pitching",
           "k9": "8.91",
           "bb9": "4.22",
           "stuff_plus": "92",
           "location_plus": "102"
-        },
-        {
-          "role": "sp4",
-          "name": "Anthony Kay",
-          "url": "https://www.fangraphs.com/players/anthony-kay/20387/stats/pitching",
-          "k9": "",
-          "bb9": "",
-          "stuff_plus": "",
-          "location_plus": ""
         },
         {
           "role": "sp5",
@@ -1413,7 +1413,7 @@
           "scope": "row",
           "section": "sp",
           "message": "All SP metrics are empty",
-          "rowKey": "sp4|Anthony Kay"
+          "rowKey": "sp2|Anthony Kay"
         },
         {
           "code": "row_all_missing",
@@ -1432,7 +1432,7 @@
       "name": "Cincinnati Reds",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -1564,12 +1564,12 @@
         },
         {
           "role": "sp5",
-          "name": "Brandon Williamson",
-          "url": "https://www.fangraphs.com/players/brandon-williamson/25463/stats/pitching",
-          "k9": "",
-          "bb9": "",
-          "stuff_plus": "",
-          "location_plus": ""
+          "name": "Chase Burns",
+          "url": "https://www.fangraphs.com/players/chase-burns/35333/stats/pitching",
+          "k9": "13.92",
+          "bb9": "3.32",
+          "stuff_plus": "115",
+          "location_plus": "106"
         }
       ],
       "rp": [
@@ -1667,20 +1667,12 @@
           "code": "row_all_missing",
           "severity": "warning",
           "scope": "row",
-          "section": "sp",
-          "message": "All SP metrics are empty",
-          "rowKey": "sp5|Brandon Williamson"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
           "section": "rp",
           "message": "All RP metrics are empty",
           "rowKey": "LR|Brandon Williamson"
         }
       ],
-      "warningCount": 3,
+      "warningCount": 2,
       "status": "warn"
     },
     {
@@ -1688,7 +1680,7 @@
       "name": "Cleveland Guardians",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -1936,7 +1928,7 @@
       "name": "Colorado Rockies",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -2176,7 +2168,7 @@
       "name": "Detroit Tigers",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -2432,7 +2424,7 @@
       "name": "Houston Astros",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -2679,7 +2671,7 @@
       "name": "Kansas City Royals",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/kc.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -2910,7 +2902,7 @@
       "name": "Los Angeles Angels",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -3006,21 +2998,21 @@
       "sp": [
         {
           "role": "sp1",
-          "name": "Yusei Kikuchi",
-          "url": "https://www.fangraphs.com/players/yusei-kikuchi/20633/stats/pitching",
-          "k9": "8.78",
-          "bb9": "3.73",
-          "stuff_plus": "95",
-          "location_plus": "106"
-        },
-        {
-          "role": "sp2",
           "name": "José Soriano",
           "url": "https://www.fangraphs.com/players/jose-soriano/22100/stats/pitching",
           "k9": "8.09",
           "bb9": "4.15",
           "stuff_plus": "95",
           "location_plus": "111"
+        },
+        {
+          "role": "sp2",
+          "name": "Yusei Kikuchi",
+          "url": "https://www.fangraphs.com/players/yusei-kikuchi/20633/stats/pitching",
+          "k9": "8.78",
+          "bb9": "3.73",
+          "stuff_plus": "95",
+          "location_plus": "106"
         },
         {
           "role": "sp3",
@@ -3042,12 +3034,12 @@
         },
         {
           "role": "sp5",
-          "name": "Alek Manoah",
-          "url": "https://www.fangraphs.com/players/alek-manoah/26410/stats/pitching",
-          "k9": "",
-          "bb9": "",
-          "stuff_plus": "",
-          "location_plus": ""
+          "name": "Jack Kochanowicz",
+          "url": "https://www.fangraphs.com/players/jack-kochanowicz/27688/stats/pitching",
+          "k9": "5.84",
+          "bb9": "4.70",
+          "stuff_plus": "93",
+          "location_plus": "90"
         }
       ],
       "rp": [
@@ -3140,17 +3132,9 @@
           "section": "sp",
           "message": "All SP metrics are empty",
           "rowKey": "sp4|Grayson Rodriguez"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
-          "section": "sp",
-          "message": "All SP metrics are empty",
-          "rowKey": "sp5|Alek Manoah"
         }
       ],
-      "warningCount": 2,
+      "warningCount": 1,
       "status": "warn"
     },
     {
@@ -3158,7 +3142,7 @@
       "name": "Los Angeles Dodgers",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -3399,7 +3383,7 @@
       "name": "Miami Marlins",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -3647,7 +3631,7 @@
       "name": "Milwaukee Brewers",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -3878,7 +3862,7 @@
       "name": "Minnesota Twins",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -4109,7 +4093,7 @@
       "name": "New York Mets",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -4348,7 +4332,7 @@
       "name": "New York Yankees",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -4588,7 +4572,7 @@
       "name": "Philadelphia Phillies",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -4844,7 +4828,7 @@
       "name": "Pittsburgh Pirates",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -5075,7 +5059,7 @@
       "name": "San Diego Padres",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -5306,7 +5290,7 @@
       "name": "San Francisco Giants",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -5537,7 +5521,7 @@
       "name": "Seattle Mariners",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -5633,20 +5617,20 @@
       "sp": [
         {
           "role": "sp1",
-          "name": "Bryan Woo",
-          "url": "https://www.fangraphs.com/players/bryan-woo/30279/stats/pitching",
-          "k9": "9.55",
-          "bb9": "1.74",
-          "stuff_plus": "105",
-          "location_plus": "110"
-        },
-        {
-          "role": "sp2",
           "name": "Logan Gilbert",
           "url": "https://www.fangraphs.com/players/logan-gilbert/22250/stats/pitching",
           "k9": "11.89",
           "bb9": "2.13",
           "stuff_plus": "96",
+          "location_plus": "110"
+        },
+        {
+          "role": "sp2",
+          "name": "Bryan Woo",
+          "url": "https://www.fangraphs.com/players/bryan-woo/30279/stats/pitching",
+          "k9": "9.55",
+          "bb9": "1.74",
+          "stuff_plus": "105",
           "location_plus": "110"
         },
         {
@@ -5768,7 +5752,7 @@
       "name": "St. Louis Cardinals",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -6024,7 +6008,7 @@
       "name": "Tampa Bay Rays",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -6264,7 +6248,7 @@
       "name": "Texas Rangers",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -6512,7 +6496,7 @@
       "name": "Toronto Blue Jays",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -6644,12 +6628,12 @@
         },
         {
           "role": "sp5",
-          "name": "Trey Yesavage",
-          "url": "https://www.fangraphs.com/players/trey-yesavage/35456/stats/pitching",
-          "k9": "10.29",
-          "bb9": "4.50",
-          "stuff_plus": "106",
-          "location_plus": "93"
+          "name": "Eric Lauer",
+          "url": "https://www.fangraphs.com/players/eric-lauer/19316/stats/pitching",
+          "k9": "8.77",
+          "bb9": "2.24",
+          "stuff_plus": "92",
+          "location_plus": "103"
         }
       ],
       "rp": [
@@ -6760,7 +6744,7 @@
       "name": "Washington Nationals",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
@@ -7016,7 +7000,7 @@
       "name": "Athletics",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/oak.png",
-      "lastUpdated": "2026-03-20T13:17:14Z",
+      "lastUpdated": "2026-03-20T14:59:54Z",
       "batter": [
         {
           "order": "1",
