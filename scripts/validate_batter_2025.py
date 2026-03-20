@@ -19,6 +19,12 @@ def validate_batter_json(path: Path) -> None:
             for k in ['order', 'name', 'position', 'wrc_plus', 'avg', 'obp', 'slg']:
                 if k not in r:
                     raise RuntimeError(f'{team}: missing key {k}')
+            all_empty = all(not str(r.get(k, '')).strip() for k in ['wrc_plus', 'avg', 'obp', 'slg'])
+            url = str(r.get('url', '')).strip()
+            if all_empty and '/stats?position=' in url:
+                raise RuntimeError(
+                    f"{team}: unresolved batter mapping for {r.get('order')} {r.get('name')} ({url})"
+                )
 
 
 def validate_payload(path: Path) -> None:

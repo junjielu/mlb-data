@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": "1.0.0",
     "season": 2025,
-    "generatedAt": "2026-03-20T12:26:05Z",
-    "buildId": "20260320-122605",
+    "generatedAt": "2026-03-20T13:17:14Z",
+    "buildId": "20260320-131714",
     "buildStatus": "success",
     "source": "fangraphs"
   },
@@ -13,7 +13,7 @@
       "name": "Arizona Diamondbacks",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -244,7 +244,7 @@
       "name": "Atlanta Braves",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -308,13 +308,13 @@
         },
         {
           "order": "7",
-          "name": "Michael Harris",
+          "name": "Michael Harris II",
           "position": "CF",
-          "url": "https://www.fangraphs.com/players/michael-harris/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/michael-harris-ii/25931/stats/batting",
+          "wrc_plus": "83",
+          "avg": ".249",
+          "obp": ".268",
+          "slg": ".409"
         },
         {
           "order": "8",
@@ -466,25 +466,16 @@
           "stuff_plus": "99"
         }
       ],
-      "warnings": [
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "7|Michael Harris"
-        }
-      ],
-      "warningCount": 1,
-      "status": "warn"
+      "warnings": [],
+      "warningCount": 0,
+      "status": "ok"
     },
     {
       "abbr": "BAL",
       "name": "Baltimore Orioles",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/bal.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -714,7 +705,7 @@
       "name": "Boston Red Sox",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -954,7 +945,7 @@
       "name": "Chicago Cubs",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -1185,7 +1176,7 @@
       "name": "Chicago White Sox",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -1259,16 +1250,6 @@
         },
         {
           "order": "8",
-          "name": "Brooks Baldwin",
-          "position": "CF",
-          "url": "https://www.fangraphs.com/players/brooks-baldwin/31394/stats/batting",
-          "wrc_plus": "92",
-          "avg": ".240",
-          "obp": ".290",
-          "slg": ".407"
-        },
-        {
-          "order": "9",
           "name": "Edgar Quero",
           "position": "C",
           "url": "https://www.fangraphs.com/players/edgar-quero/28022/stats/batting",
@@ -1276,6 +1257,16 @@
           "avg": ".268",
           "obp": ".333",
           "slg": ".356"
+        },
+        {
+          "order": "9",
+          "name": "Luisangel Acuña",
+          "position": "CF",
+          "url": "https://www.fangraphs.com/players/luisangel-acuna/26548/stats/batting",
+          "wrc_plus": "65",
+          "avg": ".234",
+          "obp": ".293",
+          "slg": ".274"
         }
       ],
       "sp": [
@@ -1441,7 +1432,7 @@
       "name": "Cincinnati Reds",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -1505,13 +1496,13 @@
         },
         {
           "order": "7",
-          "name": "J.J. Bleday",
+          "name": "JJ Bleday",
           "position": "LF",
-          "url": "https://www.fangraphs.com/players/j.j.-bleday/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/jj-bleday/26368/stats/batting",
+          "wrc_plus": "90",
+          "avg": ".212",
+          "obp": ".294",
+          "slg": ".404"
         },
         {
           "order": "8",
@@ -1668,14 +1659,6 @@
           "code": "row_all_missing",
           "severity": "warning",
           "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "7|J.J. Bleday"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
           "section": "sp",
           "message": "All SP metrics are empty",
           "rowKey": "sp4|Rhett Lowder"
@@ -1697,7 +1680,7 @@
           "rowKey": "LR|Brandon Williamson"
         }
       ],
-      "warningCount": 4,
+      "warningCount": 3,
       "status": "warn"
     },
     {
@@ -1705,7 +1688,7 @@
       "name": "Cleveland Guardians",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -1729,7 +1712,7 @@
         },
         {
           "order": "3",
-          "name": "Jose Ramirez",
+          "name": "José Ramírez",
           "position": "3B",
           "url": "https://www.fangraphs.com/players/jose-ramirez/13510/stats/batting",
           "wrc_plus": "133",
@@ -1953,7 +1936,7 @@
       "name": "Colorado Rockies",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -2193,7 +2176,7 @@
       "name": "Detroit Tigers",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -2449,7 +2432,7 @@
       "name": "Houston Astros",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -2463,16 +2446,6 @@
         },
         {
           "order": "2",
-          "name": "Yordan Alvarez",
-          "position": "DH",
-          "url": "https://www.fangraphs.com/players/yordan-alvarez/19556/stats/batting",
-          "wrc_plus": "118",
-          "avg": ".273",
-          "obp": ".367",
-          "slg": ".430"
-        },
-        {
-          "order": "3",
           "name": "Isaac Paredes",
           "position": "3B",
           "url": "https://www.fangraphs.com/players/isaac-paredes/20036/stats/batting",
@@ -2480,6 +2453,16 @@
           "avg": ".254",
           "obp": ".352",
           "slg": ".458"
+        },
+        {
+          "order": "3",
+          "name": "Yordan Alvarez",
+          "position": "DH",
+          "url": "https://www.fangraphs.com/players/yordan-alvarez/19556/stats/batting",
+          "wrc_plus": "118",
+          "avg": ".273",
+          "obp": ".367",
+          "slg": ".430"
         },
         {
           "order": "4",
@@ -2493,16 +2476,6 @@
         },
         {
           "order": "5",
-          "name": "Christian Walker",
-          "position": "1B",
-          "url": "https://www.fangraphs.com/players/christian-walker/13419/stats/batting",
-          "wrc_plus": "99",
-          "avg": ".238",
-          "obp": ".297",
-          "slg": ".421"
-        },
-        {
-          "order": "6",
           "name": "Joey Loperfido",
           "position": "LF",
           "url": "https://www.fangraphs.com/players/joey-loperfido/29630/stats/batting",
@@ -2512,17 +2485,7 @@
           "slg": ".500"
         },
         {
-          "order": "7",
-          "name": "Yainer Diaz",
-          "position": "C",
-          "url": "https://www.fangraphs.com/players/yainer-diaz/23003/stats/batting",
-          "wrc_plus": "92",
-          "avg": ".256",
-          "obp": ".284",
-          "slg": ".417"
-        },
-        {
-          "order": "8",
+          "order": "6",
           "name": "Cam Smith",
           "position": "RF",
           "url": "https://www.fangraphs.com/players/cam-smith/35108/stats/batting",
@@ -2532,14 +2495,34 @@
           "slg": ".358"
         },
         {
+          "order": "7",
+          "name": "Christian Walker",
+          "position": "1B",
+          "url": "https://www.fangraphs.com/players/christian-walker/13419/stats/batting",
+          "wrc_plus": "99",
+          "avg": ".238",
+          "obp": ".297",
+          "slg": ".421"
+        },
+        {
+          "order": "8",
+          "name": "Yainer Diaz",
+          "position": "C",
+          "url": "https://www.fangraphs.com/players/yainer-diaz/23003/stats/batting",
+          "wrc_plus": "92",
+          "avg": ".256",
+          "obp": ".284",
+          "slg": ".417"
+        },
+        {
           "order": "9",
-          "name": "Jacob Meyers",
+          "name": "Jake Meyers",
           "position": "CF",
-          "url": "https://www.fangraphs.com/players/jacob-meyers/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/jake-meyers/20308/stats/batting",
+          "wrc_plus": "107",
+          "avg": ".292",
+          "obp": ".354",
+          "slg": ".373"
         }
       ],
       "sp": [
@@ -2675,14 +2658,6 @@
           "code": "row_all_missing",
           "severity": "warning",
           "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "9|Jacob Meyers"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
           "section": "sp",
           "message": "All SP metrics are empty",
           "rowKey": "sp3|Tatsuya Imai"
@@ -2696,7 +2671,7 @@
           "rowKey": "sp6|Ryan Weiss"
         }
       ],
-      "warningCount": 3,
+      "warningCount": 2,
       "status": "warn"
     },
     {
@@ -2704,7 +2679,7 @@
       "name": "Kansas City Royals",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/kc.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -2935,7 +2910,7 @@
       "name": "Los Angeles Angels",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -3183,7 +3158,7 @@
       "name": "Los Angeles Dodgers",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -3227,13 +3202,13 @@
         },
         {
           "order": "5",
-          "name": "Will D. Smith",
+          "name": "Will Smith",
           "position": "C",
-          "url": "https://www.fangraphs.com/players/will-d.-smith/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/will-smith/19197/stats/batting",
+          "wrc_plus": "153",
+          "avg": ".296",
+          "obp": ".404",
+          "slg": ".497"
         },
         {
           "order": "6",
@@ -3415,25 +3390,16 @@
           "stuff_plus": "116"
         }
       ],
-      "warnings": [
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "5|Will D. Smith"
-        }
-      ],
-      "warningCount": 1,
-      "status": "warn"
+      "warnings": [],
+      "warningCount": 0,
+      "status": "ok"
     },
     {
       "abbr": "MIA",
       "name": "Miami Marlins",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -3681,7 +3647,7 @@
       "name": "Milwaukee Brewers",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -3765,13 +3731,13 @@
         },
         {
           "order": "9",
-          "name": "Joseph Ortiz",
+          "name": "Joey Ortiz",
           "position": "SS",
-          "url": "https://www.fangraphs.com/players/joseph-ortiz/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/joey-ortiz/25493/stats/batting",
+          "wrc_plus": "67",
+          "avg": ".230",
+          "obp": ".276",
+          "slg": ".317"
         }
       ],
       "sp": [
@@ -3903,25 +3869,16 @@
           "stuff_plus": "100"
         }
       ],
-      "warnings": [
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "9|Joseph Ortiz"
-        }
-      ],
-      "warningCount": 1,
-      "status": "warn"
+      "warnings": [],
+      "warningCount": 0,
+      "status": "ok"
     },
     {
       "abbr": "MIN",
       "name": "Minnesota Twins",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -4152,7 +4109,7 @@
       "name": "New York Mets",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -4196,12 +4153,12 @@
         },
         {
           "order": "5",
-          "name": "Marcus Semien",
-          "position": "2B",
-          "url": "https://www.fangraphs.com/players/marcus-semien/12533/stats/batting",
-          "wrc_plus": "89",
-          "avg": ".230",
-          "obp": ".305",
+          "name": "Luis Robert Jr.",
+          "position": "CF",
+          "url": "https://www.fangraphs.com/players/luis-robert-jr/20043/stats/batting",
+          "wrc_plus": "84",
+          "avg": ".223",
+          "obp": ".297",
           "slg": ".364"
         },
         {
@@ -4216,26 +4173,16 @@
         },
         {
           "order": "7",
-          "name": "Francisco Alvarez",
-          "position": "C",
-          "url": "https://www.fangraphs.com/players/francisco-alvarez/26121/stats/batting",
-          "wrc_plus": "124",
-          "avg": ".256",
-          "obp": ".339",
-          "slg": ".447"
+          "name": "Marcus Semien",
+          "position": "2B",
+          "url": "https://www.fangraphs.com/players/marcus-semien/12533/stats/batting",
+          "wrc_plus": "89",
+          "avg": ".230",
+          "obp": ".305",
+          "slg": ".364"
         },
         {
           "order": "8",
-          "name": "Luis Robert",
-          "position": "CF",
-          "url": "https://www.fangraphs.com/players/luis-robert/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
-        },
-        {
-          "order": "9",
           "name": "Carson Benge",
           "position": "RF",
           "url": "https://www.fangraphs.com/players/carson-benge/sa3025452/stats/batting",
@@ -4243,6 +4190,16 @@
           "avg": "",
           "obp": "",
           "slg": ""
+        },
+        {
+          "order": "9",
+          "name": "Francisco Alvarez",
+          "position": "C",
+          "url": "https://www.fangraphs.com/players/francisco-alvarez/26121/stats/batting",
+          "wrc_plus": "124",
+          "avg": ".256",
+          "obp": ".339",
+          "slg": ".447"
         }
       ],
       "sp": [
@@ -4380,18 +4337,10 @@
           "scope": "row",
           "section": "batter",
           "message": "All batter metrics are empty",
-          "rowKey": "8|Luis Robert"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "9|Carson Benge"
+          "rowKey": "8|Carson Benge"
         }
       ],
-      "warningCount": 2,
+      "warningCount": 1,
       "status": "warn"
     },
     {
@@ -4399,7 +4348,7 @@
       "name": "New York Yankees",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -4453,13 +4402,13 @@
         },
         {
           "order": "6",
-          "name": "Jazz Chisholm",
+          "name": "Jazz Chisholm Jr.",
           "position": "2B",
-          "url": "https://www.fangraphs.com/players/jazz-chisholm/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/jazz-chisholm-jr/20454/stats/batting",
+          "wrc_plus": "126",
+          "avg": ".242",
+          "obp": ".332",
+          "slg": ".481"
         },
         {
           "order": "7",
@@ -4626,20 +4575,12 @@
           "code": "row_all_missing",
           "severity": "warning",
           "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "6|Jazz Chisholm"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
           "section": "rp",
           "message": "All RP metrics are empty",
           "rowKey": "LR|Cade Winquest"
         }
       ],
-      "warningCount": 2,
+      "warningCount": 1,
       "status": "warn"
     },
     {
@@ -4647,7 +4588,7 @@
       "name": "Philadelphia Phillies",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -4903,7 +4844,7 @@
       "name": "Pittsburgh Pirates",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -5134,50 +5075,10 @@
       "name": "San Diego Padres",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
-          "name": "Xander Bogaerts",
-          "position": "SS",
-          "url": "https://www.fangraphs.com/players/xander-bogaerts/12161/stats/batting",
-          "wrc_plus": "104",
-          "avg": ".263",
-          "obp": ".328",
-          "slg": ".391"
-        },
-        {
-          "order": "2",
-          "name": "Jackson Merrill",
-          "position": "CF",
-          "url": "https://www.fangraphs.com/players/jackson-merrill/29490/stats/batting",
-          "wrc_plus": "116",
-          "avg": ".264",
-          "obp": ".317",
-          "slg": ".457"
-        },
-        {
-          "order": "3",
-          "name": "Manny Machado",
-          "position": "3B",
-          "url": "https://www.fangraphs.com/players/manny-machado/11493/stats/batting",
-          "wrc_plus": "123",
-          "avg": ".275",
-          "obp": ".335",
-          "slg": ".460"
-        },
-        {
-          "order": "4",
-          "name": "Fernando Tatis Jr.",
-          "position": "RF",
-          "url": "https://www.fangraphs.com/players/fernando-tatis-jr/19709/stats/batting",
-          "wrc_plus": "131",
-          "avg": ".268",
-          "obp": ".368",
-          "slg": ".446"
-        },
-        {
-          "order": "5",
           "name": "Jake Cronenworth",
           "position": "2B",
           "url": "https://www.fangraphs.com/players/jake-cronenworth/18036/stats/batting",
@@ -5187,17 +5088,47 @@
           "slg": ".377"
         },
         {
-          "order": "6",
-          "name": "Ramón Laureano",
-          "position": "LF",
-          "url": "https://www.fangraphs.com/players/ramon-laureano/17128/stats/batting",
-          "wrc_plus": "138",
-          "avg": ".281",
-          "obp": ".342",
-          "slg": ".512"
+          "order": "2",
+          "name": "Fernando Tatis Jr.",
+          "position": "RF",
+          "url": "https://www.fangraphs.com/players/fernando-tatis-jr/19709/stats/batting",
+          "wrc_plus": "131",
+          "avg": ".268",
+          "obp": ".368",
+          "slg": ".446"
         },
         {
-          "order": "7",
+          "order": "3",
+          "name": "Jackson Merrill",
+          "position": "CF",
+          "url": "https://www.fangraphs.com/players/jackson-merrill/29490/stats/batting",
+          "wrc_plus": "116",
+          "avg": ".264",
+          "obp": ".317",
+          "slg": ".457"
+        },
+        {
+          "order": "4",
+          "name": "Manny Machado",
+          "position": "3B",
+          "url": "https://www.fangraphs.com/players/manny-machado/11493/stats/batting",
+          "wrc_plus": "123",
+          "avg": ".275",
+          "obp": ".335",
+          "slg": ".460"
+        },
+        {
+          "order": "5",
+          "name": "Xander Bogaerts",
+          "position": "SS",
+          "url": "https://www.fangraphs.com/players/xander-bogaerts/12161/stats/batting",
+          "wrc_plus": "104",
+          "avg": ".263",
+          "obp": ".328",
+          "slg": ".391"
+        },
+        {
+          "order": "6",
           "name": "Gavin Sheets",
           "position": "1B",
           "url": "https://www.fangraphs.com/players/gavin-sheets/19901/stats/batting",
@@ -5205,6 +5136,16 @@
           "avg": ".252",
           "obp": ".317",
           "slg": ".429"
+        },
+        {
+          "order": "7",
+          "name": "Ramón Laureano",
+          "position": "LF",
+          "url": "https://www.fangraphs.com/players/ramon-laureano/17128/stats/batting",
+          "wrc_plus": "138",
+          "avg": ".281",
+          "obp": ".342",
+          "slg": ".512"
         },
         {
           "order": "8",
@@ -5365,7 +5306,7 @@
       "name": "San Francisco Giants",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -5439,13 +5380,13 @@
         },
         {
           "order": "8",
-          "name": "Bryce Eldridge",
+          "name": "Will Brennan",
           "position": "DH",
-          "url": "https://www.fangraphs.com/players/bryce-eldridge/33390/stats/batting",
-          "wrc_plus": "54",
-          "avg": ".107",
-          "obp": ".297",
-          "slg": ".179"
+          "url": "https://www.fangraphs.com/players/will-brennan/25660/stats/batting",
+          "wrc_plus": "7",
+          "avg": ".091",
+          "obp": ".231",
+          "slg": ".091"
         },
         {
           "order": "9",
@@ -5596,7 +5537,7 @@
       "name": "Seattle Mariners",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -5827,7 +5768,7 @@
       "name": "St. Louis Cardinals",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -6083,7 +6024,7 @@
       "name": "Tampa Bay Rays",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -6147,13 +6088,13 @@
         },
         {
           "order": "7",
-          "name": "Taylor Walls",
+          "name": "Carson Williams",
           "position": "SS",
-          "url": "https://www.fangraphs.com/players/taylor-walls/22458/stats/batting",
-          "wrc_plus": "66",
-          "avg": ".220",
-          "obp": ".280",
-          "slg": ".319"
+          "url": "https://www.fangraphs.com/players/carson-williams/30038/stats/batting",
+          "wrc_plus": "54",
+          "avg": ".172",
+          "obp": ".219",
+          "slg": ".354"
         },
         {
           "order": "8",
@@ -6323,7 +6264,7 @@
       "name": "Texas Rangers",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -6397,13 +6338,13 @@
         },
         {
           "order": "8",
-          "name": "Josh H. Smith",
+          "name": "Josh Smith",
           "position": "2B",
-          "url": "https://www.fangraphs.com/players/josh-h.-smith/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/josh-smith/26396/stats/batting",
+          "wrc_plus": "100",
+          "avg": ".251",
+          "obp": ".335",
+          "slg": ".366"
         },
         {
           "order": "9",
@@ -6550,14 +6491,6 @@
           "code": "row_all_missing",
           "severity": "warning",
           "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "8|Josh H. Smith"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
           "section": "rp",
           "message": "All RP metrics are empty",
           "rowKey": "MID|Josh Sborz"
@@ -6571,7 +6504,7 @@
           "rowKey": "MID|Carter Baumler"
         }
       ],
-      "warningCount": 3,
+      "warningCount": 2,
       "status": "warn"
     },
     {
@@ -6579,7 +6512,7 @@
       "name": "Toronto Blue Jays",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -6653,16 +6586,6 @@
         },
         {
           "order": "8",
-          "name": "Andrés Giménez",
-          "position": "SS",
-          "url": "https://www.fangraphs.com/players/andres-gimenez/19950/stats/batting",
-          "wrc_plus": "70",
-          "avg": ".210",
-          "obp": ".285",
-          "slg": ".313"
-        },
-        {
-          "order": "9",
           "name": "Ernie Clement",
           "position": "2B",
           "url": "https://www.fangraphs.com/players/ernie-clement/20352/stats/batting",
@@ -6670,6 +6593,16 @@
           "avg": ".277",
           "obp": ".313",
           "slg": ".398"
+        },
+        {
+          "order": "9",
+          "name": "Andrés Giménez",
+          "position": "SS",
+          "url": "https://www.fangraphs.com/players/andres-gimenez/19950/stats/batting",
+          "wrc_plus": "70",
+          "avg": ".210",
+          "obp": ".285",
+          "slg": ".313"
         }
       ],
       "sp": [
@@ -6827,7 +6760,7 @@
       "name": "Washington Nationals",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -6861,13 +6794,13 @@
         },
         {
           "order": "4",
-          "name": "Luis V. Garcia",
+          "name": "Luis García Jr.",
           "position": "1B",
-          "url": "https://www.fangraphs.com/players/luis-v.-garcia/stats?position=1B/2B/3B/SS/OF",
+          "url": "https://www.fangraphs.com/players/luis-garcia-jr/20391/stats/batting",
           "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "avg": ".000",
+          "obp": ".000",
+          "slg": ".000"
         },
         {
           "order": "5",
@@ -7051,12 +6984,12 @@
       ],
       "warnings": [
         {
-          "code": "row_all_missing",
-          "severity": "warning",
+          "code": "row_partial_missing",
+          "severity": "info",
           "scope": "row",
           "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "4|Luis V. Garcia"
+          "message": "Some batter metrics are missing",
+          "rowKey": "4|Luis García Jr."
         },
         {
           "code": "row_all_missing",
@@ -7075,7 +7008,7 @@
           "rowKey": "MID|Griff McGarry"
         }
       ],
-      "warningCount": 3,
+      "warningCount": 2,
       "status": "warn"
     },
     {
@@ -7083,7 +7016,7 @@
       "name": "Athletics",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/oak.png",
-      "lastUpdated": "2026-03-20T12:26:05Z",
+      "lastUpdated": "2026-03-20T13:17:14Z",
       "batter": [
         {
           "order": "1",
@@ -7157,13 +7090,13 @@
         },
         {
           "order": "8",
-          "name": "Maxwell Muncy",
+          "name": "Max Muncy",
           "position": "3B",
-          "url": "https://www.fangraphs.com/players/maxwell-muncy/stats?position=1B/2B/3B/SS/OF",
-          "wrc_plus": "",
-          "avg": "",
-          "obp": "",
-          "slg": ""
+          "url": "https://www.fangraphs.com/players/max-muncy/29779/stats/batting",
+          "wrc_plus": "72",
+          "avg": ".214",
+          "obp": ".259",
+          "slg": ".379"
         },
         {
           "order": "9",
@@ -7310,20 +7243,12 @@
           "code": "row_all_missing",
           "severity": "warning",
           "scope": "row",
-          "section": "batter",
-          "message": "All batter metrics are empty",
-          "rowKey": "8|Maxwell Muncy"
-        },
-        {
-          "code": "row_all_missing",
-          "severity": "warning",
-          "scope": "row",
           "section": "rp",
           "message": "All RP metrics are empty",
           "rowKey": "LR|Luis Medina"
         }
       ],
-      "warningCount": 2,
+      "warningCount": 1,
       "status": "warn"
     }
   ]

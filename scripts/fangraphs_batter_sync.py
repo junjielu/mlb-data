@@ -129,7 +129,15 @@ def normalize_name_loose(name: str) -> str:
         # Remove middle initials / one-letter middle names.
         parts = [parts[0]] + [p for p in parts[1:-1] if len(p) > 1] + [parts[-1]]
     if parts:
-        nickname_map = {'maxwell': 'max'}
+        nickname_map = {
+            'jacob': 'jake',
+            'joseph': 'joey',
+            'joshua': 'josh',
+            'luisangel': 'luis',
+            'maxwell': 'max',
+            'michael': 'mike',
+            'william': 'will',
+        }
         parts[0] = nickname_map.get(parts[0], parts[0])
     return ' '.join(parts)
 
@@ -144,8 +152,43 @@ def name_variants(name: str) -> list[str]:
     no_mid = re.sub(r'\b[A-Z]\.\s*', '', name).replace('  ', ' ').strip()
     if no_mid and no_mid not in out:
         out.append(no_mid)
+    suffixes = ('Jr.', 'Jr', 'II', 'III', 'IV')
+    for base in list(out):
+        no_suffix = re.sub(r'\s+(jr|sr|ii|iii|iv)\.?$', '', base, flags=re.IGNORECASE).strip()
+        if no_suffix and no_suffix not in out:
+            out.append(no_suffix)
+        if no_suffix:
+            for suffix in suffixes:
+                cand = f'{no_suffix} {suffix}'
+                if cand not in out:
+                    out.append(cand)
     if name.startswith('Maxwell '):
         out.append(name.replace('Maxwell ', 'Max ', 1))
+    first_name_variants = {
+        'Jacob': ['Jake'],
+        'Jazz': ['Jasrado'],
+        'J.J.': ['JJ'],
+        'JJ': ['J.J.'],
+        'Joseph': ['Joey'],
+        'Joshua': ['Josh'],
+        'Luisangel': ['Luis'],
+        'Michael': ['Mike'],
+        'William': ['Will'],
+        'Will': ['William'],
+    }
+    parts = name.split(' ', 1)
+    if len(parts) == 2:
+        first, rest = parts
+        for alias in first_name_variants.get(first, []):
+            cand = f'{alias} {rest}'
+            if cand not in out:
+                out.append(cand)
+    special_variants = {
+        'Luis V. Garcia': ['Luis Garcia Jr.', 'Luis Garcia'],
+    }
+    for cand in special_variants.get(name, []):
+        if cand not in out:
+            out.append(cand)
     return out
 
 
@@ -284,15 +327,20 @@ def extract_lineup_rows(
                 break
 
         link_name = matched_name
-        link_url = link_map.get(matched_name, '')
-        if not link_url:
-            norm_hit = link_by_norm.get(normalize_name(matched_name))
+        link_url = ''
+        for cand in name_variants(matched_name):
+            link_url = link_map.get(cand, '')
+            if link_url:
+                link_name = cand
+                break
+            norm_hit = link_by_norm.get(normalize_name(cand))
             if norm_hit:
                 link_name, link_url, _ = norm_hit
-        if not link_url:
-            loose_hit = link_by_loose.get(normalize_name_loose(matched_name))
+                break
+            loose_hit = link_by_loose.get(normalize_name_loose(cand))
             if loose_hit:
                 link_name, link_url, _ = loose_hit
+                break
         if not link_url:
             link_url = f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats?position=1B/2B/3B/SS/OF'
 
