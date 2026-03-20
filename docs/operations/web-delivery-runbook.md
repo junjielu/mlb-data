@@ -9,11 +9,18 @@ python3 scripts/depth_charts_pipeline.py build --season 2025 --publish
 Behavior:
 - Writes candidate artifacts to `public/data/candidates/<build_id>/`
 - Publishes to `public/data/latest/` only when gate is eligible
+- If high-risk `unknown` rows are present, the build stops at candidate creation with `buildStatus=needs_review`
 
 ## Manual Publish Existing Candidate
 
 ```bash
 python3 scripts/depth_charts_pipeline.py publish --build-id <build_id>
+```
+
+Approve a review-required candidate before publish:
+
+```bash
+python3 scripts/depth_charts_pipeline.py review --build-id <build_id> --reviewer <name> --note "manual review summary"
 ```
 
 Force publish (ignore gate):
@@ -44,6 +51,10 @@ python3 scripts/qa_go_no_go.py
 ```
 
 - QA report output: `docs/qa/go-no-go.md`
+- `qa_go_no_go.py` now returns:
+  - `GO` when publish can proceed
+  - `REVIEW` when high-risk unknown rows require operator approval
+  - `NO-GO` when blocking failures are present
 
 ## Local Web Verification
 
@@ -55,3 +66,7 @@ Open:
 - `http://127.0.0.1:4173/teams`
 - `http://127.0.0.1:4173/team/NYY`
 - `http://127.0.0.1:4173/about-data`
+
+Production UI expectation:
+- The public site shows approved depth chart results and freshness metadata
+- Internal warning counts, publish review state, and operator diagnostics stay in candidate artifacts and QA outputs

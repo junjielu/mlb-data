@@ -24,13 +24,7 @@ def find_row(rows: list[dict], key: str, value: str) -> dict:
     raise RuntimeError(f"Missing row where {key}={value}")
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description="Regression checks for known critical rows.")
-    parser.add_argument("--snapshot", type=Path, default=Path("public/data/latest/depth-charts.json"))
-    args = parser.parse_args()
-
-    snapshot = load_snapshot(args.snapshot)
-
+def get_regression_failures(snapshot: dict) -> list[str]:
     nyy = find_team(snapshot, "NYY")
     tor = find_team(snapshot, "TOR")
     lad = find_team(snapshot, "LAD")
@@ -55,6 +49,24 @@ def main() -> int:
 
     if "Muncy" not in str(ath_b8.get("name", "")):
         failures.append("ATH batter order 8 is not Muncy")
+
+    return failures
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Regression checks for known critical rows.")
+    parser.add_argument("--snapshot", type=Path, default=Path("public/data/latest/depth-charts.json"))
+    args = parser.parse_args()
+
+    snapshot = load_snapshot(args.snapshot)
+
+    nyy = find_team(snapshot, "NYY")
+    tor = find_team(snapshot, "TOR")
+    lad_b5 = find_row(find_team(snapshot, "LAD").get("batter", []), "order", "5")
+    ath_b8 = find_row(find_team(snapshot, "ATH").get("batter", []), "order", "8")
+    nyy_su7 = find_row(nyy.get("rp", []), "role", "SU7")
+    tor_su7 = find_row(tor.get("rp", []), "role", "SU7")
+    failures = get_regression_failures(snapshot)
 
     if failures:
         print("Regression checks failed:")

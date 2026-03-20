@@ -13,7 +13,12 @@
 
 ## Monitoring Checklist (first run)
 - `python3 scripts/regression_checks.py` passes
-- `python3 scripts/qa_go_no_go.py` produces GO report
+- `python3 scripts/qa_go_no_go.py` produces either:
+  - `GO` for directly publishable builds
+  - `REVIEW` for candidates awaiting operator approval
+- If review is required:
+  - Run `python3 scripts/depth_charts_pipeline.py review --build-id <build_id> --reviewer <name> --note "<summary>"`
+  - Then publish with `python3 scripts/depth_charts_pipeline.py publish --build-id <build_id>`
 - `/teams` and `/team/:abbr` load correctly in local server
 
 ## Rollback Plan

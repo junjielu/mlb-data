@@ -29,6 +29,12 @@ class SPRow:
     bb9: str
     stuff_plus: str
     location_plus: str
+    match_method: str = 'unmatched'
+    source_player_id: str = ''
+    matched_player_id: str = ''
+    source_id_found_in_stats: bool = False
+    exact_name_found_in_stats: bool = False
+    normalized_name_found_in_stats: bool = False
 
 
 def fmt_float(v: object, ndigits: int = 2) -> str:
@@ -74,6 +80,11 @@ def normalize_name(name: str) -> str:
     return s.lower().strip()
 
 
+def parse_player_ref(href: str) -> str:
+    m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
+    return m.group(1) if m else ''
+
+
 def extract_rotation_rows(
     session: requests.Session,
     team_slug: str,
@@ -95,11 +106,9 @@ def extract_rotation_rows(
         if href.startswith('/'):
             href = 'https://www.fangraphs.com' + href
         link_map.setdefault(name, href)
-        m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
-        if m:
-            pid = m.group(1)
-            if pid.isdigit():
-                id_map.setdefault(name, int(pid))
+        player_ref = parse_player_ref(href)
+        if player_ref.isdigit():
+            id_map.setdefault(name, int(player_ref))
 
     text = soup.get_text('\n')
     a = text.find('Projected Starting Rotation')
@@ -122,13 +131,25 @@ def extract_rotation_rows(
             continue
 
         name = row[3]
+        source_href = link_map.get(name, '')
+        source_player_id = parse_player_ref(source_href)
+        source_id_found = source_player_id.isdigit() and int(source_player_id) in pitch_by_id
+        exact_name_found = name in pitch_map
+        normalized_name_found = normalize_name(name) in pitch_by_name_norm
         info = pitch_map.get(name, {})
+        match_method = 'unmatched'
         if not info:
             pid = id_map.get(name)
             if pid is not None:
                 info = pitch_by_id.get(pid, {})
+                if info:
+                    match_method = 'playerid'
+        else:
+            match_method = 'exact_name'
         if not info:
             info = pitch_by_name_norm.get(normalize_name(name), {})
+            if info:
+                match_method = 'normalized_name'
         row_obj = SPRow(
             role=role.lower(),
             name=name,
@@ -137,6 +158,12 @@ def extract_rotation_rows(
             bb9=info.get('bb9', ''),
             stuff_plus=info.get('stuff_plus', ''),
             location_plus=info.get('location_plus', ''),
+            match_method=match_method,
+            source_player_id=source_player_id,
+            matched_player_id=str(info.get('playerid', '') or ''),
+            source_id_found_in_stats=source_id_found,
+            exact_name_found_in_stats=exact_name_found,
+            normalized_name_found_in_stats=normalized_name_found,
         )
         rows.append(row_obj)
 

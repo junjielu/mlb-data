@@ -1,8 +1,5 @@
-# depth-charts-web-ui Specification
+## MODIFIED Requirements
 
-## Purpose
-TBD - created by archiving change frontend-depth-charts-site. Update Purpose after archive.
-## Requirements
 ### Requirement: Division-based team overview page
 The web UI SHALL provide a teams overview page that groups all MLB teams by division and presents approved depth chart entries without exposing internal release diagnostics.
 
@@ -15,18 +12,6 @@ The web UI SHALL provide a teams overview page that groups all MLB teams by divi
 - **THEN** each team card links to the approved depth chart detail page
 - **AND** the page MUST NOT display internal warning counts, publish-review states, or operator-only quality badges
 
-### Requirement: Team detail page with fixed sections
-The web UI SHALL provide a team detail page that renders Batter, SP, and RP tables in a fixed order.
-
-#### Scenario: Team route rendering
-- **WHEN** a user navigates to `/team/:abbr`
-- **THEN** the page renders the selected team's Batter, SP, and RP tables
-
-#### Scenario: Fixed section order
-- **WHEN** the team detail page loads
-- **THEN** Batter appears before SP
-- **AND** SP appears before RP
-
 ### Requirement: Data freshness and quality transparency
 The web UI MUST display freshness metadata for the approved snapshot while keeping internal quality diagnostics out of the production frontend.
 
@@ -37,18 +22,3 @@ The web UI MUST display freshness metadata for the approved snapshot while keepi
 #### Scenario: Internal diagnostics stay out of the production UI
 - **WHEN** a user browses `/teams`, `/team/:abbr`, or `/about-data`
 - **THEN** the production frontend MUST NOT expose row-level warnings, warning summaries, or operator-review queues
-
-### Requirement: Missing metric rendering
-The web UI SHALL render missing numeric metrics consistently and visibly.
-
-#### Scenario: Missing value presentation
-- **WHEN** a metric value is missing in the snapshot
-- **THEN** the UI renders `--` in that cell
-- **AND** the row remains visible in its original role/order position
-
-### Requirement: Source traceability links
-The web UI SHALL preserve player source links for data verification.
-
-#### Scenario: Player link behavior
-- **WHEN** a user clicks a player name in any table
-- **THEN** the corresponding Fangraphs player page opens in a new tab

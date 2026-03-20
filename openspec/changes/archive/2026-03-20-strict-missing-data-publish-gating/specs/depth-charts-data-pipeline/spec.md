@@ -1,36 +1,4 @@
-# depth-charts-data-pipeline Specification
-
-## Purpose
-TBD - created by archiving change frontend-depth-charts-site. Update Purpose after archive.
-## Requirements
-### Requirement: Unified snapshot generation
-The system SHALL generate a unified depth chart snapshot for a target season that combines Batter, SP, and RP data for all 30 MLB teams.
-
-#### Scenario: Successful snapshot generation
-- **WHEN** the pipeline runs for a valid season (for example 2025)
-- **THEN** it produces a `depth-charts.json` artifact containing exactly 30 teams
-- **AND** each team includes `batter`, `sp`, and `rp` sections
-
-#### Scenario: Section order contract
-- **WHEN** a team snapshot is generated
-- **THEN** the published section order SHALL be Batter, then SP, then RP
-
-### Requirement: Quality report generation
-The system SHALL produce a quality report for every pipeline run, including structural failures, missing-data attribution, and any operator review requirements.
-
-#### Scenario: Report includes attributed missing summary
-- **WHEN** the pipeline finishes successfully
-- **THEN** it emits `quality-report.json`
-- **AND** the report includes counts for `source_missing`, `lookup_failed`, and `unknown` rows
-
-#### Scenario: Report includes review queue
-- **WHEN** high-risk `unknown` rows are present
-- **THEN** the quality report records those rows as pending operator review
-- **AND** the report identifies the team, section, slot, and evidence needed for review
-
-#### Scenario: Report includes validation failures
-- **WHEN** required structural checks fail
-- **THEN** the report records the failed checks with severity `critical`
+## ADDED Requirements
 
 ### Requirement: Risk-based operator review before publish
 The system MUST require operator review before publishing a candidate snapshot when high-risk rows remain classified as `unknown`.
@@ -44,6 +12,21 @@ The system MUST require operator review before publishing a candidate snapshot w
 - **WHEN** a candidate has no blocking failures and all required operator review steps have been approved
 - **THEN** the candidate may be promoted to `public/data/latest`
 - **AND** the promoted build becomes the approved release snapshot
+
+## MODIFIED Requirements
+
+### Requirement: Quality report generation
+The system SHALL produce a quality report for every pipeline run, including structural failures, missing-data attribution, and any operator review requirements.
+
+#### Scenario: Report includes attributed missing summary
+- **WHEN** the pipeline finishes candidate generation
+- **THEN** it emits `quality-report.json`
+- **AND** the report includes counts for `source_missing`, `lookup_failed`, and `unknown` rows
+
+#### Scenario: Report includes review queue
+- **WHEN** high-risk `unknown` rows are present
+- **THEN** the quality report records those rows as pending operator review
+- **AND** the report identifies the team, section, slot, and evidence needed for review
 
 ### Requirement: Publish gating and atomic promotion
 The system MUST publish a new snapshot to the `latest` path only if structural checks pass, blocking attribution failures are absent, and any required operator review has been approved.

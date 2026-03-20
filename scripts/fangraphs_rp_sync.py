@@ -33,6 +33,13 @@ class RPRow:
     bb9: str
     k_pct: str
     stuff_plus: str
+    match_method: str = 'unmatched'
+    source_player_id: str = ''
+    matched_player_id: str = ''
+    source_id_found_in_stats: bool = False
+    exact_name_found_in_stats: bool = False
+    normalized_name_found_in_stats: bool = False
+    loose_name_found_in_stats: bool = False
 
 
 def make_session() -> requests.Session:
@@ -82,6 +89,11 @@ def drop_middle_initials(name_key: str) -> str:
 
 def clean_player_name(name: str) -> str:
     return re.sub(r'\s+\([^)]+\)$', '', name).strip()
+
+
+def parse_player_ref(href: str) -> str:
+    m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
+    return m.group(1) if m else ''
 
 
 def fmt_float(v: Any, ndigits: int = 2) -> str:
@@ -164,11 +176,9 @@ def extract_bullpen_rows(
             href = 'https://www.fangraphs.com' + href
         clean_name = clean_player_name(name)
         link_map.setdefault(clean_name, href)
-        m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
-        if m:
-            pid = m.group(1)
-            if pid.isdigit():
-                id_map.setdefault(clean_name, int(pid))
+        player_ref = parse_player_ref(href)
+        if player_ref.isdigit():
+            id_map.setdefault(clean_name, int(player_ref))
 
     next_data = soup.find('script', id='__NEXT_DATA__')
     if next_data is None or not next_data.string:
@@ -189,7 +199,20 @@ def extract_bullpen_rows(
         if not role or not name:
             continue
 
+        source_href = link_map.get(name, '')
+        source_player_id = parse_player_ref(source_href)
+        if not source_player_id:
+            raw_pid = str(r.get('playerid', '') or '').strip()
+            if raw_pid:
+                source_player_id = raw_pid
+        source_id_found = source_player_id.isdigit() and int(source_player_id) in pitch_by_id
+        exact_name_found = name in pitch_map
+        normalized_name_found = normalize_name(name) in pitch_by_name_norm
+        loose_name_found = drop_middle_initials(normalize_name(name)) in pitch_by_name_norm
         info = pitch_map.get(name, {})
+        match_method = 'unmatched'
+        if info:
+            match_method = 'exact_name'
         if not info:
             pid = id_map.get(name)
             if pid is None:
@@ -200,10 +223,16 @@ def extract_bullpen_rows(
                     pid = None
             if pid is not None:
                 info = pitch_by_id.get(pid, {})
+                if info:
+                    match_method = 'playerid'
         if not info:
             info = pitch_by_name_norm.get(normalize_name(name), {})
+            if info:
+                match_method = 'normalized_name'
         if not info:
             info = pitch_by_name_norm.get(drop_middle_initials(normalize_name(name)), {})
+            if info:
+                match_method = 'loose_name'
 
         out.append(
             RPRow(
@@ -215,6 +244,13 @@ def extract_bullpen_rows(
                 bb9=info.get('bb9', ''),
                 k_pct=info.get('k_pct', ''),
                 stuff_plus=info.get('stuff_plus', ''),
+                match_method=match_method,
+                source_player_id=source_player_id,
+                matched_player_id=str(info.get('playerid', '') or ''),
+                source_id_found_in_stats=source_id_found,
+                exact_name_found_in_stats=exact_name_found,
+                normalized_name_found_in_stats=normalized_name_found,
+                loose_name_found_in_stats=loose_name_found,
             )
         )
     return out

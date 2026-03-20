@@ -7,7 +7,13 @@
       "k9": "8.20",
       "bb9": "3.09",
       "stuff_plus": "93",
-      "location_plus": "105"
+      "location_plus": "105",
+      "match_method": "exact_name",
+      "source_player_id": "19291",
+      "matched_player_id": "19291",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -16,7 +22,13 @@
       "k9": "7.71",
       "bb9": "2.40",
       "stuff_plus": "108",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "26253",
+      "matched_player_id": "26253",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -25,7 +37,13 @@
       "k9": "8.34",
       "bb9": "3.50",
       "stuff_plus": "91",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "13164",
+      "matched_player_id": "13164",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -34,7 +52,13 @@
       "k9": "7.49",
       "bb9": "1.88",
       "stuff_plus": "97",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "27782",
+      "matched_player_id": "27782",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -43,7 +67,13 @@
       "k9": "9.54",
       "bb9": "2.91",
       "stuff_plus": "95",
-      "location_plus": "97"
+      "location_plus": "97",
+      "match_method": "exact_name",
+      "source_player_id": "18383",
+      "matched_player_id": "18383",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "ATL": [
@@ -54,7 +84,13 @@
       "k9": "11.82",
       "bb9": "2.29",
       "stuff_plus": "107",
-      "location_plus": "105"
+      "location_plus": "105",
+      "match_method": "exact_name",
+      "source_player_id": "10603",
+      "matched_player_id": "10603",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -63,7 +99,13 @@
       "k9": "9.41",
       "bb9": "3.66",
       "stuff_plus": "96",
-      "location_plus": "93"
+      "location_plus": "93",
+      "match_method": "exact_name",
+      "source_player_id": "27498",
+      "matched_player_id": "27498",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -72,7 +114,13 @@
       "k9": "1.80",
       "bb9": "3.60",
       "stuff_plus": "99",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "16400",
+      "matched_player_id": "16400",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -81,7 +129,13 @@
       "k9": "9.63",
       "bb9": "4.23",
       "stuff_plus": "91",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "16944",
+      "matched_player_id": "16944",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -90,7 +144,13 @@
       "k9": "7.54",
       "bb9": "2.94",
       "stuff_plus": "90",
-      "location_plus": "108"
+      "location_plus": "108",
+      "match_method": "exact_name",
+      "source_player_id": "27779",
+      "matched_player_id": "27779",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "BAL": [
@@ -101,7 +161,13 @@
       "k9": "8.45",
       "bb9": "2.38",
       "stuff_plus": "92",
-      "location_plus": "105"
+      "location_plus": "105",
+      "match_method": "exact_name",
+      "source_player_id": "22286",
+      "matched_player_id": "22286",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -110,7 +176,13 @@
       "k9": "13.22",
       "bb9": "2.81",
       "stuff_plus": "95",
-      "location_plus": "111"
+      "location_plus": "111",
+      "match_method": "exact_name",
+      "source_player_id": "24586",
+      "matched_player_id": "24586",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -119,7 +191,13 @@
       "k9": "8.77",
       "bb9": "2.75",
       "stuff_plus": "96",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "12304",
+      "matched_player_id": "12304",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -128,7 +206,13 @@
       "k9": "9.52",
       "bb9": "3.46",
       "stuff_plus": "107",
-      "location_plus": "98"
+      "location_plus": "98",
+      "match_method": "exact_name",
+      "source_player_id": "22264",
+      "matched_player_id": "22264",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -137,7 +221,13 @@
       "k9": "6.31",
       "bb9": "1.64",
       "stuff_plus": "93",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "13774",
+      "matched_player_id": "13774",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp6",
@@ -146,7 +236,13 @@
       "k9": "7.44",
       "bb9": "2.36",
       "stuff_plus": "95",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "19350",
+      "matched_player_id": "19350",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "BOS": [
@@ -157,7 +253,13 @@
       "k9": "11.18",
       "bb9": "2.02",
       "stuff_plus": "116",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "27463",
+      "matched_player_id": "27463",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -166,7 +268,13 @@
       "k9": "10.01",
       "bb9": "1.89",
       "stuff_plus": "96",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "12768",
+      "matched_player_id": "12768",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -175,7 +283,13 @@
       "k9": "6.70",
       "bb9": "3.19",
       "stuff_plus": "96",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "23920",
+      "matched_player_id": "23920",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -184,7 +298,13 @@
       "k9": "9.37",
       "bb9": "5.13",
       "stuff_plus": "102",
-      "location_plus": "91"
+      "location_plus": "91",
+      "match_method": "exact_name",
+      "source_player_id": "22487",
+      "matched_player_id": "22487",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -193,7 +313,13 @@
       "k9": "8.64",
       "bb9": "2.17",
       "stuff_plus": "96",
-      "location_plus": "113"
+      "location_plus": "113",
+      "match_method": "playerid",
+      "source_player_id": "17277",
+      "matched_player_id": "17277",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": true
     }
   ],
   "CHC": [
@@ -204,7 +330,13 @@
       "k9": "7.71",
       "bb9": "2.10",
       "stuff_plus": "94",
-      "location_plus": "107"
+      "location_plus": "107",
+      "match_method": "exact_name",
+      "source_player_id": "15440",
+      "matched_player_id": "15440",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -213,7 +345,13 @@
       "k9": "7.40",
       "bb9": "2.52",
       "stuff_plus": "96",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "31872",
+      "matched_player_id": "31872",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -222,7 +360,13 @@
       "k9": "7.28",
       "bb9": "1.62",
       "stuff_plus": "94",
-      "location_plus": "108"
+      "location_plus": "108",
+      "match_method": "exact_name",
+      "source_player_id": "33829",
+      "matched_player_id": "33829",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -231,7 +375,13 @@
       "k9": "9.81",
       "bb9": "3.14",
       "stuff_plus": "105",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "21690",
+      "matched_player_id": "21690",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -240,7 +390,13 @@
       "k9": "6.80",
       "bb9": "1.87",
       "stuff_plus": "94",
-      "location_plus": "109"
+      "location_plus": "109",
+      "match_method": "exact_name",
+      "source_player_id": "11674",
+      "matched_player_id": "11674",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "CHW": [
@@ -251,7 +407,13 @@
       "k9": "8.92",
       "bb9": "3.57",
       "stuff_plus": "95",
-      "location_plus": "98"
+      "location_plus": "98",
+      "match_method": "exact_name",
+      "source_player_id": "31687",
+      "matched_player_id": "31687",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -260,7 +422,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "20387",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp3",
@@ -269,7 +437,13 @@
       "k9": "6.56",
       "bb9": "3.03",
       "stuff_plus": "97",
-      "location_plus": "96"
+      "location_plus": "96",
+      "match_method": "exact_name",
+      "source_player_id": "21448",
+      "matched_player_id": "21448",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -278,7 +452,13 @@
       "k9": "8.91",
       "bb9": "4.22",
       "stuff_plus": "92",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "29878",
+      "matched_player_id": "29878",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -287,7 +467,13 @@
       "k9": "5.30",
       "bb9": "4.28",
       "stuff_plus": "91",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "17425",
+      "matched_player_id": "17425",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "CIN": [
@@ -298,7 +484,13 @@
       "k9": "8.06",
       "bb9": "2.33",
       "stuff_plus": "97",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "29911",
+      "matched_player_id": "29911",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -307,7 +499,13 @@
       "k9": "8.96",
       "bb9": "1.78",
       "stuff_plus": "102",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "26378",
+      "matched_player_id": "26378",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -316,7 +514,13 @@
       "k9": "8.65",
       "bb9": "3.18",
       "stuff_plus": "95",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "25377",
+      "matched_player_id": "25377",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -325,7 +529,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "33876",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp5",
@@ -334,7 +544,13 @@
       "k9": "13.92",
       "bb9": "3.32",
       "stuff_plus": "115",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "35333",
+      "matched_player_id": "35333",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "CLE": [
@@ -345,7 +561,13 @@
       "k9": "9.29",
       "bb9": "4.46",
       "stuff_plus": "103",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "30122",
+      "matched_player_id": "30122",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -354,7 +576,13 @@
       "k9": "8.00",
       "bb9": "2.67",
       "stuff_plus": "102",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "30134",
+      "matched_player_id": "30134",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -363,7 +591,13 @@
       "k9": "7.43",
       "bb9": "2.18",
       "stuff_plus": "93",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "27500",
+      "matched_player_id": "27500",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -372,7 +606,13 @@
       "k9": "7.01",
       "bb9": "3.56",
       "stuff_plus": "92",
-      "location_plus": "97"
+      "location_plus": "97",
+      "match_method": "exact_name",
+      "source_player_id": "27589",
+      "matched_player_id": "27589",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -381,7 +621,13 @@
       "k9": "10.20",
       "bb9": "3.97",
       "stuff_plus": "89",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "23335",
+      "matched_player_id": "23335",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "COL": [
@@ -392,7 +638,13 @@
       "k9": "6.86",
       "bb9": "2.10",
       "stuff_plus": "95",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "16256",
+      "matched_player_id": "16256",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -401,7 +653,13 @@
       "k9": "8.07",
       "bb9": "2.48",
       "stuff_plus": "92",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "14843",
+      "matched_player_id": "14843",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -410,7 +668,13 @@
       "k9": "6.08",
       "bb9": "3.42",
       "stuff_plus": "85",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "11423",
+      "matched_player_id": "11423",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -419,7 +683,13 @@
       "k9": "7.53",
       "bb9": "4.50",
       "stuff_plus": "102",
-      "location_plus": "92"
+      "location_plus": "92",
+      "match_method": "exact_name",
+      "source_player_id": "33482",
+      "matched_player_id": "33482",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -428,7 +698,13 @@
       "k9": "6.08",
       "bb9": "2.06",
       "stuff_plus": "92",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "35321",
+      "matched_player_id": "35321",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "DET": [
@@ -439,7 +715,13 @@
       "k9": "11.10",
       "bb9": "1.52",
       "stuff_plus": "116",
-      "location_plus": "105"
+      "location_plus": "105",
+      "match_method": "exact_name",
+      "source_player_id": "22267",
+      "matched_player_id": "22267",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -448,7 +730,13 @@
       "k9": "8.77",
       "bb9": "3.19",
       "stuff_plus": "108",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "17295",
+      "matched_player_id": "17295",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -457,7 +745,13 @@
       "k9": "10.51",
       "bb9": "3.30",
       "stuff_plus": "98",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "17479",
+      "matched_player_id": "17479",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -466,7 +760,13 @@
       "k9": "8.11",
       "bb9": "3.08",
       "stuff_plus": "106",
-      "location_plus": "93"
+      "location_plus": "93",
+      "match_method": "exact_name",
+      "source_player_id": "8700",
+      "matched_player_id": "8700",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -475,7 +775,13 @@
       "k9": "8.40",
       "bb9": "2.17",
       "stuff_plus": "96",
-      "location_plus": "107"
+      "location_plus": "107",
+      "match_method": "exact_name",
+      "source_player_id": "20492",
+      "matched_player_id": "20492",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "HOU": [
@@ -486,7 +792,13 @@
       "k9": "10.00",
       "bb9": "2.77",
       "stuff_plus": "107",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "25880",
+      "matched_player_id": "25880",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -495,7 +807,13 @@
       "k9": "8.27",
       "bb9": "3.65",
       "stuff_plus": "95",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "17606",
+      "matched_player_id": "17606",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -504,7 +822,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "sa3062955",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp4",
@@ -513,7 +837,13 @@
       "k9": "9.09",
       "bb9": "2.91",
       "stuff_plus": "95",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "24728",
+      "matched_player_id": "24728",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -522,7 +852,13 @@
       "k9": "9.92",
       "bb9": "6.34",
       "stuff_plus": "102",
-      "location_plus": "90"
+      "location_plus": "90",
+      "match_method": "exact_name",
+      "source_player_id": "14120",
+      "matched_player_id": "14120",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp6",
@@ -531,7 +867,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "sa3007778",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     }
   ],
   "KCR": [
@@ -542,7 +884,13 @@
       "k9": "14.30",
       "bb9": "2.92",
       "stuff_plus": "109",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "21846",
+      "matched_player_id": "21846",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -551,7 +899,13 @@
       "k9": "6.57",
       "bb9": "2.35",
       "stuff_plus": "98",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "14078",
+      "matched_player_id": "14078",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -560,7 +914,13 @@
       "k9": "8.97",
       "bb9": "3.02",
       "stuff_plus": "93",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "21455",
+      "matched_player_id": "21455",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -569,7 +929,13 @@
       "k9": "7.74",
       "bb9": "3.41",
       "stuff_plus": "94",
-      "location_plus": "94"
+      "location_plus": "94",
+      "match_method": "exact_name",
+      "source_player_id": "12447",
+      "matched_player_id": "12447",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -578,7 +944,13 @@
       "k9": "7.42",
       "bb9": "2.80",
       "stuff_plus": "94",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "30184",
+      "matched_player_id": "30184",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "LAA": [
@@ -589,7 +961,13 @@
       "k9": "8.09",
       "bb9": "4.15",
       "stuff_plus": "95",
-      "location_plus": "111"
+      "location_plus": "111",
+      "match_method": "exact_name",
+      "source_player_id": "22100",
+      "matched_player_id": "22100",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -598,7 +976,13 @@
       "k9": "8.78",
       "bb9": "3.73",
       "stuff_plus": "95",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "20633",
+      "matched_player_id": "20633",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -607,7 +991,13 @@
       "k9": "11.31",
       "bb9": "3.53",
       "stuff_plus": "112",
-      "location_plus": "112"
+      "location_plus": "112",
+      "match_method": "exact_name",
+      "source_player_id": "27468",
+      "matched_player_id": "27468",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -616,7 +1006,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "24492",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp5",
@@ -625,7 +1021,13 @@
       "k9": "5.84",
       "bb9": "4.70",
       "stuff_plus": "93",
-      "location_plus": "90"
+      "location_plus": "90",
+      "match_method": "exact_name",
+      "source_player_id": "27688",
+      "matched_player_id": "27688",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "LAD": [
@@ -636,7 +1038,13 @@
       "k9": "10.42",
       "bb9": "3.06",
       "stuff_plus": "98",
-      "location_plus": "110"
+      "location_plus": "110",
+      "match_method": "exact_name",
+      "source_player_id": "33825",
+      "matched_player_id": "33825",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -645,7 +1053,13 @@
       "k9": "10.56",
       "bb9": "4.28",
       "stuff_plus": "98",
-      "location_plus": "91"
+      "location_plus": "91",
+      "match_method": "exact_name",
+      "source_player_id": "14374",
+      "matched_player_id": "14374",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -654,7 +1068,13 @@
       "k9": "11.87",
       "bb9": "1.72",
       "stuff_plus": "119",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "19755",
+      "matched_player_id": "19755",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -663,7 +1083,13 @@
       "k9": "10.92",
       "bb9": "2.70",
       "stuff_plus": "102",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "29839",
+      "matched_player_id": "29839",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -672,7 +1098,13 @@
       "k9": "6.94",
       "bb9": "5.45",
       "stuff_plus": "91",
-      "location_plus": "92"
+      "location_plus": "92",
+      "match_method": "exact_name",
+      "source_player_id": "35323",
+      "matched_player_id": "35323",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "MIA": [
@@ -683,7 +1115,13 @@
       "k9": "7.32",
       "bb9": "2.94",
       "stuff_plus": "108",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "18684",
+      "matched_player_id": "18684",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -692,7 +1130,13 @@
       "k9": "9.91",
       "bb9": "3.02",
       "stuff_plus": "118",
-      "location_plus": "94"
+      "location_plus": "94",
+      "match_method": "exact_name",
+      "source_player_id": "27768",
+      "matched_player_id": "27768",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -701,7 +1145,13 @@
       "k9": "6.38",
       "bb9": "2.11",
       "stuff_plus": "92",
-      "location_plus": "112"
+      "location_plus": "112",
+      "match_method": "exact_name",
+      "source_player_id": "20099",
+      "matched_player_id": "20099",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -710,7 +1160,13 @@
       "k9": "9.46",
       "bb9": "2.78",
       "stuff_plus": "97",
-      "location_plus": "107"
+      "location_plus": "107",
+      "match_method": "exact_name",
+      "source_player_id": "27474",
+      "matched_player_id": "27474",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -719,7 +1175,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "21844",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     }
   ],
   "MIL": [
@@ -730,7 +1192,13 @@
       "k9": "11.55",
       "bb9": "1.95",
       "stuff_plus": "96",
-      "location_plus": "107"
+      "location_plus": "107",
+      "match_method": "exact_name",
+      "source_player_id": "16162",
+      "matched_player_id": "16162",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -739,7 +1207,13 @@
       "k9": "11.86",
       "bb9": "4.23",
       "stuff_plus": "119",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "31623",
+      "matched_player_id": "31623",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -748,7 +1222,13 @@
       "k9": "9.55",
       "bb9": "3.01",
       "stuff_plus": "105",
-      "location_plus": "98"
+      "location_plus": "98",
+      "match_method": "exact_name",
+      "source_player_id": "30113",
+      "matched_player_id": "30113",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -757,7 +1237,13 @@
       "k9": "9.59",
       "bb9": "3.53",
       "stuff_plus": "97",
-      "location_plus": "112"
+      "location_plus": "112",
+      "match_method": "exact_name",
+      "source_player_id": "27758",
+      "matched_player_id": "27758",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -766,7 +1252,13 @@
       "k9": "7.40",
       "bb9": "3.05",
       "stuff_plus": "112",
-      "location_plus": "85"
+      "location_plus": "85",
+      "match_method": "exact_name",
+      "source_player_id": "33850",
+      "matched_player_id": "33850",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "MIN": [
@@ -777,7 +1269,13 @@
       "k9": "10.21",
       "bb9": "2.05",
       "stuff_plus": "103",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "21390",
+      "matched_player_id": "21390",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -786,7 +1284,13 @@
       "k9": "7.38",
       "bb9": "1.91",
       "stuff_plus": "94",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "21224",
+      "matched_player_id": "21224",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -795,7 +1299,13 @@
       "k9": "8.65",
       "bb9": "3.72",
       "stuff_plus": "88",
-      "location_plus": "98"
+      "location_plus": "98",
+      "match_method": "exact_name",
+      "source_player_id": "24494",
+      "matched_player_id": "24494",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -804,7 +1314,13 @@
       "k9": "8.01",
       "bb9": "3.53",
       "stuff_plus": "102",
-      "location_plus": "90"
+      "location_plus": "90",
+      "match_method": "exact_name",
+      "source_player_id": "22543",
+      "matched_player_id": "22543",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -813,7 +1329,13 @@
       "k9": "9.00",
       "bb9": "3.69",
       "stuff_plus": "109",
-      "location_plus": "96"
+      "location_plus": "96",
+      "match_method": "exact_name",
+      "source_player_id": "27756",
+      "matched_player_id": "27756",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "NYM": [
@@ -824,7 +1346,13 @@
       "k9": "10.39",
       "bb9": "3.36",
       "stuff_plus": "102",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "18679",
+      "matched_player_id": "18679",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -833,7 +1361,13 @@
       "k9": "10.69",
       "bb9": "3.00",
       "stuff_plus": "117",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "33703",
+      "matched_player_id": "33703",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -842,7 +1376,13 @@
       "k9": "8.00",
       "bb9": "3.47",
       "stuff_plus": "90",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "20302",
+      "matched_player_id": "20302",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -851,7 +1391,13 @@
       "k9": "7.01",
       "bb9": "3.59",
       "stuff_plus": "104",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "13649",
+      "matched_player_id": "13649",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -860,7 +1406,13 @@
       "k9": "11.13",
       "bb9": "1.78",
       "stuff_plus": "103",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "15873",
+      "matched_player_id": "15873",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp6",
@@ -869,7 +1421,13 @@
       "k9": "8.66",
       "bb9": "4.37",
       "stuff_plus": "94",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "31838",
+      "matched_player_id": "31838",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "NYY": [
@@ -880,7 +1438,13 @@
       "k9": "8.71",
       "bb9": "2.35",
       "stuff_plus": "111",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "13743",
+      "matched_player_id": "13743",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -889,7 +1453,13 @@
       "k9": "10.36",
       "bb9": "3.82",
       "stuff_plus": "114",
-      "location_plus": "97"
+      "location_plus": "97",
+      "match_method": "exact_name",
+      "source_player_id": "32095",
+      "matched_player_id": "32095",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -898,7 +1468,13 @@
       "k9": "9.48",
       "bb9": "3.60",
       "stuff_plus": "100",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "30182",
+      "matched_player_id": "30182",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -907,7 +1483,13 @@
       "k9": "8.69",
       "bb9": "2.82",
       "stuff_plus": "103",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "23796",
+      "matched_player_id": "23796",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -916,7 +1498,13 @@
       "k9": "6.47",
       "bb9": "5.21",
       "stuff_plus": "100",
-      "location_plus": "93"
+      "location_plus": "93",
+      "match_method": "exact_name",
+      "source_player_id": "21052",
+      "matched_player_id": "21052",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "PHI": [
@@ -927,7 +1515,13 @@
       "k9": "9.45",
       "bb9": "1.96",
       "stuff_plus": "114",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "20778",
+      "matched_player_id": "20778",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -936,7 +1530,13 @@
       "k9": "10.58",
       "bb9": "2.79",
       "stuff_plus": "102",
-      "location_plus": "112"
+      "location_plus": "112",
+      "match_method": "exact_name",
+      "source_player_id": "19959",
+      "matched_player_id": "19959",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -945,7 +1545,13 @@
       "k9": "9.25",
       "bb9": "2.67",
       "stuff_plus": "105",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "16149",
+      "matched_player_id": "16149",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -954,7 +1560,13 @@
       "k9": "6.26",
       "bb9": "3.06",
       "stuff_plus": "90",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "11836",
+      "matched_player_id": "11836",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -963,7 +1575,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "sa3017880",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     }
   ],
   "PIT": [
@@ -974,7 +1592,13 @@
       "k9": "10.36",
       "bb9": "2.01",
       "stuff_plus": "107",
-      "location_plus": "111"
+      "location_plus": "111",
+      "match_method": "exact_name",
+      "source_player_id": "33677",
+      "matched_player_id": "33677",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -983,7 +1607,13 @@
       "k9": "7.66",
       "bb9": "2.60",
       "stuff_plus": "95",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "17594",
+      "matched_player_id": "17594",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -992,7 +1622,13 @@
       "k9": "9.17",
       "bb9": "3.10",
       "stuff_plus": "105",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "23793",
+      "matched_player_id": "23793",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1001,7 +1637,13 @@
       "k9": "8.90",
       "bb9": "1.15",
       "stuff_plus": "109",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "29868",
+      "matched_player_id": "29868",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1010,7 +1652,13 @@
       "k9": "11.57",
       "bb9": "11.57",
       "stuff_plus": "92",
-      "location_plus": "90"
+      "location_plus": "90",
+      "match_method": "exact_name",
+      "source_player_id": "18413",
+      "matched_player_id": "18413",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "SDP": [
@@ -1021,7 +1669,13 @@
       "k9": "9.33",
       "bb9": "3.19",
       "stuff_plus": "99",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "19853",
+      "matched_player_id": "19853",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1030,7 +1684,13 @@
       "k9": "9.41",
       "bb9": "2.48",
       "stuff_plus": "98",
-      "location_plus": "109"
+      "location_plus": "109",
+      "match_method": "exact_name",
+      "source_player_id": "15454",
+      "matched_player_id": "15454",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1039,7 +1699,13 @@
       "k9": "5.25",
       "bb9": "3.50",
       "stuff_plus": "97",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "24719",
+      "matched_player_id": "24719",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1048,7 +1714,13 @@
       "k9": "5.91",
       "bb9": "3.42",
       "stuff_plus": "88",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "15038",
+      "matched_player_id": "15038",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1057,7 +1729,13 @@
       "k9": "6.57",
       "bb9": "4.36",
       "stuff_plus": "97",
-      "location_plus": "92"
+      "location_plus": "92",
+      "match_method": "exact_name",
+      "source_player_id": "19374",
+      "matched_player_id": "19374",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "SFG": [
@@ -1068,7 +1746,13 @@
       "k9": "9.74",
       "bb9": "2.00",
       "stuff_plus": "105",
-      "location_plus": "107"
+      "location_plus": "107",
+      "match_method": "exact_name",
+      "source_player_id": "17995",
+      "matched_player_id": "17995",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1077,7 +1761,13 @@
       "k9": "9.18",
       "bb9": "3.60",
       "stuff_plus": "97",
-      "location_plus": "95"
+      "location_plus": "95",
+      "match_method": "exact_name",
+      "source_player_id": "11486",
+      "matched_player_id": "11486",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1086,7 +1776,13 @@
       "k9": "6.85",
       "bb9": "3.01",
       "stuff_plus": "91",
-      "location_plus": "111"
+      "location_plus": "111",
+      "match_method": "exact_name",
+      "source_player_id": "16358",
+      "matched_player_id": "16358",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1095,7 +1791,13 @@
       "k9": "6.62",
       "bb9": "2.74",
       "stuff_plus": "93",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "12718",
+      "matched_player_id": "12718",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1104,7 +1806,13 @@
       "k9": "8.61",
       "bb9": "3.80",
       "stuff_plus": "97",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "30076",
+      "matched_player_id": "30076",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "SEA": [
@@ -1115,7 +1823,13 @@
       "k9": "11.89",
       "bb9": "2.13",
       "stuff_plus": "96",
-      "location_plus": "110"
+      "location_plus": "110",
+      "match_method": "exact_name",
+      "source_player_id": "22250",
+      "matched_player_id": "22250",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1124,7 +1838,13 @@
       "k9": "9.55",
       "bb9": "1.74",
       "stuff_plus": "105",
-      "location_plus": "110"
+      "location_plus": "110",
+      "match_method": "exact_name",
+      "source_player_id": "30279",
+      "matched_player_id": "30279",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1133,7 +1853,13 @@
       "k9": "8.07",
       "bb9": "2.29",
       "stuff_plus": "96",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "15689",
+      "matched_player_id": "15689",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1142,7 +1868,13 @@
       "k9": "9.79",
       "bb9": "2.07",
       "stuff_plus": "98",
-      "location_plus": "112"
+      "location_plus": "112",
+      "match_method": "exact_name",
+      "source_player_id": "25436",
+      "matched_player_id": "25436",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1151,7 +1883,13 @@
       "k9": "6.40",
       "bb9": "3.10",
       "stuff_plus": "89",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "27470",
+      "matched_player_id": "27470",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "STL": [
@@ -1162,7 +1900,13 @@
       "k9": "7.24",
       "bb9": "2.37",
       "stuff_plus": "96",
-      "location_plus": "99"
+      "location_plus": "99",
+      "match_method": "exact_name",
+      "source_player_id": "22294",
+      "matched_player_id": "22294",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1171,7 +1915,13 @@
       "k9": "8.37",
       "bb9": "3.81",
       "stuff_plus": "101",
-      "location_plus": "96"
+      "location_plus": "96",
+      "match_method": "exact_name",
+      "source_player_id": "19716",
+      "matched_player_id": "19716",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1180,7 +1930,13 @@
       "k9": "6.14",
       "bb9": "3.43",
       "stuff_plus": "94",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "26108",
+      "matched_player_id": "26108",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1189,7 +1945,13 @@
       "k9": "5.46",
       "bb9": "1.88",
       "stuff_plus": "90",
-      "location_plus": "110"
+      "location_plus": "110",
+      "match_method": "exact_name",
+      "source_player_id": "29869",
+      "matched_player_id": "29869",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1198,7 +1960,13 @@
       "k9": "8.18",
       "bb9": "2.86",
       "stuff_plus": "101",
-      "location_plus": "105"
+      "location_plus": "105",
+      "match_method": "exact_name",
+      "source_player_id": "24763",
+      "matched_player_id": "24763",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "TBR": [
@@ -1209,7 +1977,13 @@
       "k9": "7.62",
       "bb9": "2.22",
       "stuff_plus": "112",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "25385",
+      "matched_player_id": "25385",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1218,7 +1992,13 @@
       "k9": "8.96",
       "bb9": "3.27",
       "stuff_plus": "109",
-      "location_plus": "97"
+      "location_plus": "97",
+      "match_method": "exact_name",
+      "source_player_id": "26221",
+      "matched_player_id": "26221",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1227,7 +2007,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "21483",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp4",
@@ -1236,7 +2022,13 @@
       "k9": "6.30",
       "bb9": "2.28",
       "stuff_plus": "91",
-      "location_plus": "108"
+      "location_plus": "108",
+      "match_method": "exact_name",
+      "source_player_id": "12730",
+      "matched_player_id": "12730",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1245,7 +2037,13 @@
       "k9": "6.93",
       "bb9": "1.29",
       "stuff_plus": "103",
-      "location_plus": "111"
+      "location_plus": "111",
+      "match_method": "exact_name",
+      "source_player_id": "13361",
+      "matched_player_id": "13361",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "TEX": [
@@ -1256,7 +2054,13 @@
       "k9": "8.93",
       "bb9": "1.45",
       "stuff_plus": "97",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "9132",
+      "matched_player_id": "9132",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1265,7 +2069,13 @@
       "k9": "9.64",
       "bb9": "1.93",
       "stuff_plus": "111",
-      "location_plus": "106"
+      "location_plus": "106",
+      "match_method": "exact_name",
+      "source_player_id": "10954",
+      "matched_player_id": "10954",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1274,7 +2084,13 @@
       "k9": "10.43",
       "bb9": "3.61",
       "stuff_plus": "98",
-      "location_plus": "98"
+      "location_plus": "98",
+      "match_method": "exact_name",
+      "source_player_id": "22201",
+      "matched_player_id": "22201",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1283,7 +2099,13 @@
       "k9": "8.78",
       "bb9": "3.98",
       "stuff_plus": "107",
-      "location_plus": "91"
+      "location_plus": "91",
+      "match_method": "exact_name",
+      "source_player_id": "30146",
+      "matched_player_id": "30146",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1292,7 +2114,13 @@
       "k9": "7.98",
       "bb9": "3.89",
       "stuff_plus": "103",
-      "location_plus": "102"
+      "location_plus": "102",
+      "match_method": "exact_name",
+      "source_player_id": "21306",
+      "matched_player_id": "21306",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "TOR": [
@@ -1303,7 +2131,13 @@
       "k9": "8.81",
       "bb9": "2.33",
       "stuff_plus": "100",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "14107",
+      "matched_player_id": "14107",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1312,7 +2146,13 @@
       "k9": "11.52",
       "bb9": "3.80",
       "stuff_plus": "108",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "18525",
+      "matched_player_id": "18525",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1321,7 +2161,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "17920",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp4",
@@ -1330,7 +2176,13 @@
       "k9": "8.68",
       "bb9": "2.44",
       "stuff_plus": "96",
-      "location_plus": "108"
+      "location_plus": "108",
+      "match_method": "exact_name",
+      "source_player_id": "3137",
+      "matched_player_id": "3137",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1339,7 +2191,13 @@
       "k9": "8.77",
       "bb9": "2.24",
       "stuff_plus": "92",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "19316",
+      "matched_player_id": "19316",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "WSN": [
@@ -1350,7 +2208,13 @@
       "k9": "7.40",
       "bb9": "2.77",
       "stuff_plus": "108",
-      "location_plus": "94"
+      "location_plus": "94",
+      "match_method": "exact_name",
+      "source_player_id": "27473",
+      "matched_player_id": "27473",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1359,7 +2223,13 @@
       "k9": "5.76",
       "bb9": "2.13",
       "stuff_plus": "89",
-      "location_plus": "107"
+      "location_plus": "107",
+      "match_method": "exact_name",
+      "source_player_id": "9803",
+      "matched_player_id": "9803",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1368,7 +2238,13 @@
       "k9": "",
       "bb9": "",
       "stuff_plus": "",
-      "location_plus": ""
+      "location_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "16432",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false
     },
     {
       "role": "sp4",
@@ -1377,7 +2253,13 @@
       "k9": "6.20",
       "bb9": "3.10",
       "stuff_plus": "94",
-      "location_plus": "103"
+      "location_plus": "103",
+      "match_method": "exact_name",
+      "source_player_id": "21504",
+      "matched_player_id": "21504",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1386,7 +2268,13 @@
       "k9": "6.27",
       "bb9": "1.54",
       "stuff_plus": "85",
-      "location_plus": "104"
+      "location_plus": "104",
+      "match_method": "exact_name",
+      "source_player_id": "15823",
+      "matched_player_id": "15823",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ],
   "ATH": [
@@ -1397,7 +2285,13 @@
       "k9": "6.86",
       "bb9": "2.77",
       "stuff_plus": "110",
-      "location_plus": "97"
+      "location_plus": "97",
+      "match_method": "exact_name",
+      "source_player_id": "15890",
+      "matched_player_id": "15890",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp2",
@@ -1406,7 +2300,13 @@
       "k9": "7.26",
       "bb9": "2.84",
       "stuff_plus": "94",
-      "location_plus": "98"
+      "location_plus": "98",
+      "match_method": "exact_name",
+      "source_player_id": "17677",
+      "matched_player_id": "17677",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp3",
@@ -1415,7 +2315,13 @@
       "k9": "7.76",
       "bb9": "2.91",
       "stuff_plus": "98",
-      "location_plus": "89"
+      "location_plus": "89",
+      "match_method": "exact_name",
+      "source_player_id": "19479",
+      "matched_player_id": "19479",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp4",
@@ -1424,7 +2330,13 @@
       "k9": "10.97",
       "bb9": "3.59",
       "stuff_plus": "93",
-      "location_plus": "101"
+      "location_plus": "101",
+      "match_method": "exact_name",
+      "source_player_id": "25098",
+      "matched_player_id": "25098",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     },
     {
       "role": "sp5",
@@ -1433,7 +2345,13 @@
       "k9": "7.95",
       "bb9": "3.33",
       "stuff_plus": "103",
-      "location_plus": "100"
+      "location_plus": "100",
+      "match_method": "exact_name",
+      "source_player_id": "32227",
+      "matched_player_id": "32227",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true
     }
   ]
 }

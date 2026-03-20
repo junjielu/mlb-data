@@ -46,6 +46,13 @@ class BatterRow:
     avg: str
     obp: str
     slg: str
+    match_method: str = 'unmatched'
+    source_player_id: str = ''
+    matched_player_id: str = ''
+    source_id_found_in_stats: bool = False
+    exact_name_found_in_stats: bool = False
+    normalized_name_found_in_stats: bool = False
+    loose_name_found_in_stats: bool = False
 
 
 def make_session(use_cloudscraper: bool = False) -> requests.Session:
@@ -204,6 +211,11 @@ def fmt_avg(v: Any) -> str:
 def fmt_int(v: Any) -> str:
     if v is None:
         return ''
+
+
+def parse_player_ref(href: str) -> str:
+    m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
+    return m.group(1) if m else ''
     try:
         return str(int(round(float(v))))
     except (TypeError, ValueError):
@@ -271,13 +283,11 @@ def extract_lineup_rows(
             href = 'https://www.fangraphs.com' + href
         clean_name = clean_player_name(name)
         link_map.setdefault(clean_name, href)
-        m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
+        player_ref = parse_player_ref(href)
         pid_val: int | None = None
-        if m:
-            pid = m.group(1)
-            if pid.isdigit():
-                pid_val = int(pid)
-                id_map.setdefault(clean_name, pid_val)
+        if player_ref.isdigit():
+            pid_val = int(player_ref)
+            id_map.setdefault(clean_name, pid_val)
         link_by_norm.setdefault(normalize_name(clean_name), (clean_name, href, pid_val))
         link_by_loose.setdefault(normalize_name_loose(clean_name), (clean_name, href, pid_val))
 
@@ -305,25 +315,44 @@ def extract_lineup_rows(
 
         info: dict[str, str] = {}
         matched_name = name
+        match_method = 'unmatched'
+        roster_href = link_map.get(name, '')
+        if not roster_href:
+            norm_hit = link_by_norm.get(normalize_name(name))
+            if norm_hit:
+                _, roster_href, _ = norm_hit
+            else:
+                loose_hit = link_by_loose.get(normalize_name_loose(name))
+                if loose_hit:
+                    _, roster_href, _ = loose_hit
+        source_player_id = parse_player_ref(roster_href)
+        exact_name_found = name in batting_map
+        source_id_found = source_player_id.isdigit() and int(source_player_id) in batting_by_id
+        normalized_name_found = normalize_name(name) in batting_by_name_norm
+        loose_name_found = normalize_name_loose(name) in batting_by_name_loose
         for cand in name_variants(name):
             if cand in batting_map:
                 info = batting_map[cand]
                 matched_name = cand
+                match_method = 'exact_name'
                 break
             pid = id_map.get(cand)
             if pid is not None and pid in batting_by_id:
                 info = batting_by_id[pid]
                 matched_name = cand
+                match_method = 'playerid'
                 break
             by_norm = batting_by_name_norm.get(normalize_name(cand), {})
             if by_norm:
                 info = by_norm
                 matched_name = cand
+                match_method = 'normalized_name'
                 break
             loose = batting_by_name_loose.get(normalize_name_loose(cand), {})
             if loose:
                 info = loose
                 matched_name = cand
+                match_method = 'loose_name'
                 break
 
         link_name = matched_name
@@ -353,6 +382,13 @@ def extract_lineup_rows(
             avg=info.get('avg', ''),
             obp=info.get('obp', ''),
             slg=info.get('slg', ''),
+            match_method=match_method,
+            source_player_id=source_player_id,
+            matched_player_id=str(info.get('playerid', '') or ''),
+            source_id_found_in_stats=source_id_found,
+            exact_name_found_in_stats=exact_name_found,
+            normalized_name_found_in_stats=normalized_name_found,
+            loose_name_found_in_stats=loose_name_found,
         ))
 
     out.sort(key=lambda r: int(r.order) if r.order.isdigit() else 99)

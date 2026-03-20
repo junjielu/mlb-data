@@ -16,10 +16,13 @@ async function loadData() {
 }
 
 function snapshotSummary(meta) {
+  const generated = meta.generatedAt ? new Date(meta.generatedAt).toLocaleString() : "--";
   return `
     <section class="status-bar">
       <div><strong>Season:</strong> ${meta.season}</div>
       <div><strong>Source:</strong> Fangraphs depth charts snapshot</div>
+      <div><strong>Updated:</strong> ${generated}</div>
+      <div><strong>Build:</strong> ${meta.buildId || "--"}</div>
     </section>
   `;
 }
@@ -145,8 +148,7 @@ function renderTable(sectionId, title, rows, columns) {
         </thead>
         <tbody>
           ${ordered.map((r) => {
-            const rowCls = rowMissing(r, sectionId) ? "missing" : "";
-            return `<tr class="${rowCls}">${columns.map((c) => {
+            return `<tr>${columns.map((c) => {
               if (c.key === "name") return `<td><a class="ext" href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>`;
               return `<td>${safeMetric(r[c.key])}</td>`;
             }).join("")}</tr>`;
@@ -222,7 +224,7 @@ function renderAbout() {
       <h1>About Data</h1>
       <p><strong>Source:</strong> Fangraphs roster resource and leaders API.</p>
       <p><strong>Matching strategy:</strong> exact name -> playerid -> normalized name.</p>
-      <p><strong>Quality rules:</strong> section minimums, row-level missing metrics, warning aggregation.</p>
+      <p><strong>Publication policy:</strong> Only approved snapshots are promoted to the production site.</p>
       <p><strong>Schema version:</strong> ${snapshot.meta.schemaVersion}</p>
     </section>
   `;
