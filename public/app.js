@@ -10,6 +10,7 @@ let snapshot = null;
 let injuriesSnapshot = null;
 let injuryDataUnavailable = false;
 let sortState = {};
+let expandedRows = { batter: null, sp: null, rp: null };
 
 async function loadData() {
   const [snapshotRes, injuryRes] = await Promise.all([
@@ -30,7 +31,7 @@ async function loadData() {
 
 function safeMetric(value) {
   const v = String(value ?? "").trim();
-  if (!v) return `<span class="missing-cell" title="No 2025 value">--</span>`;
+  if (!v) return `<span class="missing-cell" title="No value available">--</span>`;
   return v;
 }
 
@@ -107,9 +108,63 @@ function renderTeamsPage() {
   `;
 }
 
+function rowIdentity(sectionId, row) {
+  const explicitId = String(row.playerId ?? "").trim();
+  if (explicitId) return `${sectionId}:${explicitId}`;
+  const fallback = sectionId === "batter" ? row.order : row.role;
+  return `${sectionId}:${fallback}:${row.name}`;
+}
+
+function renderPrimaryCell(sectionId, row, expanded) {
+  const key = sectionId === "batter" ? "order" : "role";
+  return `<span class="toggle-indicator" aria-hidden="true">${expanded ? "▾" : "▸"}</span>${safeMetric(row[key])}`;
+}
+
+function renderHistoryCell(sectionId, row, historyRow, column) {
+  if (column.key === "name") {
+    return `<span class="history-blank" aria-hidden="true"></span>`;
+  }
+  if (column.key === "position") {
+    return `<span class="history-blank" aria-hidden="true"></span>`;
+  }
+  if (column.key === "order" || column.key === "role") {
+    return `<span class="history-season">${historyRow.season}</span>`;
+  }
+  return safeMetric(historyRow[column.key]);
+}
+
 function renderTable(sectionId, title, rows, columns) {
   const state = sortState[sectionId] || { key: null, dir: "desc" };
   const ordered = state.key ? sortRows(rows, sectionId, state.key, state.dir) : rows;
+  const expandedRowId = expandedRows[sectionId];
+  const body = [];
+
+  for (const row of ordered) {
+    const rowId = rowIdentity(sectionId, row);
+    const expanded = expandedRowId === rowId;
+    body.push(`
+      <tr class="primary-row expandable-row${expanded ? " is-expanded" : ""}" data-expand-section="${sectionId}" data-row-id="${escapeHtml(rowId)}">
+        ${columns.map((column) => {
+          if (column.key === "name") {
+            return `<td><a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a></td>`;
+          }
+          if (column.key === "order" || column.key === "role") {
+            return `<td class="primary-label-cell">${renderPrimaryCell(sectionId, row, expanded)}</td>`;
+          }
+          return `<td>${safeMetric(row[column.key])}</td>`;
+        }).join("")}
+      </tr>
+    `);
+
+    if (!expanded) continue;
+    for (const historyRow of row.history || []) {
+      body.push(`
+        <tr class="history-row" data-parent-row-id="${escapeHtml(rowId)}">
+          ${columns.map((column) => `<td>${renderHistoryCell(sectionId, row, historyRow, column)}</td>`).join("")}
+        </tr>
+      `);
+    }
+  }
 
   return `
     <section class="table-wrap" id="${sectionId}">
@@ -121,12 +176,7 @@ function renderTable(sectionId, title, rows, columns) {
           </tr>
         </thead>
         <tbody>
-          ${ordered.map((r) => {
-            return `<tr>${columns.map((c) => {
-              if (c.key === "name") return `<td><a class="player-link" href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>`;
-              return `<td>${safeMetric(r[c.key])}</td>`;
-            }).join("")}</tr>`;
-          }).join("")}
+          ${body.join("")}
         </tbody>
       </table>
     </section>
@@ -260,6 +310,17 @@ function renderTeamPage(abbr) {
       const key = th.dataset.key;
       const curr = sortState[sec] || { key: null, dir: "desc" };
       sortState[sec] = curr.key === key ? { key, dir: curr.dir === "desc" ? "asc" : "desc" } : { key, dir: "desc" };
+      renderTeamPage(abbr);
+    });
+  });
+
+  document.querySelectorAll("tr[data-expand-section]").forEach((rowEl) => {
+    rowEl.addEventListener("click", (event) => {
+      if (event.target.closest("a.player-link")) return;
+      const sectionId = rowEl.dataset.expandSection;
+      const rowId = rowEl.dataset.rowId;
+      if (!sectionId || !rowId) return;
+      expandedRows[sectionId] = expandedRows[sectionId] === rowId ? null : rowId;
       renderTeamPage(abbr);
     });
   });

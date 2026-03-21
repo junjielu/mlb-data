@@ -3,11 +3,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+import requests
 
 from regression_checks import get_regression_failures
 
@@ -64,6 +68,13 @@ TEAM_META = {
 B_KEYS = ["wrc_plus", "avg", "obp", "slg"]
 SP_KEYS = ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"]
 RP_KEYS = ["era", "k9", "bb9", "k_pct", "stuff_plus"]
+HISTORY_SEASONS = (2024, 2023)
+PUBLIC_ID_KEYS = ("matched_player_id", "source_player_id")
+HISTORY_ROW_KEYS = {
+    "batter": ["runs", "hr", "rbi", "sb", "avg", "obp", "slg", "wrc_plus"],
+    "sp": ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"],
+    "rp": ["era", "k9", "bb9", "k_pct", "stuff_plus"],
+}
 
 
 @dataclass
@@ -72,6 +83,171 @@ class GateResult:
     pass_publish: bool
     critical_count: int
     review_required: bool
+
+
+def make_session() -> requests.Session:
+    session = requests.Session()
+    session.trust_env = False
+    return session
+
+
+def http_get(session: requests.Session, url: str, *, params: dict[str, str] | None = None, timeout: int = 45) -> requests.Response:
+    last_err: Exception | None = None
+    last_status: int | None = None
+    for i in range(5):
+        try:
+            response = session.get(url, params=params, timeout=timeout)
+            if response.status_code == 200:
+                return response
+            last_status = response.status_code
+            if response.status_code in {403, 429, 500, 502, 503, 504}:
+                time.sleep(1.2 * (i + 1))
+                continue
+            return response
+        except requests.RequestException as exc:
+            last_err = exc
+            time.sleep(1.2 * (i + 1))
+
+    if last_err is not None:
+        raise RuntimeError(f"HTTP request failed after retries for {url}: {last_err}") from last_err
+    raise RuntimeError(f"HTTP request failed after retries for {url}: status={last_status}")
+
+
+def fmt_float(value: Any, ndigits: int = 2) -> str:
+    if value is None:
+        return ""
+    try:
+        return f"{float(value):.{ndigits}f}"
+    except (TypeError, ValueError):
+        return ""
+
+
+def fmt_avg(value: Any) -> str:
+    if value is None:
+        return ""
+    try:
+        return f"{float(value):.3f}".lstrip("0")
+    except (TypeError, ValueError):
+        return ""
+
+
+def fmt_int(value: Any) -> str:
+    if value is None:
+        return ""
+    try:
+        return str(int(round(float(value))))
+    except (TypeError, ValueError):
+        return ""
+
+
+def fmt_pct(value: Any) -> str:
+    if value is None:
+        return ""
+    try:
+        return f"{float(value) * 100:.1f}%"
+    except (TypeError, ValueError):
+        return ""
+
+
+def fetch_batting_history_map(session: requests.Session, season: int) -> dict[str, dict[str, str]]:
+    params = dict(
+        age="", pos="all", stats="bat", lg="all", qual="0", season=str(season),
+        season1=str(season), startdate=f"{season}-03-01", enddate=f"{season}-11-30",
+        month="0", hand="", team="0", pageitems="3000", pagenum="1", ind="0",
+        rost="0", players="", sortdir="default", sortstat="WAR", type="8",
+    )
+    url = "https://www.fangraphs.com/api/leaders/major-league/data"
+    response = http_get(session, url, params=params, timeout=45)
+    if response.status_code != 200:
+        raise RuntimeError(f"Fangraphs batting API failed: HTTP {response.status_code}")
+
+    history: dict[str, dict[str, str]] = {}
+    for row in response.json().get("data", []):
+        player_id = str(row.get("playerid", "") or "").strip()
+        if not player_id:
+            continue
+        wrc_val = row.get("wRC+")
+        if wrc_val is None:
+            wrc_val = row.get("wRCPlus")
+        history[player_id] = {
+            "runs": fmt_int(row.get("R")),
+            "hr": fmt_int(row.get("HR")),
+            "rbi": fmt_int(row.get("RBI")),
+            "sb": fmt_int(row.get("SB")),
+            "avg": fmt_avg(row.get("AVG")),
+            "obp": fmt_avg(row.get("OBP")),
+            "slg": fmt_avg(row.get("SLG")),
+            "wrc_plus": fmt_int(wrc_val),
+        }
+    return history
+
+
+def fetch_pitching_history_map(session: requests.Session, season: int) -> dict[str, dict[str, str]]:
+    params = dict(
+        age="", pos="all", stats="pit", lg="all", qual="0", season=str(season),
+        season1=str(season), startdate=f"{season}-03-01", enddate=f"{season}-11-30",
+        month="0", hand="", team="0", pageitems="3000", pagenum="1", ind="0",
+        rost="0", players="", sortdir="default", sortstat="WAR", type="42",
+    )
+    url = "https://www.fangraphs.com/api/leaders/major-league/data"
+    response = http_get(session, url, params=params, timeout=45)
+    if response.status_code != 200:
+        raise RuntimeError(f"Fangraphs pitching API failed: HTTP {response.status_code}")
+
+    history: dict[str, dict[str, str]] = {}
+    for row in response.json().get("data", []):
+        player_id = str(row.get("playerid", "") or "").strip()
+        if not player_id:
+            continue
+        history[player_id] = {
+            "era": fmt_float(row.get("ERA"), 2),
+            "whip": fmt_float(row.get("WHIP"), 2),
+            "k9": fmt_float(row.get("K/9"), 2),
+            "bb9": fmt_float(row.get("BB/9"), 2),
+            "k_pct": fmt_pct(row.get("K%")),
+            "stuff_plus": fmt_int(row.get("sp_stuff")),
+            "location_plus": fmt_int(row.get("sp_location")),
+        }
+    return history
+
+
+def resolve_public_player_id(row: dict[str, Any]) -> str:
+    for key in PUBLIC_ID_KEYS:
+        candidate = str(row.get(key, "") or "").strip()
+        if candidate:
+            return candidate
+    url = str(row.get("url", "") or "")
+    match = re.search(r"/players/[^/]+/(\d+|sa\d+)/stats", url)
+    return match.group(1) if match else ""
+
+
+def empty_history_entry(section: str, season: int) -> dict[str, str | int]:
+    return {"season": season, **{key: "" for key in HISTORY_ROW_KEYS[section]}}
+
+
+def build_history_entry(section: str, season: int, stats: dict[str, str] | None) -> dict[str, str | int]:
+    entry = empty_history_entry(section, season)
+    if stats:
+        for key in HISTORY_ROW_KEYS[section]:
+            entry[key] = stats.get(key, "")
+    return entry
+
+
+def attach_public_player_history(teams: list[dict[str, Any]]) -> None:
+    session = make_session()
+    batting_history = {season: fetch_batting_history_map(session, season) for season in HISTORY_SEASONS}
+    pitching_history = {season: fetch_pitching_history_map(session, season) for season in HISTORY_SEASONS}
+
+    for team in teams:
+        for section in ("batter", "sp", "rp"):
+            for row in team.get(section, []):
+                player_id = resolve_public_player_id(row)
+                row["playerId"] = player_id
+                source_map = batting_history if section == "batter" else pitching_history
+                row["history"] = [
+                    build_history_entry(section, season, source_map[season].get(player_id))
+                    for season in HISTORY_SEASONS
+                ]
 
 
 def load_json(path: Path) -> dict[str, list[dict[str, Any]]]:
@@ -343,6 +519,7 @@ def build_snapshot(season: int, batter_path: Path, sp_path: Path, rp_path: Path)
             }
         )
 
+    attach_public_player_history(teams)
     teams, quality, gate = evaluate_quality(teams)
 
     snapshot = {
