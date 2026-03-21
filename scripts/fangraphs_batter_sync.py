@@ -53,6 +53,8 @@ class BatterRow:
     exact_name_found_in_stats: bool = False
     normalized_name_found_in_stats: bool = False
     loose_name_found_in_stats: bool = False
+    identity_mismatch_found: bool = False
+    mismatch_candidate_player_id: str = ''
 
 
 def make_session(use_cloudscraper: bool = False) -> requests.Session:
@@ -363,6 +365,17 @@ def extract_lineup_rows(
         source_id_found = source_player_id.isdigit() and int(source_player_id) in batting_by_id
         normalized_name_found = normalize_name(name) in batting_by_name_norm
         loose_name_found = normalize_name_loose(name) in batting_by_name_loose
+        identity_mismatch_found = False
+        mismatch_candidate_player_id = ''
+
+        def record_identity_mismatch(candidate: dict[str, str]) -> None:
+            nonlocal identity_mismatch_found, mismatch_candidate_player_id
+            candidate_pid = str(candidate.get('playerid', '') or '')
+            if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                return
+            identity_mismatch_found = True
+            if not mismatch_candidate_player_id:
+                mismatch_candidate_player_id = candidate_pid
 
         if source_player_id.isdigit():
             source_pid = int(source_player_id)
@@ -389,12 +402,17 @@ def extract_lineup_rows(
                     matched_name = cand
                     match_method = 'exact_name'
                     break
+                record_identity_mismatch(candidate)
             pid = id_map.get(cand)
             if pid is not None and pid in batting_by_id:
-                info = batting_by_id[pid]
-                matched_name = cand
-                match_method = 'playerid'
-                break
+                candidate = batting_by_id[pid]
+                candidate_pid = str(candidate.get('playerid', '') or '')
+                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                    info = candidate
+                    matched_name = cand
+                    match_method = 'playerid'
+                    break
+                record_identity_mismatch(candidate)
             by_norm = batting_by_name_norm.get(normalize_name(cand), {})
             if by_norm:
                 candidate_pid = str(by_norm.get('playerid', '') or '')
@@ -403,6 +421,7 @@ def extract_lineup_rows(
                     matched_name = cand
                     match_method = 'normalized_name'
                     break
+                record_identity_mismatch(by_norm)
             loose = batting_by_name_loose.get(normalize_name_loose(cand), {})
             if loose:
                 candidate_pid = str(loose.get('playerid', '') or '')
@@ -411,6 +430,7 @@ def extract_lineup_rows(
                     matched_name = cand
                     match_method = 'loose_name'
                     break
+                record_identity_mismatch(loose)
 
         link_name = matched_name
         link_url = ''
@@ -446,6 +466,8 @@ def extract_lineup_rows(
             exact_name_found_in_stats=exact_name_found,
             normalized_name_found_in_stats=normalized_name_found,
             loose_name_found_in_stats=loose_name_found,
+            identity_mismatch_found=identity_mismatch_found,
+            mismatch_candidate_player_id=mismatch_candidate_player_id,
         ))
 
     out.sort(key=lambda r: int(r.order) if r.order.isdigit() else 99)

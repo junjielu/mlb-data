@@ -2,9 +2,11 @@
 import argparse
 import json
 import re
+import time
 import unicodedata
 from dataclasses import dataclass, asdict
 from pathlib import Path
+from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
@@ -37,6 +39,30 @@ class SPRow:
     source_id_found_in_stats: bool = False
     exact_name_found_in_stats: bool = False
     normalized_name_found_in_stats: bool = False
+    identity_mismatch_found: bool = False
+    mismatch_candidate_player_id: str = ''
+
+
+def http_get(session: requests.Session, url: str, *, params: dict[str, str] | None = None, timeout: int = 45) -> requests.Response:
+    last_err: Exception | None = None
+    last_status: int | None = None
+    for i in range(5):
+        try:
+            r = session.get(url, params=params, timeout=timeout)
+            if r.status_code == 200:
+                return r
+            last_status = r.status_code
+            if r.status_code in {403, 429, 500, 502, 503, 504}:
+                time.sleep(1.2 * (i + 1))
+                continue
+            return r
+        except requests.RequestException as e:
+            last_err = e
+            time.sleep(1.2 * (i + 1))
+
+    if last_err is not None:
+        raise RuntimeError(f'HTTP request failed after retries for {url}: {last_err}') from last_err
+    raise RuntimeError(f'HTTP request failed after retries for {url}: status={last_status}')
 
 
 def fmt_float(v: object, ndigits: int = 2) -> str:
@@ -56,7 +82,10 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
         rost='0', players='', sortdir='default', sortstat='WAR', type='42'
     )
     url = 'https://www.fangraphs.com/api/leaders/major-league/data'
-    rows = session.get(url, params=params, timeout=30).json().get('data', [])
+    res = http_get(session, url, params=params, timeout=45)
+    if res.status_code != 200:
+        raise RuntimeError(f'Fangraphs pitching API failed: HTTP {res.status_code}')
+    rows = res.json().get('data', [])
     out = {}
     for r in rows:
         name = r.get('PlayerName')
@@ -80,6 +109,32 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
     return out
 
 
+def fetch_pitching_row_by_player_id(session: requests.Session, season: int, player_id: int) -> dict[str, Any]:
+    params = dict(
+        age='', pos='all', stats='pit', lg='all', qual='0', season=str(season),
+        season1=str(season), startdate=f'{season}-03-01', enddate=f'{season}-11-30',
+        month='0', hand='', team='0', pageitems='3000', pagenum='1', ind='0',
+        rost='0', players=str(player_id), sortdir='default', sortstat='WAR', type='42'
+    )
+    url = 'https://www.fangraphs.com/api/leaders/major-league/data'
+    res = http_get(session, url, params=params, timeout=45)
+    if res.status_code != 200:
+        return {}
+    rows = res.json().get('data', [])
+    if not rows:
+        return {}
+    row = rows[0]
+    return {
+        'era': fmt_float(row.get('ERA'), 2),
+        'whip': fmt_float(row.get('WHIP'), 2),
+        'stuff_plus': '' if row.get('sp_stuff') is None else str(int(round(float(row.get('sp_stuff'))))),
+        'location_plus': '' if row.get('sp_location') is None else str(int(round(float(row.get('sp_location'))))),
+        'k9': fmt_float(row.get('K/9'), 2),
+        'bb9': fmt_float(row.get('BB/9'), 2),
+        'playerid': row.get('playerid'),
+    }
+
+
 def normalize_name(name: str) -> str:
     s = unicodedata.normalize('NFKD', name)
     s = ''.join(ch for ch in s if not unicodedata.combining(ch))
@@ -93,13 +148,14 @@ def parse_player_ref(href: str) -> str:
 
 def extract_rotation_rows(
     session: requests.Session,
+    season: int,
     team_slug: str,
     pitch_map: dict[str, dict],
     pitch_by_id: dict[int, dict],
     pitch_by_name_norm: dict[str, dict],
 ) -> list[SPRow]:
     url = f'https://www.fangraphs.com/roster-resource/depth-charts/{team_slug}'
-    html = session.get(url, timeout=30).text
+    html = http_get(session, url, timeout=45).text
     soup = BeautifulSoup(html, 'html.parser')
 
     link_map: dict[str, str] = {}
@@ -123,6 +179,7 @@ def extract_rotation_rows(
     lines = [ln.strip() for ln in seg.split('\n') if ln.strip()]
     idx = [i for i in range(len(lines) - 1) if re.fullmatch(r'SP\d+', lines[i]) and lines[i + 1] == 'SP']
 
+    player_id_cache: dict[int, dict[str, Any]] = {}
     rows: list[SPRow] = []
     seen: set[str] = set()
     for i in idx:
@@ -142,20 +199,56 @@ def extract_rotation_rows(
         source_id_found = source_player_id.isdigit() and int(source_player_id) in pitch_by_id
         exact_name_found = name in pitch_map
         normalized_name_found = normalize_name(name) in pitch_by_name_norm
-        info = pitch_map.get(name, {})
+        info: dict[str, Any] = {}
         match_method = 'unmatched'
-        if not info:
-            pid = id_map.get(name)
-            if pid is not None:
-                info = pitch_by_id.get(pid, {})
-                if info:
-                    match_method = 'playerid'
+        identity_mismatch_found = False
+        mismatch_candidate_player_id = ''
+
+        def record_identity_mismatch(candidate: dict[str, Any]) -> None:
+            nonlocal identity_mismatch_found, mismatch_candidate_player_id
+            candidate_pid = str(candidate.get('playerid', '') or '')
+            if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                return
+            identity_mismatch_found = True
+            if not mismatch_candidate_player_id:
+                mismatch_candidate_player_id = candidate_pid
+
+        source_pid: int | None = None
+        if source_player_id.isdigit():
+            source_pid = int(source_player_id)
         else:
-            match_method = 'exact_name'
-        if not info:
-            info = pitch_by_name_norm.get(normalize_name(name), {})
+            source_pid = id_map.get(name)
+
+        if source_pid is not None:
+            info = pitch_by_id.get(source_pid, {})
             if info:
-                match_method = 'normalized_name'
+                match_method = 'playerid'
+            else:
+                cached = player_id_cache.get(source_pid)
+                if cached is None:
+                    cached = fetch_pitching_row_by_player_id(session, season, source_pid)
+                    player_id_cache[source_pid] = cached
+                if cached:
+                    info = cached
+                    match_method = 'playerid_api'
+        if not info:
+            candidate = pitch_map.get(name, {})
+            if candidate:
+                candidate_pid = str(candidate.get('playerid', '') or '')
+                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                    info = candidate
+                    match_method = 'exact_name'
+                else:
+                    record_identity_mismatch(candidate)
+        if not info:
+            candidate = pitch_by_name_norm.get(normalize_name(name), {})
+            if candidate:
+                candidate_pid = str(candidate.get('playerid', '') or '')
+                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                    info = candidate
+                    match_method = 'normalized_name'
+                else:
+                    record_identity_mismatch(candidate)
         row_obj = SPRow(
             role=role.lower(),
             name=name,
@@ -172,6 +265,8 @@ def extract_rotation_rows(
             source_id_found_in_stats=source_id_found,
             exact_name_found_in_stats=exact_name_found,
             normalized_name_found_in_stats=normalized_name_found,
+            identity_mismatch_found=identity_mismatch_found,
+            mismatch_candidate_player_id=mismatch_candidate_player_id,
         )
         rows.append(row_obj)
 
@@ -185,7 +280,8 @@ def main() -> None:
     args = parser.parse_args()
 
     s = requests.Session()
-    s.get('https://www.fangraphs.com', timeout=30)
+    s.trust_env = False
+    http_get(s, 'https://www.fangraphs.com', timeout=45)
 
     pitch_map = fetch_pitching_map(s, args.season)
     pitch_by_id = {}
@@ -200,7 +296,7 @@ def main() -> None:
     for abbr, slug in TEAM_SLUGS.items():
         result[abbr] = [
             asdict(r)
-            for r in extract_rotation_rows(s, slug, pitch_map, pitch_by_id, pitch_by_name_norm)
+            for r in extract_rotation_rows(s, args.season, slug, pitch_map, pitch_by_id, pitch_by_name_norm)
         ]
 
     args.out.parent.mkdir(parents=True, exist_ok=True)

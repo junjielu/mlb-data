@@ -7,8 +7,8 @@ python3 scripts/depth_charts_pipeline.py build --season 2025 --publish
 ```
 
 Behavior:
-- Writes candidate artifacts to `public/data/candidates/<build_id>/`
-- Publishes to `public/data/latest/` only when gate is eligible
+- Writes candidate artifacts to `data/builds/depth-charts/candidates/<build_id>/`
+- Publishes sanitized release files to `public/data/latest/` only when gate is eligible
 - If high-risk `unknown` rows are present, the build stops at candidate creation with `buildStatus=needs_review`
 
 ## Manual Publish Existing Candidate
@@ -47,10 +47,11 @@ python3 scripts/depth_charts_pipeline.py rollback --backup-name <backup_dir_name
 
 ```bash
 python3 scripts/regression_checks.py
-python3 scripts/qa_go_no_go.py
+python3 scripts/qa_go_no_go.py --build-id <build_id>
 ```
 
 - QA report output: `docs/qa/go-no-go.md`
+- Candidate QA inputs come from `data/builds/depth-charts/candidates/<build_id>/`
 - `qa_go_no_go.py` now returns:
   - `GO` when publish can proceed
   - `REVIEW` when high-risk unknown rows require operator approval
@@ -69,4 +70,4 @@ Open:
 
 Production UI expectation:
 - The public site shows approved depth chart results and freshness metadata
-- Internal warning counts, publish review state, and operator diagnostics stay in candidate artifacts and QA outputs
+- Internal warning counts, publish review state, and operator diagnostics stay in internal artifacts and QA outputs

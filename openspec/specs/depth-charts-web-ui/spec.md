@@ -34,7 +34,7 @@ The web UI SHALL provide a team detail page that renders Batter, SP, RP, and Cur
 - **AND** RP appears before Current Injury Report
 
 ### Requirement: Data freshness and quality transparency
-The web UI MUST keep the public experience consumer-facing by limiting freshness context to lightweight section-level updated-time signals and by excluding operator-oriented metadata and diagnostics from public pages.
+The web UI MUST keep the public experience consumer-facing by limiting freshness context to lightweight section-level updated-time signals and by consuming release artifacts that exclude operator-oriented metadata and diagnostics.
 
 #### Scenario: Section-level freshness display
 - **WHEN** a user opens `/team/:abbr`
@@ -44,6 +44,14 @@ The web UI MUST keep the public experience consumer-facing by limiting freshness
 #### Scenario: Internal diagnostics stay out of the production UI
 - **WHEN** a user browses `/teams` or `/team/:abbr`
 - **THEN** the production frontend MUST NOT expose row-level warnings, warning summaries, operator-review queues, or release workflow states
+
+### Requirement: Source traceability links
+The web UI SHALL preserve player source links for data verification using the sanitized public release snapshot rather than internal candidate or QA artifacts.
+
+#### Scenario: Player link behavior
+- **WHEN** a user clicks a player name in any table
+- **THEN** the corresponding Fangraphs player page opens in a new tab
+- **AND** the link target comes from the approved public release data contract
 
 ### Requirement: Current injury report presentation
 The web UI SHALL present current-season Fangraphs injury data as display-only context on team detail pages without altering Batter, SP, or RP table rows.
@@ -80,13 +88,6 @@ The web UI SHALL render missing numeric metrics consistently and visibly.
 - **WHEN** a metric value is missing in the snapshot
 - **THEN** the UI renders `--` in that cell
 - **AND** the row remains visible in its original role/order position
-
-### Requirement: Source traceability links
-The web UI SHALL preserve player source links for data verification.
-
-#### Scenario: Player link behavior
-- **WHEN** a user clicks a player name in any table
-- **THEN** the corresponding Fangraphs player page opens in a new tab
 
 ### Requirement: Public navigation stays focused on depth chart browsing
 The web UI SHALL keep the primary public navigation focused on approved team depth chart pages rather than maintenance-oriented explainer content.

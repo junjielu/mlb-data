@@ -12,6 +12,21 @@ from typing import Any
 from regression_checks import get_regression_failures
 
 SCHEMA_VERSION = "1.0.0"
+OPERATOR_TEAM_FIELDS = {"warnings", "warningCount", "status"}
+OPERATOR_ROW_FIELDS = {
+    "match_method",
+    "source_player_id",
+    "matched_player_id",
+    "source_id_found_in_stats",
+    "exact_name_found_in_stats",
+    "normalized_name_found_in_stats",
+    "loose_name_found_in_stats",
+    "identity_mismatch_found",
+    "mismatch_candidate_player_id",
+    "missingDataClassification",
+    "missingRiskTier",
+    "reviewRequired",
+}
 
 TEAM_META = {
     "ARI": {"name": "Arizona Diamondbacks", "division": "NL West", "logo_url": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png"},
@@ -140,9 +155,13 @@ def _classify_missing(row: dict[str, Any], section: str) -> tuple[str, str, dict
         "exactNameFoundInStats": bool(row.get("exact_name_found_in_stats", False)),
         "normalizedNameFoundInStats": bool(row.get("normalized_name_found_in_stats", False)),
         "looseNameFoundInStats": bool(row.get("loose_name_found_in_stats", False)),
+        "identityMismatchFound": bool(row.get("identity_mismatch_found", False)),
+        "mismatchCandidatePlayerId": str(row.get("mismatch_candidate_player_id", "")).strip(),
     }
     risk_tier = _risk_tier(section, row)
 
+    if evidence["identityMismatchFound"]:
+        return "lookup_failed", risk_tier, evidence
     if match_method != "unmatched":
         return "source_missing", risk_tier, evidence
     if evidence["sourceIdFoundInStats"] or evidence["exactNameFoundInStats"] or evidence["normalizedNameFoundInStats"] or evidence["looseNameFoundInStats"]:
@@ -279,6 +298,28 @@ def evaluate_quality(teams: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
     return teams, quality, GateResult(build_status=build_status, pass_publish=pass_publish, critical_count=total_critical, review_required=review_required)
 
 
+def _sanitize_row(row: dict[str, Any]) -> dict[str, Any]:
+    return {k: v for k, v in row.items() if k not in OPERATOR_ROW_FIELDS}
+
+
+def sanitize_snapshot(snapshot: dict[str, Any]) -> dict[str, Any]:
+    public_meta = {
+        "schemaVersion": snapshot.get("meta", {}).get("schemaVersion"),
+        "season": snapshot.get("meta", {}).get("season"),
+        "generatedAt": snapshot.get("meta", {}).get("generatedAt"),
+        "buildId": snapshot.get("meta", {}).get("buildId"),
+        "source": snapshot.get("meta", {}).get("source"),
+    }
+    teams: list[dict[str, Any]] = []
+    for team in snapshot.get("teams", []):
+        public_team = {k: v for k, v in team.items() if k not in OPERATOR_TEAM_FIELDS}
+        public_team["batter"] = [_sanitize_row(row) for row in team.get("batter", [])]
+        public_team["sp"] = [_sanitize_row(row) for row in team.get("sp", [])]
+        public_team["rp"] = [_sanitize_row(row) for row in team.get("rp", [])]
+        teams.append(public_team)
+    return {"meta": public_meta, "teams": teams}
+
+
 def build_snapshot(season: int, batter_path: Path, sp_path: Path, rp_path: Path) -> tuple[dict[str, Any], dict[str, Any], str]:
     batter = load_json(batter_path)
     sp = load_json(sp_path)
@@ -357,8 +398,12 @@ def _review_status(snapshot: dict[str, Any], quality: dict[str, Any]) -> dict[st
     }
 
 
-def write_candidate(base: Path, build_id: str, snapshot: dict[str, Any], quality: dict[str, Any]) -> Path:
-    out = base / "candidates" / build_id
+def _candidate_dir(artifact_base: Path, build_id: str) -> Path:
+    return artifact_base / "candidates" / build_id
+
+
+def write_candidate(artifact_base: Path, build_id: str, snapshot: dict[str, Any], quality: dict[str, Any]) -> Path:
+    out = _candidate_dir(artifact_base, build_id)
     out.mkdir(parents=True, exist_ok=True)
     (out / "depth-charts.json").write_text(json.dumps(snapshot, ensure_ascii=False, indent=2), encoding="utf-8")
     (out / "quality-report.json").write_text(json.dumps(quality, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -383,18 +428,34 @@ def _write_candidate_state(candidate: Path, snapshot: dict[str, Any], quality: d
     (candidate / "review-status.json").write_text(json.dumps(review, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def atomic_publish(candidate_dir: Path, base: Path) -> Path:
-    latest = base / "latest"
-    backups = base / "backups"
+def _copy_public_forward(latest: Path, destination: Path) -> None:
+    if not latest.exists():
+        return
+    for child in latest.iterdir():
+        if child.name in {"depth-charts.json", "quality-report.json", "review-status.json"}:
+            continue
+        target = destination / child.name
+        if child.is_dir():
+            shutil.copytree(child, target)
+        else:
+            shutil.copy2(child, target)
+
+
+def atomic_publish(snapshot: dict[str, Any], public_base: Path) -> Path:
+    latest = public_base / "latest"
+    backups = public_base / "backups"
     backups.mkdir(parents=True, exist_ok=True)
 
-    build_id = candidate_dir.name
-    tmp = base / f".latest_tmp_{build_id}"
-    old = base / f".latest_old_{build_id}"
+    build_id = str(snapshot.get("meta", {}).get("buildId", "unknown"))
+    tmp = public_base / f".latest_tmp_{build_id}"
+    old = public_base / f".latest_old_{build_id}"
 
     if tmp.exists():
         shutil.rmtree(tmp)
-    shutil.copytree(candidate_dir, tmp)
+    tmp.mkdir(parents=True, exist_ok=True)
+    _copy_public_forward(latest, tmp)
+    public_snapshot = sanitize_snapshot(snapshot)
+    (tmp / "depth-charts.json").write_text(json.dumps(public_snapshot, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if latest.exists():
         backup_dir = backups / f"pre-{build_id}-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}"
@@ -446,36 +507,35 @@ def cmd_build(args: argparse.Namespace) -> int:
         sp_path=args.sp,
         rp_path=args.rp,
     )
-    data_base = args.data_base
-    candidate = write_candidate(data_base, build_id, snapshot, quality)
+    candidate = write_candidate(args.artifact_base, build_id, snapshot, quality)
     print(f"Wrote candidate snapshot: {candidate}")
 
     if args.publish:
         if not quality["meta"]["publishEligible"]:
             print("Publish skipped: gate failed (publishEligible=false)")
             return 2
-        latest = atomic_publish(candidate, data_base)
+        latest = atomic_publish(snapshot, args.public_base)
         print(f"Published latest snapshot: {latest}")
 
     return 0
 
 
 def cmd_publish(args: argparse.Namespace) -> int:
-    candidate = args.data_base / "candidates" / args.build_id
+    candidate = _candidate_dir(args.artifact_base, args.build_id)
     if not candidate.exists():
         raise RuntimeError(f"Candidate build not found: {candidate}")
-    _snapshot, quality, review = _load_candidate(candidate)
+    snapshot, quality, review = _load_candidate(candidate)
     if args.require_gate and not quality.get("meta", {}).get("publishEligible", False):
         if quality.get("meta", {}).get("reviewRequired") and not review.get("approved", False):
             raise RuntimeError("Candidate requires operator review before publish. Run the review subcommand first or use --no-require-gate to force.")
         raise RuntimeError("Gate check failed for candidate. Use --no-require-gate to force.")
-    latest = atomic_publish(candidate, args.data_base)
+    latest = atomic_publish(snapshot, args.public_base)
     print(f"Published latest snapshot: {latest}")
     return 0
 
 
 def cmd_review(args: argparse.Namespace) -> int:
-    candidate = args.data_base / "candidates" / args.build_id
+    candidate = _candidate_dir(args.artifact_base, args.build_id)
     if not candidate.exists():
         raise RuntimeError(f"Candidate build not found: {candidate}")
     snapshot, quality, review = _load_candidate(candidate)
@@ -504,7 +564,7 @@ def cmd_review(args: argparse.Namespace) -> int:
 
 
 def cmd_rollback(args: argparse.Namespace) -> int:
-    rollback_latest(args.data_base, args.backup_name)
+    rollback_latest(args.public_base, args.backup_name)
     print(f"Rolled back latest using backup: {args.backup_name}")
     return 0
 
@@ -518,13 +578,15 @@ def build_parser() -> argparse.ArgumentParser:
     b.add_argument("--batter", type=Path, default=Path("data/fangraphs_batter_2025.json"))
     b.add_argument("--sp", type=Path, default=Path("data/fangraphs_sp_2025.json"))
     b.add_argument("--rp", type=Path, default=Path("data/fangraphs_rp_2025.json"))
-    b.add_argument("--data-base", type=Path, default=Path("public/data"))
+    b.add_argument("--artifact-base", type=Path, default=Path("data/builds/depth-charts"))
+    b.add_argument("--public-base", "--data-base", dest="public_base", type=Path, default=Path("public/data"))
     b.add_argument("--publish", action="store_true")
     b.set_defaults(func=cmd_build)
 
     pub = sub.add_parser("publish", help="Publish an existing candidate build to latest")
     pub.add_argument("--build-id", required=True)
-    pub.add_argument("--data-base", type=Path, default=Path("public/data"))
+    pub.add_argument("--artifact-base", type=Path, default=Path("data/builds/depth-charts"))
+    pub.add_argument("--public-base", "--data-base", dest="public_base", type=Path, default=Path("public/data"))
     pub.add_argument("--require-gate", action=argparse.BooleanOptionalAction, default=True)
     pub.set_defaults(func=cmd_publish)
 
@@ -532,12 +594,13 @@ def build_parser() -> argparse.ArgumentParser:
     review.add_argument("--build-id", required=True)
     review.add_argument("--reviewer", required=True)
     review.add_argument("--note", default="")
-    review.add_argument("--data-base", type=Path, default=Path("public/data"))
+    review.add_argument("--artifact-base", type=Path, default=Path("data/builds/depth-charts"))
+    review.add_argument("--public-base", "--data-base", dest="public_base", type=Path, default=Path("public/data"))
     review.set_defaults(func=cmd_review)
 
     rb = sub.add_parser("rollback", help="Rollback latest to a backup directory name")
     rb.add_argument("--backup-name", required=True)
-    rb.add_argument("--data-base", type=Path, default=Path("public/data"))
+    rb.add_argument("--public-base", "--data-base", dest="public_base", type=Path, default=Path("public/data"))
     rb.set_defaults(func=cmd_rollback)
 
     return p

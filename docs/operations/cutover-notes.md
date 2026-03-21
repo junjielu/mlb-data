@@ -8,12 +8,13 @@
 - Build command:
   - `python3 scripts/depth_charts_pipeline.py build --season 2025 --publish`
 - Result:
-  - Candidate written to `public/data/candidates/20260320-121344/`
+  - Candidate written to `data/builds/depth-charts/candidates/<build_id>/`
   - Published to `public/data/latest/`
 
 ## Monitoring Checklist (first run)
 - `python3 scripts/regression_checks.py` passes
 - `python3 scripts/qa_go_no_go.py` produces either:
+  - Use `--build-id <build_id>` to check the internal candidate before publish
   - `GO` for directly publishable builds
   - `REVIEW` for candidates awaiting operator approval
 - If review is required:

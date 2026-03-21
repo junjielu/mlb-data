@@ -10,6 +10,28 @@ def load_snapshot(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def latest_candidate_snapshot(artifact_base: Path) -> Path | None:
+    candidates_dir = artifact_base / "candidates"
+    if not candidates_dir.exists():
+        return None
+    candidates = sorted([p for p in candidates_dir.iterdir() if p.is_dir()])
+    if not candidates:
+        return None
+    snapshot = candidates[-1] / "depth-charts.json"
+    return snapshot if snapshot.exists() else None
+
+
+def resolve_snapshot_path(snapshot: Path | None, artifact_base: Path, build_id: str | None) -> Path:
+    if snapshot is not None:
+        return snapshot
+    if build_id:
+        return artifact_base / "candidates" / build_id / "depth-charts.json"
+    latest_candidate = latest_candidate_snapshot(artifact_base)
+    if latest_candidate is not None:
+        return latest_candidate
+    return Path("public/data/latest/depth-charts.json")
+
+
 def find_team(snapshot: dict, abbr: str) -> dict:
     for team in snapshot.get("teams", []):
         if team.get("abbr") == abbr:
@@ -64,10 +86,13 @@ def get_regression_failures(snapshot: dict) -> list[str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Regression checks for known critical rows.")
-    parser.add_argument("--snapshot", type=Path, default=Path("public/data/latest/depth-charts.json"))
+    parser.add_argument("--snapshot", type=Path)
+    parser.add_argument("--build-id")
+    parser.add_argument("--artifact-base", type=Path, default=Path("data/builds/depth-charts"))
     args = parser.parse_args()
 
-    snapshot = load_snapshot(args.snapshot)
+    snapshot_path = resolve_snapshot_path(args.snapshot, args.artifact_base, args.build_id)
+    snapshot = load_snapshot(snapshot_path)
 
     nyy = find_team(snapshot, "NYY")
     tor = find_team(snapshot, "TOR")
@@ -86,6 +111,7 @@ def main() -> int:
         return 1
 
     print("Regression checks passed:")
+    print(f"- Snapshot: {snapshot_path}")
     print(f"- NYY SU7: {nyy_su7['name']} {nyy_su7['era']} {nyy_su7['k9']} {nyy_su7['bb9']} {nyy_su7['k_pct']} {nyy_su7['stuff_plus']}")
     print(f"- TOR SU7: {tor_su7['name']} {tor_su7['era']} {tor_su7['k9']} {tor_su7['bb9']} {tor_su7['k_pct']} {tor_su7['stuff_plus']}")
     print(f"- LAD batter #5: {lad_b5['name']}")

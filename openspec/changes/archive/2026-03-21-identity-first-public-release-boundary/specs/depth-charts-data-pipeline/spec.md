@@ -1,8 +1,5 @@
-# depth-charts-data-pipeline Specification
+## ADDED Requirements
 
-## Purpose
-TBD - created by archiving change frontend-depth-charts-site. Update Purpose after archive.
-## Requirements
 ### Requirement: Public release artifacts are isolated from operator workflow artifacts
 The system MUST isolate operator workflow artifacts from public release artifacts so browser-consumable files under `public/data/latest/` contain only approved release data.
 
@@ -15,6 +12,8 @@ The system MUST isolate operator workflow artifacts from public release artifact
 - **WHEN** a reviewed build is promoted to the public release path
 - **THEN** `public/data/latest/` contains only release artifacts intended for frontend consumption
 - **AND** it MUST NOT contain candidate-only review records, QA reports, or operator gating files
+
+## MODIFIED Requirements
 
 ### Requirement: Unified snapshot generation
 The system SHALL generate a unified public depth chart snapshot for a target season that combines Batter, SP, and RP data for all 30 MLB teams while excluding operator-only workflow fields from the published release artifact.

@@ -11,6 +11,33 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def latest_candidate_paths(artifact_base: Path) -> tuple[Path, Path] | None:
+    candidates_dir = artifact_base / "candidates"
+    if not candidates_dir.exists():
+        return None
+    candidates = sorted([p for p in candidates_dir.iterdir() if p.is_dir()])
+    if not candidates:
+        return None
+    candidate = candidates[-1]
+    snapshot = candidate / "depth-charts.json"
+    quality = candidate / "quality-report.json"
+    if snapshot.exists() and quality.exists():
+        return snapshot, quality
+    return None
+
+
+def resolve_artifact_paths(snapshot: Path | None, quality: Path | None, artifact_base: Path, build_id: str | None) -> tuple[Path, Path]:
+    if snapshot is not None and quality is not None:
+        return snapshot, quality
+    if build_id:
+        candidate = artifact_base / "candidates" / build_id
+        return candidate / "depth-charts.json", candidate / "quality-report.json"
+    latest_candidate = latest_candidate_paths(artifact_base)
+    if latest_candidate is not None:
+        return latest_candidate
+    return Path("public/data/latest/depth-charts.json"), Path("public/data/latest/quality-report.json")
+
+
 def check(snapshot: dict, quality: dict) -> tuple[str, list[str], list[str], list[dict]]:
     notes: list[str] = []
     blocking: list[str] = []
@@ -103,17 +130,20 @@ def write_report(path: Path, decision: str, notes: list[str], blocking: list[str
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate go/no-go QA report from latest snapshot artifacts.")
-    parser.add_argument("--snapshot", type=Path, default=Path("public/data/latest/depth-charts.json"))
-    parser.add_argument("--quality", type=Path, default=Path("public/data/latest/quality-report.json"))
+    parser = argparse.ArgumentParser(description="Generate go/no-go QA report from internal candidate artifacts or the current public release.")
+    parser.add_argument("--snapshot", type=Path)
+    parser.add_argument("--quality", type=Path)
+    parser.add_argument("--build-id")
+    parser.add_argument("--artifact-base", type=Path, default=Path("data/builds/depth-charts"))
     parser.add_argument("--out", type=Path, default=Path("docs/qa/go-no-go.md"))
     args = parser.parse_args()
 
-    snapshot = load_json(args.snapshot)
-    quality = load_json(args.quality)
+    snapshot_path, quality_path = resolve_artifact_paths(args.snapshot, args.quality, args.artifact_base, args.build_id)
+    snapshot = load_json(snapshot_path)
+    quality = load_json(quality_path)
     decision, notes, blocking, review_queue = check(snapshot, quality)
     write_report(args.out, decision, notes, blocking, review_queue, snapshot, quality)
-    print(f"Wrote QA report: {args.out} (decision={decision})")
+    print(f"Wrote QA report: {args.out} (decision={decision}, snapshot={snapshot_path}, quality={quality_path})")
     return 0 if decision == "GO" else 1
 
 
