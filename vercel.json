@@ -1,14 +1,11 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": "public",
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/teams",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/team/:abbr",
-      "destination": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index"
     }
   ]
 }
