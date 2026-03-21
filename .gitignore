@@ -12,5 +12,6 @@ __pycache__/
 .DS_Store
 
 # Generated pipeline artifacts (keep latest in repo by default, ignore volatile build dirs)
+data/builds/
 public/data/candidates/
 public/data/backups/

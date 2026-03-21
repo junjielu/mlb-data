@@ -26,7 +26,7 @@ def latest_candidate_paths(artifact_base: Path) -> tuple[Path, Path] | None:
     return None
 
 
-def resolve_artifact_paths(snapshot: Path | None, quality: Path | None, artifact_base: Path, build_id: str | None) -> tuple[Path, Path]:
+def resolve_artifact_paths(snapshot: Path | None, quality: Path | None, artifact_base: Path, build_id: str | None) -> tuple[Path, Path | None]:
     if snapshot is not None and quality is not None:
         return snapshot, quality
     if build_id:
@@ -35,7 +35,21 @@ def resolve_artifact_paths(snapshot: Path | None, quality: Path | None, artifact
     latest_candidate = latest_candidate_paths(artifact_base)
     if latest_candidate is not None:
         return latest_candidate
-    return Path("public/data/latest/depth-charts.json"), Path("public/data/latest/quality-report.json")
+    return Path("public/data/latest/depth-charts.json"), None
+
+
+def empty_quality_report() -> dict:
+    return {
+        "meta": {
+            "publishEligible": None,
+            "reviewRequired": False,
+            "reviewApproved": False,
+        },
+        "summary": {
+            "blockingFailures": [],
+        },
+        "reviewQueue": [],
+    }
 
 
 def check(snapshot: dict, quality: dict) -> tuple[str, list[str], list[str], list[dict]]:
@@ -140,10 +154,11 @@ def main() -> int:
 
     snapshot_path, quality_path = resolve_artifact_paths(args.snapshot, args.quality, args.artifact_base, args.build_id)
     snapshot = load_json(snapshot_path)
-    quality = load_json(quality_path)
+    quality = load_json(quality_path) if quality_path is not None and quality_path.exists() else empty_quality_report()
     decision, notes, blocking, review_queue = check(snapshot, quality)
     write_report(args.out, decision, notes, blocking, review_queue, snapshot, quality)
-    print(f"Wrote QA report: {args.out} (decision={decision}, snapshot={snapshot_path}, quality={quality_path})")
+    quality_label = str(quality_path) if quality_path is not None and quality_path.exists() else "none"
+    print(f"Wrote QA report: {args.out} (decision={decision}, snapshot={snapshot_path}, quality={quality_label})")
     return 0 if decision == "GO" else 1
 
 
