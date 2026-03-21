@@ -16,7 +16,7 @@ def validate_batter_json(path: Path) -> None:
         if len(rows) < 9:
             raise RuntimeError(f'{team}: lineup rows < 9 ({len(rows)})')
         for r in rows[:9]:
-            for k in ['order', 'name', 'position', 'wrc_plus', 'avg', 'obp', 'slg']:
+            for k in ['order', 'name', 'position', 'runs', 'hr', 'rbi', 'sb', 'wrc_plus', 'avg', 'obp', 'slg']:
                 if k not in r:
                     raise RuntimeError(f'{team}: missing key {k}')
             all_empty = all(not str(r.get(k, '')).strip() for k in ['wrc_plus', 'avg', 'obp', 'slg'])
@@ -32,7 +32,7 @@ def validate_payload(path: Path) -> None:
     if len(payload) != REQUIRED_TEAMS:
         raise RuntimeError(f'payload rows expected {REQUIRED_TEAMS}, got {len(payload)}')
 
-    required_header = '|Order|Name|Position|wRC+|AVG|OBP|SLG|'
+    required_header = '|Order|Name|Position|R|HR|RBI|SB|AVG|OBP|SLG|wRC+|'
     for i, row in enumerate(payload):
         content = row.get('content', '')
         if '## Batter' not in content:

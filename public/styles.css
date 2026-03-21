@@ -163,7 +163,7 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 720px;
+  min-width: 980px;
 }
 th, td {
   padding: 8px 10px;

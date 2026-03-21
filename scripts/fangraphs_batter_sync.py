@@ -42,6 +42,10 @@ class BatterRow:
     name: str
     position: str
     url: str
+    runs: str
+    hr: str
+    rbi: str
+    sb: str
     wrc_plus: str
     avg: str
     obp: str
@@ -248,6 +252,10 @@ def fetch_batting_map(session: requests.Session, season: int) -> dict[str, dict[
             wrc_val = r.get('wRCPlus')
 
         out[name] = {
+            'runs': fmt_int(r.get('R')),
+            'hr': fmt_int(r.get('HR')),
+            'rbi': fmt_int(r.get('RBI')),
+            'sb': fmt_int(r.get('SB')),
             'wrc_plus': fmt_int(wrc_val),
             'avg': fmt_avg(r.get('AVG')),
             'obp': fmt_avg(r.get('OBP')),
@@ -276,6 +284,10 @@ def fetch_batting_row_by_player_id(session: requests.Session, season: int, playe
     if wrc_val is None:
         wrc_val = row.get('wRCPlus')
     return {
+        'runs': fmt_int(row.get('R')),
+        'hr': fmt_int(row.get('HR')),
+        'rbi': fmt_int(row.get('RBI')),
+        'sb': fmt_int(row.get('SB')),
         'wrc_plus': fmt_int(wrc_val),
         'avg': fmt_avg(row.get('AVG')),
         'obp': fmt_avg(row.get('OBP')),
@@ -455,6 +467,10 @@ def extract_lineup_rows(
             name=link_name,
             position=position if position in POS_SET else position,
             url=link_url,
+            runs=info.get('runs', ''),
+            hr=info.get('hr', ''),
+            rbi=info.get('rbi', ''),
+            sb=info.get('sb', ''),
             wrc_plus=info.get('wrc_plus', ''),
             avg=info.get('avg', ''),
             obp=info.get('obp', ''),
@@ -477,11 +493,11 @@ def extract_lineup_rows(
 def batter_markdown(rows: list[dict[str, str]]) -> str:
     head = [
         '## Batter',
-        '|Order|Name|Position|wRC+|AVG|OBP|SLG|',
-        '|---|---|---|---|---|---|---|',
+        '|Order|Name|Position|R|HR|RBI|SB|AVG|OBP|SLG|wRC+|',
+        '|---|---|---|---|---|---|---|---|---|---|---|',
     ]
     body = [
-        f"|{r['order']}|[**{r['name']}**]({r['url']})|{r['position']}|{r['wrc_plus']}|{r['avg']}|{r['obp']}|{r['slg']}|"
+        f"|{r['order']}|[**{r['name']}**]({r['url']})|{r['position']}|{r.get('runs', '')}|{r.get('hr', '')}|{r.get('rbi', '')}|{r.get('sb', '')}|{r['avg']}|{r['obp']}|{r['slg']}|{r['wrc_plus']}|"
         for r in rows
     ]
     return '\n'.join(head + body)
