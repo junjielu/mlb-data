@@ -1,5 +1,8 @@
 # AGENTS Guide
 
+## 协作约定
+- 默认使用中文回复；仅在用户明确要求英文或其他语言时切换。
+
 ## 项目目标
 - 本项目用于从 Fangraphs 拉取 MLB depth charts 与 current injury report 数据，并发布为前端可消费的静态快照。
 - 默认前端读取入口是 `public/data/latest/` 下的浏览器消费型产物，其中核心是 `depth-charts.json`，伤病数据是独立的 `injuries.json`；不要再把 QA 文件当作公共输出的一部分。
