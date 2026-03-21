@@ -211,15 +211,15 @@ def fmt_avg(v: Any) -> str:
 def fmt_int(v: Any) -> str:
     if v is None:
         return ''
+    try:
+        return str(int(round(float(v))))
+    except (TypeError, ValueError):
+        return ''
 
 
 def parse_player_ref(href: str) -> str:
     m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
     return m.group(1) if m else ''
-    try:
-        return str(int(round(float(v))))
-    except (TypeError, ValueError):
-        return ''
 
 
 def fetch_batting_map(session: requests.Session, season: int) -> dict[str, dict[str, str]]:

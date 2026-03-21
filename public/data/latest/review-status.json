@@ -1,8 +1,8 @@
 {
-  "buildId": "20260321-030646",
+  "buildId": "20260321-033000",
   "required": true,
   "approved": true,
-  "approvedAt": "2026-03-21T03:11:08Z",
+  "approvedAt": "2026-03-21T03:31:33Z",
   "reviewer": "codex",
-  "note": "Verified ERA/WHIP SP metrics and UI labels"
+  "note": "Approve fixed batter wRC+ extraction after fmt_int repair"
 }
