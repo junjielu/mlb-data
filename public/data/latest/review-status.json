@@ -1,8 +1,8 @@
 {
-  "buildId": "20260321-033000",
+  "buildId": "20260321-054856",
   "required": true,
   "approved": true,
-  "approvedAt": "2026-03-21T03:31:33Z",
+  "approvedAt": "2026-03-21T05:49:14Z",
   "reviewer": "codex",
-  "note": "Approve fixed batter wRC+ extraction after fmt_int repair"
+  "note": "Approve candidate after correcting duplicate-name batter matching for Max Muncy and Luis Garcia Jr."
 }

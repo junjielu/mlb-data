@@ -29,11 +29,14 @@ def get_regression_failures(snapshot: dict) -> list[str]:
     tor = find_team(snapshot, "TOR")
     lad = find_team(snapshot, "LAD")
     ath = find_team(snapshot, "ATH")
+    wsn = find_team(snapshot, "WSN")
 
     nyy_su7 = find_row(nyy.get("rp", []), "role", "SU7")
     tor_su7 = find_row(tor.get("rp", []), "role", "SU7")
     lad_b5 = find_row(lad.get("batter", []), "order", "5")
+    lad_b6 = find_row(lad.get("batter", []), "order", "6")
     ath_b8 = find_row(ath.get("batter", []), "order", "8")
+    wsn_b4 = find_row(wsn.get("batter", []), "order", "4")
 
     failures: list[str] = []
 
@@ -47,8 +50,14 @@ def get_regression_failures(snapshot: dict) -> list[str]:
     if "Smith" not in str(lad_b5.get("name", "")):
         failures.append("LAD batter order 5 is not Will Smith")
 
+    if str(lad_b6.get("matched_player_id", "")) != "13301":
+        failures.append("LAD batter order 6 Max Muncy is not matched to playerid 13301")
+
     if "Muncy" not in str(ath_b8.get("name", "")):
         failures.append("ATH batter order 8 is not Muncy")
+
+    if str(wsn_b4.get("matched_player_id", "")) != "20391":
+        failures.append("WSN batter order 4 Luis García Jr. is not matched to playerid 20391")
 
     return failures
 
@@ -63,7 +72,9 @@ def main() -> int:
     nyy = find_team(snapshot, "NYY")
     tor = find_team(snapshot, "TOR")
     lad_b5 = find_row(find_team(snapshot, "LAD").get("batter", []), "order", "5")
+    lad_b6 = find_row(find_team(snapshot, "LAD").get("batter", []), "order", "6")
     ath_b8 = find_row(find_team(snapshot, "ATH").get("batter", []), "order", "8")
+    wsn_b4 = find_row(find_team(snapshot, "WSN").get("batter", []), "order", "4")
     nyy_su7 = find_row(nyy.get("rp", []), "role", "SU7")
     tor_su7 = find_row(tor.get("rp", []), "role", "SU7")
     failures = get_regression_failures(snapshot)
@@ -78,7 +89,9 @@ def main() -> int:
     print(f"- NYY SU7: {nyy_su7['name']} {nyy_su7['era']} {nyy_su7['k9']} {nyy_su7['bb9']} {nyy_su7['k_pct']} {nyy_su7['stuff_plus']}")
     print(f"- TOR SU7: {tor_su7['name']} {tor_su7['era']} {tor_su7['k9']} {tor_su7['bb9']} {tor_su7['k_pct']} {tor_su7['stuff_plus']}")
     print(f"- LAD batter #5: {lad_b5['name']}")
+    print(f"- LAD batter #6: {lad_b6['name']} matched_player_id={lad_b6.get('matched_player_id')}")
     print(f"- ATH batter #8: {ath_b8['name']}")
+    print(f"- WSN batter #4: {wsn_b4['name']} matched_player_id={wsn_b4.get('matched_player_id')}")
     return 0
 
 

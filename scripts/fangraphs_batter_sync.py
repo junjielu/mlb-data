@@ -255,8 +255,36 @@ def fetch_batting_map(session: requests.Session, season: int) -> dict[str, dict[
     return out
 
 
+def fetch_batting_row_by_player_id(session: requests.Session, season: int, player_id: int) -> dict[str, str]:
+    params = dict(
+        age='', pos='all', stats='bat', lg='all', qual='0', season=str(season),
+        season1=str(season), startdate=f'{season}-03-01', enddate=f'{season}-11-30',
+        month='0', hand='', team='0', pageitems='3000', pagenum='1', ind='0',
+        rost='0', players=str(player_id), sortdir='default', sortstat='WAR', type='8'
+    )
+    url = 'https://www.fangraphs.com/api/leaders/major-league/data'
+    res = http_get(session, url, params=params, timeout=45)
+    if res.status_code != 200:
+        return {}
+    rows = res.json().get('data', [])
+    if not rows:
+        return {}
+    row = rows[0]
+    wrc_val = row.get('wRC+')
+    if wrc_val is None:
+        wrc_val = row.get('wRCPlus')
+    return {
+        'wrc_plus': fmt_int(wrc_val),
+        'avg': fmt_avg(row.get('AVG')),
+        'obp': fmt_avg(row.get('OBP')),
+        'slg': fmt_avg(row.get('SLG')),
+        'playerid': row.get('playerid'),
+    }
+
+
 def extract_lineup_rows(
     session: requests.Session,
+    season: int,
     team_slug: str,
     batting_map: dict[str, dict[str, str]],
     batting_by_id: dict[int, dict[str, str]],
@@ -304,6 +332,7 @@ def extract_lineup_rows(
     ]
     lineup.sort(key=lambda r: int(str(r.get('role'))))
 
+    player_id_cache: dict[int, dict[str, str]] = {}
     out: list[BatterRow] = []
     for r in lineup:
         order = str(r.get('role', '')).strip()
@@ -316,26 +345,50 @@ def extract_lineup_rows(
         info: dict[str, str] = {}
         matched_name = name
         match_method = 'unmatched'
-        roster_href = link_map.get(name, '')
-        if not roster_href:
-            norm_hit = link_by_norm.get(normalize_name(name))
+        roster_href = ''
+        for cand in name_variants(name):
+            roster_href = link_map.get(cand, '')
+            if roster_href:
+                break
+            norm_hit = link_by_norm.get(normalize_name(cand))
             if norm_hit:
                 _, roster_href, _ = norm_hit
-            else:
-                loose_hit = link_by_loose.get(normalize_name_loose(name))
-                if loose_hit:
-                    _, roster_href, _ = loose_hit
+                break
+            loose_hit = link_by_loose.get(normalize_name_loose(cand))
+            if loose_hit:
+                _, roster_href, _ = loose_hit
+                break
         source_player_id = parse_player_ref(roster_href)
         exact_name_found = name in batting_map
         source_id_found = source_player_id.isdigit() and int(source_player_id) in batting_by_id
         normalized_name_found = normalize_name(name) in batting_by_name_norm
         loose_name_found = normalize_name_loose(name) in batting_by_name_loose
+
+        if source_player_id.isdigit():
+            source_pid = int(source_player_id)
+            if source_pid in batting_by_id:
+                info = batting_by_id[source_pid]
+                match_method = 'playerid'
+            else:
+                cached = player_id_cache.get(source_pid)
+                if cached is None:
+                    cached = fetch_batting_row_by_player_id(session, season, source_pid)
+                    player_id_cache[source_pid] = cached
+                if cached:
+                    info = cached
+                    match_method = 'playerid_api'
+
         for cand in name_variants(name):
-            if cand in batting_map:
-                info = batting_map[cand]
-                matched_name = cand
-                match_method = 'exact_name'
+            if info:
                 break
+            if cand in batting_map:
+                candidate = batting_map[cand]
+                candidate_pid = str(candidate.get('playerid', '') or '')
+                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                    info = candidate
+                    matched_name = cand
+                    match_method = 'exact_name'
+                    break
             pid = id_map.get(cand)
             if pid is not None and pid in batting_by_id:
                 info = batting_by_id[pid]
@@ -344,16 +397,20 @@ def extract_lineup_rows(
                 break
             by_norm = batting_by_name_norm.get(normalize_name(cand), {})
             if by_norm:
-                info = by_norm
-                matched_name = cand
-                match_method = 'normalized_name'
-                break
+                candidate_pid = str(by_norm.get('playerid', '') or '')
+                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                    info = by_norm
+                    matched_name = cand
+                    match_method = 'normalized_name'
+                    break
             loose = batting_by_name_loose.get(normalize_name_loose(cand), {})
             if loose:
-                info = loose
-                matched_name = cand
-                match_method = 'loose_name'
-                break
+                candidate_pid = str(loose.get('playerid', '') or '')
+                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
+                    info = loose
+                    matched_name = cand
+                    match_method = 'loose_name'
+                    break
 
         link_name = matched_name
         link_url = ''
@@ -485,7 +542,7 @@ def main() -> None:
 
     result: dict[str, list[dict[str, str]]] = {}
     for abbr, slug in TEAM_SLUGS.items():
-        rows = extract_lineup_rows(s, slug, batting_map, batting_by_id, batting_by_name_norm, batting_by_name_loose)
+        rows = extract_lineup_rows(s, args.season, slug, batting_map, batting_by_id, batting_by_name_norm, batting_by_name_loose)
         result[abbr] = [asdict(r) for r in rows]
 
     validate_batter_data(result, args.season)
