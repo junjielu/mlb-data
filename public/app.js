@@ -7,12 +7,25 @@ const METRIC_KEYS = {
 
 const app = document.getElementById("app");
 let snapshot = null;
+let injuriesSnapshot = null;
+let injuryDataUnavailable = false;
 let sortState = {};
 
 async function loadData() {
-  const res = await fetch("/data/latest/depth-charts.json", { cache: "no-store" });
-  if (!res.ok) throw new Error(`Failed to load snapshot: ${res.status}`);
-  snapshot = await res.json();
+  const [snapshotRes, injuryRes] = await Promise.all([
+    fetch("/data/latest/depth-charts.json", { cache: "no-store" }),
+    fetch("/data/latest/injuries.json", { cache: "no-store" }).catch(() => null),
+  ]);
+  if (!snapshotRes.ok) throw new Error(`Failed to load snapshot: ${snapshotRes.status}`);
+  snapshot = await snapshotRes.json();
+
+  if (injuryRes && injuryRes.ok) {
+    injuriesSnapshot = await injuryRes.json();
+    injuryDataUnavailable = false;
+  } else {
+    injuriesSnapshot = null;
+    injuryDataUnavailable = true;
+  }
 }
 
 function safeMetric(value) {
@@ -35,6 +48,25 @@ function sortRows(rows, section, key, dir) {
     return dir === "asc" ? av.localeCompare(bv) : bv.localeCompare(av);
   });
   return mapped;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function formatTimestamp(value) {
+  if (!value) return "--";
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? value : parsed.toLocaleString();
+}
+
+function findInjuryTeam(abbr) {
+  return injuriesSnapshot?.teams?.find((team) => team.abbr === abbr) || null;
 }
 
 function parseRoute() {
@@ -91,7 +123,7 @@ function renderTable(sectionId, title, rows, columns) {
         <tbody>
           ${ordered.map((r) => {
             return `<tr>${columns.map((c) => {
-              if (c.key === "name") return `<td><a class="ext" href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>`;
+              if (c.key === "name") return `<td><a class="player-link" href="${r.url}" target="_blank" rel="noopener noreferrer">${r.name}</a></td>`;
               return `<td>${safeMetric(r[c.key])}</td>`;
             }).join("")}</tr>`;
           }).join("")}
@@ -101,23 +133,88 @@ function renderTable(sectionId, title, rows, columns) {
   `;
 }
 
+function renderSectionContext(id, title, metaText) {
+  return `
+    <section class="data-context" id="${id}">
+      <h2>${title}</h2>
+      <p class="section-meta">${metaText}</p>
+    </section>
+  `;
+}
+
+function renderInjurySection(abbr) {
+  const injuryTeam = findInjuryTeam(abbr);
+
+  if (injuryDataUnavailable || !injuryTeam) {
+    return `
+      <section class="table-wrap injury-wrap" id="injury">
+        <div class="section-header">
+          <h2>Current Injury Report</h2>
+        </div>
+        <div class="table-state">Current injury data is temporarily unavailable.</div>
+      </section>
+    `;
+  }
+
+  if (!injuryTeam.injuries.length) {
+    return `
+      <section class="table-wrap injury-wrap" id="injury">
+        <div class="section-header">
+          <h2>Current Injury Report</h2>
+        </div>
+        <div class="table-state">No current injury entries reported by Fangraphs.</div>
+      </section>
+    `;
+  }
+
+  return `
+    <section class="table-wrap injury-wrap" id="injury">
+      <div class="section-header">
+        <h2>Current Injury Report</h2>
+      </div>
+      <table class="injury-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Pos</th>
+            <th>Status</th>
+            <th>Latest Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${injuryTeam.injuries.map((row) => `
+            <tr>
+              <td><a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a></td>
+              <td>${escapeHtml(row.position)}</td>
+              <td>${escapeHtml(row.status || "--")}</td>
+              <td class="update-cell">${escapeHtml(row.latest_update || "--")}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </section>
+  `;
+}
+
 function renderTeamPage(abbr) {
   const team = snapshot.teams.find((t) => t.abbr === abbr);
   if (!team) return renderNotFound();
-  const updated = snapshot.meta.generatedAt ? new Date(snapshot.meta.generatedAt).toLocaleString() : "--";
+  const depthMetaText = `${snapshot.meta.season} snapshot updated ${formatTimestamp(snapshot.meta.generatedAt)}`;
 
   app.innerHTML = `
     <section class="team-header">
       <h1><img src="${team.logoUrl}" alt="${team.abbr} logo" style="width:34px;height:34px;vertical-align:middle;margin-right:8px;"/>${team.abbr} · ${team.name}</h1>
       <div class="meta">${team.division}</div>
-      <p class="updated-note">Updated ${updated}</p>
     </section>
 
     <nav class="section-nav">
       <a href="#batter">Batter</a>
       <a href="#sp">SP</a>
       <a href="#rp">RP</a>
+      <a href="#injury">Injury</a>
     </nav>
+
+    ${renderSectionContext("depth", `${snapshot.meta.season} Depth Charts`, depthMetaText)}
 
     ${renderTable("batter", "Batter", team.batter, [
       { key: "order", label: "Order" },
@@ -149,6 +246,8 @@ function renderTeamPage(abbr) {
       { key: "k_pct", label: "K%" },
       { key: "stuff_plus", label: "stuff+" },
     ])}
+
+    ${renderInjurySection(abbr)}
   `;
 
   document.querySelectorAll("th[data-section]").forEach((th) => {

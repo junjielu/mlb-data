@@ -114,6 +114,26 @@ body {
   color: var(--muted);
 }
 
+.data-context {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.data-context h2,
+.section-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.section-meta {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .section-nav {
   display: flex;
   gap: 8px;
@@ -136,6 +156,9 @@ body {
   overflow: auto;
 }
 .table-wrap h2 { margin: 10px 10px 6px; }
+.section-header {
+  padding: 10px 10px 6px;
+}
 
 table {
   width: 100%;
@@ -152,8 +175,34 @@ th {
   cursor: pointer;
 }
 .missing-cell { color: var(--missing-fg); font-weight: 600; }
+.player-link {
+  color: #183b63;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 120ms ease, border-color 120ms ease;
+}
 
-a.ext::after { content: " ↗"; font-size: 12px; color: #678; }
+.player-link:hover {
+  color: #0f5ea8;
+  border-color: rgba(15, 94, 168, 0.35);
+}
+
+.table-state {
+  padding: 12px 10px 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.injury-table {
+  min-width: 860px;
+}
+
+.injury-table td.update-cell {
+  min-width: 360px;
+  white-space: normal;
+  line-height: 1.45;
+}
 
 .about {
   background: var(--card);
