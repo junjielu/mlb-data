@@ -47,7 +47,7 @@ TEAM_META = {
 }
 
 B_KEYS = ["wrc_plus", "avg", "obp", "slg"]
-SP_KEYS = ["k9", "bb9", "stuff_plus", "location_plus"]
+SP_KEYS = ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"]
 RP_KEYS = ["era", "k9", "bb9", "k_pct", "stuff_plus"]
 
 

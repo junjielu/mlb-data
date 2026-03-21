@@ -1,7 +1,7 @@
 const DIVISION_ORDER = ["AL East", "AL Central", "AL West", "NL East", "NL Central", "NL West"];
 const METRIC_KEYS = {
   batter: ["wrc_plus", "avg", "obp", "slg"],
-  sp: ["k9", "bb9", "stuff_plus", "location_plus"],
+  sp: ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"],
   rp: ["era", "k9", "bb9", "k_pct", "stuff_plus"],
 };
 
@@ -130,12 +130,14 @@ function renderTeamPage(abbr) {
     ])}
 
     ${renderTable("sp", "SP", team.sp, [
-      { key: "role", label: "role" },
+      { key: "role", label: "Role" },
       { key: "name", label: "Name" },
-      { key: "k9", label: "k/9" },
-      { key: "bb9", label: "bb/9" },
-      { key: "stuff_plus", label: "stuff+" },
-      { key: "location_plus", label: "location+" },
+      { key: "era", label: "ERA" },
+      { key: "whip", label: "WHIP" },
+      { key: "k9", label: "K/9" },
+      { key: "bb9", label: "BB/9" },
+      { key: "stuff_plus", label: "Stuff+" },
+      { key: "location_plus", label: "Location+" },
     ])}
 
     ${renderTable("rp", "RP", team.rp, [

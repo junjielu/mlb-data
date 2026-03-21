@@ -25,6 +25,8 @@ class SPRow:
     role: str
     name: str
     url: str
+    era: str
+    whip: str
     k9: str
     bb9: str
     stuff_plus: str
@@ -62,9 +64,13 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
             continue
         stuff = r.get('sp_stuff')
         location = r.get('sp_location')
+        era = r.get('ERA')
+        whip = r.get('WHIP')
         k9 = r.get('K/9')
         bb9 = r.get('BB/9')
         out[name] = {
+            'era': fmt_float(era, 2),
+            'whip': fmt_float(whip, 2),
             'stuff_plus': '' if stuff is None else str(int(round(float(stuff)))),
             'location_plus': '' if location is None else str(int(round(float(location)))),
             'k9': fmt_float(k9, 2),
@@ -154,6 +160,8 @@ def extract_rotation_rows(
             role=role.lower(),
             name=name,
             url=link_map.get(name, f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats/pitching'),
+            era=info.get('era', ''),
+            whip=info.get('whip', ''),
             k9=info.get('k9', ''),
             bb9=info.get('bb9', ''),
             stuff_plus=info.get('stuff_plus', ''),
@@ -171,7 +179,7 @@ def extract_rotation_rows(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Fetch Fangraphs projected SP1-SP5 + K/9, BB/9, Stuff+ for MLB teams.')
+    parser = argparse.ArgumentParser(description='Fetch Fangraphs projected SP1-SP5 + ERA, WHIP, K/9, BB/9, Stuff+, Location+ for MLB teams.')
     parser.add_argument('--season', type=int, default=2025)
     parser.add_argument('--out', type=Path, default=Path('data/fangraphs_sp_2025.json'))
     args = parser.parse_args()
