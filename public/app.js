@@ -136,8 +136,11 @@ function renderPlayerNameCell(sectionId, row) {
 }
 
 function renderHistoryCell(sectionId, row, historyRow, column) {
+  const hasPrimaryLabelColumn = Object.prototype.hasOwnProperty.call(row, "order") || Object.prototype.hasOwnProperty.call(row, "role");
   if (column.key === "name") {
-    return `<span class="history-blank" aria-hidden="true"></span>`;
+    return hasPrimaryLabelColumn
+      ? `<span class="history-blank" aria-hidden="true"></span>`
+      : `<span class="history-season">${historyRow.season}</span>`;
   }
   if (column.key === "position") {
     return `<span class="history-blank" aria-hidden="true"></span>`;
@@ -158,11 +161,15 @@ function renderTableMarkup(sectionId, rows, columns, options = {}) {
   for (const row of ordered) {
     const rowId = rowIdentity(sectionId, row);
     const expanded = expandable && expandedRowId === rowId;
+    const hasPrimaryLabelColumn = columns.some((column) => column.key === "order" || column.key === "role");
     body.push(`
       <tr class="primary-row${expandable ? " expandable-row" : ""}${expanded ? " is-expanded" : ""}"${expandable ? ` data-expand-section="${sectionId}" data-row-id="${escapeHtml(rowId)}"` : ""}>
         ${columns.map((column) => {
           if (column.key === "name") {
-            return `<td class="player-name-cell">${renderPlayerNameCell(sectionId, row)}</td>`;
+            const indicator = expandable && !hasPrimaryLabelColumn
+              ? `<span class="toggle-indicator" aria-hidden="true">${expanded ? "▾" : "▸"}</span>`
+              : "";
+            return `<td class="player-name-cell">${indicator}${renderPlayerNameCell(sectionId, row)}</td>`;
           }
           if (column.key === "order" || column.key === "role") {
             return `<td class="primary-label-cell">${renderPrimaryCell(sectionId, row, expanded)}</td>`;
@@ -184,6 +191,9 @@ function renderTableMarkup(sectionId, rows, columns, options = {}) {
 
   return `
     <table class="${tableClass}">
+      <colgroup>
+        ${columns.map((column) => `<col class="col-${column.key}">`).join("")}
+      </colgroup>
       <thead>
         <tr>
           ${columns.map((c) => `<th data-section="${sectionId}" data-key="${c.key}">${c.label}${state.key === c.key ? (state.dir === "asc" ? " ↑" : " ↓") : ""}</th>`).join("")}
@@ -297,12 +307,12 @@ function renderBatterSection(team) {
         </div>
         <div class="batter-group">
           <h4>Projected Starters</h4>
-          ${renderTableMarkup(`batter-${viewKey}-lineup`, starterRows, starterColumns, { tableClass: "batter-subtable" })}
+          ${renderTableMarkup(`batter-${viewKey}-lineup`, starterRows, starterColumns, { tableClass: "batter-subtable batter-lineup-table" })}
         </div>
         <div class="batter-group">
           <h4>Bench</h4>
           ${alternateRows.length
-            ? renderTableMarkup(`batter-${viewKey}-alternates`, alternateRows, alternateColumns, { tableClass: "batter-subtable batter-alternates-table", expandable: false })
+            ? renderTableMarkup(`batter-${viewKey}-alternates`, alternateRows, alternateColumns, { tableClass: "batter-subtable batter-alternates-table" })
             : `<div class="table-state">No bench entries published for this handedness.</div>`}
         </div>
       </div>
