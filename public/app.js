@@ -121,6 +121,19 @@ function primaryValueKey(row) {
 
 function renderPrimaryCell(sectionId, row, expanded) {
   const key = primaryValueKey(row);
+  if (sectionId === "sp") {
+    const roleText = String(row[key] ?? "").trim().toUpperCase();
+    const rank = Number(roleText.replace("SP", ""));
+    const emoji = {
+      1: "🥇",
+      2: "🥈",
+      3: "🥉",
+      4: "4️⃣",
+      5: "5️⃣",
+    }[rank] || "⚾";
+    const label = Number.isNaN(rank) ? roleText : `No. ${rank}`;
+    return `<span class="toggle-indicator" aria-hidden="true">${expanded ? "▾" : "▸"}</span><span class="role-badge"><span class="role-emoji" aria-hidden="true">${emoji}</span><span class="role-text">${escapeHtml(label)}</span></span>`;
+  }
   return `<span class="toggle-indicator" aria-hidden="true">${expanded ? "▾" : "▸"}</span>${safeMetric(row[key])}`;
 }
 
@@ -129,17 +142,12 @@ function renderPlayerNameCell(sectionId, row) {
   const positionMarkup = sectionId.startsWith("batter") && position
     ? `<span class="player-position" aria-label="Position ${escapeHtml(position)}" title="Position ${escapeHtml(position)}">${escapeHtml(position)}</span>`
     : "";
-  const isAlternateRow = sectionId.includes("-alternates");
   let platoonLabel = "";
   if (row.platoonRole === "vsR_only") {
-    platoonLabel = isAlternateRow
-      ? `<span class="platoon-tag" title="Benched only against right-handed pitching">vs LHP only</span>`
-      : `<span class="platoon-tag" title="Published only against right-handed pitching">vs RHP only</span>`;
+    platoonLabel = `<span class="platoon-tag" title="This row appears only in the current handedness view">Platoon</span>`;
   }
   if (row.platoonRole === "vsL_only") {
-    platoonLabel = isAlternateRow
-      ? `<span class="platoon-tag" title="Benched only against left-handed pitching">vs RHP only</span>`
-      : `<span class="platoon-tag" title="Published only against left-handed pitching">vs LHP only</span>`;
+    platoonLabel = `<span class="platoon-tag" title="This row appears only in the current handedness view">Platoon</span>`;
   }
   return `<a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a>${positionMarkup}${platoonLabel}`;
 }
@@ -291,6 +299,23 @@ function renderInjurySection(abbr) {
   `;
 }
 
+function renderTeamHero(team) {
+  return `
+    <section class="team-hero">
+      <div class="team-hero-main">
+        <div class="team-identity">
+          <div class="team-logo-shell">
+            <img src="${team.logoUrl}" alt="${team.abbr} logo" />
+          </div>
+          <div class="team-title-block">
+            <h1>${team.name}</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
 function renderBatterSection(team) {
   const batter = team.batter || {};
   const lineups = batter.lineups || {};
@@ -362,25 +387,17 @@ function renderTeamPage(abbr) {
     { key: "babip", label: "BABIP" },
   ];
   app.innerHTML = `
-    <section class="team-header">
-      <h1><img src="${team.logoUrl}" alt="${team.abbr} logo" style="width:34px;height:34px;vertical-align:middle;margin-right:8px;"/>${team.abbr} · ${team.name}</h1>
-      <div class="meta">${team.division}</div>
-    </section>
+    <div class="team-detail-page theme-editorial">
+      ${renderTeamHero(team)}
 
-    <nav class="section-nav">
-      <a href="#batter">Batter</a>
-      <a href="#sp">SP</a>
-      <a href="#rp">RP</a>
-      <a href="#injury">Injury</a>
-    </nav>
+      ${renderBatterSection(team)}
 
-    ${renderBatterSection(team)}
+      ${renderTable("sp", "SP", team.sp, pitcherColumns, { tableClass: "pitcher-table", contentClass: "pitcher-card" })}
 
-    ${renderTable("sp", "SP", team.sp, pitcherColumns, { tableClass: "pitcher-table", contentClass: "pitcher-card" })}
+      ${renderTable("rp", "RP", team.rp, pitcherColumns, { tableClass: "pitcher-table", contentClass: "pitcher-card" })}
 
-    ${renderTable("rp", "RP", team.rp, pitcherColumns, { tableClass: "pitcher-table", contentClass: "pitcher-card" })}
-
-    ${renderInjurySection(abbr)}
+      ${renderInjurySection(abbr)}
+    </div>
   `;
 
   document.querySelectorAll("th[data-section]").forEach((th) => {
@@ -403,6 +420,7 @@ function renderTeamPage(abbr) {
       renderTeamPage(abbr);
     });
   });
+
 }
 
 function renderNotFound() {
