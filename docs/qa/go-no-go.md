@@ -1,19 +1,19 @@
 # Go/No-Go QA Report
 
-- Generated: 2026-03-22T11:48:47Z
+- Generated: 2026-03-22T13:28:08Z
 - Season: 2025
-- Build ID: 20260322-114600
-- Build Status: success
-- Publish Eligible: True
-- Decision: **GO**
+- Build ID: 20260322-132746
+- Build Status: needs_review
+- Publish Eligible: False
+- Decision: **REVIEW**
 
 ## Checks
 
 - PASS Gate0: 30 teams present
 - PASS Gate1: structural minimums satisfied
 - PASS Gate2: no blocking attribution or regression failures
-- PASS Gate3: buildStatus=success
-- PASS Gate4: no pending operator review
+- REVIEW Gate3: buildStatus=needs_review
+- REVIEW Gate4: 3 high-risk unknown rows require operator approval
 
 ## Pending Review Queue
 

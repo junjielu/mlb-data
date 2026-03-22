@@ -242,14 +242,15 @@ def attach_public_player_history(teams: list[dict[str, Any]]) -> None:
     for team in teams:
         batter_section = team.get("batter", {})
         if isinstance(batter_section, dict):
-            for rows in batter_section.get("lineups", {}).values():
-                for row in rows:
-                    player_id = resolve_public_player_id(row)
-                    row["playerId"] = player_id
-                    row["history"] = [
-                        build_history_entry("batter", season, batting_history[season].get(player_id))
-                        for season in HISTORY_SEASONS
-                    ]
+            for collection_name in ("lineups", "alternates"):
+                for rows in batter_section.get(collection_name, {}).values():
+                    for row in rows:
+                        player_id = resolve_public_player_id(row)
+                        row["playerId"] = player_id
+                        row["history"] = [
+                            build_history_entry("batter", season, batting_history[season].get(player_id))
+                            for season in HISTORY_SEASONS
+                        ]
 
         for section in ("sp", "rp"):
             for row in team.get(section, []):
@@ -275,17 +276,34 @@ def batter_lineups(team: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
     }
 
 
-def derive_batter_platoon_roles(team: dict[str, Any]) -> None:
-    lineups = batter_lineups(team)
-    vsr_ids = {str(resolve_public_player_id(row) or row.get("name", "")).strip() for row in lineups["vsR"]}
-    vsl_ids = {str(resolve_public_player_id(row) or row.get("name", "")).strip() for row in lineups["vsL"]}
+def batter_alternates(team: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    batter = team.get("batter", {})
+    if not isinstance(batter, dict):
+        return {"vsR": [], "vsL": []}
+    alternates = batter.get("alternates", {})
+    if not isinstance(alternates, dict):
+        return {"vsR": [], "vsL": []}
+    return {
+        "vsR": list(alternates.get("vsR", [])),
+        "vsL": list(alternates.get("vsL", [])),
+    }
 
-    for row in lineups["vsR"]:
+
+def _derive_collection_platoon_roles(collections: dict[str, list[dict[str, Any]]]) -> None:
+    vsr_ids = {str(resolve_public_player_id(row) or row.get("name", "")).strip() for row in collections["vsR"]}
+    vsl_ids = {str(resolve_public_player_id(row) or row.get("name", "")).strip() for row in collections["vsL"]}
+
+    for row in collections["vsR"]:
         row_id = str(resolve_public_player_id(row) or row.get("name", "")).strip()
         row["platoonRole"] = "vsR_only" if row_id and row_id not in vsl_ids else ""
-    for row in lineups["vsL"]:
+    for row in collections["vsL"]:
         row_id = str(resolve_public_player_id(row) or row.get("name", "")).strip()
         row["platoonRole"] = "vsL_only" if row_id and row_id not in vsr_ids else ""
+
+
+def derive_batter_platoon_roles(team: dict[str, Any]) -> None:
+    _derive_collection_platoon_roles(batter_lineups(team))
+    _derive_collection_platoon_roles(batter_alternates(team))
 
 
 def load_json(path: Path) -> dict[str, list[dict[str, Any]]]:
@@ -411,16 +429,31 @@ def evaluate_quality(teams: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
 
         derive_batter_platoon_roles(team)
         batter_views = batter_lineups(team)
+        batter_alts = batter_alternates(team)
         batter_vsr = batter_views["vsR"]
         batter_vsl = batter_views["vsL"]
+        batter_alt_vsr = batter_alts["vsR"]
+        batter_alt_vsl = batter_alts["vsL"]
         sp = team["sp"]
         rp = team["rp"]
+
+        batter_section = team.get("batter", {})
+        alternates_present = (
+            isinstance(batter_section, dict)
+            and isinstance(batter_section.get("alternates"), dict)
+            and "vsR" in batter_section.get("alternates", {})
+            and "vsL" in batter_section.get("alternates", {})
+        )
 
         for view_name, rows in [("vsR", batter_vsr), ("vsL", batter_vsl)]:
             if len(rows) < 9:
                 msg = f"Batter {view_name} rows {len(rows)} < 9"
                 warnings.append(warn("section_too_short", "critical", "batter", msg))
                 blocking_failures.append(f"{team['abbr']} batter {view_name} section too short")
+        if not alternates_present:
+            msg = "Batter alternates container must include vsR and vsL"
+            warnings.append(warn("alternates_missing", "critical", "batter", msg))
+            blocking_failures.append(f"{team['abbr']} batter alternates container missing")
         if len(sp) < 5:
             msg = f"SP rows {len(sp)} < 5"
             warnings.append(warn("section_too_short", "critical", "sp", msg))
@@ -439,6 +472,8 @@ def evaluate_quality(teams: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
         for section_name, rows, keys in [
             ("batter", batter_vsr, B_KEYS),
             ("batter", batter_vsl, B_KEYS),
+            ("batter", batter_alt_vsr, B_KEYS),
+            ("batter", batter_alt_vsl, B_KEYS),
             ("sp", sp, SP_KEYS),
             ("rp", rp, RP_KEYS),
         ]:
@@ -526,11 +561,16 @@ def _sanitize_row(row: dict[str, Any]) -> dict[str, Any]:
 
 def _sanitize_batter_section(batter: dict[str, Any]) -> dict[str, Any]:
     lineups = batter.get("lineups", {}) if isinstance(batter, dict) else {}
+    alternates = batter.get("alternates", {}) if isinstance(batter, dict) else {}
     return {
         "defaultView": str(batter.get("defaultView", DEFAULT_BATTER_VIEW) or DEFAULT_BATTER_VIEW),
         "lineups": {
             "vsR": [_sanitize_row(row) for row in lineups.get("vsR", [])],
             "vsL": [_sanitize_row(row) for row in lineups.get("vsL", [])],
+        },
+        "alternates": {
+            "vsR": [_sanitize_row(row) for row in alternates.get("vsR", [])],
+            "vsL": [_sanitize_row(row) for row in alternates.get("vsL", [])],
         },
     }
 
@@ -570,7 +610,14 @@ def build_snapshot(season: int, batter_path: Path, sp_path: Path, rp_path: Path)
                 "division": TEAM_META[abbr]["division"],
                 "logoUrl": TEAM_META[abbr]["logo_url"],
                 "lastUpdated": generated_at,
-                "batter": batter.get(abbr, {"defaultView": DEFAULT_BATTER_VIEW, "lineups": {"vsR": [], "vsL": []}}),
+                "batter": batter.get(
+                    abbr,
+                    {
+                        "defaultView": DEFAULT_BATTER_VIEW,
+                        "lineups": {"vsR": [], "vsL": []},
+                        "alternates": {"vsR": [], "vsL": []},
+                    },
+                ),
                 "sp": sp.get(abbr, []),
                 "rp": rp.get(abbr, []),
             }
@@ -759,10 +806,19 @@ def cmd_publish(args: argparse.Namespace) -> int:
     if not candidate.exists():
         raise RuntimeError(f"Candidate build not found: {candidate}")
     snapshot, quality, review = _load_candidate(candidate)
-    if args.require_gate and not quality.get("meta", {}).get("publishEligible", False):
-        if quality.get("meta", {}).get("reviewRequired") and not review.get("approved", False):
+    if args.require_gate:
+        review_required = bool(quality.get("meta", {}).get("reviewRequired", False))
+        review_approved = bool(review.get("approved", False))
+        blocking_failures = list(quality.get("summary", {}).get("blockingFailures", []))
+        publish_eligible = bool(quality.get("meta", {}).get("publishEligible", False))
+        gate_passed = publish_eligible or (review_required and review_approved and not blocking_failures)
+
+        if not gate_passed:
+            if review_required and not review_approved:
+                raise RuntimeError("Candidate requires operator review before publish. Run the review subcommand first or use --no-require-gate to force.")
+            raise RuntimeError("Gate check failed for candidate. Use --no-require-gate to force.")
+        if review_required and not review_approved:
             raise RuntimeError("Candidate requires operator review before publish. Run the review subcommand first or use --no-require-gate to force.")
-        raise RuntimeError("Gate check failed for candidate. Use --no-require-gate to force.")
     latest = atomic_publish(snapshot, args.public_base)
     print(f"Published latest snapshot: {latest}")
     return 0

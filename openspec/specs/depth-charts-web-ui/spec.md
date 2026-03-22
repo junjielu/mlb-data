@@ -151,51 +151,56 @@ The web UI MUST preserve the existing table comparison model when recent history
 - **THEN** the corresponding table cell renders `--`
 - **AND** the historical row remains visible in its expanded position
 
-### Requirement: Team detail player names display age inline
-The web UI SHALL display a player's age inline to the right of the linked player name on Batter, SP, and RP primary rows on `/team/:abbr`.
+### Requirement: Team detail player ages display in a dedicated column
+The web UI SHALL display a player's age in a dedicated `Age` column on Batter, SP, and RP tables on `/team/:abbr`.
 
-#### Scenario: Batter row shows age beside name
+#### Scenario: Batter row shows age in the Age column
 - **WHEN** a Batter primary row has an age value in the approved public snapshot
-- **THEN** the team detail page renders that age inline to the right of the player's linked name
-- **AND** the age display remains part of the same name cell rather than a separate table column
+- **THEN** the team detail page renders that age in the Batter `Age` column
+- **AND** the Batter `Position` field remains visually attached to the player name rather than occupying its own table column
 
-#### Scenario: Pitcher rows show age beside name
+#### Scenario: Pitcher rows show age in the Age column
 - **WHEN** an SP or RP primary row has an age value in the approved public snapshot
-- **THEN** the team detail page renders that age inline to the right of the player's linked name
-- **AND** the existing role/order columns and metric columns remain unchanged
+- **THEN** the team detail page renders that age in the section's `Age` column
+- **AND** the existing role/order columns and metric columns remain otherwise unchanged
 
-#### Scenario: Missing age stays visually quiet
+#### Scenario: Missing age uses existing missing-value treatment
 - **WHEN** a Batter, SP, or RP primary row has no age value in the public snapshot
-- **THEN** the team detail page renders the linked player name without an age label
-- **AND** it MUST NOT show a missing-value placeholder beside the name
+- **THEN** the team detail page renders `--` in the corresponding `Age` cell
+- **AND** the row remains visible in its original section position
 
-### Requirement: Batter section supports platoon lineup view switching
-The web UI SHALL render the team detail Batter section as a switchable platoon lineup view so users can inspect projected starters against right-handed and left-handed pitching without leaving `/team/:abbr`.
+### Requirement: Batter section supports simultaneous platoon comparison
+The web UI SHALL render the team detail Batter section as a simultaneous platoon comparison surface so users can inspect the approved `vs RHP` and `vs LHP` batter views together without switching between them.
 
-#### Scenario: Batter section defaults to right-handed-pitching view
+#### Scenario: Team detail page renders both handedness columns
 - **WHEN** a user opens `/team/:abbr`
-- **THEN** the Batter section initially renders the `vs RHP` lineup view from the approved public snapshot
-- **AND** the page provides a visible control to switch the Batter section to the `vs LHP` lineup view
+- **THEN** the Batter section renders both the `vs RHP` and `vs LHP` views from the approved public snapshot at the same time
+- **AND** the page MUST NOT require a lineup toggle control to access one of the handedness views
 
-#### Scenario: User switches to left-handed-pitching view
-- **WHEN** a user selects the `vs LHP` control in the Batter section
-- **THEN** the Batter table rerenders using the approved `vsL` lineup rows for that team
-- **AND** the existing Batter columns, sorting, missing-value rendering, and expandable history behavior remain available in the selected view
+#### Scenario: Each handedness column shows starters and bench together
+- **WHEN** the Batter section renders a handedness column
+- **THEN** the starter lineup for that handedness appears before the corresponding `Bench` group from the approved public snapshot
+- **AND** both groups remain part of the same handedness comparison column
+
+#### Scenario: Simultaneous platoon comparison remains usable on narrow screens
+- **WHEN** the team detail page is rendered on a narrow viewport
+- **THEN** the Batter section still shows both handedness views within the same page flow
+- **AND** the layout may stack the handedness columns vertically instead of hiding one side behind a toggle
 
 ### Requirement: Batter platoon-only starters are labeled inline
-The web UI SHALL surface platoon-only starter context directly in the Batter table so users can tell when a player starts only against one pitcher handedness.
+The web UI SHALL surface platoon-only batter context directly in rendered Batter rows so users can tell when a starter or bench option appears only against one pitcher handedness.
 
-#### Scenario: Right-handed-pitching-only starter is labeled
-- **WHEN** a Batter row in the active lineup view carries the public marker for a player who starts only against right-handed pitching
+#### Scenario: Right-handed-pitching-only batter row is labeled
+- **WHEN** a rendered Batter row carries the public marker for a player who appears only against right-handed pitching in that row type
 - **THEN** the team detail page renders a lightweight inline label beside that player's name indicating `vs RHP only`
 - **AND** the label remains secondary to the player name and metrics
 
-#### Scenario: Left-handed-pitching-only starter is labeled
-- **WHEN** a Batter row in the active lineup view carries the public marker for a player who starts only against left-handed pitching
+#### Scenario: Left-handed-pitching-only batter row is labeled
+- **WHEN** a rendered Batter row carries the public marker for a player who appears only against left-handed pitching in that row type
 - **THEN** the team detail page renders a lightweight inline label beside that player's name indicating `vs LHP only`
 - **AND** the label remains secondary to the player name and metrics
 
-#### Scenario: Everyday starter remains unlabeled in the name cell
-- **WHEN** a Batter row represents a player who starts in both lineup views
+#### Scenario: Shared-handedness batter row remains unlabeled in the name cell
+- **WHEN** a rendered Batter row represents a player who appears in both handedness collections for that row type
 - **THEN** the team detail page renders the linked player name without a platoon-only label
 - **AND** it MUST NOT show a placeholder or neutral badge for the player

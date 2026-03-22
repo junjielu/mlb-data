@@ -35,6 +35,8 @@ TEAM_SLUGS = {
 
 POS_SET = {'C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'DH', 'OF'}
 DEFAULT_VIEW = 'vsR'
+BENCH_MIN_ORDER = 10
+NON_BENCH_STATUS_ORDER_FLOOR = 90
 
 
 @dataclass
@@ -368,12 +370,14 @@ def fetch_platoon_payload(session: requests.Session, team_slug: str) -> list[dic
     return [row for row in rows if isinstance(row, dict)]
 
 
-def extract_lineup_rows(
+def extract_platoon_rows(
     session: requests.Session,
     season: int,
     team_slug: str,
     batting_by_id: dict[int, dict[str, str]],
     handedness: str,
+    *,
+    include_starters: bool = True,
 ) -> list[BatterRow]:
     handedness = handedness.upper()
     if handedness not in {'R', 'L'}:
@@ -386,12 +390,18 @@ def extract_lineup_rows(
     out: list[BatterRow] = []
     for row in rows:
         order_val = row.get(order_key)
-        try:
-            order_num = int(order_val)
-        except (TypeError, ValueError):
-            continue
-        if order_num < 1 or order_num > 9:
-            continue
+        order_str = str(order_val or '').strip()
+        order_num: int | None = None
+        if order_str.isdigit():
+            order_num = int(order_str)
+        if include_starters:
+            if order_num is None or order_num < 1 or order_num > 9:
+                continue
+        else:
+            if order_num is None:
+                continue
+            if order_num < BENCH_MIN_ORDER or order_num >= NON_BENCH_STATUS_ORDER_FLOOR:
+                continue
 
         name = clean_player_name(str(row.get('Name') or row.get('firstlastName') or '').strip())
         if not name:
@@ -420,7 +430,7 @@ def extract_lineup_rows(
             link_url = f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats?position=1B/2B/3B/SS/OF'
 
         out.append(BatterRow(
-            order=str(order_num),
+            order=str(order_num) if order_num is not None else order_str,
             name=name,
             age=info.get('age', ''),
             position=str(row.get(position_key, '') or '').strip(),
@@ -444,8 +454,45 @@ def extract_lineup_rows(
             mismatch_candidate_player_id='',
         ))
 
-    out.sort(key=lambda r: int(r.order) if r.order.isdigit() else 99)
+    if include_starters:
+        out.sort(key=lambda r: int(r.order) if r.order.isdigit() else 99)
+    else:
+        out.sort(key=lambda r: int(r.order) if str(r.order).isdigit() else 99)
     return out
+
+
+def extract_lineup_rows(
+    session: requests.Session,
+    season: int,
+    team_slug: str,
+    batting_by_id: dict[int, dict[str, str]],
+    handedness: str,
+) -> list[BatterRow]:
+    return extract_platoon_rows(
+        session,
+        season,
+        team_slug,
+        batting_by_id,
+        handedness,
+        include_starters=True,
+    )
+
+
+def extract_alternate_rows(
+    session: requests.Session,
+    season: int,
+    team_slug: str,
+    batting_by_id: dict[int, dict[str, str]],
+    handedness: str,
+) -> list[BatterRow]:
+    return extract_platoon_rows(
+        session,
+        season,
+        team_slug,
+        batting_by_id,
+        handedness,
+        include_starters=False,
+    )
 
 
 def batter_markdown(rows: list[dict[str, str]]) -> str:
@@ -495,10 +542,13 @@ def validate_batter_data(data: dict[str, dict[str, Any]], season: int) -> None:
     missing_lineup: list[tuple[str, str, int]] = []
     for team, batter in data.items():
         lineups = batter.get('lineups', {}) if isinstance(batter, dict) else {}
+        alternates = batter.get('alternates', {}) if isinstance(batter, dict) else {}
         for key in ('vsR', 'vsL'):
             rows = lineups.get(key, []) if isinstance(lineups, dict) else []
             if len(rows) < 9:
                 missing_lineup.append((team, key, len(rows)))
+            if not isinstance(alternates, dict) or key not in alternates:
+                raise RuntimeError(f'Validation failed: missing alternates collection for {team}:{key}')
 
     if missing_lineup:
         short = ', '.join([f'{t}:{view}:{n}' for t, view, n in missing_lineup[:8]])
@@ -539,11 +589,17 @@ def main() -> None:
     for abbr, slug in TEAM_SLUGS.items():
         vsr_rows = extract_lineup_rows(s, args.season, slug, batting_by_id, 'R')
         vsl_rows = extract_lineup_rows(s, args.season, slug, batting_by_id, 'L')
+        vsr_alternates = extract_alternate_rows(s, args.season, slug, batting_by_id, 'R')
+        vsl_alternates = extract_alternate_rows(s, args.season, slug, batting_by_id, 'L')
         result[abbr] = {
             'defaultView': DEFAULT_VIEW,
             'lineups': {
                 'vsR': [asdict(r) for r in vsr_rows],
                 'vsL': [asdict(r) for r in vsl_rows],
+            },
+            'alternates': {
+                'vsR': [asdict(r) for r in vsr_alternates],
+                'vsL': [asdict(r) for r in vsl_alternates],
             },
         }
 

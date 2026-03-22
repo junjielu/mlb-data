@@ -61,6 +61,15 @@ def batter_lineups(team: dict) -> tuple[list[dict], list[dict]]:
     return rows, rows
 
 
+def batter_alternates(team: dict) -> tuple[list[dict], list[dict], bool]:
+    batter = team.get("batter", {})
+    if isinstance(batter, dict):
+        alternates = batter.get("alternates", {})
+        if isinstance(alternates, dict):
+            return list(alternates.get("vsR", [])), list(alternates.get("vsL", [])), "vsR" in alternates and "vsL" in alternates
+    return [], [], False
+
+
 def check(snapshot: dict, quality: dict) -> tuple[str, list[str], list[str], list[dict]]:
     notes: list[str] = []
     blocking: list[str] = []
@@ -76,14 +85,15 @@ def check(snapshot: dict, quality: dict) -> tuple[str, list[str], list[str], lis
     for team in teams:
         abbr = team.get("abbr")
         b_vsr, b_vsl = batter_lineups(team)
+        a_vsr, a_vsl, alternates_present = batter_alternates(team)
         sp = team.get("sp", [])
         rp = team.get("rp", [])
-        if len(b_vsr) < 9 or len(b_vsl) < 9 or len(sp) < 5 or len(rp) < 5:
+        if len(b_vsr) < 9 or len(b_vsl) < 9 or len(sp) < 5 or len(rp) < 5 or not alternates_present:
             notes.append(
-                f"FAIL Gate1: {abbr} counts batter.vsR={len(b_vsr)} batter.vsL={len(b_vsl)} sp={len(sp)} rp={len(rp)}"
+                f"FAIL Gate1: {abbr} counts batter.vsR={len(b_vsr)} batter.vsL={len(b_vsl)} alternates.vsR={len(a_vsr)} alternates.vsL={len(a_vsl)} alternatesPresent={alternates_present} sp={len(sp)} rp={len(rp)}"
             )
             blocking.append(
-                f"{abbr} counts batter.vsR={len(b_vsr)} batter.vsL={len(b_vsl)} sp={len(sp)} rp={len(rp)}"
+                f"{abbr} counts batter.vsR={len(b_vsr)} batter.vsL={len(b_vsl)} alternates.vsR={len(a_vsr)} alternates.vsL={len(a_vsl)} alternatesPresent={alternates_present} sp={len(sp)} rp={len(rp)}"
             )
 
     if not blocking:

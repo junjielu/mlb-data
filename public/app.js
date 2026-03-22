@@ -10,8 +10,7 @@ let snapshot = null;
 let injuriesSnapshot = null;
 let injuryDataUnavailable = false;
 let sortState = {};
-let expandedRows = { batter: null, sp: null, rp: null };
-let batterView = "vsR";
+let expandedRows = { sp: null, rp: null };
 
 async function loadData() {
   const [snapshotRes, injuryRes] = await Promise.all([
@@ -111,24 +110,29 @@ function renderTeamsPage() {
 
 function rowIdentity(sectionId, row) {
   const explicitId = String(row.playerId ?? "").trim();
-  const prefix = sectionId === "batter" ? `${sectionId}:${batterView}` : sectionId;
-  if (explicitId) return `${prefix}:${explicitId}`;
-  const fallback = sectionId === "batter" ? row.order : row.role;
-  return `${prefix}:${fallback}:${row.name}`;
+  if (explicitId) return `${sectionId}:${explicitId}`;
+  const fallback = Object.prototype.hasOwnProperty.call(row, "order") ? row.order : row.role;
+  return `${sectionId}:${fallback}:${row.name}`;
+}
+
+function primaryValueKey(row) {
+  return Object.prototype.hasOwnProperty.call(row, "order") ? "order" : "role";
 }
 
 function renderPrimaryCell(sectionId, row, expanded) {
-  const key = sectionId === "batter" ? "order" : "role";
+  const key = primaryValueKey(row);
   return `<span class="toggle-indicator" aria-hidden="true">${expanded ? "▾" : "▸"}</span>${safeMetric(row[key])}`;
 }
 
-function renderPlayerNameCell(row) {
-  const age = String(row.age ?? "").trim();
-  const ageMarkup = age ? `<span class="player-age" aria-label="Player age ${escapeHtml(age)}" title="Player age ${escapeHtml(age)}">${escapeHtml(age)}</span>` : "";
+function renderPlayerNameCell(sectionId, row) {
+  const position = String(row.position ?? "").trim();
+  const positionMarkup = sectionId.startsWith("batter") && position
+    ? `<span class="player-position" aria-label="Position ${escapeHtml(position)}" title="Position ${escapeHtml(position)}">${escapeHtml(position)}</span>`
+    : "";
   let platoonLabel = "";
-  if (row.platoonRole === "vsR_only") platoonLabel = `<span class="platoon-tag" title="Starts only against right-handed pitching">vs RHP only</span>`;
-  if (row.platoonRole === "vsL_only") platoonLabel = `<span class="platoon-tag" title="Starts only against left-handed pitching">vs LHP only</span>`;
-  return `<a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a>${ageMarkup}${platoonLabel}`;
+  if (row.platoonRole === "vsR_only") platoonLabel = `<span class="platoon-tag" title="Published only against right-handed pitching">vs RHP only</span>`;
+  if (row.platoonRole === "vsL_only") platoonLabel = `<span class="platoon-tag" title="Published only against left-handed pitching">vs LHP only</span>`;
+  return `<a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a>${positionMarkup}${platoonLabel}`;
 }
 
 function renderHistoryCell(sectionId, row, historyRow, column) {
@@ -144,7 +148,8 @@ function renderHistoryCell(sectionId, row, historyRow, column) {
   return safeMetric(historyRow[column.key]);
 }
 
-function renderTable(sectionId, title, rows, columns) {
+function renderTableMarkup(sectionId, rows, columns, options = {}) {
+  const { tableClass = "", expandable = true } = options;
   const state = sortState[sectionId] || { key: null, dir: "desc" };
   const ordered = state.key ? sortRows(rows, sectionId, state.key, state.dir) : rows;
   const expandedRowId = expandedRows[sectionId];
@@ -152,12 +157,12 @@ function renderTable(sectionId, title, rows, columns) {
 
   for (const row of ordered) {
     const rowId = rowIdentity(sectionId, row);
-    const expanded = expandedRowId === rowId;
+    const expanded = expandable && expandedRowId === rowId;
     body.push(`
-      <tr class="primary-row expandable-row${expanded ? " is-expanded" : ""}" data-expand-section="${sectionId}" data-row-id="${escapeHtml(rowId)}">
+      <tr class="primary-row${expandable ? " expandable-row" : ""}${expanded ? " is-expanded" : ""}"${expandable ? ` data-expand-section="${sectionId}" data-row-id="${escapeHtml(rowId)}"` : ""}>
         ${columns.map((column) => {
           if (column.key === "name") {
-            return `<td class="player-name-cell">${renderPlayerNameCell(row)}</td>`;
+            return `<td class="player-name-cell">${renderPlayerNameCell(sectionId, row)}</td>`;
           }
           if (column.key === "order" || column.key === "role") {
             return `<td class="primary-label-cell">${renderPrimaryCell(sectionId, row, expanded)}</td>`;
@@ -178,18 +183,24 @@ function renderTable(sectionId, title, rows, columns) {
   }
 
   return `
+    <table class="${tableClass}">
+      <thead>
+        <tr>
+          ${columns.map((c) => `<th data-section="${sectionId}" data-key="${c.key}">${c.label}${state.key === c.key ? (state.dir === "asc" ? " ↑" : " ↓") : ""}</th>`).join("")}
+        </tr>
+      </thead>
+      <tbody>
+        ${body.join("")}
+      </tbody>
+    </table>
+  `;
+}
+
+function renderTable(sectionId, title, rows, columns) {
+  return `
     <section class="table-wrap" id="${sectionId}">
       <h2>${title}</h2>
-      <table>
-        <thead>
-          <tr>
-            ${columns.map((c) => `<th data-section="${sectionId}" data-key="${c.key}">${c.label}${state.key === c.key ? (state.dir === "asc" ? " ↑" : " ↓") : ""}</th>`).join("")}
-          </tr>
-        </thead>
-        <tbody>
-          ${body.join("")}
-        </tbody>
-      </table>
+      ${renderTableMarkup(sectionId, rows, columns)}
     </section>
   `;
 }
@@ -259,38 +270,54 @@ function renderInjurySection(abbr) {
 
 function renderBatterSection(team) {
   const batter = team.batter || {};
-  const defaultView = String(batter.defaultView || "vsR");
   const lineups = batter.lineups || {};
-  if (!lineups.vsR && Array.isArray(team.batter)) {
-    lineups.vsR = team.batter;
+  const alternates = batter.alternates || {};
+  const starterColumns = [
+    { key: "order", label: "Order" },
+    { key: "name", label: "Name" },
+    { key: "age", label: "Age" },
+    { key: "runs", label: "R" },
+    { key: "hr", label: "HR" },
+    { key: "rbi", label: "RBI" },
+    { key: "sb", label: "SB" },
+    { key: "avg", label: "AVG" },
+    { key: "obp", label: "OBP" },
+    { key: "slg", label: "SLG" },
+    { key: "wrc_plus", label: "wRC+" },
+  ];
+  const alternateColumns = starterColumns.filter((column) => column.key !== "order");
+
+  function renderBatterColumn(viewKey, title) {
+    const starterRows = lineups[viewKey] || [];
+    const alternateRows = alternates[viewKey] || [];
+    return `
+      <div class="batter-column">
+        <div class="batter-column-header">
+          <h3>${title}</h3>
+        </div>
+        <div class="batter-group">
+          <h4>Projected Starters</h4>
+          ${renderTableMarkup(`batter-${viewKey}-lineup`, starterRows, starterColumns, { tableClass: "batter-subtable" })}
+        </div>
+        <div class="batter-group">
+          <h4>Bench</h4>
+          ${alternateRows.length
+            ? renderTableMarkup(`batter-${viewKey}-alternates`, alternateRows, alternateColumns, { tableClass: "batter-subtable batter-alternates-table", expandable: false })
+            : `<div class="table-state">No bench entries published for this handedness.</div>`}
+        </div>
+      </div>
+    `;
   }
-  const activeView = lineups[batterView] ? batterView : defaultView;
-  const rows = lineups[activeView] || [];
-  const controls = `
-    <div class="platoon-switcher" role="tablist" aria-label="Batter lineup view">
-      <button type="button" class="platoon-toggle${activeView === "vsR" ? " is-active" : ""}" data-batter-view="vsR">vs RHP</button>
-      <button type="button" class="platoon-toggle${activeView === "vsL" ? " is-active" : ""}" data-batter-view="vsL">vs LHP</button>
-    </div>
-  `;
+
   return `
     <section class="table-wrap" id="batter">
       <div class="section-header batter-header">
         <h2>Batter</h2>
-        ${controls}
       </div>
-      ${renderTable("batter", "Batter", rows, [
-        { key: "order", label: "Order" },
-        { key: "name", label: "Name" },
-        { key: "position", label: "Position" },
-        { key: "runs", label: "R" },
-        { key: "hr", label: "HR" },
-        { key: "rbi", label: "RBI" },
-        { key: "sb", label: "SB" },
-        { key: "avg", label: "AVG" },
-        { key: "obp", label: "OBP" },
-        { key: "slg", label: "SLG" },
-        { key: "wrc_plus", label: "wRC+" },
-      ]).replace('<section class="table-wrap" id="batter">', "").replace(/<\/section>\s*$/, "")}
+      <div class="batter-comparison-grid">
+        ${renderBatterColumn("vsR", "vs RHP")}
+        ${renderBatterColumn("vsL", "vs LHP")}
+      </div>
     </section>
   `;
 }
@@ -298,9 +325,6 @@ function renderBatterSection(team) {
 function renderTeamPage(abbr) {
   const team = snapshot.teams.find((t) => t.abbr === abbr);
   if (!team) return renderNotFound();
-  batterView = team.batter?.lineups?.[batterView] ? batterView : String(team.batter?.defaultView || "vsR");
-  const depthMetaText = `${snapshot.meta.season} snapshot updated ${formatTimestamp(snapshot.meta.generatedAt)}`;
-
   app.innerHTML = `
     <section class="team-header">
       <h1><img src="${team.logoUrl}" alt="${team.abbr} logo" style="width:34px;height:34px;vertical-align:middle;margin-right:8px;"/>${team.abbr} · ${team.name}</h1>
@@ -314,13 +338,12 @@ function renderTeamPage(abbr) {
       <a href="#injury">Injury</a>
     </nav>
 
-    ${renderSectionContext("depth", `${snapshot.meta.season} Depth Charts`, depthMetaText)}
-
     ${renderBatterSection(team)}
 
     ${renderTable("sp", "SP", team.sp, [
       { key: "role", label: "Role" },
       { key: "name", label: "Name" },
+      { key: "age", label: "Age" },
       { key: "era", label: "ERA" },
       { key: "whip", label: "WHIP" },
       { key: "k9", label: "K/9" },
@@ -332,6 +355,7 @@ function renderTeamPage(abbr) {
     ${renderTable("rp", "RP", team.rp, [
       { key: "role", label: "Role" },
       { key: "name", label: "Name" },
+      { key: "age", label: "Age" },
       { key: "era", label: "ERA" },
       { key: "k9", label: "K/9" },
       { key: "bb9", label: "BB/9" },
@@ -359,16 +383,6 @@ function renderTeamPage(abbr) {
       const rowId = rowEl.dataset.rowId;
       if (!sectionId || !rowId) return;
       expandedRows[sectionId] = expandedRows[sectionId] === rowId ? null : rowId;
-      renderTeamPage(abbr);
-    });
-  });
-
-  document.querySelectorAll("button[data-batter-view]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const nextView = button.dataset.batterView;
-      if (!nextView || nextView === batterView) return;
-      batterView = nextView;
-      expandedRows.batter = null;
       renderTeamPage(abbr);
     });
   });
