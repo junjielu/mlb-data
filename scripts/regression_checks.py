@@ -46,6 +46,13 @@ def find_row(rows: list[dict], key: str, value: str) -> dict:
     raise RuntimeError(f"Missing row where {key}={value}")
 
 
+def batter_rows(team: dict, view: str = "vsR") -> list[dict]:
+    batter = team.get("batter", {})
+    if isinstance(batter, dict):
+        return list(batter.get("lineups", {}).get(view, []))
+    return list(batter or [])
+
+
 def get_regression_failures(snapshot: dict) -> list[str]:
     nyy = find_team(snapshot, "NYY")
     tor = find_team(snapshot, "TOR")
@@ -55,10 +62,10 @@ def get_regression_failures(snapshot: dict) -> list[str]:
 
     nyy_su7 = find_row(nyy.get("rp", []), "role", "SU7")
     tor_su7 = find_row(tor.get("rp", []), "role", "SU7")
-    lad_b5 = find_row(lad.get("batter", []), "order", "5")
-    lad_b6 = find_row(lad.get("batter", []), "order", "6")
-    ath_b8 = find_row(ath.get("batter", []), "order", "8")
-    wsn_b4 = find_row(wsn.get("batter", []), "order", "4")
+    lad_b5 = find_row(batter_rows(lad), "order", "5")
+    lad_b6 = find_row(batter_rows(lad), "order", "6")
+    ath_b8 = find_row(batter_rows(ath), "order", "8")
+    wsn_b4 = find_row(batter_rows(wsn), "order", "4")
 
     failures: list[str] = []
 
@@ -96,10 +103,10 @@ def main() -> int:
 
     nyy = find_team(snapshot, "NYY")
     tor = find_team(snapshot, "TOR")
-    lad_b5 = find_row(find_team(snapshot, "LAD").get("batter", []), "order", "5")
-    lad_b6 = find_row(find_team(snapshot, "LAD").get("batter", []), "order", "6")
-    ath_b8 = find_row(find_team(snapshot, "ATH").get("batter", []), "order", "8")
-    wsn_b4 = find_row(find_team(snapshot, "WSN").get("batter", []), "order", "4")
+    lad_b5 = find_row(batter_rows(find_team(snapshot, "LAD")), "order", "5")
+    lad_b6 = find_row(batter_rows(find_team(snapshot, "LAD")), "order", "6")
+    ath_b8 = find_row(batter_rows(find_team(snapshot, "ATH")), "order", "8")
+    wsn_b4 = find_row(batter_rows(find_team(snapshot, "WSN")), "order", "4")
     nyy_su7 = find_row(nyy.get("rp", []), "role", "SU7")
     tor_su7 = find_row(tor.get("rp", []), "role", "SU7")
     failures = get_regression_failures(snapshot)

@@ -70,6 +70,7 @@ SP_KEYS = ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"]
 RP_KEYS = ["era", "k9", "bb9", "k_pct", "stuff_plus"]
 HISTORY_SEASONS = (2024, 2023)
 PUBLIC_ID_KEYS = ("matched_player_id", "source_player_id")
+DEFAULT_BATTER_VIEW = "vsR"
 HISTORY_ROW_KEYS = {
     "batter": ["runs", "hr", "rbi", "sb", "avg", "obp", "slg", "wrc_plus"],
     "sp": ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"],
@@ -239,15 +240,52 @@ def attach_public_player_history(teams: list[dict[str, Any]]) -> None:
     pitching_history = {season: fetch_pitching_history_map(session, season) for season in HISTORY_SEASONS}
 
     for team in teams:
-        for section in ("batter", "sp", "rp"):
+        batter_section = team.get("batter", {})
+        if isinstance(batter_section, dict):
+            for rows in batter_section.get("lineups", {}).values():
+                for row in rows:
+                    player_id = resolve_public_player_id(row)
+                    row["playerId"] = player_id
+                    row["history"] = [
+                        build_history_entry("batter", season, batting_history[season].get(player_id))
+                        for season in HISTORY_SEASONS
+                    ]
+
+        for section in ("sp", "rp"):
             for row in team.get(section, []):
                 player_id = resolve_public_player_id(row)
                 row["playerId"] = player_id
-                source_map = batting_history if section == "batter" else pitching_history
+                source_map = pitching_history
                 row["history"] = [
                     build_history_entry(section, season, source_map[season].get(player_id))
                     for season in HISTORY_SEASONS
                 ]
+
+
+def batter_lineups(team: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    batter = team.get("batter", {})
+    if not isinstance(batter, dict):
+        return {"vsR": [], "vsL": []}
+    lineups = batter.get("lineups", {})
+    if not isinstance(lineups, dict):
+        return {"vsR": [], "vsL": []}
+    return {
+        "vsR": list(lineups.get("vsR", [])),
+        "vsL": list(lineups.get("vsL", [])),
+    }
+
+
+def derive_batter_platoon_roles(team: dict[str, Any]) -> None:
+    lineups = batter_lineups(team)
+    vsr_ids = {str(resolve_public_player_id(row) or row.get("name", "")).strip() for row in lineups["vsR"]}
+    vsl_ids = {str(resolve_public_player_id(row) or row.get("name", "")).strip() for row in lineups["vsL"]}
+
+    for row in lineups["vsR"]:
+        row_id = str(resolve_public_player_id(row) or row.get("name", "")).strip()
+        row["platoonRole"] = "vsR_only" if row_id and row_id not in vsl_ids else ""
+    for row in lineups["vsL"]:
+        row_id = str(resolve_public_player_id(row) or row.get("name", "")).strip()
+        row["platoonRole"] = "vsL_only" if row_id and row_id not in vsr_ids else ""
 
 
 def load_json(path: Path) -> dict[str, list[dict[str, Any]]]:
@@ -371,14 +409,18 @@ def evaluate_quality(teams: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
     for team in teams:
         warnings: list[dict[str, Any]] = []
 
-        batter = team["batter"]
+        derive_batter_platoon_roles(team)
+        batter_views = batter_lineups(team)
+        batter_vsr = batter_views["vsR"]
+        batter_vsl = batter_views["vsL"]
         sp = team["sp"]
         rp = team["rp"]
 
-        if len(batter) < 9:
-            msg = f"Batter rows {len(batter)} < 9"
-            warnings.append(warn("section_too_short", "critical", "batter", msg))
-            blocking_failures.append(f"{team['abbr']} batter section too short")
+        for view_name, rows in [("vsR", batter_vsr), ("vsL", batter_vsl)]:
+            if len(rows) < 9:
+                msg = f"Batter {view_name} rows {len(rows)} < 9"
+                warnings.append(warn("section_too_short", "critical", "batter", msg))
+                blocking_failures.append(f"{team['abbr']} batter {view_name} section too short")
         if len(sp) < 5:
             msg = f"SP rows {len(sp)} < 5"
             warnings.append(warn("section_too_short", "critical", "sp", msg))
@@ -395,7 +437,8 @@ def evaluate_quality(teams: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
             blocking_failures.append(f"{team['abbr']} section order invalid")
 
         for section_name, rows, keys in [
-            ("batter", batter, B_KEYS),
+            ("batter", batter_vsr, B_KEYS),
+            ("batter", batter_vsl, B_KEYS),
             ("sp", sp, SP_KEYS),
             ("rp", rp, RP_KEYS),
         ]:
@@ -481,6 +524,17 @@ def _sanitize_row(row: dict[str, Any]) -> dict[str, Any]:
     return public_row
 
 
+def _sanitize_batter_section(batter: dict[str, Any]) -> dict[str, Any]:
+    lineups = batter.get("lineups", {}) if isinstance(batter, dict) else {}
+    return {
+        "defaultView": str(batter.get("defaultView", DEFAULT_BATTER_VIEW) or DEFAULT_BATTER_VIEW),
+        "lineups": {
+            "vsR": [_sanitize_row(row) for row in lineups.get("vsR", [])],
+            "vsL": [_sanitize_row(row) for row in lineups.get("vsL", [])],
+        },
+    }
+
+
 def sanitize_snapshot(snapshot: dict[str, Any]) -> dict[str, Any]:
     public_meta = {
         "schemaVersion": snapshot.get("meta", {}).get("schemaVersion"),
@@ -492,7 +546,7 @@ def sanitize_snapshot(snapshot: dict[str, Any]) -> dict[str, Any]:
     teams: list[dict[str, Any]] = []
     for team in snapshot.get("teams", []):
         public_team = {k: v for k, v in team.items() if k not in OPERATOR_TEAM_FIELDS}
-        public_team["batter"] = [_sanitize_row(row) for row in team.get("batter", [])]
+        public_team["batter"] = _sanitize_batter_section(team.get("batter", {}))
         public_team["sp"] = [_sanitize_row(row) for row in team.get("sp", [])]
         public_team["rp"] = [_sanitize_row(row) for row in team.get("rp", [])]
         teams.append(public_team)
@@ -516,7 +570,7 @@ def build_snapshot(season: int, batter_path: Path, sp_path: Path, rp_path: Path)
                 "division": TEAM_META[abbr]["division"],
                 "logoUrl": TEAM_META[abbr]["logo_url"],
                 "lastUpdated": generated_at,
-                "batter": batter.get(abbr, []),
+                "batter": batter.get(abbr, {"defaultView": DEFAULT_BATTER_VIEW, "lineups": {"vsR": [], "vsL": []}}),
                 "sp": sp.get(abbr, []),
                 "rp": rp.get(abbr, []),
             }

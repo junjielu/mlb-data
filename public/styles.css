@@ -160,6 +160,36 @@ body {
   padding: 10px 10px 6px;
 }
 
+.batter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.platoon-switcher {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.platoon-toggle {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #234;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.platoon-toggle.is-active {
+  background: #183b63;
+  border-color: #183b63;
+  color: #fff;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -240,6 +270,21 @@ th {
   vertical-align: middle;
 }
 
+.platoon-tag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border: 1px solid #d9e4cf;
+  border-radius: 999px;
+  background: #f5faef;
+  color: #4d6b2e;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.1;
+  vertical-align: middle;
+}
+
 .table-state {
   padding: 12px 10px 14px;
   border-top: 1px solid var(--line);
@@ -266,4 +311,8 @@ th {
 
 @media (max-width: 1000px) {
   .division-grid { grid-template-columns: 1fr; }
+  .batter-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

@@ -52,6 +52,15 @@ def empty_quality_report() -> dict:
     }
 
 
+def batter_lineups(team: dict) -> tuple[list[dict], list[dict]]:
+    batter = team.get("batter", {})
+    if isinstance(batter, dict):
+        lineups = batter.get("lineups", {})
+        return list(lineups.get("vsR", [])), list(lineups.get("vsL", []))
+    rows = list(batter or [])
+    return rows, rows
+
+
 def check(snapshot: dict, quality: dict) -> tuple[str, list[str], list[str], list[dict]]:
     notes: list[str] = []
     blocking: list[str] = []
@@ -66,12 +75,16 @@ def check(snapshot: dict, quality: dict) -> tuple[str, list[str], list[str], lis
 
     for team in teams:
         abbr = team.get("abbr")
-        b = team.get("batter", [])
+        b_vsr, b_vsl = batter_lineups(team)
         sp = team.get("sp", [])
         rp = team.get("rp", [])
-        if len(b) < 9 or len(sp) < 5 or len(rp) < 5:
-            notes.append(f"FAIL Gate1: {abbr} counts batter={len(b)} sp={len(sp)} rp={len(rp)}")
-            blocking.append(f"{abbr} counts batter={len(b)} sp={len(sp)} rp={len(rp)}")
+        if len(b_vsr) < 9 or len(b_vsl) < 9 or len(sp) < 5 or len(rp) < 5:
+            notes.append(
+                f"FAIL Gate1: {abbr} counts batter.vsR={len(b_vsr)} batter.vsL={len(b_vsl)} sp={len(sp)} rp={len(rp)}"
+            )
+            blocking.append(
+                f"{abbr} counts batter.vsR={len(b_vsr)} batter.vsL={len(b_vsl)} sp={len(sp)} rp={len(rp)}"
+            )
 
     if not blocking:
         notes.append("PASS Gate1: structural minimums satisfied")

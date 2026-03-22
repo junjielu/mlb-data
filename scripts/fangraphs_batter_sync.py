@@ -34,6 +34,7 @@ TEAM_SLUGS = {
 }
 
 POS_SET = {'C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'DH', 'OF'}
+DEFAULT_VIEW = 'vsR'
 
 
 @dataclass
@@ -241,6 +242,10 @@ def parse_player_ref(href: str) -> str:
     return m.group(1) if m else ''
 
 
+def platoon_lineup_url(team_slug: str) -> str:
+    return f'https://www.fangraphs.com/roster-resource/platoon-lineups/{team_slug}'
+
+
 def fetch_batting_map(session: requests.Session, season: int) -> dict[str, dict[str, str]]:
     params = dict(
         age='', pos='all', stats='bat', lg='all', qual='0', season=str(season),
@@ -311,178 +316,114 @@ def fetch_batting_row_by_player_id(session: requests.Session, season: int, playe
     }
 
 
+def _join_fangraphs_url(href: str) -> str:
+    href = str(href or '').strip()
+    if not href:
+        return ''
+    if href.startswith('/'):
+        return 'https://www.fangraphs.com' + href
+    return href
+
+
+def _payload_player_id(row: dict[str, Any]) -> str:
+    for key in ('upid', 'S_playerid', 'R_1_playerid', 'L_1_playerid'):
+        candidate = str(row.get(key, '') or '').strip()
+        if candidate:
+            return candidate
+    return ''
+
+
+def _fallback_batting_info(row: dict[str, Any]) -> dict[str, str]:
+    wrc_val = row.get('S_wRC+')
+    return {
+        'age': '',
+        'runs': '',
+        'hr': fmt_int(row.get('S_HR')),
+        'rbi': '',
+        'sb': '',
+        'wrc_plus': fmt_int(wrc_val),
+        'avg': fmt_avg(row.get('S_AVG')),
+        'obp': fmt_avg(row.get('S_OBP')),
+        'slg': fmt_avg(row.get('S_SLG')),
+        'playerid': _payload_player_id(row),
+    }
+
+
+def fetch_platoon_payload(session: requests.Session, team_slug: str) -> list[dict[str, Any]]:
+    url = platoon_lineup_url(team_slug)
+    resp = http_get(session, url, timeout=45)
+    if resp.status_code != 200:
+        raise RuntimeError(f'Platoon lineup request failed for {team_slug}: HTTP {resp.status_code}')
+
+    soup = BeautifulSoup(resp.text, 'html.parser')
+    next_data = soup.find('script', id='__NEXT_DATA__')
+    if next_data is None or not next_data.string:
+        raise RuntimeError(f'Cannot find __NEXT_DATA__ in platoon lineup page for {team_slug}')
+
+    root = json.loads(next_data.string)
+    data = root['props']['pageProps']['dehydratedState']['queries'][0]['state']['data']
+    rows = data.get('data', [])
+    if not isinstance(rows, list):
+        raise RuntimeError(f'Unexpected platoon payload shape for {team_slug}')
+    return [row for row in rows if isinstance(row, dict)]
+
+
 def extract_lineup_rows(
     session: requests.Session,
     season: int,
     team_slug: str,
-    batting_map: dict[str, dict[str, str]],
     batting_by_id: dict[int, dict[str, str]],
-    batting_by_name_norm: dict[str, dict[str, str]],
-    batting_by_name_loose: dict[str, dict[str, str]],
+    handedness: str,
 ) -> list[BatterRow]:
-    url = f'https://www.fangraphs.com/roster-resource/depth-charts/{team_slug}'
-    resp = http_get(session, url, timeout=45)
-    if resp.status_code != 200:
-        raise RuntimeError(f'Depth chart request failed for {team_slug}: HTTP {resp.status_code}')
+    handedness = handedness.upper()
+    if handedness not in {'R', 'L'}:
+        raise RuntimeError(f'Unsupported handedness: {handedness}')
 
-    soup = BeautifulSoup(resp.text, 'html.parser')
+    order_key = f'Orderv{handedness}'
+    position_key = f'Positionv{handedness}'
+    rows = fetch_platoon_payload(session, team_slug)
 
-    link_map: dict[str, str] = {}
-    id_map: dict[str, int] = {}
-    link_by_norm: dict[str, tuple[str, str, int | None]] = {}
-    link_by_loose: dict[str, tuple[str, str, int | None]] = {}
-    for a in soup.select('a[href*="/players/"]'):
-        name = a.get_text(strip=True)
-        href = a.get('href', '').strip()
-        if not name or '/players/' not in href:
-            continue
-        if href.startswith('/'):
-            href = 'https://www.fangraphs.com' + href
-        clean_name = clean_player_name(name)
-        link_map.setdefault(clean_name, href)
-        player_ref = parse_player_ref(href)
-        pid_val: int | None = None
-        if player_ref.isdigit():
-            pid_val = int(player_ref)
-            id_map.setdefault(clean_name, pid_val)
-        link_by_norm.setdefault(normalize_name(clean_name), (clean_name, href, pid_val))
-        link_by_loose.setdefault(normalize_name_loose(clean_name), (clean_name, href, pid_val))
-
-    next_data = soup.find('script', id='__NEXT_DATA__')
-    if next_data is None or not next_data.string:
-        raise RuntimeError(f'Cannot find __NEXT_DATA__ in depth chart page for {team_slug}')
-
-    root = json.loads(next_data.string)
-    data = root['props']['pageProps']['dehydratedState']['queries'][0]['state']['data']
-    roster = data.get('dataRoster', [])
-    lineup = [
-        r for r in roster
-        if r.get('type') == 'mlb-sl' and re.fullmatch(r'[1-9]', str(r.get('role', '')).strip())
-    ]
-    lineup.sort(key=lambda r: int(str(r.get('role'))))
-
-    player_id_cache: dict[int, dict[str, str]] = {}
     out: list[BatterRow] = []
-    for r in lineup:
-        order = str(r.get('role', '')).strip()
-        position = str(r.get('position', '')).strip()
-        raw_name = str(r.get('player', '')).strip()
-        name = clean_player_name(raw_name)
-        roster_age = fmt_age(r.get('age') or r.get('age1'))
+    for row in rows:
+        order_val = row.get(order_key)
+        try:
+            order_num = int(order_val)
+        except (TypeError, ValueError):
+            continue
+        if order_num < 1 or order_num > 9:
+            continue
+
+        name = clean_player_name(str(row.get('Name') or row.get('firstlastName') or '').strip())
         if not name:
             continue
 
-        info: dict[str, str] = {}
-        matched_name = name
+        source_player_id = _payload_player_id(row)
+        matched_player_id = source_player_id
+        info = {}
         match_method = 'unmatched'
-        roster_href = ''
-        for cand in name_variants(name):
-            roster_href = link_map.get(cand, '')
-            if roster_href:
-                break
-            norm_hit = link_by_norm.get(normalize_name(cand))
-            if norm_hit:
-                _, roster_href, _ = norm_hit
-                break
-            loose_hit = link_by_loose.get(normalize_name_loose(cand))
-            if loose_hit:
-                _, roster_href, _ = loose_hit
-                break
-        source_player_id = parse_player_ref(roster_href)
-        exact_name_found = name in batting_map
-        source_id_found = source_player_id.isdigit() and int(source_player_id) in batting_by_id
-        normalized_name_found = normalize_name(name) in batting_by_name_norm
-        loose_name_found = normalize_name_loose(name) in batting_by_name_loose
-        identity_mismatch_found = False
-        mismatch_candidate_player_id = ''
-
-        def record_identity_mismatch(candidate: dict[str, str]) -> None:
-            nonlocal identity_mismatch_found, mismatch_candidate_player_id
-            candidate_pid = str(candidate.get('playerid', '') or '')
-            if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
-                return
-            identity_mismatch_found = True
-            if not mismatch_candidate_player_id:
-                mismatch_candidate_player_id = candidate_pid
-
+        source_id_found = False
         if source_player_id.isdigit():
             source_pid = int(source_player_id)
-            if source_pid in batting_by_id:
-                info = batting_by_id[source_pid]
-                match_method = 'playerid'
-            else:
-                cached = player_id_cache.get(source_pid)
-                if cached is None:
-                    cached = fetch_batting_row_by_player_id(session, season, source_pid)
-                    player_id_cache[source_pid] = cached
-                if cached:
-                    info = cached
-                    match_method = 'playerid_api'
-
-        for cand in name_variants(name):
+            info = batting_by_id.get(source_pid, {})
+            if not info:
+                info = fetch_batting_row_by_player_id(session, season, source_pid)
             if info:
-                break
-            if cand in batting_map:
-                candidate = batting_map[cand]
-                candidate_pid = str(candidate.get('playerid', '') or '')
-                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
-                    info = candidate
-                    matched_name = cand
-                    match_method = 'exact_name'
-                    break
-                record_identity_mismatch(candidate)
-            pid = id_map.get(cand)
-            if pid is not None and pid in batting_by_id:
-                candidate = batting_by_id[pid]
-                candidate_pid = str(candidate.get('playerid', '') or '')
-                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
-                    info = candidate
-                    matched_name = cand
-                    match_method = 'playerid'
-                    break
-                record_identity_mismatch(candidate)
-            by_norm = batting_by_name_norm.get(normalize_name(cand), {})
-            if by_norm:
-                candidate_pid = str(by_norm.get('playerid', '') or '')
-                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
-                    info = by_norm
-                    matched_name = cand
-                    match_method = 'normalized_name'
-                    break
-                record_identity_mismatch(by_norm)
-            loose = batting_by_name_loose.get(normalize_name_loose(cand), {})
-            if loose:
-                candidate_pid = str(loose.get('playerid', '') or '')
-                if not source_player_id.isdigit() or not candidate_pid.isdigit() or candidate_pid == source_player_id:
-                    info = loose
-                    matched_name = cand
-                    match_method = 'loose_name'
-                    break
-                record_identity_mismatch(loose)
+                match_method = 'playerid'
+                source_id_found = True
+        if not info:
+            info = _fallback_batting_info(row)
+            if matched_player_id:
+                match_method = 'playerid'
 
-        link_name = matched_name
-        link_url = ''
-        for cand in name_variants(matched_name):
-            link_url = link_map.get(cand, '')
-            if link_url:
-                link_name = cand
-                break
-            norm_hit = link_by_norm.get(normalize_name(cand))
-            if norm_hit:
-                link_name, link_url, _ = norm_hit
-                break
-            loose_hit = link_by_loose.get(normalize_name_loose(cand))
-            if loose_hit:
-                link_name, link_url, _ = loose_hit
-                break
+        link_url = _join_fangraphs_url(row.get('upurl', ''))
         if not link_url:
             link_url = f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats?position=1B/2B/3B/SS/OF'
 
         out.append(BatterRow(
-            order=order,
-            name=link_name,
-            age=roster_age or info.get('age', ''),
-            position=position if position in POS_SET else position,
+            order=str(order_num),
+            name=name,
+            age=info.get('age', ''),
+            position=str(row.get(position_key, '') or '').strip(),
             url=link_url,
             runs=info.get('runs', ''),
             hr=info.get('hr', ''),
@@ -494,13 +435,13 @@ def extract_lineup_rows(
             slg=info.get('slg', ''),
             match_method=match_method,
             source_player_id=source_player_id,
-            matched_player_id=str(info.get('playerid', '') or ''),
+            matched_player_id=str(info.get('playerid', '') or matched_player_id),
             source_id_found_in_stats=source_id_found,
-            exact_name_found_in_stats=exact_name_found,
-            normalized_name_found_in_stats=normalized_name_found,
-            loose_name_found_in_stats=loose_name_found,
-            identity_mismatch_found=identity_mismatch_found,
-            mismatch_candidate_player_id=mismatch_candidate_player_id,
+            exact_name_found_in_stats=False,
+            normalized_name_found_in_stats=False,
+            loose_name_found_in_stats=False,
+            identity_mismatch_found=False,
+            mismatch_candidate_player_id='',
         ))
 
     out.sort(key=lambda r: int(r.order) if r.order.isdigit() else 99)
@@ -520,7 +461,7 @@ def batter_markdown(rows: list[dict[str, str]]) -> str:
     return '\n'.join(head + body)
 
 
-def update_notion_payload(payload_path: Path, batter_data: dict[str, list[dict[str, str]]], out_path: Path) -> None:
+def update_notion_payload(payload_path: Path, batter_data: dict[str, dict[str, Any]], out_path: Path) -> None:
     payload = json.loads(payload_path.read_text(encoding='utf-8'))
     if len(payload) != len(TEAM_SLUGS):
         raise RuntimeError(f'Unexpected payload length {len(payload)} (expected {len(TEAM_SLUGS)})')
@@ -535,7 +476,8 @@ def update_notion_payload(payload_path: Path, batter_data: dict[str, list[dict[s
             continue
 
         sp_part = content.split('## SP', 1)[1]
-        rows = batter_data.get(team, [])
+        batter_section = batter_data.get(team, {})
+        rows = batter_section.get('lineups', {}).get(DEFAULT_VIEW, []) if isinstance(batter_section, dict) else []
         row['content'] = batter_markdown(rows) + '\n\n## SP' + sp_part
         updated += 1
 
@@ -543,23 +485,26 @@ def update_notion_payload(payload_path: Path, batter_data: dict[str, list[dict[s
     print(f'Updated payload rows: {updated}, wrote: {out_path}')
 
 
-def validate_batter_data(data: dict[str, list[dict[str, str]]], season: int) -> None:
+def validate_batter_data(data: dict[str, dict[str, Any]], season: int) -> None:
     if season != 2025:
         raise RuntimeError(f'Validation guard failed: expected season=2025, got {season}')
 
     if len(data) != 30:
         raise RuntimeError(f'Validation failed: expected 30 teams, got {len(data)}')
 
-    missing_lineup = []
-    for team, rows in data.items():
-        if len(rows) < 9:
-            missing_lineup.append((team, len(rows)))
+    missing_lineup: list[tuple[str, str, int]] = []
+    for team, batter in data.items():
+        lineups = batter.get('lineups', {}) if isinstance(batter, dict) else {}
+        for key in ('vsR', 'vsL'):
+            rows = lineups.get(key, []) if isinstance(lineups, dict) else []
+            if len(rows) < 9:
+                missing_lineup.append((team, key, len(rows)))
 
     if missing_lineup:
-        short = ', '.join([f'{t}:{n}' for t, n in missing_lineup[:8]])
-        raise RuntimeError(f'Validation failed: lineup rows < 9 for teams: {short}')
+        short = ', '.join([f'{t}:{view}:{n}' for t, view, n in missing_lineup[:8]])
+        raise RuntimeError(f'Validation failed: lineup rows < 9 for team/view: {short}')
 
-    print('Validation passed: season=2025, teams=30, each team has at least 9 batter rows.')
+    print('Validation passed: season=2025, teams=30, each team has at least 9 batter rows in vsR and vsL.')
 
 
 def main() -> None:
@@ -584,21 +529,23 @@ def main() -> None:
     if args.cookie_header.strip():
         apply_cookie_header(s, args.cookie_header.strip())
 
-    batting_map = fetch_batting_map(s, args.season)
     batting_by_id: dict[int, dict[str, str]] = {}
-    batting_by_name_norm: dict[str, dict[str, str]] = {}
-    batting_by_name_loose: dict[str, dict[str, str]] = {}
-    for name, info in batting_map.items():
+    for _name, info in fetch_batting_map(s, args.season).items():
         pid = info.get('playerid')
         if isinstance(pid, int):
             batting_by_id[pid] = info
-        batting_by_name_norm[normalize_name(name)] = info
-        batting_by_name_loose[normalize_name_loose(name)] = info
 
-    result: dict[str, list[dict[str, str]]] = {}
+    result: dict[str, dict[str, Any]] = {}
     for abbr, slug in TEAM_SLUGS.items():
-        rows = extract_lineup_rows(s, args.season, slug, batting_map, batting_by_id, batting_by_name_norm, batting_by_name_loose)
-        result[abbr] = [asdict(r) for r in rows]
+        vsr_rows = extract_lineup_rows(s, args.season, slug, batting_by_id, 'R')
+        vsl_rows = extract_lineup_rows(s, args.season, slug, batting_by_id, 'L')
+        result[abbr] = {
+            'defaultView': DEFAULT_VIEW,
+            'lineups': {
+                'vsR': [asdict(r) for r in vsr_rows],
+                'vsL': [asdict(r) for r in vsl_rows],
+            },
+        }
 
     validate_batter_data(result, args.season)
 
