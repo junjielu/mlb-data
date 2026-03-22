@@ -34,6 +34,8 @@ class SPRow:
     bb9: str
     stuff_plus: str
     location_plus: str
+    vfa: str
+    babip: str
     match_method: str = 'unmatched'
     source_player_id: str = ''
     matched_player_id: str = ''
@@ -118,6 +120,8 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
             'location_plus': '' if location is None else str(int(round(float(location)))),
             'k9': fmt_float(k9, 2),
             'bb9': fmt_float(bb9, 2),
+            'vfa': fmt_float(r.get('FBv'), 1),
+            'babip': fmt_float(r.get('BABIP'), 3).lstrip('0'),
             'playerid': r.get('playerid'),
         }
     return out
@@ -146,6 +150,8 @@ def fetch_pitching_row_by_player_id(session: requests.Session, season: int, play
         'location_plus': '' if row.get('sp_location') is None else str(int(round(float(row.get('sp_location'))))),
         'k9': fmt_float(row.get('K/9'), 2),
         'bb9': fmt_float(row.get('BB/9'), 2),
+        'vfa': fmt_float(row.get('FBv'), 1),
+        'babip': fmt_float(row.get('BABIP'), 3).lstrip('0'),
         'playerid': row.get('playerid'),
     }
 
@@ -293,6 +299,8 @@ def extract_rotation_rows(
             bb9=info.get('bb9', ''),
             stuff_plus=info.get('stuff_plus', ''),
             location_plus=info.get('location_plus', ''),
+            vfa=info.get('vfa', ''),
+            babip=info.get('babip', ''),
             match_method=match_method,
             source_player_id=source_player_id,
             matched_player_id=str(info.get('playerid', '') or ''),
@@ -308,7 +316,7 @@ def extract_rotation_rows(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Fetch Fangraphs projected SP1-SP5 + ERA, WHIP, K/9, BB/9, Stuff+, Location+ for MLB teams.')
+    parser = argparse.ArgumentParser(description='Fetch Fangraphs projected SP1-SP5 + ERA, WHIP, K/9, BB/9, Stuff+, Location+, vFA, BABIP for MLB teams.')
     parser.add_argument('--season', type=int, default=2025)
     parser.add_argument('--out', type=Path, default=Path('data/fangraphs_sp_2025.json'))
     args = parser.parse_args()

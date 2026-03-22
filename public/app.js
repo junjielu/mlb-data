@@ -1,8 +1,8 @@
 const DIVISION_ORDER = ["AL East", "AL Central", "AL West", "NL East", "NL Central", "NL West"];
 const METRIC_KEYS = {
   batter: ["runs", "hr", "rbi", "sb", "avg", "obp", "slg", "wrc_plus"],
-  sp: ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"],
-  rp: ["era", "k9", "bb9", "k_pct", "stuff_plus"],
+  sp: ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus", "vfa", "babip"],
+  rp: ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus", "vfa", "babip"],
 };
 
 const app = document.getElementById("app");
@@ -206,11 +206,15 @@ function renderTableMarkup(sectionId, rows, columns, options = {}) {
   `;
 }
 
-function renderTable(sectionId, title, rows, columns) {
+function renderTable(sectionId, title, rows, columns, options = {}) {
+  const { tableClass = "", contentClass = "" } = options;
+  const content = renderTableMarkup(sectionId, rows, columns, { tableClass });
   return `
     <section class="table-wrap" id="${sectionId}">
-      <h2>${title}</h2>
-      ${renderTableMarkup(sectionId, rows, columns)}
+      <div class="section-header">
+        <h2>${title}</h2>
+      </div>
+      ${contentClass ? `<div class="${contentClass}">${content}</div>` : content}
     </section>
   `;
 }
@@ -335,6 +339,19 @@ function renderBatterSection(team) {
 function renderTeamPage(abbr) {
   const team = snapshot.teams.find((t) => t.abbr === abbr);
   if (!team) return renderNotFound();
+  const pitcherColumns = [
+    { key: "role", label: "Role" },
+    { key: "name", label: "Name" },
+    { key: "age", label: "Age" },
+    { key: "era", label: "ERA" },
+    { key: "whip", label: "WHIP" },
+    { key: "k9", label: "K/9" },
+    { key: "bb9", label: "BB/9" },
+    { key: "stuff_plus", label: "Stuff+" },
+    { key: "location_plus", label: "Location+" },
+    { key: "vfa", label: "vFA" },
+    { key: "babip", label: "BABIP" },
+  ];
   app.innerHTML = `
     <section class="team-header">
       <h1><img src="${team.logoUrl}" alt="${team.abbr} logo" style="width:34px;height:34px;vertical-align:middle;margin-right:8px;"/>${team.abbr} · ${team.name}</h1>
@@ -350,28 +367,9 @@ function renderTeamPage(abbr) {
 
     ${renderBatterSection(team)}
 
-    ${renderTable("sp", "SP", team.sp, [
-      { key: "role", label: "Role" },
-      { key: "name", label: "Name" },
-      { key: "age", label: "Age" },
-      { key: "era", label: "ERA" },
-      { key: "whip", label: "WHIP" },
-      { key: "k9", label: "K/9" },
-      { key: "bb9", label: "BB/9" },
-      { key: "stuff_plus", label: "Stuff+" },
-      { key: "location_plus", label: "Location+" },
-    ])}
+    ${renderTable("sp", "SP", team.sp, pitcherColumns, { tableClass: "pitcher-table", contentClass: "pitcher-card" })}
 
-    ${renderTable("rp", "RP", team.rp, [
-      { key: "role", label: "Role" },
-      { key: "name", label: "Name" },
-      { key: "age", label: "Age" },
-      { key: "era", label: "ERA" },
-      { key: "k9", label: "K/9" },
-      { key: "bb9", label: "BB/9" },
-      { key: "k_pct", label: "K%" },
-      { key: "stuff_plus", label: "stuff+" },
-    ])}
+    ${renderTable("rp", "RP", team.rp, pitcherColumns, { tableClass: "pitcher-table", contentClass: "pitcher-card" })}
 
     ${renderInjurySection(abbr)}
   `;

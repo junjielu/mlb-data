@@ -155,7 +155,6 @@ body {
   margin-bottom: 14px;
   overflow: auto;
 }
-.table-wrap h2 { margin: 10px 10px 6px; }
 .section-header {
   padding: 10px 10px 6px;
 }
@@ -206,6 +205,54 @@ table {
   width: 100%;
   border-collapse: collapse;
   min-width: 980px;
+}
+
+.pitcher-table {
+  min-width: 1120px;
+  table-layout: fixed;
+}
+
+.pitcher-card {
+  margin: 0 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fcfdff 0%, #f8fbff 100%);
+  overflow: auto;
+}
+
+.pitcher-card th {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.pitcher-card .primary-row.is-expanded {
+  background: rgba(227, 238, 250, 0.82);
+}
+
+.pitcher-card .history-row {
+  background: rgba(248, 251, 255, 0.9);
+}
+
+.pitcher-table .col-role {
+  width: 70px;
+}
+
+.pitcher-table .col-name {
+  width: 220px;
+}
+
+.pitcher-table .col-age {
+  width: 58px;
+}
+
+.pitcher-table .col-era,
+.pitcher-table .col-whip,
+.pitcher-table .col-k9,
+.pitcher-table .col-bb9,
+.pitcher-table .col-stuff_plus,
+.pitcher-table .col-location_plus,
+.pitcher-table .col-vfa,
+.pitcher-table .col-babip {
+  width: 76px;
 }
 
 .batter-subtable {

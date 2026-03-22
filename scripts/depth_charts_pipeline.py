@@ -66,15 +66,16 @@ TEAM_META = {
 }
 
 B_KEYS = ["wrc_plus", "avg", "obp", "slg"]
-SP_KEYS = ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"]
-RP_KEYS = ["era", "k9", "bb9", "k_pct", "stuff_plus"]
+PITCHER_KEYS = ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus", "vfa", "babip"]
+SP_KEYS = PITCHER_KEYS
+RP_KEYS = PITCHER_KEYS
 HISTORY_SEASONS = (2024, 2023)
 PUBLIC_ID_KEYS = ("matched_player_id", "source_player_id")
 DEFAULT_BATTER_VIEW = "vsR"
 HISTORY_ROW_KEYS = {
     "batter": ["runs", "hr", "rbi", "sb", "avg", "obp", "slg", "wrc_plus"],
-    "sp": ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus"],
-    "rp": ["era", "k9", "bb9", "k_pct", "stuff_plus"],
+    "sp": PITCHER_KEYS,
+    "rp": PITCHER_KEYS,
 }
 
 
@@ -205,9 +206,10 @@ def fetch_pitching_history_map(session: requests.Session, season: int) -> dict[s
             "whip": fmt_float(row.get("WHIP"), 2),
             "k9": fmt_float(row.get("K/9"), 2),
             "bb9": fmt_float(row.get("BB/9"), 2),
-            "k_pct": fmt_pct(row.get("K%")),
             "stuff_plus": fmt_int(row.get("sp_stuff")),
             "location_plus": fmt_int(row.get("sp_location")),
+            "vfa": fmt_float(row.get("FBv"), 1),
+            "babip": fmt_avg(row.get("BABIP")),
         }
     return history
 

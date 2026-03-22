@@ -30,10 +30,13 @@ class RPRow:
     age: str
     url: str
     era: str
+    whip: str
     k9: str
     bb9: str
-    k_pct: str
     stuff_plus: str
+    location_plus: str
+    vfa: str
+    babip: str
     match_method: str = 'unmatched'
     source_player_id: str = ''
     matched_player_id: str = ''
@@ -159,10 +162,13 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
         out[name] = {
             'age': fmt_age(r.get('Age')),
             'era': fmt_float(r.get('ERA'), 2),
+            'whip': fmt_float(r.get('WHIP'), 2),
             'k9': fmt_float(r.get('K/9'), 2),
             'bb9': fmt_float(r.get('BB/9'), 2),
-            'k_pct': fmt_pct(r.get('K%')),
             'stuff_plus': fmt_int(r.get('sp_stuff')),
+            'location_plus': fmt_int(r.get('sp_location')),
+            'vfa': fmt_float(r.get('FBv'), 1),
+            'babip': fmt_float(r.get('BABIP'), 3).lstrip('0'),
             'playerid': r.get('playerid'),
         }
     return out
@@ -186,10 +192,13 @@ def fetch_pitching_row_by_player_id(session: requests.Session, season: int, play
     return {
         'age': fmt_age(row.get('Age')),
         'era': fmt_float(row.get('ERA'), 2),
+        'whip': fmt_float(row.get('WHIP'), 2),
         'k9': fmt_float(row.get('K/9'), 2),
         'bb9': fmt_float(row.get('BB/9'), 2),
-        'k_pct': fmt_pct(row.get('K%')),
         'stuff_plus': fmt_int(row.get('sp_stuff')),
+        'location_plus': fmt_int(row.get('sp_location')),
+        'vfa': fmt_float(row.get('FBv'), 1),
+        'babip': fmt_float(row.get('BABIP'), 3).lstrip('0'),
         'playerid': row.get('playerid'),
     }
 
@@ -326,10 +335,13 @@ def extract_bullpen_rows(
                 age=roster_age or info.get('age', ''),
                 url=link_map.get(name, f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats/pitching'),
                 era=info.get('era', ''),
+                whip=info.get('whip', ''),
                 k9=info.get('k9', ''),
                 bb9=info.get('bb9', ''),
-                k_pct=info.get('k_pct', ''),
                 stuff_plus=info.get('stuff_plus', ''),
+                location_plus=info.get('location_plus', ''),
+                vfa=info.get('vfa', ''),
+                babip=info.get('babip', ''),
                 match_method=match_method,
                 source_player_id=source_player_id,
                 matched_player_id=str(info.get('playerid', '') or ''),
@@ -347,11 +359,11 @@ def extract_bullpen_rows(
 def rp_markdown(rows: list[dict[str, str]]) -> str:
     head = [
         '## RP',
-        '|Role|Name|ERA|K/9|BB/9|K%|stuff+|',
-        '|---|---|---|---|---|---|---|',
+        '|Role|Name|ERA|WHIP|K/9|BB/9|Stuff+|Location+|vFA|BABIP|',
+        '|---|---|---|---|---|---|---|---|---|---|',
     ]
     body = [
-        f"|{r['role']}|[**{r['name']}**]({r['url']})|{r['era']}|{r['k9']}|{r['bb9']}|{r['k_pct']}|{r['stuff_plus']}|"
+        f"|{r['role']}|[**{r['name']}**]({r['url']})|{r['era']}|{r['whip']}|{r['k9']}|{r['bb9']}|{r['stuff_plus']}|{r['location_plus']}|{r['vfa']}|{r['babip']}|"
         for r in rows
     ]
     return '\n'.join(head + body)

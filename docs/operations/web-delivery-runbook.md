@@ -71,5 +71,6 @@ Open:
 Production UI expectation:
 - The public site shows approved depth chart results and freshness metadata
 - Published `depth-charts.json` rows expose consumer-facing `playerId` and inline `history` entries for 2024 and 2023
+- Published SP and RP rows use the same metric contract: `ERA`, `WHIP`, `K/9`, `BB/9`, `Stuff+`, `Location+`, `vFA`, `BABIP`
 - `/team/:abbr` renders 2025 primary rows by default and can expand inline recent history beneath a player row
 - Internal warning counts, publish review state, and operator diagnostics stay in internal artifacts and QA outputs

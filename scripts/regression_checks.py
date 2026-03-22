@@ -87,8 +87,8 @@ def get_regression_failures(snapshot: dict) -> list[str]:
                 failures.append(f"{abbr} batter alternates.{view} is missing")
 
     for label, row, keys in [
-        ("NYY SU7", nyy_su7, ["era", "k9", "bb9", "k_pct", "stuff_plus"]),
-        ("TOR SU7", tor_su7, ["era", "k9", "bb9", "k_pct", "stuff_plus"]),
+        ("NYY SU7", nyy_su7, ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus", "vfa", "babip"]),
+        ("TOR SU7", tor_su7, ["era", "whip", "k9", "bb9", "stuff_plus", "location_plus", "vfa", "babip"]),
     ]:
         if any(not str(row.get(k, "")).strip() for k in keys):
             failures.append(f"{label} has missing RP metrics")
@@ -138,8 +138,8 @@ def main() -> int:
 
     print("Regression checks passed:")
     print(f"- Snapshot: {snapshot_path}")
-    print(f"- NYY SU7: {nyy_su7['name']} {nyy_su7['era']} {nyy_su7['k9']} {nyy_su7['bb9']} {nyy_su7['k_pct']} {nyy_su7['stuff_plus']}")
-    print(f"- TOR SU7: {tor_su7['name']} {tor_su7['era']} {tor_su7['k9']} {tor_su7['bb9']} {tor_su7['k_pct']} {tor_su7['stuff_plus']}")
+    print(f"- NYY SU7: {nyy_su7['name']} {nyy_su7['era']} {nyy_su7['whip']} {nyy_su7['k9']} {nyy_su7['bb9']} {nyy_su7['stuff_plus']} {nyy_su7['location_plus']} {nyy_su7['vfa']} {nyy_su7['babip']}")
+    print(f"- TOR SU7: {tor_su7['name']} {tor_su7['era']} {tor_su7['whip']} {tor_su7['k9']} {tor_su7['bb9']} {tor_su7['stuff_plus']} {tor_su7['location_plus']} {tor_su7['vfa']} {tor_su7['babip']}")
     print(f"- LAD batter #5: {lad_b5['name']}")
     print(f"- LAD batter #6: {lad_b6['name']} matched_player_id={lad_b6.get('matched_player_id')}")
     print(f"- LAD alternates vsR/vsL: {len(lad_alt_vsr)}/{len(lad_alt_vsl)}")
