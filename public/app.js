@@ -129,9 +129,18 @@ function renderPlayerNameCell(sectionId, row) {
   const positionMarkup = sectionId.startsWith("batter") && position
     ? `<span class="player-position" aria-label="Position ${escapeHtml(position)}" title="Position ${escapeHtml(position)}">${escapeHtml(position)}</span>`
     : "";
+  const isAlternateRow = sectionId.includes("-alternates");
   let platoonLabel = "";
-  if (row.platoonRole === "vsR_only") platoonLabel = `<span class="platoon-tag" title="Published only against right-handed pitching">vs RHP only</span>`;
-  if (row.platoonRole === "vsL_only") platoonLabel = `<span class="platoon-tag" title="Published only against left-handed pitching">vs LHP only</span>`;
+  if (row.platoonRole === "vsR_only") {
+    platoonLabel = isAlternateRow
+      ? `<span class="platoon-tag" title="Benched only against right-handed pitching">vs LHP only</span>`
+      : `<span class="platoon-tag" title="Published only against right-handed pitching">vs RHP only</span>`;
+  }
+  if (row.platoonRole === "vsL_only") {
+    platoonLabel = isAlternateRow
+      ? `<span class="platoon-tag" title="Benched only against left-handed pitching">vs RHP only</span>`
+      : `<span class="platoon-tag" title="Published only against left-handed pitching">vs LHP only</span>`;
+  }
   return `<a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a>${positionMarkup}${platoonLabel}`;
 }
 
