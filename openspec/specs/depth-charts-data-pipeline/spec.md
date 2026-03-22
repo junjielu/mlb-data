@@ -106,3 +106,16 @@ The depth charts data pipeline SHALL publish recent season history for each publ
 - **WHEN** one or more historical metric values are unavailable for a row's 2024 or 2023 history entry
 - **THEN** the release artifact may leave those metric fields empty
 - **AND** the row remains publishable without adding operator-only explanation fields to the public contract
+
+### Requirement: Public depth chart rows retain Fangraphs player age
+The depth charts data pipeline SHALL retain each Fangraphs player row's current age on public Batter, SP, and RP rows in the published `depth-charts.json` artifact.
+
+#### Scenario: Public release rows include age on primary players
+- **WHEN** the pipeline builds and publishes a Batter, SP, or RP row from the Fangraphs source data
+- **THEN** the published primary row includes an `age` field sourced from the parsed Fangraphs player row
+- **AND** the age field is available for frontend consumption alongside the existing public player fields
+
+#### Scenario: Missing age does not expose operator-only metadata
+- **WHEN** Fangraphs does not provide a usable age value for a published Batter, SP, or RP row
+- **THEN** the public row may leave the `age` field empty
+- **AND** the published artifact MUST NOT expose operator-only diagnostics or review metadata to explain the missing age

@@ -475,7 +475,10 @@ def evaluate_quality(teams: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
 
 
 def _sanitize_row(row: dict[str, Any]) -> dict[str, Any]:
-    return {k: v for k, v in row.items() if k not in OPERATOR_ROW_FIELDS}
+    public_row = {k: v for k, v in row.items() if k not in OPERATOR_ROW_FIELDS}
+    if "age" in public_row:
+        public_row["age"] = str(public_row.get("age", "") or "").strip()
+    return public_row
 
 
 def sanitize_snapshot(snapshot: dict[str, Any]) -> dict[str, Any]:

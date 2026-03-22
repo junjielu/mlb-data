@@ -3,6 +3,7 @@
     {
       "role": "CL",
       "name": "Paul Sewald",
+      "age": "35.8",
       "url": "https://www.fangraphs.com/players/paul-sewald/13892/stats/pitching",
       "era": "4.58",
       "k9": "9.15",
@@ -22,6 +23,7 @@
     {
       "role": "SU8",
       "name": "Taylor Clarke",
+      "age": "32.9",
       "url": "https://www.fangraphs.com/players/taylor-clarke/17611/stats/pitching",
       "era": "3.25",
       "k9": "7.16",
@@ -41,6 +43,7 @@
     {
       "role": "SU7",
       "name": "Jonathan Loaisiga",
+      "age": "31.4",
       "url": "https://www.fangraphs.com/players/jonathan-loaisiga/stats/pitching",
       "era": "4.25",
       "k9": "7.58",
@@ -60,6 +63,7 @@
     {
       "role": "MID",
       "name": "Ryan Thompson",
+      "age": "33.7",
       "url": "https://www.fangraphs.com/players/ryan-thompson/16647/stats/pitching",
       "era": "3.92",
       "k9": "7.84",
@@ -79,6 +83,7 @@
     {
       "role": "MID",
       "name": "Kevin Ginkel",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/kevin-ginkel/19876/stats/pitching",
       "era": "7.36",
       "k9": "10.17",
@@ -98,6 +103,7 @@
     {
       "role": "MID",
       "name": "Philip Abner",
+      "age": "23.9",
       "url": "https://www.fangraphs.com/players/philip-abner/33821/stats/pitching",
       "era": "4.91",
       "k9": "12.27",
@@ -117,6 +123,7 @@
     {
       "role": "MID",
       "name": "Juan Morillo",
+      "age": "27",
       "url": "https://www.fangraphs.com/players/juan-morillo/21924/stats/pitching",
       "era": "4.19",
       "k9": "9.44",
@@ -136,6 +143,7 @@
     {
       "role": "LR",
       "name": "Andrew Hoffmann",
+      "age": "26.1",
       "url": "https://www.fangraphs.com/players/andrew-hoffmann/29633/stats/pitching",
       "era": "6.00",
       "k9": "9.00",
@@ -157,6 +165,7 @@
     {
       "role": "CL",
       "name": "Raisel Iglesias",
+      "age": "36.2",
       "url": "https://www.fangraphs.com/players/raisel-iglesias/17130/stats/pitching",
       "era": "3.21",
       "k9": "9.76",
@@ -176,6 +185,7 @@
     {
       "role": "SU8",
       "name": "Robert Suarez",
+      "age": "35.1",
       "url": "https://www.fangraphs.com/players/robert-suarez/30115/stats/pitching",
       "era": "2.97",
       "k9": "9.69",
@@ -195,6 +205,7 @@
     {
       "role": "SU7",
       "name": "Dylan Lee",
+      "age": "31.6",
       "url": "https://www.fangraphs.com/players/dylan-lee/19996/stats/pitching",
       "era": "3.29",
       "k9": "10.01",
@@ -214,6 +225,7 @@
     {
       "role": "MID",
       "name": "Tyler Kinley",
+      "age": "35.1",
       "url": "https://www.fangraphs.com/players/tyler-kinley/18297/stats/pitching",
       "era": "3.96",
       "k9": "9.04",
@@ -233,6 +245,7 @@
     {
       "role": "MID",
       "name": "Aaron Bummer",
+      "age": "32.5",
       "url": "https://www.fangraphs.com/players/aaron-bummer/16258/stats/pitching",
       "era": "3.81",
       "k9": "8.45",
@@ -252,6 +265,7 @@
     {
       "role": "MID",
       "name": "Joel Payamps",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/joel-payamps/14332/stats/pitching",
       "era": "6.84",
       "k9": "8.20",
@@ -271,6 +285,7 @@
     {
       "role": "MID",
       "name": "Didier Fuentes",
+      "age": "20.8",
       "url": "https://www.fangraphs.com/players/didier-fuentes/30661/stats/pitching",
       "era": "13.85",
       "k9": "8.31",
@@ -290,6 +305,7 @@
     {
       "role": "LR",
       "name": "Jose Suarez",
+      "age": "28.2",
       "url": "https://www.fangraphs.com/players/jose-suarez/stats/pitching",
       "era": "1.86",
       "k9": "7.45",
@@ -311,6 +327,7 @@
     {
       "role": "CL",
       "name": "Ryan Helsley",
+      "age": "31.7",
       "url": "https://www.fangraphs.com/players/ryan-helsley/18138/stats/pitching",
       "era": "4.50",
       "k9": "10.13",
@@ -330,6 +347,7 @@
     {
       "role": "SU8",
       "name": "Keegan Akin",
+      "age": "31",
       "url": "https://www.fangraphs.com/players/keegan-akin/19362/stats/pitching",
       "era": "3.41",
       "k9": "8.38",
@@ -349,6 +367,7 @@
     {
       "role": "SU7",
       "name": "Yennier Cano",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/yennier-cano/25911/stats/pitching",
       "era": "5.12",
       "k9": "8.22",
@@ -368,6 +387,7 @@
     {
       "role": "MID",
       "name": "Tyler Wells",
+      "age": "31.6",
       "url": "https://www.fangraphs.com/players/tyler-wells/20000/stats/pitching",
       "era": "2.91",
       "k9": "7.48",
@@ -387,6 +407,7 @@
     {
       "role": "MID",
       "name": "Dietrich Enns",
+      "age": "34.8",
       "url": "https://www.fangraphs.com/players/dietrich-enns/13932/stats/pitching",
       "era": "4.08",
       "k9": "9.52",
@@ -406,6 +427,7 @@
     {
       "role": "MID",
       "name": "Rico Garcia",
+      "age": "32.2",
       "url": "https://www.fangraphs.com/players/rico-garcia/20023/stats/pitching",
       "era": "3.15",
       "k9": "9.96",
@@ -425,6 +447,7 @@
     {
       "role": "MID",
       "name": "Grant Wolfram",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/grant-wolfram/21623/stats/pitching",
       "era": "5.40",
       "k9": "10.46",
@@ -444,6 +467,7 @@
     {
       "role": "LR",
       "name": "Jackson Kowar",
+      "age": "29.5",
       "url": "https://www.fangraphs.com/players/jackson-kowar/21549/stats/pitching",
       "era": "4.24",
       "k9": "7.94",
@@ -465,6 +489,7 @@
     {
       "role": "CL",
       "name": "Aroldis Chapman",
+      "age": "38.1",
       "url": "https://www.fangraphs.com/players/aroldis-chapman/10233/stats/pitching",
       "era": "1.17",
       "k9": "12.47",
@@ -484,6 +509,7 @@
     {
       "role": "SU8",
       "name": "Garrett Whitlock",
+      "age": "29.8",
       "url": "https://www.fangraphs.com/players/garrett-whitlock/20191/stats/pitching",
       "era": "2.25",
       "k9": "11.38",
@@ -503,6 +529,7 @@
     {
       "role": "SU7",
       "name": "Justin Slaten",
+      "age": "28.5",
       "url": "https://www.fangraphs.com/players/justin-slaten/25648/stats/pitching",
       "era": "4.24",
       "k9": "6.62",
@@ -522,6 +549,7 @@
     {
       "role": "MID",
       "name": "Greg Weissert",
+      "age": "31.1",
       "url": "https://www.fangraphs.com/players/greg-weissert/20375/stats/pitching",
       "era": "2.82",
       "k9": "7.66",
@@ -541,6 +569,7 @@
     {
       "role": "MID",
       "name": "Danny Coulombe",
+      "age": "36.4",
       "url": "https://www.fangraphs.com/players/danny-coulombe/13293/stats/pitching",
       "era": "2.30",
       "k9": "9.00",
@@ -560,6 +589,7 @@
     {
       "role": "MID",
       "name": "Zack Kelly",
+      "age": "31",
       "url": "https://www.fangraphs.com/players/zack-kelly/20349/stats/pitching",
       "era": "4.58",
       "k9": "8.92",
@@ -579,6 +609,7 @@
     {
       "role": "MID",
       "name": "Jovani Moran",
+      "age": "28.9",
       "url": "https://www.fangraphs.com/players/jovani-moran/stats/pitching",
       "era": "6.75",
       "k9": "11.25",
@@ -598,6 +629,7 @@
     {
       "role": "LR",
       "name": "Ryan Watson",
+      "age": "28.3",
       "url": "https://www.fangraphs.com/players/ryan-watson/sa3015070/stats/pitching",
       "era": "",
       "k9": "",
@@ -619,6 +651,7 @@
     {
       "role": "CL",
       "name": "Daniel Palencia",
+      "age": "26.1",
       "url": "https://www.fangraphs.com/players/daniel-palencia/27914/stats/pitching",
       "era": "2.91",
       "k9": "10.42",
@@ -638,6 +671,7 @@
     {
       "role": "SU8",
       "name": "Phil Maton",
+      "age": "33",
       "url": "https://www.fangraphs.com/players/phil-maton/18064/stats/pitching",
       "era": "2.79",
       "k9": "11.89",
@@ -657,6 +691,7 @@
     {
       "role": "SU7",
       "name": "Hunter Harvey",
+      "age": "31.3",
       "url": "https://www.fangraphs.com/players/hunter-harvey/15507/stats/pitching",
       "era": "0.00",
       "k9": "9.28",
@@ -676,6 +711,7 @@
     {
       "role": "MID",
       "name": "Caleb Thielbar",
+      "age": "39.1",
       "url": "https://www.fangraphs.com/players/caleb-thielbar/10078/stats/pitching",
       "era": "2.64",
       "k9": "8.69",
@@ -695,6 +731,7 @@
     {
       "role": "MID",
       "name": "Jacob Webb",
+      "age": "32.6",
       "url": "https://www.fangraphs.com/players/jacob-webb/19274/stats/pitching",
       "era": "3.00",
       "k9": "7.91",
@@ -714,6 +751,7 @@
     {
       "role": "MID",
       "name": "Hoby Milner",
+      "age": "35.2",
       "url": "https://www.fangraphs.com/players/hoby-milner/13346/stats/pitching",
       "era": "3.84",
       "k9": "7.42",
@@ -733,6 +771,7 @@
     {
       "role": "MID",
       "name": "Javier Assad",
+      "age": "28.6",
       "url": "https://www.fangraphs.com/players/javier-assad/21741/stats/pitching",
       "era": "3.65",
       "k9": "5.59",
@@ -752,6 +791,7 @@
     {
       "role": "LR",
       "name": "Colin Rea",
+      "age": "35.7",
       "url": "https://www.fangraphs.com/players/colin-rea/12317/stats/pitching",
       "era": "3.95",
       "k9": "7.17",
@@ -773,6 +813,7 @@
     {
       "role": "CL",
       "name": "Seranthony Dominguez",
+      "age": "31.3",
       "url": "https://www.fangraphs.com/players/seranthony-dominguez/stats/pitching",
       "era": "3.16",
       "k9": "11.35",
@@ -792,6 +833,7 @@
     {
       "role": "SU8",
       "name": "Jordan Leasure",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/jordan-leasure/29950/stats/pitching",
       "era": "3.92",
       "k9": "11.33",
@@ -811,6 +853,7 @@
     {
       "role": "SU7",
       "name": "Grant Taylor",
+      "age": "23.8",
       "url": "https://www.fangraphs.com/players/grant-taylor/33927/stats/pitching",
       "era": "4.91",
       "k9": "13.25",
@@ -830,6 +873,7 @@
     {
       "role": "MID",
       "name": "Sean Newcomb",
+      "age": "32.8",
       "url": "https://www.fangraphs.com/players/sean-newcomb/16943/stats/pitching",
       "era": "2.73",
       "k9": "8.87",
@@ -849,6 +893,7 @@
     {
       "role": "MID",
       "name": "Brandon Eisert",
+      "age": "28.2",
       "url": "https://www.fangraphs.com/players/brandon-eisert/27668/stats/pitching",
       "era": "4.39",
       "k9": "9.56",
@@ -868,6 +913,7 @@
     {
       "role": "MID",
       "name": "Jordan Hicks",
+      "age": "29.5",
       "url": "https://www.fangraphs.com/players/jordan-hicks/19618/stats/pitching",
       "era": "6.95",
       "k9": "7.75",
@@ -887,6 +933,7 @@
     {
       "role": "MID",
       "name": "Chris Murphy",
+      "age": "27.8",
       "url": "https://www.fangraphs.com/players/chris-murphy/26214/stats/pitching",
       "era": "3.12",
       "k9": "7.79",
@@ -906,6 +953,7 @@
     {
       "role": "LR",
       "name": "Jedixson Paez",
+      "age": "22.2",
       "url": "https://www.fangraphs.com/players/jedixson-paez/sa3016264/stats/pitching",
       "era": "",
       "k9": "",
@@ -927,6 +975,7 @@
     {
       "role": "CL",
       "name": "Emilio Pagan",
+      "age": "34.9",
       "url": "https://www.fangraphs.com/players/emilio-pagan/stats/pitching",
       "era": "2.88",
       "k9": "10.62",
@@ -946,6 +995,7 @@
     {
       "role": "SU8",
       "name": "Tony Santillan",
+      "age": "28.9",
       "url": "https://www.fangraphs.com/players/tony-santillan/19926/stats/pitching",
       "era": "2.44",
       "k9": "9.16",
@@ -965,6 +1015,7 @@
     {
       "role": "SU7",
       "name": "Graham Ashcraft",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/graham-ashcraft/27552/stats/pitching",
       "era": "3.99",
       "k9": "8.82",
@@ -984,6 +1035,7 @@
     {
       "role": "MID",
       "name": "Pierce Johnson",
+      "age": "34.9",
       "url": "https://www.fangraphs.com/players/pierce-johnson/13435/stats/pitching",
       "era": "3.05",
       "k9": "9.00",
@@ -1003,6 +1055,7 @@
     {
       "role": "MID",
       "name": "Brock Burke",
+      "age": "29.6",
       "url": "https://www.fangraphs.com/players/brock-burke/17968/stats/pitching",
       "era": "3.36",
       "k9": "7.59",
@@ -1022,6 +1075,7 @@
     {
       "role": "MID",
       "name": "Connor Phillips",
+      "age": "24.9",
       "url": "https://www.fangraphs.com/players/connor-phillips/27649/stats/pitching",
       "era": "2.88",
       "k9": "11.52",
@@ -1041,6 +1095,7 @@
     {
       "role": "MID",
       "name": "Sam Moll",
+      "age": "34.2",
       "url": "https://www.fangraphs.com/players/sam-moll/14874/stats/pitching",
       "era": "6.38",
       "k9": "10.80",
@@ -1060,6 +1115,7 @@
     {
       "role": "LR",
       "name": "Brandon Williamson",
+      "age": "28",
       "url": "https://www.fangraphs.com/players/brandon-williamson/25463/stats/pitching",
       "era": "",
       "k9": "",
@@ -1081,6 +1137,7 @@
     {
       "role": "CL",
       "name": "Cade Smith",
+      "age": "26.9",
       "url": "https://www.fangraphs.com/players/cade-smith/27867/stats/pitching",
       "era": "2.93",
       "k9": "12.71",
@@ -1100,6 +1157,7 @@
     {
       "role": "SU8",
       "name": "Shawn Armstrong",
+      "age": "35.5",
       "url": "https://www.fangraphs.com/players/shawn-armstrong/12857/stats/pitching",
       "era": "2.31",
       "k9": "9.00",
@@ -1119,6 +1177,7 @@
     {
       "role": "SU7",
       "name": "Erik Sabrowski",
+      "age": "28.4",
       "url": "https://www.fangraphs.com/players/erik-sabrowski/24978/stats/pitching",
       "era": "1.84",
       "k9": "12.89",
@@ -1138,6 +1197,7 @@
     {
       "role": "MID",
       "name": "Matt Festa",
+      "age": "33",
       "url": "https://www.fangraphs.com/players/matt-festa/19330/stats/pitching",
       "era": "4.12",
       "k9": "9.22",
@@ -1157,6 +1217,7 @@
     {
       "role": "MID",
       "name": "Tim Herrin",
+      "age": "29.4",
       "url": "https://www.fangraphs.com/players/tim-herrin/25139/stats/pitching",
       "era": "4.85",
       "k9": "9.49",
@@ -1176,6 +1237,7 @@
     {
       "role": "MID",
       "name": "Connor Brogdon",
+      "age": "31.1",
       "url": "https://www.fangraphs.com/players/connor-brogdon/21205/stats/pitching",
       "era": "5.55",
       "k9": "9.38",
@@ -1195,6 +1257,7 @@
     {
       "role": "MID",
       "name": "Colin Holderman",
+      "age": "30.5",
       "url": "https://www.fangraphs.com/players/colin-holderman/22361/stats/pitching",
       "era": "7.01",
       "k9": "6.31",
@@ -1214,6 +1277,7 @@
     {
       "role": "LR",
       "name": "Peyton Pallette",
+      "age": "24.9",
       "url": "https://www.fangraphs.com/players/peyton-pallette/sa3020742/stats/pitching",
       "era": "",
       "k9": "",
@@ -1235,6 +1299,7 @@
     {
       "role": "CL",
       "name": "Victor Vodnik",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/victor-vodnik/24614/stats/pitching",
       "era": "3.02",
       "k9": "8.70",
@@ -1254,6 +1319,7 @@
     {
       "role": "SU8",
       "name": "Jimmy Herget",
+      "age": "32.5",
       "url": "https://www.fangraphs.com/players/jimmy-herget/17556/stats/pitching",
       "era": "2.48",
       "k9": "8.75",
@@ -1273,6 +1339,7 @@
     {
       "role": "SU7",
       "name": "Juan M. Mejia",
+      "age": "25.7",
       "url": "https://www.fangraphs.com/players/juan-m.-mejia/stats/pitching",
       "era": "3.96",
       "k9": "9.98",
@@ -1292,6 +1359,7 @@
     {
       "role": "MID",
       "name": "Zach Agnos",
+      "age": "25.6",
       "url": "https://www.fangraphs.com/players/zach-agnos/31552/stats/pitching",
       "era": "6.61",
       "k9": "5.46",
@@ -1311,6 +1379,7 @@
     {
       "role": "MID",
       "name": "Brennan Bernardino",
+      "age": "34.2",
       "url": "https://www.fangraphs.com/players/brennan-bernardino/16835/stats/pitching",
       "era": "3.14",
       "k9": "7.49",
@@ -1330,6 +1399,7 @@
     {
       "role": "MID",
       "name": "John Brebbia",
+      "age": "35.8",
       "url": "https://www.fangraphs.com/players/john-brebbia/12777/stats/pitching",
       "era": "7.71",
       "k9": "10.03",
@@ -1349,6 +1419,7 @@
     {
       "role": "MID",
       "name": "Keegan Thompson",
+      "age": "31",
       "url": "https://www.fangraphs.com/players/keegan-thompson/19795/stats/pitching",
       "era": "",
       "k9": "",
@@ -1368,6 +1439,7 @@
     {
       "role": "LR",
       "name": "Antonio Senzatela",
+      "age": "31.2",
       "url": "https://www.fangraphs.com/players/antonio-senzatela/15488/stats/pitching",
       "era": "6.65",
       "k9": "5.05",
@@ -1389,6 +1461,7 @@
     {
       "role": "CL",
       "name": "Kenley Jansen",
+      "age": "38.5",
       "url": "https://www.fangraphs.com/players/kenley-jansen/3096/stats/pitching",
       "era": "2.59",
       "k9": "8.69",
@@ -1408,6 +1481,7 @@
     {
       "role": "SU8",
       "name": "Will Vest",
+      "age": "30.8",
       "url": "https://www.fangraphs.com/players/will-vest/19769/stats/pitching",
       "era": "3.01",
       "k9": "9.83",
@@ -1427,6 +1501,7 @@
     {
       "role": "SU7",
       "name": "Kyle Finnegan",
+      "age": "34.5",
       "url": "https://www.fangraphs.com/players/kyle-finnegan/15009/stats/pitching",
       "era": "3.47",
       "k9": "8.68",
@@ -1446,6 +1521,7 @@
     {
       "role": "MID",
       "name": "Tyler Holton",
+      "age": "29.8",
       "url": "https://www.fangraphs.com/players/tyler-holton/26231/stats/pitching",
       "era": "3.66",
       "k9": "7.32",
@@ -1465,6 +1541,7 @@
     {
       "role": "MID",
       "name": "Drew Anderson",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/drew-anderson/15130/stats/pitching",
       "era": "",
       "k9": "",
@@ -1484,6 +1561,7 @@
     {
       "role": "MID",
       "name": "Brenan Hanifee",
+      "age": "27.8",
       "url": "https://www.fangraphs.com/players/brenan-hanifee/22304/stats/pitching",
       "era": "3.00",
       "k9": "6.00",
@@ -1503,6 +1581,7 @@
     {
       "role": "MID",
       "name": "Brant Hurter",
+      "age": "27.5",
       "url": "https://www.fangraphs.com/players/brant-hurter/30133/stats/pitching",
       "era": "2.43",
       "k9": "9.71",
@@ -1522,6 +1601,7 @@
     {
       "role": "LR",
       "name": "Enmanuel De Jesus",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/enmanuel-de-jesus/18554/stats/pitching",
       "era": "",
       "k9": "",
@@ -1543,6 +1623,7 @@
     {
       "role": "CL",
       "name": "Bryan Abreu",
+      "age": "28.6",
       "url": "https://www.fangraphs.com/players/bryan-abreu/16609/stats/pitching",
       "era": "2.28",
       "k9": "13.31",
@@ -1562,6 +1643,7 @@
     {
       "role": "SU8",
       "name": "Bryan King",
+      "age": "29.4",
       "url": "https://www.fangraphs.com/players/bryan-king/25890/stats/pitching",
       "era": "2.78",
       "k9": "9.13",
@@ -1581,6 +1663,7 @@
     {
       "role": "SU7",
       "name": "Enyel De Los Santos",
+      "age": "30.2",
       "url": "https://www.fangraphs.com/players/enyel-de-los-santos/18403/stats/pitching",
       "era": "4.36",
       "k9": "8.45",
@@ -1600,6 +1683,7 @@
     {
       "role": "MID",
       "name": "Steven Okert",
+      "age": "34.7",
       "url": "https://www.fangraphs.com/players/steven-okert/13580/stats/pitching",
       "era": "3.01",
       "k9": "10.55",
@@ -1619,6 +1703,7 @@
     {
       "role": "MID",
       "name": "Roddery Munoz",
+      "age": "25.9",
       "url": "https://www.fangraphs.com/players/roddery-munoz/stats/pitching",
       "era": "8.18",
       "k9": "11.45",
@@ -1638,6 +1723,7 @@
     {
       "role": "MID",
       "name": "Christian Roa",
+      "age": "27",
       "url": "https://www.fangraphs.com/players/christian-roa/27662/stats/pitching",
       "era": "0.00",
       "k9": "9.00",
@@ -1657,6 +1743,7 @@
     {
       "role": "MID",
       "name": "Kai-Wei Teng",
+      "age": "27.3",
       "url": "https://www.fangraphs.com/players/kai-wei-teng/24282/stats/pitching",
       "era": "6.37",
       "k9": "11.83",
@@ -1676,6 +1763,7 @@
     {
       "role": "LR",
       "name": "Ryan Weiss",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/ryan-weiss/sa3007778/stats/pitching",
       "era": "",
       "k9": "",
@@ -1697,6 +1785,7 @@
     {
       "role": "CL",
       "name": "Carlos Estevez",
+      "age": "33.2",
       "url": "https://www.fangraphs.com/players/carlos-estevez/stats/pitching",
       "era": "2.45",
       "k9": "7.36",
@@ -1716,6 +1805,7 @@
     {
       "role": "SU8",
       "name": "Lucas Erceg",
+      "age": "30.9",
       "url": "https://www.fangraphs.com/players/lucas-erceg/19360/stats/pitching",
       "era": "2.64",
       "k9": "7.04",
@@ -1735,6 +1825,7 @@
     {
       "role": "SU7",
       "name": "Matt Strahm",
+      "age": "34.4",
       "url": "https://www.fangraphs.com/players/matt-strahm/13799/stats/pitching",
       "era": "2.74",
       "k9": "10.11",
@@ -1754,6 +1845,7 @@
     {
       "role": "MID",
       "name": "John Schreiber",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/john-schreiber/20020/stats/pitching",
       "era": "3.80",
       "k9": "8.72",
@@ -1773,6 +1865,7 @@
     {
       "role": "MID",
       "name": "Nick Mears",
+      "age": "29.5",
       "url": "https://www.fangraphs.com/players/nick-mears/25376/stats/pitching",
       "era": "3.49",
       "k9": "7.31",
@@ -1792,6 +1885,7 @@
     {
       "role": "MID",
       "name": "Daniel Lynch",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/daniel-lynch/stats/pitching",
       "era": "3.06",
       "k9": "5.99",
@@ -1811,6 +1905,7 @@
     {
       "role": "MID",
       "name": "Alex Lange",
+      "age": "30.5",
       "url": "https://www.fangraphs.com/players/alex-lange/19883/stats/pitching",
       "era": "0.00",
       "k9": "9.00",
@@ -1830,6 +1925,7 @@
     {
       "role": "LR",
       "name": "Bailey Falter",
+      "age": "28.9",
       "url": "https://www.fangraphs.com/players/bailey-falter/20070/stats/pitching",
       "era": "4.45",
       "k9": "5.82",
@@ -1851,6 +1947,7 @@
     {
       "role": "CL",
       "name": "Kirby Yates",
+      "age": "39",
       "url": "https://www.fangraphs.com/players/kirby-yates/9073/stats/pitching",
       "era": "5.23",
       "k9": "11.32",
@@ -1870,6 +1967,7 @@
     {
       "role": "CL",
       "name": "Drew Pomeranz",
+      "age": "37.3",
       "url": "https://www.fangraphs.com/players/drew-pomeranz/11426/stats/pitching",
       "era": "2.17",
       "k9": "10.33",
@@ -1889,6 +1987,7 @@
     {
       "role": "CL",
       "name": "Jordan Romano",
+      "age": "32.9",
       "url": "https://www.fangraphs.com/players/jordan-romano/16122/stats/pitching",
       "era": "8.23",
       "k9": "9.91",
@@ -1908,6 +2007,7 @@
     {
       "role": "MID",
       "name": "Ryan Zeferjahn",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/ryan-zeferjahn/25420/stats/pitching",
       "era": "4.74",
       "k9": "11.53",
@@ -1927,6 +2027,7 @@
     {
       "role": "MID",
       "name": "Brent Suter",
+      "age": "36.6",
       "url": "https://www.fangraphs.com/players/brent-suter/13942/stats/pitching",
       "era": "4.52",
       "k9": "7.05",
@@ -1946,6 +2047,7 @@
     {
       "role": "MID",
       "name": "Sam Bachman",
+      "age": "26.5",
       "url": "https://www.fangraphs.com/players/sam-bachman/29754/stats/pitching",
       "era": "6.20",
       "k9": "7.97",
@@ -1965,6 +2067,7 @@
     {
       "role": "MID",
       "name": "Chase Silseth",
+      "age": "25.8",
       "url": "https://www.fangraphs.com/players/chase-silseth/30074/stats/pitching",
       "era": "1.64",
       "k9": "10.64",
@@ -1984,6 +2087,7 @@
     {
       "role": "LR",
       "name": "Walbert Urena",
+      "age": "22.2",
       "url": "https://www.fangraphs.com/players/walbert-urena/sa3018298/stats/pitching",
       "era": "",
       "k9": "",
@@ -2005,6 +2109,7 @@
     {
       "role": "CL",
       "name": "Edwin Diaz",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/edwin-diaz/stats/pitching",
       "era": "1.63",
       "k9": "13.30",
@@ -2024,6 +2129,7 @@
     {
       "role": "SU8",
       "name": "Tanner Scott",
+      "age": "31.7",
       "url": "https://www.fangraphs.com/players/tanner-scott/17586/stats/pitching",
       "era": "4.74",
       "k9": "9.47",
@@ -2043,6 +2149,7 @@
     {
       "role": "SU7",
       "name": "Alex Vesia",
+      "age": "29.9",
       "url": "https://www.fangraphs.com/players/alex-vesia/25007/stats/pitching",
       "era": "3.02",
       "k9": "12.07",
@@ -2062,6 +2169,7 @@
     {
       "role": "MID",
       "name": "Will Klein",
+      "age": "26.3",
       "url": "https://www.fangraphs.com/players/will-klein/27787/stats/pitching",
       "era": "2.35",
       "k9": "12.33",
@@ -2081,6 +2189,7 @@
     {
       "role": "MID",
       "name": "Blake Treinen",
+      "age": "37.7",
       "url": "https://www.fangraphs.com/players/blake-treinen/12572/stats/pitching",
       "era": "5.40",
       "k9": "12.15",
@@ -2100,6 +2209,7 @@
     {
       "role": "MID",
       "name": "Jack Dreyer",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/jack-dreyer/30249/stats/pitching",
       "era": "2.95",
       "k9": "8.72",
@@ -2119,6 +2229,7 @@
     {
       "role": "MID",
       "name": "Edgardo Henriquez",
+      "age": "23.7",
       "url": "https://www.fangraphs.com/players/edgardo-henriquez/26944/stats/pitching",
       "era": "2.37",
       "k9": "8.53",
@@ -2138,6 +2249,7 @@
     {
       "role": "MID",
       "name": "Justin Wrobleski",
+      "age": "25.7",
       "url": "https://www.fangraphs.com/players/justin-wrobleski/31204/stats/pitching",
       "era": "4.32",
       "k9": "10.26",
@@ -2157,6 +2269,7 @@
     {
       "role": "LR",
       "name": "Ben Casparius",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/ben-casparius/30085/stats/pitching",
       "era": "4.64",
       "k9": "8.23",
@@ -2178,6 +2291,7 @@
     {
       "role": "CL",
       "name": "Peter Fairbanks",
+      "age": "32.3",
       "url": "https://www.fangraphs.com/players/peter-fairbanks/stats/pitching",
       "era": "2.83",
       "k9": "8.80",
@@ -2197,6 +2311,7 @@
     {
       "role": "SU8",
       "name": "Calvin Faucher",
+      "age": "30.5",
       "url": "https://www.fangraphs.com/players/calvin-faucher/20116/stats/pitching",
       "era": "3.28",
       "k9": "8.80",
@@ -2216,6 +2331,7 @@
     {
       "role": "SU7",
       "name": "Tyler Phillips",
+      "age": "28.4",
       "url": "https://www.fangraphs.com/players/tyler-phillips/20629/stats/pitching",
       "era": "2.78",
       "k9": "6.03",
@@ -2235,6 +2351,7 @@
     {
       "role": "MID",
       "name": "Anthony Bender",
+      "age": "31.1",
       "url": "https://www.fangraphs.com/players/anthony-bender/19742/stats/pitching",
       "era": "2.16",
       "k9": "7.56",
@@ -2254,6 +2371,7 @@
     {
       "role": "MID",
       "name": "Cade Gibson",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/cade-gibson/31815/stats/pitching",
       "era": "2.63",
       "k9": "7.08",
@@ -2273,6 +2391,7 @@
     {
       "role": "MID",
       "name": "Andrew Nardi",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/andrew-nardi/25942/stats/pitching",
       "era": "",
       "k9": "",
@@ -2292,6 +2411,7 @@
     {
       "role": "MID",
       "name": "John King",
+      "age": "31.5",
       "url": "https://www.fangraphs.com/players/john-king/22051/stats/pitching",
       "era": "4.66",
       "k9": "5.21",
@@ -2311,6 +2431,7 @@
     {
       "role": "LR",
       "name": "Lake Bachar",
+      "age": "30.8",
       "url": "https://www.fangraphs.com/players/lake-bachar/19222/stats/pitching",
       "era": "3.93",
       "k9": "9.51",
@@ -2332,6 +2453,7 @@
     {
       "role": "CL",
       "name": "Abner Uribe",
+      "age": "25.7",
       "url": "https://www.fangraphs.com/players/abner-uribe/25327/stats/pitching",
       "era": "1.67",
       "k9": "10.75",
@@ -2351,6 +2473,7 @@
     {
       "role": "CL",
       "name": "Trevor Megill",
+      "age": "32.3",
       "url": "https://www.fangraphs.com/players/trevor-megill/17722/stats/pitching",
       "era": "2.49",
       "k9": "11.49",
@@ -2370,6 +2493,7 @@
     {
       "role": "SU8",
       "name": "Jared Koenig",
+      "age": "32.2",
       "url": "https://www.fangraphs.com/players/jared-koenig/27517/stats/pitching",
       "era": "2.86",
       "k9": "9.27",
@@ -2389,6 +2513,7 @@
     {
       "role": "SU7",
       "name": "Aaron Ashby",
+      "age": "27.8",
       "url": "https://www.fangraphs.com/players/aaron-ashby/23550/stats/pitching",
       "era": "2.16",
       "k9": "10.26",
@@ -2408,6 +2533,7 @@
     {
       "role": "MID",
       "name": "Angel Zerpa",
+      "age": "26.5",
       "url": "https://www.fangraphs.com/players/angel-zerpa/22717/stats/pitching",
       "era": "4.18",
       "k9": "8.07",
@@ -2427,6 +2553,7 @@
     {
       "role": "MID",
       "name": "Grant Anderson",
+      "age": "28.7",
       "url": "https://www.fangraphs.com/players/grant-anderson/20546/stats/pitching",
       "era": "3.23",
       "k9": "9.56",
@@ -2446,6 +2573,7 @@
     {
       "role": "MID",
       "name": "DL Hall",
+      "age": "27.5",
       "url": "https://www.fangraphs.com/players/dl-hall/22207/stats/pitching",
       "era": "3.49",
       "k9": "6.28",
@@ -2465,6 +2593,7 @@
     {
       "role": "LR",
       "name": "Easton McGee",
+      "age": "28.2",
       "url": "https://www.fangraphs.com/players/easton-mcgee/22176/stats/pitching",
       "era": "5.52",
       "k9": "7.98",
@@ -2486,6 +2615,7 @@
     {
       "role": "CL",
       "name": "Taylor Rogers",
+      "age": "35.3",
       "url": "https://www.fangraphs.com/players/taylor-rogers/13449/stats/pitching",
       "era": "3.38",
       "k9": "9.41",
@@ -2505,6 +2635,7 @@
     {
       "role": "SU8",
       "name": "Kody Funderburk",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/kody-funderburk/24993/stats/pitching",
       "era": "3.51",
       "k9": "8.78",
@@ -2524,6 +2655,7 @@
     {
       "role": "SU7",
       "name": "Cole Sands",
+      "age": "28.7",
       "url": "https://www.fangraphs.com/players/cole-sands/21461/stats/pitching",
       "era": "4.50",
       "k9": "8.00",
@@ -2543,6 +2675,7 @@
     {
       "role": "MID",
       "name": "Justin Topa",
+      "age": "35",
       "url": "https://www.fangraphs.com/players/justin-topa/15145/stats/pitching",
       "era": "3.90",
       "k9": "7.35",
@@ -2562,6 +2695,7 @@
     {
       "role": "MID",
       "name": "Anthony Banda",
+      "age": "32.6",
       "url": "https://www.fangraphs.com/players/anthony-banda/14706/stats/pitching",
       "era": "3.18",
       "k9": "8.45",
@@ -2581,6 +2715,7 @@
     {
       "role": "MID",
       "name": "Cody Laweryson",
+      "age": "27.2",
       "url": "https://www.fangraphs.com/players/cody-laweryson/26429/stats/pitching",
       "era": "1.17",
       "k9": "8.22",
@@ -2600,6 +2735,7 @@
     {
       "role": "MID",
       "name": "Eric Orze",
+      "age": "28.6",
       "url": "https://www.fangraphs.com/players/eric-orze/27626/stats/pitching",
       "era": "3.02",
       "k9": "8.64",
@@ -2619,6 +2755,7 @@
     {
       "role": "LR",
       "name": "Zak Kent",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/zak-kent/25703/stats/pitching",
       "era": "4.58",
       "k9": "8.15",
@@ -2640,6 +2777,7 @@
     {
       "role": "CL",
       "name": "Devin Williams",
+      "age": "31.5",
       "url": "https://www.fangraphs.com/players/devin-williams/15816/stats/pitching",
       "era": "4.79",
       "k9": "13.06",
@@ -2659,6 +2797,7 @@
     {
       "role": "SU8",
       "name": "Luke Weaver",
+      "age": "32.6",
       "url": "https://www.fangraphs.com/players/luke-weaver/16918/stats/pitching",
       "era": "3.62",
       "k9": "10.02",
@@ -2678,6 +2817,7 @@
     {
       "role": "SU7",
       "name": "Brooks Raley",
+      "age": "37.7",
       "url": "https://www.fangraphs.com/players/brooks-raley/10061/stats/pitching",
       "era": "2.45",
       "k9": "8.77",
@@ -2697,6 +2837,7 @@
     {
       "role": "MID",
       "name": "Luis Garcia",
+      "age": "39.1",
       "url": "https://www.fangraphs.com/players/luis-garcia/stats/pitching",
       "era": "3.42",
       "k9": "7.81",
@@ -2716,6 +2857,7 @@
     {
       "role": "MID",
       "name": "Huascar Brazoban",
+      "age": "36.4",
       "url": "https://www.fangraphs.com/players/huascar-brazoban/stats/pitching",
       "era": "3.57",
       "k9": "8.14",
@@ -2735,6 +2877,7 @@
     {
       "role": "MID",
       "name": "Tobias Myers",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/tobias-myers/22191/stats/pitching",
       "era": "3.55",
       "k9": "6.75",
@@ -2754,6 +2897,7 @@
     {
       "role": "MID",
       "name": "Richard Lovelady",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/richard-lovelady/19337/stats/pitching",
       "era": "8.49",
       "k9": "9.26",
@@ -2773,6 +2917,7 @@
     {
       "role": "LR",
       "name": "Sean Manaea",
+      "age": "34.1",
       "url": "https://www.fangraphs.com/players/sean-manaea/15873/stats/pitching",
       "era": "5.64",
       "k9": "11.13",
@@ -2794,6 +2939,7 @@
     {
       "role": "CL",
       "name": "David Bednar",
+      "age": "31.4",
       "url": "https://www.fangraphs.com/players/david-bednar/19569/stats/pitching",
       "era": "2.30",
       "k9": "12.35",
@@ -2813,6 +2959,7 @@
     {
       "role": "SU8",
       "name": "Camilo Doval",
+      "age": "28.7",
       "url": "https://www.fangraphs.com/players/camilo-doval/21992/stats/pitching",
       "era": "3.58",
       "k9": "9.92",
@@ -2832,6 +2979,7 @@
     {
       "role": "SU7",
       "name": "Fernando E. Cruz",
+      "age": "36",
       "url": "https://www.fangraphs.com/players/fernando-e.-cruz/stats/pitching",
       "era": "3.56",
       "k9": "13.50",
@@ -2851,6 +2999,7 @@
     {
       "role": "MID",
       "name": "Tim Hill",
+      "age": "36.1",
       "url": "https://www.fangraphs.com/players/tim-hill/16814/stats/pitching",
       "era": "3.09",
       "k9": "4.97",
@@ -2870,6 +3019,7 @@
     {
       "role": "MID",
       "name": "Jake Bird",
+      "age": "30.3",
       "url": "https://www.fangraphs.com/players/jake-bird/21267/stats/pitching",
       "era": "5.53",
       "k9": "10.73",
@@ -2889,6 +3039,7 @@
     {
       "role": "MID",
       "name": "Paul Blackburn",
+      "age": "32.3",
       "url": "https://www.fangraphs.com/players/paul-blackburn/14739/stats/pitching",
       "era": "6.23",
       "k9": "7.85",
@@ -2908,6 +3059,7 @@
     {
       "role": "MID",
       "name": "Ryan Yarbrough",
+      "age": "34.2",
       "url": "https://www.fangraphs.com/players/ryan-yarbrough/16502/stats/pitching",
       "era": "4.36",
       "k9": "7.73",
@@ -2927,6 +3079,7 @@
     {
       "role": "LR",
       "name": "Cade Winquest",
+      "age": "25.9",
       "url": "https://www.fangraphs.com/players/cade-winquest/sa3020805/stats/pitching",
       "era": "",
       "k9": "",
@@ -2948,6 +3101,7 @@
     {
       "role": "CL",
       "name": "Jhoan Duran",
+      "age": "28.2",
       "url": "https://www.fangraphs.com/players/jhoan-duran/21029/stats/pitching",
       "era": "2.06",
       "k9": "10.29",
@@ -2967,6 +3121,7 @@
     {
       "role": "SU8",
       "name": "Jose Alvarado",
+      "age": "30.8",
       "url": "https://www.fangraphs.com/players/jose-alvarado/stats/pitching",
       "era": "3.81",
       "k9": "11.08",
@@ -2986,6 +3141,7 @@
     {
       "role": "SU7",
       "name": "Brad Keller",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/brad-keller/15734/stats/pitching",
       "era": "2.07",
       "k9": "9.69",
@@ -3005,6 +3161,7 @@
     {
       "role": "MID",
       "name": "Orion Kerkering",
+      "age": "25",
       "url": "https://www.fangraphs.com/players/orion-kerkering/31776/stats/pitching",
       "era": "3.30",
       "k9": "9.75",
@@ -3024,6 +3181,7 @@
     {
       "role": "MID",
       "name": "Tanner Banks",
+      "age": "34.4",
       "url": "https://www.fangraphs.com/players/tanner-banks/16990/stats/pitching",
       "era": "3.07",
       "k9": "8.15",
@@ -3043,6 +3201,7 @@
     {
       "role": "MID",
       "name": "Jonathan Bowlan",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/jonathan-bowlan/24607/stats/pitching",
       "era": "3.86",
       "k9": "9.34",
@@ -3062,6 +3221,7 @@
     {
       "role": "MID",
       "name": "Kyle Backhus",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/kyle-backhus/29615/stats/pitching",
       "era": "4.62",
       "k9": "7.82",
@@ -3081,6 +3241,7 @@
     {
       "role": "LR",
       "name": "Zach McCambley",
+      "age": "26.9",
       "url": "https://www.fangraphs.com/players/zachary-mccambley/sa3014478/stats/pitching",
       "era": "",
       "k9": "",
@@ -3102,6 +3263,7 @@
     {
       "role": "CL",
       "name": "Dennis Santana",
+      "age": "29.9",
       "url": "https://www.fangraphs.com/players/dennis-santana/17878/stats/pitching",
       "era": "2.18",
       "k9": "7.68",
@@ -3121,6 +3283,7 @@
     {
       "role": "SU8",
       "name": "Gregory Soto",
+      "age": "31.1",
       "url": "https://www.fangraphs.com/players/gregory-soto/19677/stats/pitching",
       "era": "4.18",
       "k9": "10.44",
@@ -3140,6 +3303,7 @@
     {
       "role": "SU7",
       "name": "Isaac Mattson",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/isaac-mattson/20385/stats/pitching",
       "era": "2.45",
       "k9": "8.50",
@@ -3159,6 +3323,7 @@
     {
       "role": "MID",
       "name": "Justin Lawrence",
+      "age": "31.3",
       "url": "https://www.fangraphs.com/players/justin-lawrence/17639/stats/pitching",
       "era": "0.51",
       "k9": "11.72",
@@ -3178,6 +3343,7 @@
     {
       "role": "MID",
       "name": "Mason Montgomery",
+      "age": "25.8",
       "url": "https://www.fangraphs.com/players/mason-montgomery/29770/stats/pitching",
       "era": "5.67",
       "k9": "12.33",
@@ -3197,6 +3363,7 @@
     {
       "role": "MID",
       "name": "Yohan Ramirez",
+      "age": "30.9",
       "url": "https://www.fangraphs.com/players/yohan-ramirez/stats/pitching",
       "era": "5.40",
       "k9": "12.15",
@@ -3216,6 +3383,7 @@
     {
       "role": "MID",
       "name": "Cam Sanders",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/cam-sanders/23479/stats/pitching",
       "era": "8.10",
       "k9": "5.40",
@@ -3235,6 +3403,7 @@
     {
       "role": "LR",
       "name": "Jose Urquidy",
+      "age": "30.9",
       "url": "https://www.fangraphs.com/players/jose-urquidy/stats/pitching",
       "era": "7.71",
       "k9": "11.57",
@@ -3256,6 +3425,7 @@
     {
       "role": "CL",
       "name": "Mason Miller",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/mason-miller/31757/stats/pitching",
       "era": "2.63",
       "k9": "15.18",
@@ -3275,6 +3445,7 @@
     {
       "role": "SU8",
       "name": "Adrian Morejon",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/adrian-morejon/20039/stats/pitching",
       "era": "2.08",
       "k9": "8.55",
@@ -3294,6 +3465,7 @@
     {
       "role": "SU7",
       "name": "Jeremiah Estrada",
+      "age": "27.4",
       "url": "https://www.fangraphs.com/players/jeremiah-estrada/22210/stats/pitching",
       "era": "3.45",
       "k9": "13.32",
@@ -3313,6 +3485,7 @@
     {
       "role": "MID",
       "name": "David Morgan",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/david-morgan/31616/stats/pitching",
       "era": "2.66",
       "k9": "9.51",
@@ -3332,6 +3505,7 @@
     {
       "role": "MID",
       "name": "Wandy Peralta",
+      "age": "34.7",
       "url": "https://www.fangraphs.com/players/wandy-peralta/14295/stats/pitching",
       "era": "3.14",
       "k9": "7.91",
@@ -3351,6 +3525,7 @@
     {
       "role": "MID",
       "name": "Bradgley Rodriguez",
+      "age": "22.3",
       "url": "https://www.fangraphs.com/players/bradgley-rodriguez/29107/stats/pitching",
       "era": "1.17",
       "k9": "10.57",
@@ -3370,6 +3545,7 @@
     {
       "role": "MID",
       "name": "Kyle Hart",
+      "age": "33.3",
       "url": "https://www.fangraphs.com/players/kyle-hart/19646/stats/pitching",
       "era": "5.86",
       "k9": "7.74",
@@ -3389,6 +3565,7 @@
     {
       "role": "LR",
       "name": "Ron Marinaccio",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/ron-marinaccio/23488/stats/pitching",
       "era": "0.84",
       "k9": "10.13",
@@ -3410,6 +3587,7 @@
     {
       "role": "CL",
       "name": "Ryan Walker",
+      "age": "30.3",
       "url": "https://www.fangraphs.com/players/ryan-walker/20423/stats/pitching",
       "era": "4.11",
       "k9": "8.80",
@@ -3429,6 +3607,7 @@
     {
       "role": "SU8",
       "name": "Erik Miller",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/erik-miller/26252/stats/pitching",
       "era": "1.50",
       "k9": "6.60",
@@ -3448,6 +3627,7 @@
     {
       "role": "SU7",
       "name": "Jose Butto",
+      "age": "28",
       "url": "https://www.fangraphs.com/players/jose-butto/stats/pitching",
       "era": "3.90",
       "k9": "7.79",
@@ -3467,6 +3647,7 @@
     {
       "role": "MID",
       "name": "Spencer Bivens",
+      "age": "31.7",
       "url": "https://www.fangraphs.com/players/spencer-bivens/30226/stats/pitching",
       "era": "4.00",
       "k9": "6.78",
@@ -3486,6 +3667,7 @@
     {
       "role": "MID",
       "name": "Matt Gage",
+      "age": "33.1",
       "url": "https://www.fangraphs.com/players/matt-gage/17381/stats/pitching",
       "era": "3.19",
       "k9": "7.84",
@@ -3505,6 +3687,7 @@
     {
       "role": "MID",
       "name": "Caleb Kilian",
+      "age": "28.8",
       "url": "https://www.fangraphs.com/players/caleb-kilian/26213/stats/pitching",
       "era": "",
       "k9": "",
@@ -3524,6 +3707,7 @@
     {
       "role": "MID",
       "name": "Ryan Borucki",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/ryan-borucki/16350/stats/pitching",
       "era": "4.63",
       "k9": "8.23",
@@ -3543,6 +3727,7 @@
     {
       "role": "LR",
       "name": "JT Brubaker",
+      "age": "32.3",
       "url": "https://www.fangraphs.com/players/jt-brubaker/17578/stats/pitching",
       "era": "3.77",
       "k9": "6.91",
@@ -3564,6 +3749,7 @@
     {
       "role": "CL",
       "name": "Andres Muñoz",
+      "age": "27.2",
       "url": "https://www.fangraphs.com/players/andres-muñoz/stats/pitching",
       "era": "1.73",
       "k9": "11.98",
@@ -3583,6 +3769,7 @@
     {
       "role": "SU8",
       "name": "Matt Brash",
+      "age": "27.9",
       "url": "https://www.fangraphs.com/players/matt-brash/25756/stats/pitching",
       "era": "2.47",
       "k9": "11.03",
@@ -3602,6 +3789,7 @@
     {
       "role": "SU7",
       "name": "Jose A. Ferrer",
+      "age": "26",
       "url": "https://www.fangraphs.com/players/jose-a-ferrer/24017/stats/pitching",
       "era": "4.48",
       "k9": "8.37",
@@ -3621,6 +3809,7 @@
     {
       "role": "MID",
       "name": "Eduard Bazardo",
+      "age": "30.6",
       "url": "https://www.fangraphs.com/players/eduard-bazardo/20997/stats/pitching",
       "era": "2.52",
       "k9": "9.38",
@@ -3640,6 +3829,7 @@
     {
       "role": "MID",
       "name": "Gabe Speier",
+      "age": "30.9",
       "url": "https://www.fangraphs.com/players/gabe-speier/17170/stats/pitching",
       "era": "2.61",
       "k9": "11.90",
@@ -3659,6 +3849,7 @@
     {
       "role": "MID",
       "name": "Carlos M. Vargas",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/carlos-m.-vargas/stats/pitching",
       "era": "3.97",
       "k9": "6.31",
@@ -3678,6 +3869,7 @@
     {
       "role": "MID",
       "name": "Casey Legumina",
+      "age": "28.8",
       "url": "https://www.fangraphs.com/players/casey-legumina/25921/stats/pitching",
       "era": "5.62",
       "k9": "9.97",
@@ -3697,6 +3889,7 @@
     {
       "role": "LR",
       "name": "Cooper Criswell",
+      "age": "29.7",
       "url": "https://www.fangraphs.com/players/cooper-criswell/24975/stats/pitching",
       "era": "3.57",
       "k9": "4.58",
@@ -3718,6 +3911,7 @@
     {
       "role": "CL",
       "name": "Riley O'Brien",
+      "age": "31.1",
       "url": "https://www.fangraphs.com/players/riley-obrien/20348/stats/pitching",
       "era": "2.06",
       "k9": "8.44",
@@ -3737,6 +3931,7 @@
     {
       "role": "CL",
       "name": "JoJo Romero",
+      "age": "29.5",
       "url": "https://www.fangraphs.com/players/jojo-romero/19574/stats/pitching",
       "era": "2.07",
       "k9": "8.11",
@@ -3756,6 +3951,7 @@
     {
       "role": "CL",
       "name": "Matt Svanson",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/matt-svanson/29629/stats/pitching",
       "era": "1.94",
       "k9": "10.14",
@@ -3775,6 +3971,7 @@
     {
       "role": "CL",
       "name": "Ryne Stanek",
+      "age": "34.7",
       "url": "https://www.fangraphs.com/players/ryne-stanek/15947/stats/pitching",
       "era": "5.30",
       "k9": "9.32",
@@ -3794,6 +3991,7 @@
     {
       "role": "MID",
       "name": "Justin Bruihl",
+      "age": "28.7",
       "url": "https://www.fangraphs.com/players/justin-bruihl/23779/stats/pitching",
       "era": "5.27",
       "k9": "11.85",
@@ -3813,6 +4011,7 @@
     {
       "role": "MID",
       "name": "George Soriano",
+      "age": "27",
       "url": "https://www.fangraphs.com/players/george-soriano/21863/stats/pitching",
       "era": "8.35",
       "k9": "8.84",
@@ -3832,6 +4031,7 @@
     {
       "role": "MID",
       "name": "Chris Roycroft",
+      "age": "28.7",
       "url": "https://www.fangraphs.com/players/chris-roycroft/31261/stats/pitching",
       "era": "7.84",
       "k9": "6.53",
@@ -3851,6 +4051,7 @@
     {
       "role": "LR",
       "name": "Matt Pushard",
+      "age": "28.4",
       "url": "https://www.fangraphs.com/players/matthew-pushard/sa3019955/stats/pitching",
       "era": "",
       "k9": "",
@@ -3872,6 +4073,7 @@
     {
       "role": "CL",
       "name": "Griffin Jax",
+      "age": "31.3",
       "url": "https://www.fangraphs.com/players/griffin-jax/20253/stats/pitching",
       "era": "4.23",
       "k9": "13.50",
@@ -3891,6 +4093,7 @@
     {
       "role": "CL",
       "name": "Garrett Cleavinger",
+      "age": "31.9",
       "url": "https://www.fangraphs.com/players/garrett-cleavinger/17897/stats/pitching",
       "era": "2.35",
       "k9": "12.03",
@@ -3910,6 +4113,7 @@
     {
       "role": "CL",
       "name": "Bryan Baker",
+      "age": "31.3",
       "url": "https://www.fangraphs.com/players/bryan-baker/19804/stats/pitching",
       "era": "4.06",
       "k9": "10.88",
@@ -3929,6 +4133,7 @@
     {
       "role": "MID",
       "name": "Mason Englert",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/mason-englert/22288/stats/pitching",
       "era": "3.83",
       "k9": "8.87",
@@ -3948,6 +4153,7 @@
     {
       "role": "MID",
       "name": "Hunter Bigge",
+      "age": "27.8",
       "url": "https://www.fangraphs.com/players/hunter-bigge/26259/stats/pitching",
       "era": "2.40",
       "k9": "7.20",
@@ -3967,6 +4173,7 @@
     {
       "role": "MID",
       "name": "Ian Seymour",
+      "age": "27.3",
       "url": "https://www.fangraphs.com/players/ian-seymour/27932/stats/pitching",
       "era": "3.63",
       "k9": "10.11",
@@ -3986,6 +4193,7 @@
     {
       "role": "MID",
       "name": "Cole Sulser",
+      "age": "36",
       "url": "https://www.fangraphs.com/players/cole-sulser/15256/stats/pitching",
       "era": "1.99",
       "k9": "8.74",
@@ -4005,6 +4213,7 @@
     {
       "role": "LR",
       "name": "Yoendrys Gomez",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/yoendrys-gomez/stats/pitching",
       "era": "5.17",
       "k9": "8.33",
@@ -4026,6 +4235,7 @@
     {
       "role": "CL",
       "name": "Robert Garcia",
+      "age": "29.8",
       "url": "https://www.fangraphs.com/players/robert-garcia/23363/stats/pitching",
       "era": "2.95",
       "k9": "9.56",
@@ -4045,6 +4255,7 @@
     {
       "role": "SU8",
       "name": "Chris Martin",
+      "age": "39.8",
       "url": "https://www.fangraphs.com/players/chris-martin/11847/stats/pitching",
       "era": "2.98",
       "k9": "9.14",
@@ -4064,6 +4275,7 @@
     {
       "role": "SU7",
       "name": "Cole Winn",
+      "age": "26.3",
       "url": "https://www.fangraphs.com/players/cole-winn/22113/stats/pitching",
       "era": "1.51",
       "k9": "7.56",
@@ -4083,6 +4295,7 @@
     {
       "role": "MID",
       "name": "Josh Sborz",
+      "age": "32.3",
       "url": "https://www.fangraphs.com/players/josh-sborz/18323/stats/pitching",
       "era": "",
       "k9": "",
@@ -4102,6 +4315,7 @@
     {
       "role": "MID",
       "name": "Jakob Junis",
+      "age": "33.5",
       "url": "https://www.fangraphs.com/players/jakob-junis/13619/stats/pitching",
       "era": "2.97",
       "k9": "7.43",
@@ -4121,6 +4335,7 @@
     {
       "role": "MID",
       "name": "Jalen Beeks",
+      "age": "32.7",
       "url": "https://www.fangraphs.com/players/jalen-beeks/17192/stats/pitching",
       "era": "3.77",
       "k9": "7.38",
@@ -4140,6 +4355,7 @@
     {
       "role": "MID",
       "name": "Carter Baumler",
+      "age": "24.1",
       "url": "https://www.fangraphs.com/players/carter-baumler/sa3014480/stats/pitching",
       "era": "",
       "k9": "",
@@ -4159,6 +4375,7 @@
     {
       "role": "LR",
       "name": "Tyler Alexander",
+      "age": "31.7",
       "url": "https://www.fangraphs.com/players/tyler-alexander/17735/stats/pitching",
       "era": "4.98",
       "k9": "7.56",
@@ -4180,6 +4397,7 @@
     {
       "role": "CL",
       "name": "Jeff Hoffman",
+      "age": "33.2",
       "url": "https://www.fangraphs.com/players/jeff-hoffman/17432/stats/pitching",
       "era": "4.37",
       "k9": "11.12",
@@ -4199,6 +4417,7 @@
     {
       "role": "SU8",
       "name": "Tyler Rogers",
+      "age": "35.3",
       "url": "https://www.fangraphs.com/players/tyler-rogers/15541/stats/pitching",
       "era": "1.98",
       "k9": "5.59",
@@ -4218,6 +4437,7 @@
     {
       "role": "SU7",
       "name": "Louie Varland",
+      "age": "28.3",
       "url": "https://www.fangraphs.com/players/louie-varland/stats/pitching",
       "era": "2.97",
       "k9": "9.29",
@@ -4237,6 +4457,7 @@
     {
       "role": "MID",
       "name": "Brendon Little",
+      "age": "29.6",
       "url": "https://www.fangraphs.com/players/brendon-little/21574/stats/pitching",
       "era": "3.03",
       "k9": "11.99",
@@ -4256,6 +4477,7 @@
     {
       "role": "MID",
       "name": "Braydon Fisher",
+      "age": "25.7",
       "url": "https://www.fangraphs.com/players/braydon-fisher/24609/stats/pitching",
       "era": "2.70",
       "k9": "11.16",
@@ -4275,6 +4497,7 @@
     {
       "role": "MID",
       "name": "Tommy Nance",
+      "age": "35",
       "url": "https://www.fangraphs.com/players/tommy-nance/19178/stats/pitching",
       "era": "1.99",
       "k9": "9.09",
@@ -4294,6 +4517,7 @@
     {
       "role": "MID",
       "name": "Mason Fluharty",
+      "age": "24.6",
       "url": "https://www.fangraphs.com/players/mason-fluharty/31553/stats/pitching",
       "era": "4.44",
       "k9": "9.57",
@@ -4313,6 +4537,7 @@
     {
       "role": "LR",
       "name": "Angel Bastardo",
+      "age": "23.8",
       "url": "https://www.fangraphs.com/players/angel-bastardo/sa3009716/stats/pitching",
       "era": "",
       "k9": "",
@@ -4334,6 +4559,7 @@
     {
       "role": "CL",
       "name": "Clayton Beeter",
+      "age": "27.4",
       "url": "https://www.fangraphs.com/players/clayton-beeter/27494/stats/pitching",
       "era": "4.26",
       "k9": "11.72",
@@ -4353,6 +4579,7 @@
     {
       "role": "CL",
       "name": "Cole Henry",
+      "age": "26.7",
       "url": "https://www.fangraphs.com/players/cole-henry/27570/stats/pitching",
       "era": "4.27",
       "k9": "8.89",
@@ -4372,6 +4599,7 @@
     {
       "role": "CL",
       "name": "Brad Lord",
+      "age": "26.1",
       "url": "https://www.fangraphs.com/players/brad-lord/31972/stats/pitching",
       "era": "4.34",
       "k9": "7.44",
@@ -4391,6 +4619,7 @@
     {
       "role": "MID",
       "name": "PJ Poulin",
+      "age": "29.7",
       "url": "https://www.fangraphs.com/players/pj-poulin/23394/stats/pitching",
       "era": "3.65",
       "k9": "9.85",
@@ -4410,6 +4639,7 @@
     {
       "role": "MID",
       "name": "Cionel Perez",
+      "age": "29.9",
       "url": "https://www.fangraphs.com/players/cionel-perez/stats/pitching",
       "era": "8.31",
       "k9": "8.72",
@@ -4429,6 +4659,7 @@
     {
       "role": "MID",
       "name": "Orlando Ribalta",
+      "age": "28",
       "url": "https://www.fangraphs.com/players/orlando-ribalta/26247/stats/pitching",
       "era": "7.03",
       "k9": "9.25",
@@ -4448,6 +4679,7 @@
     {
       "role": "MID",
       "name": "Ken Waldichuk",
+      "age": "28.2",
       "url": "https://www.fangraphs.com/players/ken-waldichuk/27681/stats/pitching",
       "era": "",
       "k9": "",
@@ -4467,6 +4699,7 @@
     {
       "role": "LR",
       "name": "Griff McGarry",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/griffin-mcgarry/sa3017130/stats/pitching",
       "era": "",
       "k9": "",
@@ -4488,6 +4721,7 @@
     {
       "role": "CL",
       "name": "Hogan Harris",
+      "age": "29.2",
       "url": "https://www.fangraphs.com/players/hogan-harris/21520/stats/pitching",
       "era": "3.20",
       "k9": "9.05",
@@ -4507,6 +4741,7 @@
     {
       "role": "CL",
       "name": "Justin Sterner",
+      "age": "29.6",
       "url": "https://www.fangraphs.com/players/justin-sterner/27694/stats/pitching",
       "era": "3.18",
       "k9": "9.69",
@@ -4526,6 +4761,7 @@
     {
       "role": "CL",
       "name": "Mark Leiter Jr.",
+      "age": "35",
       "url": "https://www.fangraphs.com/players/mark-leiter-jr/15551/stats/pitching",
       "era": "4.84",
       "k9": "10.06",
@@ -4545,6 +4781,7 @@
     {
       "role": "MID",
       "name": "Scott Barlow",
+      "age": "33.3",
       "url": "https://www.fangraphs.com/players/scott-barlow/14993/stats/pitching",
       "era": "4.21",
       "k9": "9.88",
@@ -4564,6 +4801,7 @@
     {
       "role": "MID",
       "name": "Michael J. Kelly",
+      "age": "33.5",
       "url": "https://www.fangraphs.com/players/michael-j.-kelly/stats/pitching",
       "era": "3.18",
       "k9": "6.58",
@@ -4583,6 +4821,7 @@
     {
       "role": "MID",
       "name": "Elvis Alvarado",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/elvis-alvarado/21662/stats/pitching",
       "era": "3.19",
       "k9": "10.63",
@@ -4602,6 +4841,7 @@
     {
       "role": "MID",
       "name": "Nick Anderson",
+      "age": "35.7",
       "url": "https://www.fangraphs.com/players/nick-anderson/18337/stats/pitching",
       "era": "6.14",
       "k9": "6.14",
@@ -4621,6 +4861,7 @@
     {
       "role": "LR",
       "name": "Luis Medina",
+      "age": "26.9",
       "url": "https://www.fangraphs.com/players/luis-medina/21649/stats/pitching",
       "era": "",
       "k9": "",

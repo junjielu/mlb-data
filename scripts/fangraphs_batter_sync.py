@@ -40,6 +40,7 @@ POS_SET = {'C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'DH', 'OF'}
 class BatterRow:
     order: str
     name: str
+    age: str
     position: str
     url: str
     runs: str
@@ -223,6 +224,18 @@ def fmt_int(v: Any) -> str:
         return ''
 
 
+def fmt_age(v: Any) -> str:
+    if v is None:
+        return ''
+    try:
+        age = float(v)
+    except (TypeError, ValueError):
+        return ''
+    if age.is_integer():
+        return str(int(age))
+    return f"{age:.1f}".rstrip('0').rstrip('.')
+
+
 def parse_player_ref(href: str) -> str:
     m = re.search(r'/players/[^/]+/(\d+|sa\d+)/stats', href)
     return m.group(1) if m else ''
@@ -252,6 +265,7 @@ def fetch_batting_map(session: requests.Session, season: int) -> dict[str, dict[
             wrc_val = r.get('wRCPlus')
 
         out[name] = {
+            'age': fmt_age(r.get('Age')),
             'runs': fmt_int(r.get('R')),
             'hr': fmt_int(r.get('HR')),
             'rbi': fmt_int(r.get('RBI')),
@@ -284,6 +298,7 @@ def fetch_batting_row_by_player_id(session: requests.Session, season: int, playe
     if wrc_val is None:
         wrc_val = row.get('wRCPlus')
     return {
+        'age': fmt_age(row.get('Age')),
         'runs': fmt_int(row.get('R')),
         'hr': fmt_int(row.get('HR')),
         'rbi': fmt_int(row.get('RBI')),
@@ -353,6 +368,7 @@ def extract_lineup_rows(
         position = str(r.get('position', '')).strip()
         raw_name = str(r.get('player', '')).strip()
         name = clean_player_name(raw_name)
+        roster_age = fmt_age(r.get('age') or r.get('age1'))
         if not name:
             continue
 
@@ -465,6 +481,7 @@ def extract_lineup_rows(
         out.append(BatterRow(
             order=order,
             name=link_name,
+            age=roster_age or info.get('age', ''),
             position=position if position in POS_SET else position,
             url=link_url,
             runs=info.get('runs', ''),

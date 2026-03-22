@@ -26,6 +26,7 @@ TEAM_SLUGS = {
 class SPRow:
     role: str
     name: str
+    age: str
     url: str
     era: str
     whip: str
@@ -74,6 +75,18 @@ def fmt_float(v: object, ndigits: int = 2) -> str:
         return ''
 
 
+def fmt_age(v: object) -> str:
+    if v is None:
+        return ''
+    try:
+        age = float(v)
+    except (TypeError, ValueError):
+        return ''
+    if age.is_integer():
+        return str(int(age))
+    return f'{age:.1f}'.rstrip('0').rstrip('.')
+
+
 def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict]:
     params = dict(
         age='', pos='all', stats='pit', lg='all', qual='0', season=str(season),
@@ -98,6 +111,7 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
         k9 = r.get('K/9')
         bb9 = r.get('BB/9')
         out[name] = {
+            'age': fmt_age(r.get('Age')),
             'era': fmt_float(era, 2),
             'whip': fmt_float(whip, 2),
             'stuff_plus': '' if stuff is None else str(int(round(float(stuff)))),
@@ -125,6 +139,7 @@ def fetch_pitching_row_by_player_id(session: requests.Session, season: int, play
         return {}
     row = rows[0]
     return {
+        'age': fmt_age(row.get('Age')),
         'era': fmt_float(row.get('ERA'), 2),
         'whip': fmt_float(row.get('WHIP'), 2),
         'stuff_plus': '' if row.get('sp_stuff') is None else str(int(round(float(row.get('sp_stuff'))))),
@@ -157,6 +172,20 @@ def extract_rotation_rows(
     url = f'https://www.fangraphs.com/roster-resource/depth-charts/{team_slug}'
     html = http_get(session, url, timeout=45).text
     soup = BeautifulSoup(html, 'html.parser')
+    next_data = soup.find('script', id='__NEXT_DATA__')
+    rotation_meta_by_role: dict[str, dict[str, str]] = {}
+    if next_data is not None and next_data.string:
+        root = json.loads(next_data.string)
+        data = root['props']['pageProps']['dehydratedState']['queries'][0]['state']['data']
+        roster = data.get('dataRoster', [])
+        for roster_row in roster:
+            role = str(roster_row.get('role', '')).strip().upper()
+            if not re.fullmatch(r'SP\d+', role):
+                continue
+            rotation_meta_by_role[role] = {
+                'age': fmt_age(roster_row.get('age') or roster_row.get('age1')),
+                'playerid': str(roster_row.get('playerid', '') or '').strip(),
+            }
 
     link_map: dict[str, str] = {}
     id_map: dict[str, int] = {}
@@ -194,8 +223,12 @@ def extract_rotation_rows(
             continue
 
         name = row[3]
+        rotation_meta = rotation_meta_by_role.get(role.upper(), {})
+        roster_age = rotation_meta.get('age', '')
         source_href = link_map.get(name, '')
         source_player_id = parse_player_ref(source_href)
+        if not source_player_id:
+            source_player_id = rotation_meta.get('playerid', '')
         source_id_found = source_player_id.isdigit() and int(source_player_id) in pitch_by_id
         exact_name_found = name in pitch_map
         normalized_name_found = normalize_name(name) in pitch_by_name_norm
@@ -252,6 +285,7 @@ def extract_rotation_rows(
         row_obj = SPRow(
             role=role.lower(),
             name=name,
+            age=roster_age or info.get('age', ''),
             url=link_map.get(name, f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats/pitching'),
             era=info.get('era', ''),
             whip=info.get('whip', ''),

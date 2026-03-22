@@ -120,6 +120,12 @@ function renderPrimaryCell(sectionId, row, expanded) {
   return `<span class="toggle-indicator" aria-hidden="true">${expanded ? "▾" : "▸"}</span>${safeMetric(row[key])}`;
 }
 
+function renderPlayerNameCell(row) {
+  const age = String(row.age ?? "").trim();
+  const ageMarkup = age ? `<span class="player-age" aria-label="Player age ${escapeHtml(age)}" title="Player age ${escapeHtml(age)}">${escapeHtml(age)}</span>` : "";
+  return `<a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a>${ageMarkup}`;
+}
+
 function renderHistoryCell(sectionId, row, historyRow, column) {
   if (column.key === "name") {
     return `<span class="history-blank" aria-hidden="true"></span>`;
@@ -146,7 +152,7 @@ function renderTable(sectionId, title, rows, columns) {
       <tr class="primary-row expandable-row${expanded ? " is-expanded" : ""}" data-expand-section="${sectionId}" data-row-id="${escapeHtml(rowId)}">
         ${columns.map((column) => {
           if (column.key === "name") {
-            return `<td><a class="player-link" href="${row.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(row.name)}</a></td>`;
+            return `<td class="player-name-cell">${renderPlayerNameCell(row)}</td>`;
           }
           if (column.key === "order" || column.key === "role") {
             return `<td class="primary-label-cell">${renderPrimaryCell(sectionId, row, expanded)}</td>`;

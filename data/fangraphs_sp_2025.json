@@ -3,6 +3,7 @@
     {
       "role": "sp1",
       "name": "Zac Gallen",
+      "age": "30.6",
       "url": "https://www.fangraphs.com/players/zac-gallen/19291/stats/pitching",
       "era": "4.83",
       "whip": "1.26",
@@ -22,6 +23,7 @@
     {
       "role": "sp2",
       "name": "Ryne Nelson",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/ryne-nelson/26253/stats/pitching",
       "era": "3.39",
       "whip": "1.07",
@@ -41,6 +43,7 @@
     {
       "role": "sp3",
       "name": "Eduardo Rodriguez",
+      "age": "33",
       "url": "https://www.fangraphs.com/players/eduardo-rodriguez/13164/stats/pitching",
       "era": "5.02",
       "whip": "1.54",
@@ -60,6 +63,7 @@
     {
       "role": "sp4",
       "name": "Michael Soroka",
+      "age": "28.6",
       "url": "https://www.fangraphs.com/players/michael-soroka/18383/stats/pitching",
       "era": "4.52",
       "whip": "1.13",
@@ -79,6 +83,7 @@
     {
       "role": "sp5",
       "name": "Brandon Pfaadt",
+      "age": "27.4",
       "url": "https://www.fangraphs.com/players/brandon-pfaadt/27782/stats/pitching",
       "era": "5.25",
       "whip": "1.33",
@@ -100,6 +105,7 @@
     {
       "role": "sp1",
       "name": "Chris Sale",
+      "age": "37",
       "url": "https://www.fangraphs.com/players/chris-sale/10603/stats/pitching",
       "era": "2.58",
       "whip": "1.07",
@@ -119,6 +125,7 @@
     {
       "role": "sp2",
       "name": "Spencer Strider",
+      "age": "27.4",
       "url": "https://www.fangraphs.com/players/spencer-strider/27498/stats/pitching",
       "era": "4.45",
       "whip": "1.40",
@@ -138,6 +145,7 @@
     {
       "role": "sp3",
       "name": "Reynaldo López",
+      "age": "32.2",
       "url": "https://www.fangraphs.com/players/reynaldo-lopez/16400/stats/pitching",
       "era": "5.40",
       "whip": "2.20",
@@ -157,6 +165,7 @@
     {
       "role": "sp4",
       "name": "Grant Holmes",
+      "age": "30",
       "url": "https://www.fangraphs.com/players/grant-holmes/16944/stats/pitching",
       "era": "3.99",
       "whip": "1.34",
@@ -176,6 +185,7 @@
     {
       "role": "sp5",
       "name": "Bryce Elder",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/bryce-elder/27779/stats/pitching",
       "era": "5.30",
       "whip": "1.39",
@@ -197,6 +207,7 @@
     {
       "role": "sp1",
       "name": "Trevor Rogers",
+      "age": "28.4",
       "url": "https://www.fangraphs.com/players/trevor-rogers/22286/stats/pitching",
       "era": "1.81",
       "whip": "0.90",
@@ -216,6 +227,7 @@
     {
       "role": "sp2",
       "name": "Kyle Bradish",
+      "age": "29.5",
       "url": "https://www.fangraphs.com/players/kyle-bradish/24586/stats/pitching",
       "era": "2.53",
       "whip": "1.03",
@@ -235,6 +247,7 @@
     {
       "role": "sp3",
       "name": "Chris Bassitt",
+      "age": "37.1",
       "url": "https://www.fangraphs.com/players/chris-bassitt/12304/stats/pitching",
       "era": "3.96",
       "whip": "1.33",
@@ -254,6 +267,7 @@
     {
       "role": "sp4",
       "name": "Shane Baz",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/shane-baz/22264/stats/pitching",
       "era": "4.87",
       "whip": "1.33",
@@ -273,6 +287,7 @@
     {
       "role": "sp5",
       "name": "Zach Eflin",
+      "age": "32",
       "url": "https://www.fangraphs.com/players/zach-eflin/13774/stats/pitching",
       "era": "5.93",
       "whip": "1.42",
@@ -294,6 +309,7 @@
     {
       "role": "sp1",
       "name": "Garrett Crochet",
+      "age": "26.7",
       "url": "https://www.fangraphs.com/players/garrett-crochet/27463/stats/pitching",
       "era": "2.59",
       "whip": "1.03",
@@ -313,6 +329,7 @@
     {
       "role": "sp2",
       "name": "Sonny Gray",
+      "age": "36.4",
       "url": "https://www.fangraphs.com/players/sonny-gray/12768/stats/pitching",
       "era": "4.28",
       "whip": "1.23",
@@ -332,6 +349,7 @@
     {
       "role": "sp3",
       "name": "Johan Oviedo",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/johan-oviedo/22487/stats/pitching",
       "era": "3.57",
       "whip": "1.21",
@@ -351,6 +369,7 @@
     {
       "role": "sp4",
       "name": "Ranger Suarez",
+      "age": "30.6",
       "url": "https://www.fangraphs.com/players/ranger-suarez/17277/stats/pitching",
       "era": "3.20",
       "whip": "1.22",
@@ -370,6 +389,7 @@
     {
       "role": "sp5",
       "name": "Brayan Bello",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/brayan-bello/23920/stats/pitching",
       "era": "3.35",
       "whip": "1.24",
@@ -391,6 +411,7 @@
     {
       "role": "sp1",
       "name": "Matthew Boyd",
+      "age": "35.1",
       "url": "https://www.fangraphs.com/players/matthew-boyd/15440/stats/pitching",
       "era": "3.21",
       "whip": "1.09",
@@ -410,6 +431,7 @@
     {
       "role": "sp2",
       "name": "Cade Horton",
+      "age": "24.6",
       "url": "https://www.fangraphs.com/players/cade-horton/31872/stats/pitching",
       "era": "2.67",
       "whip": "1.08",
@@ -429,6 +451,7 @@
     {
       "role": "sp3",
       "name": "Shota Imanaga",
+      "age": "32.6",
       "url": "https://www.fangraphs.com/players/shota-imanaga/33829/stats/pitching",
       "era": "3.73",
       "whip": "0.99",
@@ -448,6 +471,7 @@
     {
       "role": "sp4",
       "name": "Edward Cabrera",
+      "age": "27.9",
       "url": "https://www.fangraphs.com/players/edward-cabrera/21690/stats/pitching",
       "era": "3.53",
       "whip": "1.23",
@@ -467,6 +491,7 @@
     {
       "role": "sp5",
       "name": "Jameson Taillon",
+      "age": "34.3",
       "url": "https://www.fangraphs.com/players/jameson-taillon/11674/stats/pitching",
       "era": "3.68",
       "whip": "1.06",
@@ -488,6 +513,7 @@
     {
       "role": "sp1",
       "name": "Shane Smith",
+      "age": "26",
       "url": "https://www.fangraphs.com/players/shane-smith/31687/stats/pitching",
       "era": "3.81",
       "whip": "1.20",
@@ -507,6 +533,7 @@
     {
       "role": "sp2",
       "name": "Anthony Kay",
+      "age": "31",
       "url": "https://www.fangraphs.com/players/anthony-kay/20387/stats/pitching",
       "era": "",
       "whip": "",
@@ -526,6 +553,7 @@
     {
       "role": "sp3",
       "name": "Davis Martin",
+      "age": "29.2",
       "url": "https://www.fangraphs.com/players/davis-martin/21448/stats/pitching",
       "era": "4.10",
       "whip": "1.29",
@@ -545,6 +573,7 @@
     {
       "role": "sp4",
       "name": "Sean Burke",
+      "age": "26.3",
       "url": "https://www.fangraphs.com/players/sean-burke/29878/stats/pitching",
       "era": "4.22",
       "whip": "1.44",
@@ -564,6 +593,7 @@
     {
       "role": "sp5",
       "name": "Erick Fedde",
+      "age": "33.1",
       "url": "https://www.fangraphs.com/players/erick-fedde/17425/stats/pitching",
       "era": "5.49",
       "whip": "1.52",
@@ -585,6 +615,7 @@
     {
       "role": "sp1",
       "name": "Andrew Abbott",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/andrew-abbott/29911/stats/pitching",
       "era": "2.87",
       "whip": "1.15",
@@ -604,6 +635,7 @@
     {
       "role": "sp2",
       "name": "Nick Lodolo",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/nick-lodolo/26378/stats/pitching",
       "era": "3.33",
       "whip": "1.08",
@@ -623,6 +655,7 @@
     {
       "role": "sp3",
       "name": "Brady Singer",
+      "age": "29.6",
       "url": "https://www.fangraphs.com/players/brady-singer/25377/stats/pitching",
       "era": "4.03",
       "whip": "1.24",
@@ -642,6 +675,7 @@
     {
       "role": "sp4",
       "name": "Rhett Lowder",
+      "age": "24",
       "url": "https://www.fangraphs.com/players/rhett-lowder/33876/stats/pitching",
       "era": "",
       "whip": "",
@@ -661,6 +695,7 @@
     {
       "role": "sp5",
       "name": "Chase Burns",
+      "age": "23.2",
       "url": "https://www.fangraphs.com/players/chase-burns/35333/stats/pitching",
       "era": "4.57",
       "whip": "1.32",
@@ -682,6 +717,7 @@
     {
       "role": "sp1",
       "name": "Tanner Bibee",
+      "age": "27",
       "url": "https://www.fangraphs.com/players/tanner-bibee/30134/stats/pitching",
       "era": "4.24",
       "whip": "1.23",
@@ -701,6 +737,7 @@
     {
       "role": "sp2",
       "name": "Gavin Williams",
+      "age": "26.7",
       "url": "https://www.fangraphs.com/players/gavin-williams/30122/stats/pitching",
       "era": "3.06",
       "whip": "1.27",
@@ -720,6 +757,7 @@
     {
       "role": "sp3",
       "name": "Slade Cecconi",
+      "age": "26.7",
       "url": "https://www.fangraphs.com/players/slade-cecconi/27500/stats/pitching",
       "era": "4.30",
       "whip": "1.19",
@@ -739,6 +777,7 @@
     {
       "role": "sp4",
       "name": "Joey Cantillo",
+      "age": "26.3",
       "url": "https://www.fangraphs.com/players/joey-cantillo/23335/stats/pitching",
       "era": "3.21",
       "whip": "1.26",
@@ -758,6 +797,7 @@
     {
       "role": "sp5",
       "name": "Parker Messick",
+      "age": "25.4",
       "url": "https://www.fangraphs.com/players/parker-messick/31986/stats/pitching",
       "era": "2.72",
       "whip": "1.31",
@@ -779,6 +819,7 @@
     {
       "role": "sp1",
       "name": "Kyle Freeland",
+      "age": "32.9",
       "url": "https://www.fangraphs.com/players/kyle-freeland/16256/stats/pitching",
       "era": "4.98",
       "whip": "1.42",
@@ -798,6 +839,7 @@
     {
       "role": "sp2",
       "name": "Michael Lorenzen",
+      "age": "34.2",
       "url": "https://www.fangraphs.com/players/michael-lorenzen/14843/stats/pitching",
       "era": "4.64",
       "whip": "1.33",
@@ -817,6 +859,7 @@
     {
       "role": "sp3",
       "name": "Jose Quintana",
+      "age": "37.2",
       "url": "https://www.fangraphs.com/players/jose-quintana/11423/stats/pitching",
       "era": "3.96",
       "whip": "1.29",
@@ -836,6 +879,7 @@
     {
       "role": "sp4",
       "name": "Tomoyuki Sugano",
+      "age": "36.4",
       "url": "https://www.fangraphs.com/players/tomoyuki-sugano/35321/stats/pitching",
       "era": "4.64",
       "whip": "1.33",
@@ -855,6 +899,7 @@
     {
       "role": "sp5",
       "name": "Chase Dollander",
+      "age": "24.4",
       "url": "https://www.fangraphs.com/players/chase-dollander/33482/stats/pitching",
       "era": "6.52",
       "whip": "1.55",
@@ -876,6 +921,7 @@
     {
       "role": "sp1",
       "name": "Tarik Skubal",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/tarik-skubal/22267/stats/pitching",
       "era": "2.21",
       "whip": "0.89",
@@ -895,6 +941,7 @@
     {
       "role": "sp2",
       "name": "Framber Valdez",
+      "age": "32.3",
       "url": "https://www.fangraphs.com/players/framber-valdez/17295/stats/pitching",
       "era": "3.66",
       "whip": "1.24",
@@ -914,6 +961,7 @@
     {
       "role": "sp3",
       "name": "Jack Flaherty",
+      "age": "30.4",
       "url": "https://www.fangraphs.com/players/jack-flaherty/17479/stats/pitching",
       "era": "4.64",
       "whip": "1.28",
@@ -933,6 +981,7 @@
     {
       "role": "sp4",
       "name": "Justin Verlander",
+      "age": "43.1",
       "url": "https://www.fangraphs.com/players/justin-verlander/8700/stats/pitching",
       "era": "3.85",
       "whip": "1.36",
@@ -952,6 +1001,7 @@
     {
       "role": "sp5",
       "name": "Casey Mize",
+      "age": "28.9",
       "url": "https://www.fangraphs.com/players/casey-mize/20492/stats/pitching",
       "era": "3.87",
       "whip": "1.27",
@@ -973,6 +1023,7 @@
     {
       "role": "sp1",
       "name": "Hunter Brown",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/hunter-brown/25880/stats/pitching",
       "era": "2.43",
       "whip": "1.03",
@@ -992,6 +1043,7 @@
     {
       "role": "sp3",
       "name": "Cristian Javier",
+      "age": "29",
       "url": "https://www.fangraphs.com/players/cristian-javier/17606/stats/pitching",
       "era": "4.62",
       "whip": "1.27",
@@ -1011,6 +1063,7 @@
     {
       "role": "sp4",
       "name": "Tatsuya Imai",
+      "age": "27.9",
       "url": "https://www.fangraphs.com/players/tatsuya-imai/sa3062955/stats/pitching",
       "era": "",
       "whip": "",
@@ -1030,6 +1083,7 @@
     {
       "role": "sp2",
       "name": "Mike Burrows",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/mike-burrows/24728/stats/pitching",
       "era": "3.94",
       "whip": "1.24",
@@ -1049,6 +1103,7 @@
     {
       "role": "sp5",
       "name": "Lance McCullers Jr.",
+      "age": "32.5",
       "url": "https://www.fangraphs.com/players/lance-mccullers-jr/14120/stats/pitching",
       "era": "6.51",
       "whip": "1.81",
@@ -1070,6 +1125,7 @@
     {
       "role": "sp1",
       "name": "Cole Ragans",
+      "age": "28.3",
       "url": "https://www.fangraphs.com/players/cole-ragans/21846/stats/pitching",
       "era": "4.67",
       "whip": "1.18",
@@ -1089,6 +1145,7 @@
     {
       "role": "sp2",
       "name": "Michael Wacha",
+      "age": "34.7",
       "url": "https://www.fangraphs.com/players/michael-wacha/14078/stats/pitching",
       "era": "3.86",
       "whip": "1.22",
@@ -1108,6 +1165,7 @@
     {
       "role": "sp3",
       "name": "Seth Lugo",
+      "age": "36.3",
       "url": "https://www.fangraphs.com/players/seth-lugo/12447/stats/pitching",
       "era": "4.15",
       "whip": "1.29",
@@ -1127,6 +1185,7 @@
     {
       "role": "sp4",
       "name": "Kris Bubic",
+      "age": "28.6",
       "url": "https://www.fangraphs.com/players/kris-bubic/21455/stats/pitching",
       "era": "2.55",
       "whip": "1.18",
@@ -1146,6 +1205,7 @@
     {
       "role": "sp5",
       "name": "Noah Cameron",
+      "age": "26.7",
       "url": "https://www.fangraphs.com/players/noah-cameron/30184/stats/pitching",
       "era": "2.99",
       "whip": "1.10",
@@ -1167,6 +1227,7 @@
     {
       "role": "sp1",
       "name": "José Soriano",
+      "age": "27.4",
       "url": "https://www.fangraphs.com/players/jose-soriano/22100/stats/pitching",
       "era": "4.26",
       "whip": "1.40",
@@ -1186,6 +1247,7 @@
     {
       "role": "sp2",
       "name": "Yusei Kikuchi",
+      "age": "34.8",
       "url": "https://www.fangraphs.com/players/yusei-kikuchi/20633/stats/pitching",
       "era": "3.99",
       "whip": "1.42",
@@ -1205,6 +1267,7 @@
     {
       "role": "sp3",
       "name": "Reid Detmers",
+      "age": "26.7",
       "url": "https://www.fangraphs.com/players/reid-detmers/27468/stats/pitching",
       "era": "3.96",
       "whip": "1.30",
@@ -1224,6 +1287,7 @@
     {
       "role": "sp4",
       "name": "Jack Kochanowicz",
+      "age": "25.2",
       "url": "https://www.fangraphs.com/players/jack-kochanowicz/27688/stats/pitching",
       "era": "6.81",
       "whip": "1.75",
@@ -1243,6 +1307,7 @@
     {
       "role": "sp5",
       "name": "Ryan Johnson",
+      "age": "23.6",
       "url": "https://www.fangraphs.com/players/ryan-johnson/35325/stats/pitching",
       "era": "7.36",
       "whip": "1.98",
@@ -1264,6 +1329,7 @@
     {
       "role": "sp1",
       "name": "Yoshinobu Yamamoto",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/yoshinobu-yamamoto/33825/stats/pitching",
       "era": "2.49",
       "whip": "0.99",
@@ -1283,6 +1349,7 @@
     {
       "role": "sp2",
       "name": "Tyler Glasnow",
+      "age": "32.6",
       "url": "https://www.fangraphs.com/players/tyler-glasnow/14374/stats/pitching",
       "era": "3.19",
       "whip": "1.10",
@@ -1302,6 +1369,7 @@
     {
       "role": "sp3",
       "name": "Shohei Ohtani",
+      "age": "31.7",
       "url": "https://www.fangraphs.com/players/shohei-ohtani/19755/stats/batting",
       "era": "2.87",
       "whip": "1.04",
@@ -1321,6 +1389,7 @@
     {
       "role": "sp4",
       "name": "Emmet Sheehan",
+      "age": "26.3",
       "url": "https://www.fangraphs.com/players/emmet-sheehan/29839/stats/pitching",
       "era": "2.82",
       "whip": "0.97",
@@ -1340,6 +1409,7 @@
     {
       "role": "sp5",
       "name": "Roki Sasaki",
+      "age": "24.4",
       "url": "https://www.fangraphs.com/players/roki-sasaki/35323/stats/pitching",
       "era": "4.46",
       "whip": "1.43",
@@ -1361,6 +1431,7 @@
     {
       "role": "sp1",
       "name": "Sandy Alcantara",
+      "age": "30.5",
       "url": "https://www.fangraphs.com/players/sandy-alcantara/18684/stats/pitching",
       "era": "5.36",
       "whip": "1.27",
@@ -1380,6 +1451,7 @@
     {
       "role": "sp2",
       "name": "Eury Pérez",
+      "age": "22.9",
       "url": "https://www.fangraphs.com/players/eury-perez/27768/stats/pitching",
       "era": "4.25",
       "whip": "1.05",
@@ -1399,6 +1471,7 @@
     {
       "role": "sp3",
       "name": "Max Meyer",
+      "age": "27",
       "url": "https://www.fangraphs.com/players/max-meyer/27474/stats/pitching",
       "era": "4.73",
       "whip": "1.42",
@@ -1418,6 +1491,7 @@
     {
       "role": "sp4",
       "name": "Chris Paddack",
+      "age": "30.2",
       "url": "https://www.fangraphs.com/players/chris-paddack/20099/stats/pitching",
       "era": "5.35",
       "whip": "1.28",
@@ -1437,6 +1511,7 @@
     {
       "role": "sp5",
       "name": "Janson Junk",
+      "age": "30.2",
       "url": "https://www.fangraphs.com/players/janson-junk/23301/stats/pitching",
       "era": "4.17",
       "whip": "1.14",
@@ -1458,6 +1533,7 @@
     {
       "role": "sp1",
       "name": "Jacob Misiorowski",
+      "age": "24",
       "url": "https://www.fangraphs.com/players/jacob-misiorowski/31623/stats/pitching",
       "era": "4.36",
       "whip": "1.24",
@@ -1477,6 +1553,7 @@
     {
       "role": "sp2",
       "name": "Chad Patrick",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/chad-patrick/30113/stats/pitching",
       "era": "3.53",
       "whip": "1.28",
@@ -1496,6 +1573,7 @@
     {
       "role": "sp3",
       "name": "Brandon Woodruff",
+      "age": "33.1",
       "url": "https://www.fangraphs.com/players/brandon-woodruff/16162/stats/pitching",
       "era": "3.20",
       "whip": "0.91",
@@ -1515,6 +1593,7 @@
     {
       "role": "sp4",
       "name": "Kyle Harrison",
+      "age": "24.6",
       "url": "https://www.fangraphs.com/players/kyle-harrison/27758/stats/pitching",
       "era": "4.04",
       "whip": "1.37",
@@ -1534,6 +1613,7 @@
     {
       "role": "sp5",
       "name": "Brandon Sproat",
+      "age": "25.5",
       "url": "https://www.fangraphs.com/players/brandon-sproat/33850/stats/pitching",
       "era": "4.79",
       "whip": "1.21",
@@ -1555,6 +1635,7 @@
     {
       "role": "sp1",
       "name": "Joe Ryan",
+      "age": "29.8",
       "url": "https://www.fangraphs.com/players/joe-ryan/21390/stats/pitching",
       "era": "3.42",
       "whip": "1.04",
@@ -1574,6 +1655,7 @@
     {
       "role": "sp2",
       "name": "Bailey Ober",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/bailey-ober/21224/stats/pitching",
       "era": "5.10",
       "whip": "1.30",
@@ -1593,6 +1675,7 @@
     {
       "role": "sp3",
       "name": "Simeon Woods Richardson",
+      "age": "25.5",
       "url": "https://www.fangraphs.com/players/simeon-woods-richardson/24494/stats/pitching",
       "era": "4.04",
       "whip": "1.28",
@@ -1612,6 +1695,7 @@
     {
       "role": "sp4",
       "name": "Taj Bradley",
+      "age": "25",
       "url": "https://www.fangraphs.com/players/taj-bradley/22543/stats/pitching",
       "era": "5.05",
       "whip": "1.31",
@@ -1631,6 +1715,7 @@
     {
       "role": "sp5",
       "name": "Mick Abel",
+      "age": "24.6",
       "url": "https://www.fangraphs.com/players/mick-abel/27756/stats/pitching",
       "era": "6.23",
       "whip": "1.51",
@@ -1652,6 +1737,7 @@
     {
       "role": "sp1",
       "name": "Freddy Peralta",
+      "age": "29.8",
       "url": "https://www.fangraphs.com/players/freddy-peralta/18679/stats/pitching",
       "era": "2.70",
       "whip": "1.08",
@@ -1671,6 +1757,7 @@
     {
       "role": "sp2",
       "name": "David Peterson",
+      "age": "30.5",
       "url": "https://www.fangraphs.com/players/david-peterson/20302/stats/pitching",
       "era": "4.22",
       "whip": "1.37",
@@ -1690,6 +1777,7 @@
     {
       "role": "sp3",
       "name": "Nolan McLean",
+      "age": "24.7",
       "url": "https://www.fangraphs.com/players/nolan-mclean/33703/stats/pitching",
       "era": "2.06",
       "whip": "1.04",
@@ -1709,6 +1797,7 @@
     {
       "role": "sp4",
       "name": "Clay Holmes",
+      "age": "33",
       "url": "https://www.fangraphs.com/players/clay-holmes/13649/stats/pitching",
       "era": "3.53",
       "whip": "1.30",
@@ -1728,6 +1817,7 @@
     {
       "role": "sp5",
       "name": "Kodai Senga",
+      "age": "33.1",
       "url": "https://www.fangraphs.com/players/kodai-senga/31838/stats/pitching",
       "era": "3.02",
       "whip": "1.31",
@@ -1749,6 +1839,7 @@
     {
       "role": "sp1",
       "name": "Max Fried",
+      "age": "32.2",
       "url": "https://www.fangraphs.com/players/max-fried/13743/stats/pitching",
       "era": "2.86",
       "whip": "1.10",
@@ -1768,6 +1859,7 @@
     {
       "role": "sp2",
       "name": "Cam Schlittler",
+      "age": "25.1",
       "url": "https://www.fangraphs.com/players/cameron-schlittler/32095/stats/pitching",
       "era": "2.96",
       "whip": "1.22",
@@ -1787,6 +1879,7 @@
     {
       "role": "sp3",
       "name": "Will Warren",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/will-warren/30182/stats/pitching",
       "era": "4.44",
       "whip": "1.37",
@@ -1806,6 +1899,7 @@
     {
       "role": "sp4",
       "name": "Ryan Weathers",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/ryan-weathers/23796/stats/pitching",
       "era": "3.99",
       "whip": "1.28",
@@ -1825,6 +1919,7 @@
     {
       "role": "sp5",
       "name": "Luis Gil",
+      "age": "27.8",
       "url": "https://www.fangraphs.com/players/luis-gil/21052/stats/pitching",
       "era": "3.32",
       "whip": "1.40",
@@ -1846,6 +1941,7 @@
     {
       "role": "sp1",
       "name": "Cristopher Sánchez",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/cristopher-sanchez/20778/stats/pitching",
       "era": "2.50",
       "whip": "1.06",
@@ -1865,6 +1961,7 @@
     {
       "role": "sp2",
       "name": "Aaron Nola",
+      "age": "32.8",
       "url": "https://www.fangraphs.com/players/aaron-nola/16149/stats/pitching",
       "era": "6.01",
       "whip": "1.35",
@@ -1884,6 +1981,7 @@
     {
       "role": "sp3",
       "name": "Jesús Luzardo",
+      "age": "28.5",
       "url": "https://www.fangraphs.com/players/jesus-luzardo/19959/stats/pitching",
       "era": "3.92",
       "whip": "1.22",
@@ -1903,6 +2001,7 @@
     {
       "role": "sp4",
       "name": "Taijuan Walker",
+      "age": "33.6",
       "url": "https://www.fangraphs.com/players/taijuan-walker/11836/stats/pitching",
       "era": "4.08",
       "whip": "1.41",
@@ -1922,6 +2021,7 @@
     {
       "role": "sp5",
       "name": "Andrew Painter",
+      "age": "22.9",
       "url": "https://www.fangraphs.com/players/andrew-painter/sa3017880/stats/pitching",
       "era": "",
       "whip": "",
@@ -1943,6 +2043,7 @@
     {
       "role": "sp1",
       "name": "Paul Skenes",
+      "age": "23.8",
       "url": "https://www.fangraphs.com/players/paul-skenes/33677/stats/pitching",
       "era": "1.97",
       "whip": "0.95",
@@ -1962,6 +2063,7 @@
     {
       "role": "sp2",
       "name": "Mitch Keller",
+      "age": "30",
       "url": "https://www.fangraphs.com/players/mitch-keller/17594/stats/pitching",
       "era": "4.19",
       "whip": "1.26",
@@ -1981,6 +2083,7 @@
     {
       "role": "sp3",
       "name": "Braxton Ashcraft",
+      "age": "26.5",
       "url": "https://www.fangraphs.com/players/braxton-ashcraft/23793/stats/pitching",
       "era": "2.71",
       "whip": "1.25",
@@ -2000,6 +2103,7 @@
     {
       "role": "sp4",
       "name": "Bubba Chandler",
+      "age": "23.5",
       "url": "https://www.fangraphs.com/players/bubba-chandler/29868/stats/pitching",
       "era": "4.02",
       "whip": "0.93",
@@ -2019,6 +2123,7 @@
     {
       "role": "sp5",
       "name": "Carmen Mlodzinski",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/carmen-mlodzinski/27572/stats/pitching",
       "era": "3.55",
       "whip": "1.30",
@@ -2040,6 +2145,7 @@
     {
       "role": "sp1",
       "name": "Michael King",
+      "age": "30.8",
       "url": "https://www.fangraphs.com/players/michael-king/19853/stats/pitching",
       "era": "3.44",
       "whip": "1.20",
@@ -2059,6 +2165,7 @@
     {
       "role": "sp2",
       "name": "Nick Pivetta",
+      "age": "33.1",
       "url": "https://www.fangraphs.com/players/nick-pivetta/15454/stats/pitching",
       "era": "2.87",
       "whip": "0.99",
@@ -2078,6 +2185,7 @@
     {
       "role": "sp3",
       "name": "Randy Vásquez",
+      "age": "27.4",
       "url": "https://www.fangraphs.com/players/randy-vasquez/24719/stats/pitching",
       "era": "3.84",
       "whip": "1.32",
@@ -2097,6 +2205,7 @@
     {
       "role": "sp4",
       "name": "Germán Márquez",
+      "age": "31.1",
       "url": "https://www.fangraphs.com/players/german-marquez/15038/stats/pitching",
       "era": "6.70",
       "whip": "1.71",
@@ -2116,6 +2225,7 @@
     {
       "role": "sp5",
       "name": "Walker Buehler",
+      "age": "31.6",
       "url": "https://www.fangraphs.com/players/walker-buehler/19374/stats/pitching",
       "era": "4.93",
       "whip": "1.52",
@@ -2137,6 +2247,7 @@
     {
       "role": "sp1",
       "name": "Logan Webb",
+      "age": "29.3",
       "url": "https://www.fangraphs.com/players/logan-webb/17995/stats/pitching",
       "era": "3.22",
       "whip": "1.24",
@@ -2156,6 +2267,7 @@
     {
       "role": "sp2",
       "name": "Robbie Ray",
+      "age": "34.5",
       "url": "https://www.fangraphs.com/players/robbie-ray/11486/stats/pitching",
       "era": "3.65",
       "whip": "1.21",
@@ -2175,6 +2287,7 @@
     {
       "role": "sp3",
       "name": "Tyler Mahle",
+      "age": "31.5",
       "url": "https://www.fangraphs.com/players/tyler-mahle/16358/stats/pitching",
       "era": "2.18",
       "whip": "1.13",
@@ -2194,6 +2307,7 @@
     {
       "role": "sp4",
       "name": "Adrian Houser",
+      "age": "33.1",
       "url": "https://www.fangraphs.com/players/adrian-houser/12718/stats/pitching",
       "era": "3.31",
       "whip": "1.28",
@@ -2213,6 +2327,7 @@
     {
       "role": "sp5",
       "name": "Landen Roupp",
+      "age": "27.5",
       "url": "https://www.fangraphs.com/players/landen-roupp/30076/stats/pitching",
       "era": "3.80",
       "whip": "1.48",
@@ -2234,6 +2349,7 @@
     {
       "role": "sp1",
       "name": "Logan Gilbert",
+      "age": "28.9",
       "url": "https://www.fangraphs.com/players/logan-gilbert/22250/stats/pitching",
       "era": "3.44",
       "whip": "1.03",
@@ -2253,6 +2369,7 @@
     {
       "role": "sp2",
       "name": "Bryan Woo",
+      "age": "26.1",
       "url": "https://www.fangraphs.com/players/bryan-woo/30279/stats/pitching",
       "era": "2.94",
       "whip": "0.93",
@@ -2272,6 +2389,7 @@
     {
       "role": "sp3",
       "name": "Luis Castillo",
+      "age": "33.3",
       "url": "https://www.fangraphs.com/players/luis-castillo/15689/stats/pitching",
       "era": "3.54",
       "whip": "1.18",
@@ -2291,6 +2409,7 @@
     {
       "role": "sp4",
       "name": "George Kirby",
+      "age": "28.1",
       "url": "https://www.fangraphs.com/players/george-kirby/25436/stats/pitching",
       "era": "4.21",
       "whip": "1.19",
@@ -2310,6 +2429,7 @@
     {
       "role": "sp5",
       "name": "Emerson Hancock",
+      "age": "26.8",
       "url": "https://www.fangraphs.com/players/emerson-hancock/27470/stats/pitching",
       "era": "4.90",
       "whip": "1.38",
@@ -2331,6 +2451,7 @@
     {
       "role": "sp1",
       "name": "Matthew Liberatore",
+      "age": "26.4",
       "url": "https://www.fangraphs.com/players/matthew-liberatore/22294/stats/pitching",
       "era": "4.21",
       "whip": "1.31",
@@ -2350,6 +2471,7 @@
     {
       "role": "sp2",
       "name": "Michael McGreevy",
+      "age": "25.7",
       "url": "https://www.fangraphs.com/players/michael-mcgreevy/29869/stats/pitching",
       "era": "4.42",
       "whip": "1.25",
@@ -2369,6 +2491,7 @@
     {
       "role": "sp3",
       "name": "Dustin May",
+      "age": "28.5",
       "url": "https://www.fangraphs.com/players/dustin-may/19716/stats/pitching",
       "era": "4.96",
       "whip": "1.42",
@@ -2388,6 +2511,7 @@
     {
       "role": "sp4",
       "name": "Kyle Leahy",
+      "age": "28.8",
       "url": "https://www.fangraphs.com/players/kyle-leahy/24763/stats/pitching",
       "era": "3.07",
       "whip": "1.23",
@@ -2407,6 +2531,7 @@
     {
       "role": "sp5",
       "name": "Andre Pallante",
+      "age": "27.5",
       "url": "https://www.fangraphs.com/players/andre-pallante/26108/stats/pitching",
       "era": "5.31",
       "whip": "1.44",
@@ -2428,6 +2553,7 @@
     {
       "role": "sp1",
       "name": "Drew Rasmussen",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/drew-rasmussen/25385/stats/pitching",
       "era": "2.76",
       "whip": "1.02",
@@ -2447,6 +2573,7 @@
     {
       "role": "sp2",
       "name": "Ryan Pepiot",
+      "age": "28.6",
       "url": "https://www.fangraphs.com/players/ryan-pepiot/26221/stats/pitching",
       "era": "3.86",
       "whip": "1.16",
@@ -2466,6 +2593,7 @@
     {
       "role": "sp3",
       "name": "Shane McClanahan",
+      "age": "28.9",
       "url": "https://www.fangraphs.com/players/shane-mcclanahan/21483/stats/pitching",
       "era": "",
       "whip": "",
@@ -2485,6 +2613,7 @@
     {
       "role": "sp4",
       "name": "Nick Martinez",
+      "age": "35.6",
       "url": "https://www.fangraphs.com/players/nick-martinez/12730/stats/pitching",
       "era": "4.45",
       "whip": "1.21",
@@ -2504,6 +2633,7 @@
     {
       "role": "sp5",
       "name": "Steven Matz",
+      "age": "34.8",
       "url": "https://www.fangraphs.com/players/steven-matz/13361/stats/pitching",
       "era": "3.05",
       "whip": "1.10",
@@ -2525,6 +2655,7 @@
     {
       "role": "sp1",
       "name": "Nathan Eovaldi",
+      "age": "36.1",
       "url": "https://www.fangraphs.com/players/nathan-eovaldi/9132/stats/pitching",
       "era": "1.73",
       "whip": "0.85",
@@ -2544,6 +2675,7 @@
     {
       "role": "sp2",
       "name": "Jacob deGrom",
+      "age": "37.8",
       "url": "https://www.fangraphs.com/players/jacob-degrom/10954/stats/pitching",
       "era": "2.97",
       "whip": "0.92",
@@ -2563,6 +2695,7 @@
     {
       "role": "sp3",
       "name": "MacKenzie Gore",
+      "age": "27.1",
       "url": "https://www.fangraphs.com/players/mackenzie-gore/22201/stats/pitching",
       "era": "4.17",
       "whip": "1.35",
@@ -2582,6 +2715,7 @@
     {
       "role": "sp4",
       "name": "Jack Leiter",
+      "age": "25.9",
       "url": "https://www.fangraphs.com/players/jack-leiter/30146/stats/pitching",
       "era": "3.86",
       "whip": "1.28",
@@ -2601,6 +2735,7 @@
     {
       "role": "sp5",
       "name": "Jacob Latz",
+      "age": "29.9",
       "url": "https://www.fangraphs.com/players/jacob-latz/21306/stats/pitching",
       "era": "2.84",
       "whip": "1.24",
@@ -2622,6 +2757,7 @@
     {
       "role": "sp1",
       "name": "Kevin Gausman",
+      "age": "35.2",
       "url": "https://www.fangraphs.com/players/kevin-gausman/14107/stats/pitching",
       "era": "3.59",
       "whip": "1.06",
@@ -2641,6 +2777,7 @@
     {
       "role": "sp2",
       "name": "Dylan Cease",
+      "age": "30.2",
       "url": "https://www.fangraphs.com/players/dylan-cease/18525/stats/pitching",
       "era": "4.55",
       "whip": "1.33",
@@ -2660,6 +2797,7 @@
     {
       "role": "sp3",
       "name": "Eric Lauer",
+      "age": "30.8",
       "url": "https://www.fangraphs.com/players/eric-lauer/19316/stats/pitching",
       "era": "3.18",
       "whip": "1.11",
@@ -2679,6 +2817,7 @@
     {
       "role": "sp4",
       "name": "Cody Ponce",
+      "age": "31.9",
       "url": "https://www.fangraphs.com/players/cody-ponce/17920/stats/pitching",
       "era": "",
       "whip": "",
@@ -2698,6 +2837,7 @@
     {
       "role": "sp5",
       "name": "Max Scherzer",
+      "age": "41.6",
       "url": "https://www.fangraphs.com/players/max-scherzer/3137/stats/pitching",
       "era": "5.19",
       "whip": "1.29",
@@ -2719,6 +2859,7 @@
     {
       "role": "sp1",
       "name": "Cade Cavalli",
+      "age": "27.6",
       "url": "https://www.fangraphs.com/players/cade-cavalli/27473/stats/pitching",
       "era": "4.25",
       "whip": "1.48",
@@ -2738,6 +2879,7 @@
     {
       "role": "sp2",
       "name": "Miles Mikolas",
+      "age": "37.6",
       "url": "https://www.fangraphs.com/players/miles-mikolas/9803/stats/pitching",
       "era": "4.84",
       "whip": "1.32",
@@ -2757,6 +2899,7 @@
     {
       "role": "sp3",
       "name": "Foster Griffin",
+      "age": "30.7",
       "url": "https://www.fangraphs.com/players/foster-griffin/16432/stats/pitching",
       "era": "",
       "whip": "",
@@ -2776,6 +2919,7 @@
     {
       "role": "sp4",
       "name": "Jake Irvin",
+      "age": "29.1",
       "url": "https://www.fangraphs.com/players/jake-irvin/21504/stats/pitching",
       "era": "5.70",
       "whip": "1.43",
@@ -2795,6 +2939,7 @@
     {
       "role": "sp5",
       "name": "Zack Littell",
+      "age": "30.5",
       "url": "https://www.fangraphs.com/players/zack-littell/15823/stats/pitching",
       "era": "3.81",
       "whip": "1.10",
@@ -2816,6 +2961,7 @@
     {
       "role": "sp1",
       "name": "Luis Severino",
+      "age": "32.1",
       "url": "https://www.fangraphs.com/players/luis-severino/15890/stats/pitching",
       "era": "4.54",
       "whip": "1.30",
@@ -2835,6 +2981,7 @@
     {
       "role": "sp2",
       "name": "Jeffrey Springs",
+      "age": "33.5",
       "url": "https://www.fangraphs.com/players/jeffrey-springs/17677/stats/pitching",
       "era": "4.11",
       "whip": "1.21",
@@ -2854,6 +3001,7 @@
     {
       "role": "sp3",
       "name": "Aaron Civale",
+      "age": "30.8",
       "url": "https://www.fangraphs.com/players/aaron-civale/19479/stats/pitching",
       "era": "4.85",
       "whip": "1.26",
@@ -2873,6 +3021,7 @@
     {
       "role": "sp4",
       "name": "Jacob Lopez",
+      "age": "28",
       "url": "https://www.fangraphs.com/players/jacob-lopez/25098/stats/pitching",
       "era": "4.08",
       "whip": "1.27",
@@ -2892,6 +3041,7 @@
     {
       "role": "sp5",
       "name": "Luis Morales",
+      "age": "23.5",
       "url": "https://www.fangraphs.com/players/luis-morales/32227/stats/pitching",
       "era": "3.14",
       "whip": "1.15",

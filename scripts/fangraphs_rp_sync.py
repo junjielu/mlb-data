@@ -27,6 +27,7 @@ TEAM_SLUGS = {
 class RPRow:
     role: str
     name: str
+    age: str
     url: str
     era: str
     k9: str
@@ -125,6 +126,18 @@ def fmt_pct(v: Any) -> str:
         return ''
 
 
+def fmt_age(v: Any) -> str:
+    if v is None:
+        return ''
+    try:
+        age = float(v)
+    except (TypeError, ValueError):
+        return ''
+    if age.is_integer():
+        return str(int(age))
+    return f'{age:.1f}'.rstrip('0').rstrip('.')
+
+
 def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict[str, Any]]:
     params = dict(
         age='', pos='all', stats='pit', lg='all', qual='0', season=str(season),
@@ -144,6 +157,7 @@ def fetch_pitching_map(session: requests.Session, season: int) -> dict[str, dict
         if not name:
             continue
         out[name] = {
+            'age': fmt_age(r.get('Age')),
             'era': fmt_float(r.get('ERA'), 2),
             'k9': fmt_float(r.get('K/9'), 2),
             'bb9': fmt_float(r.get('BB/9'), 2),
@@ -170,6 +184,7 @@ def fetch_pitching_row_by_player_id(session: requests.Session, season: int, play
         return {}
     row = rows[0]
     return {
+        'age': fmt_age(row.get('Age')),
         'era': fmt_float(row.get('ERA'), 2),
         'k9': fmt_float(row.get('K/9'), 2),
         'bb9': fmt_float(row.get('BB/9'), 2),
@@ -225,6 +240,7 @@ def extract_bullpen_rows(
         role = str(r.get('role', '')).strip().upper()
         raw_name = str(r.get('player', '')).strip()
         name = clean_player_name(raw_name)
+        roster_age = fmt_age(r.get('age') or r.get('age1'))
         if not role or not name:
             continue
 
@@ -307,6 +323,7 @@ def extract_bullpen_rows(
             RPRow(
                 role=role,
                 name=name,
+                age=roster_age or info.get('age', ''),
                 url=link_map.get(name, f'https://www.fangraphs.com/players/{name.lower().replace(" ", "-")}/stats/pitching'),
                 era=info.get('era', ''),
                 k9=info.get('k9', ''),
