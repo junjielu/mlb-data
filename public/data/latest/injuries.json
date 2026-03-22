@@ -4,8 +4,8 @@
     "source": "fangraphs",
     "season": 2026,
     "timeframe": "current",
-    "generatedAt": "2026-03-21T04:16:14Z",
-    "sourceUpdatedAt": "Friday, March 20, 2026 11:36 PM ET",
+    "generatedAt": "2026-03-22T08:14:37Z",
+    "sourceUpdatedAt": "Saturday, March 21, 2026 11:35 PM ET",
     "teamCount": 30,
     "stateSemantics": {
       "emptyTeamRows": "A team with available=true and an empty injuries array has no current Fangraphs injury entries.",
@@ -236,19 +236,6 @@
           "latest_update": "No timetable for return"
         },
         {
-          "name": "Grant Holmes",
-          "url": "https://www.fangraphs.com/players/grant-holmes/16944/stats/pitching",
-          "team": "ATL",
-          "position": "SP",
-          "injury_date": "07/26/25",
-          "injury": "Elbow inflammation",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
           "name": "Daysbel Hernández",
           "url": "https://www.fangraphs.com/players/daysbel-hernandez/20271/stats/pitching",
           "team": "ATL",
@@ -348,19 +335,6 @@
       "available": true,
       "injuries": [
         {
-          "name": "Zach Eflin",
-          "url": "https://www.fangraphs.com/players/zach-eflin/13774/stats/pitching",
-          "team": "BAL",
-          "position": "SP",
-          "injury_date": "08/18/25",
-          "injury": "Back surgery (lumbar microdiscectomy)",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
           "name": "Jordan Westburg",
           "url": "https://www.fangraphs.com/players/jordan-westburg/27815/stats/batting",
           "team": "BAL",
@@ -400,12 +374,38 @@
           "latest_update": "Questionable for Opening Day"
         },
         {
+          "name": "Heston Kjerstad",
+          "url": "https://www.fangraphs.com/players/heston-kjerstad/31166/stats/batting",
+          "team": "BAL",
+          "position": "OF",
+          "injury_date": "03/19/26",
+          "injury": "Strained hamstring",
+          "status": "Projected Injured List",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
+        },
+        {
           "name": "Dylan Beavers",
           "url": "https://www.fangraphs.com/players/dylan-beavers/31695/stats/batting",
           "team": "BAL",
           "position": "OF",
           "injury_date": "03/20/26",
           "injury": "Knee discomfort",
+          "status": "Projected Opening Day roster",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
+        },
+        {
+          "name": "Keegan Akin",
+          "url": "https://www.fangraphs.com/players/keegan-akin/19362/stats/pitching",
+          "team": "BAL",
+          "position": "RP",
+          "injury_date": "03/21/26",
+          "injury": "Adductor tightness",
           "status": "Projected Opening Day roster",
           "il_retro_date": "",
           "eligible_to_return": "",
@@ -766,7 +766,7 @@
           "position": "SP",
           "injury_date": "Feb '26",
           "injury": "Shoulder inflammation",
-          "status": "Projected MiLB",
+          "status": "Projected Injured List",
           "il_retro_date": "",
           "eligible_to_return": "",
           "return_date": "",
@@ -846,26 +846,13 @@
       "available": true,
       "injuries": [
         {
-          "name": "Dillon Dingler",
-          "url": "https://www.fangraphs.com/players/dillon-dingler/27464/stats/batting",
-          "team": "DET",
-          "position": "C",
-          "injury_date": "01/28/26",
-          "injury": "Arthroscopic elbow surgery (right)",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
           "name": "Trey Sweeney",
           "url": "https://www.fangraphs.com/players/trey-sweeney/29575/stats/batting",
           "team": "DET",
           "position": "INF",
           "injury_date": "Feb '26",
           "injury": "Strained shoulder",
-          "status": "Projected MiLB",
+          "status": "Projected Injured List",
           "il_retro_date": "",
           "eligible_to_return": "",
           "return_date": "",
@@ -969,19 +956,6 @@
           "eligible_to_return": "",
           "return_date": "",
           "latest_update": "Questionable for 2026 season"
-        },
-        {
-          "name": "Isaac Paredes",
-          "url": "https://www.fangraphs.com/players/isaac-paredes/20036/stats/batting",
-          "team": "HOU",
-          "position": "INF",
-          "injury_date": "07/19/25",
-          "injury": "Strained hamstring",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
         },
         {
           "name": "Brandon Walter",
@@ -1255,6 +1229,19 @@
           "latest_update": "Questionable for Opening Day"
         },
         {
+          "name": "Bobby Miller",
+          "url": "https://www.fangraphs.com/players/bobby-miller/27483/stats/pitching",
+          "team": "LAD",
+          "position": "RP",
+          "injury_date": "Feb '26",
+          "injury": "Shoulder soreness",
+          "status": "Projected Injured List",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
+        },
+        {
           "name": "Gavin Stone",
           "url": "https://www.fangraphs.com/players/gavin-stone/27792/stats/pitching",
           "team": "LAD",
@@ -1302,38 +1289,12 @@
       "available": true,
       "injuries": [
         {
-          "name": "Braxton Garrett",
-          "url": "https://www.fangraphs.com/players/braxton-garrett/21844/stats/pitching",
-          "team": "MIA",
-          "position": "SP",
-          "injury_date": "12/16/24",
-          "injury": "UCL revision surgery (internal brace)",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
           "name": "Graham Pauley",
           "url": "https://www.fangraphs.com/players/graham-pauley/31363/stats/batting",
           "team": "MIA",
           "position": "INF",
           "injury_date": "Feb '26",
           "injury": "Forearm tightness",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
-          "name": "Janson Junk",
-          "url": "https://www.fangraphs.com/players/janson-junk/23301/stats/pitching",
-          "team": "MIA",
-          "position": "SP",
-          "injury_date": "02/17/26",
-          "injury": "Sprained ankle",
           "status": "Projected Opening Day roster",
           "il_retro_date": "",
           "eligible_to_return": "",
@@ -1365,6 +1326,32 @@
           "eligible_to_return": "",
           "return_date": "",
           "latest_update": "Out for 2026 season"
+        },
+        {
+          "name": "Esteury Ruiz",
+          "url": "https://www.fangraphs.com/players/esteury-ruiz/21780/stats/batting",
+          "team": "MIA",
+          "position": "OF",
+          "injury_date": "03/20/26",
+          "injury": "Strained oblique",
+          "status": "Projected Injured List",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
+        },
+        {
+          "name": "Kyle Stowers",
+          "url": "https://www.fangraphs.com/players/kyle-stowers/26151/stats/batting",
+          "team": "MIA",
+          "position": "OF",
+          "injury_date": "03/20/26",
+          "injury": "Hamstring tightness",
+          "status": "Projected Opening Day roster",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
         },
         {
           "name": "Ronny Henriquez",
@@ -1468,19 +1455,6 @@
           "injury_date": "Feb '26",
           "injury": "Shoulder impingement",
           "status": "Projected Injured List",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
-          "name": "Joe Ryan",
-          "url": "https://www.fangraphs.com/players/joe-ryan/21390/stats/pitching",
-          "team": "MIN",
-          "position": "SP",
-          "injury_date": "02/21/26",
-          "injury": "Lower back inflammation",
-          "status": "Projected Opening Day roster",
           "il_retro_date": "",
           "eligible_to_return": "",
           "return_date": "",
@@ -1620,19 +1594,6 @@
           "latest_update": "No timetable for return"
         },
         {
-          "name": "Oswaldo Cabrera",
-          "url": "https://www.fangraphs.com/players/oswaldo-cabrera/21707/stats/batting",
-          "team": "NYY",
-          "position": "INF/OF",
-          "injury_date": "05/12/25",
-          "injury": "Fractured ankle",
-          "status": "Projected Injured List",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
           "name": "Anthony Volpe",
           "url": "https://www.fangraphs.com/players/anthony-volpe/27647/stats/batting",
           "team": "NYY",
@@ -1653,19 +1614,6 @@
           "injury_date": "10/15/25",
           "injury": "Elbow surgery (bone spur removal)",
           "status": "Projected Injured List",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
-          "name": "Cam Schlittler",
-          "url": "https://www.fangraphs.com/players/cameron-schlittler/32095/stats/pitching",
-          "team": "NYY",
-          "position": "SP",
-          "injury_date": "Feb '26",
-          "injury": "Back inflammation",
-          "status": "Projected Opening Day roster",
           "il_retro_date": "",
           "eligible_to_return": "",
           "return_date": "",
@@ -1725,7 +1673,7 @@
           "position": "RP",
           "injury_date": "03/08/26",
           "injury": "Strained oblique",
-          "status": "Projected MiLB",
+          "status": "Projected Injured List",
           "il_retro_date": "",
           "eligible_to_return": "",
           "return_date": "",
@@ -1899,32 +1847,6 @@
           "latest_update": "Questionable for Opening Day"
         },
         {
-          "name": "Erik Miller",
-          "url": "https://www.fangraphs.com/players/erik-miller/26252/stats/pitching",
-          "team": "SFG",
-          "position": "RP",
-          "injury_date": "Feb '26",
-          "injury": "Lower back tightness",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
-        {
-          "name": "Hayden Birdsong",
-          "url": "https://www.fangraphs.com/players/hayden-birdsong/31635/stats/pitching",
-          "team": "SFG",
-          "position": "SP",
-          "injury_date": "Mar '26",
-          "injury": "Tommy John surgery",
-          "status": "Projected Injured List",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Out for 2026 season"
-        },
-        {
           "name": "Reiver Sanmartin",
           "url": "https://www.fangraphs.com/players/reiver-sanmartin/19754/stats/pitching",
           "team": "SFG",
@@ -1936,6 +1858,19 @@
           "eligible_to_return": "",
           "return_date": "",
           "latest_update": "Expected to miss 3 months"
+        },
+        {
+          "name": "Harrison Bader",
+          "url": "https://www.fangraphs.com/players/harrison-bader/18030/stats/batting",
+          "team": "SFG",
+          "position": "OF",
+          "injury_date": "03/16/26",
+          "injury": "Hamstring tightness",
+          "status": "Projected Opening Day roster",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
         },
         {
           "name": "Jason Foley",
@@ -1975,6 +1910,19 @@
           "eligible_to_return": "05/24/26",
           "return_date": "",
           "latest_update": "Out for 2026 season"
+        },
+        {
+          "name": "Hayden Birdsong",
+          "url": "https://www.fangraphs.com/players/hayden-birdsong/31635/stats/pitching",
+          "team": "SFG",
+          "position": "SP",
+          "injury_date": "Mar '26",
+          "injury": "Tommy John surgery",
+          "status": "60-Day IL",
+          "il_retro_date": "03/25/26",
+          "eligible_to_return": "05/24/26",
+          "return_date": "",
+          "latest_update": "Out for 2026 season"
         }
       ]
     },
@@ -1991,6 +1939,19 @@
           "position": "SP",
           "injury_date": "02/26/26",
           "injury": "Strained oblique",
+          "status": "Projected Injured List",
+          "il_retro_date": "",
+          "eligible_to_return": "",
+          "return_date": "",
+          "latest_update": "Questionable for Opening Day"
+        },
+        {
+          "name": "Miles Mastrobuoni",
+          "url": "https://www.fangraphs.com/players/miles-mastrobuoni/20017/stats/batting",
+          "team": "SEA",
+          "position": "INF/OF",
+          "injury_date": "03/10/26",
+          "injury": "Strained calf",
           "status": "Projected Injured List",
           "il_retro_date": "",
           "eligible_to_return": "",
@@ -2056,19 +2017,6 @@
           "eligible_to_return": "",
           "return_date": "",
           "latest_update": "Questionable for Opening Day"
-        },
-        {
-          "name": "Riley O'Brien",
-          "url": "https://www.fangraphs.com/players/riley-obrien/20348/stats/pitching",
-          "team": "STL",
-          "position": "RP",
-          "injury_date": "02/17/26",
-          "injury": "Strained calf",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
         }
       ]
     },
@@ -2078,19 +2026,6 @@
       "sourceUrl": "https://www.fangraphs.com/roster-resource/injury-report/rays?groupby=team&timeframe=current",
       "available": true,
       "injuries": [
-        {
-          "name": "Shane McClanahan",
-          "url": "https://www.fangraphs.com/players/shane-mcclanahan/21483/stats/pitching",
-          "team": "TBR",
-          "position": "SP",
-          "injury_date": "08/11/25",
-          "injury": "Arm surgery (nerve-related)",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
-        },
         {
           "name": "Steven Wilson",
           "url": "https://www.fangraphs.com/players/steven-wilson/20353/stats/pitching",
@@ -2176,19 +2111,6 @@
           "eligible_to_return": "",
           "return_date": "",
           "latest_update": "Questionable for Opening Day; out 4-6 weeks (2/21)"
-        },
-        {
-          "name": "Josh Jung",
-          "url": "https://www.fangraphs.com/players/josh-jung/26299/stats/batting",
-          "team": "TEX",
-          "position": "3B",
-          "injury_date": "02/26/26",
-          "injury": "Strained groin",
-          "status": "Projected Opening Day roster",
-          "il_retro_date": "",
-          "eligible_to_return": "",
-          "return_date": "",
-          "latest_update": "Questionable for Opening Day"
         },
         {
           "name": "Jordan Montgomery",

@@ -10,12 +10,14 @@
       "bb9": "3.09",
       "stuff_plus": "93",
       "location_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19291",
       "matched_player_id": "19291",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -27,12 +29,14 @@
       "bb9": "2.40",
       "stuff_plus": "108",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26253",
       "matched_player_id": "26253",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -44,32 +48,17 @@
       "bb9": "3.50",
       "stuff_plus": "91",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13164",
       "matched_player_id": "13164",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
-      "name": "Brandon Pfaadt",
-      "url": "https://www.fangraphs.com/players/brandon-pfaadt/27782/stats/pitching",
-      "era": "5.25",
-      "whip": "1.33",
-      "k9": "7.49",
-      "bb9": "1.88",
-      "stuff_plus": "97",
-      "location_plus": "104",
-      "match_method": "exact_name",
-      "source_player_id": "27782",
-      "matched_player_id": "27782",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp5",
       "name": "Michael Soroka",
       "url": "https://www.fangraphs.com/players/michael-soroka/18383/stats/pitching",
       "era": "4.52",
@@ -78,12 +67,33 @@
       "bb9": "2.91",
       "stuff_plus": "95",
       "location_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18383",
       "matched_player_id": "18383",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "sp5",
+      "name": "Brandon Pfaadt",
+      "url": "https://www.fangraphs.com/players/brandon-pfaadt/27782/stats/pitching",
+      "era": "5.25",
+      "whip": "1.33",
+      "k9": "7.49",
+      "bb9": "1.88",
+      "stuff_plus": "97",
+      "location_plus": "104",
+      "match_method": "playerid",
+      "source_player_id": "27782",
+      "matched_player_id": "27782",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "ATL": [
@@ -97,12 +107,14 @@
       "bb9": "2.29",
       "stuff_plus": "107",
       "location_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "10603",
       "matched_player_id": "10603",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -114,12 +126,14 @@
       "bb9": "3.66",
       "stuff_plus": "96",
       "location_plus": "93",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27498",
       "matched_player_id": "27498",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -131,12 +145,14 @@
       "bb9": "3.60",
       "stuff_plus": "99",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16400",
       "matched_player_id": "16400",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -148,12 +164,14 @@
       "bb9": "4.23",
       "stuff_plus": "91",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16944",
       "matched_player_id": "16944",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -165,12 +183,14 @@
       "bb9": "2.94",
       "stuff_plus": "90",
       "location_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27779",
       "matched_player_id": "27779",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "BAL": [
@@ -184,12 +204,14 @@
       "bb9": "2.38",
       "stuff_plus": "92",
       "location_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22286",
       "matched_player_id": "22286",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -201,12 +223,14 @@
       "bb9": "2.81",
       "stuff_plus": "95",
       "location_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24586",
       "matched_player_id": "24586",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -218,12 +242,14 @@
       "bb9": "2.75",
       "stuff_plus": "96",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12304",
       "matched_player_id": "12304",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -235,12 +261,14 @@
       "bb9": "3.46",
       "stuff_plus": "107",
       "location_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22264",
       "matched_player_id": "22264",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -252,29 +280,14 @@
       "bb9": "1.64",
       "stuff_plus": "93",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13774",
       "matched_player_id": "13774",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp6",
-      "name": "Dean Kremer",
-      "url": "https://www.fangraphs.com/players/dean-kremer/19350/stats/pitching",
-      "era": "4.19",
-      "whip": "1.21",
-      "k9": "7.44",
-      "bb9": "2.36",
-      "stuff_plus": "95",
-      "location_plus": "101",
-      "match_method": "exact_name",
-      "source_player_id": "19350",
-      "matched_player_id": "19350",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "BOS": [
@@ -288,12 +301,14 @@
       "bb9": "2.02",
       "stuff_plus": "116",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27463",
       "matched_player_id": "27463",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -305,12 +320,14 @@
       "bb9": "1.89",
       "stuff_plus": "96",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12768",
       "matched_player_id": "12768",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -322,12 +339,14 @@
       "bb9": "5.13",
       "stuff_plus": "102",
       "location_plus": "91",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22487",
       "matched_player_id": "22487",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -344,7 +363,9 @@
       "matched_player_id": "17277",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -356,12 +377,14 @@
       "bb9": "3.19",
       "stuff_plus": "96",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23920",
       "matched_player_id": "23920",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CHC": [
@@ -375,12 +398,14 @@
       "bb9": "2.10",
       "stuff_plus": "94",
       "location_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15440",
       "matched_player_id": "15440",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -392,12 +417,14 @@
       "bb9": "2.52",
       "stuff_plus": "96",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31872",
       "matched_player_id": "31872",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -409,12 +436,14 @@
       "bb9": "1.62",
       "stuff_plus": "94",
       "location_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "33829",
       "matched_player_id": "33829",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -426,12 +455,14 @@
       "bb9": "3.14",
       "stuff_plus": "105",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21690",
       "matched_player_id": "21690",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -443,12 +474,14 @@
       "bb9": "1.87",
       "stuff_plus": "94",
       "location_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "11674",
       "matched_player_id": "11674",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CHW": [
@@ -462,12 +495,14 @@
       "bb9": "3.57",
       "stuff_plus": "95",
       "location_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31687",
       "matched_player_id": "31687",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -484,7 +519,9 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -496,12 +533,14 @@
       "bb9": "3.03",
       "stuff_plus": "97",
       "location_plus": "96",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21448",
       "matched_player_id": "21448",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -513,12 +552,14 @@
       "bb9": "4.22",
       "stuff_plus": "92",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29878",
       "matched_player_id": "29878",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -530,12 +571,14 @@
       "bb9": "4.28",
       "stuff_plus": "91",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17425",
       "matched_player_id": "17425",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CIN": [
@@ -549,12 +592,14 @@
       "bb9": "2.33",
       "stuff_plus": "97",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29911",
       "matched_player_id": "29911",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -566,12 +611,14 @@
       "bb9": "1.78",
       "stuff_plus": "102",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26378",
       "matched_player_id": "26378",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -583,12 +630,14 @@
       "bb9": "3.18",
       "stuff_plus": "95",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25377",
       "matched_player_id": "25377",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -605,7 +654,9 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -617,12 +668,14 @@
       "bb9": "3.32",
       "stuff_plus": "115",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "35333",
       "matched_player_id": "35333",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CLE": [
@@ -636,12 +689,14 @@
       "bb9": "2.67",
       "stuff_plus": "102",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30134",
       "matched_player_id": "30134",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -653,12 +708,14 @@
       "bb9": "4.46",
       "stuff_plus": "103",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30122",
       "matched_player_id": "30122",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -670,32 +727,17 @@
       "bb9": "2.18",
       "stuff_plus": "93",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27500",
       "matched_player_id": "27500",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
-      "name": "Logan Allen",
-      "url": "https://www.fangraphs.com/players/logan-allen/27589/stats/pitching",
-      "era": "4.25",
-      "whip": "1.40",
-      "k9": "7.01",
-      "bb9": "3.56",
-      "stuff_plus": "92",
-      "location_plus": "97",
-      "match_method": "exact_name",
-      "source_player_id": "27589",
-      "matched_player_id": "27589",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp5",
       "name": "Joey Cantillo",
       "url": "https://www.fangraphs.com/players/joey-cantillo/23335/stats/pitching",
       "era": "3.21",
@@ -704,12 +746,33 @@
       "bb9": "3.97",
       "stuff_plus": "89",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23335",
       "matched_player_id": "23335",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "sp5",
+      "name": "Parker Messick",
+      "url": "https://www.fangraphs.com/players/parker-messick/31986/stats/pitching",
+      "era": "2.72",
+      "whip": "1.31",
+      "k9": "8.62",
+      "bb9": "1.36",
+      "stuff_plus": "96",
+      "location_plus": "109",
+      "match_method": "playerid",
+      "source_player_id": "31986",
+      "matched_player_id": "31986",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "COL": [
@@ -723,12 +786,14 @@
       "bb9": "2.10",
       "stuff_plus": "95",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16256",
       "matched_player_id": "16256",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -740,12 +805,14 @@
       "bb9": "2.48",
       "stuff_plus": "92",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14843",
       "matched_player_id": "14843",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -757,32 +824,17 @@
       "bb9": "3.42",
       "stuff_plus": "85",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "11423",
       "matched_player_id": "11423",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
-      "name": "Chase Dollander",
-      "url": "https://www.fangraphs.com/players/chase-dollander/33482/stats/pitching",
-      "era": "6.52",
-      "whip": "1.55",
-      "k9": "7.53",
-      "bb9": "4.50",
-      "stuff_plus": "102",
-      "location_plus": "92",
-      "match_method": "exact_name",
-      "source_player_id": "33482",
-      "matched_player_id": "33482",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp5",
       "name": "Tomoyuki Sugano",
       "url": "https://www.fangraphs.com/players/tomoyuki-sugano/35321/stats/pitching",
       "era": "4.64",
@@ -791,12 +843,33 @@
       "bb9": "2.06",
       "stuff_plus": "92",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "35321",
       "matched_player_id": "35321",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "sp5",
+      "name": "Chase Dollander",
+      "url": "https://www.fangraphs.com/players/chase-dollander/33482/stats/pitching",
+      "era": "6.52",
+      "whip": "1.55",
+      "k9": "7.53",
+      "bb9": "4.50",
+      "stuff_plus": "102",
+      "location_plus": "92",
+      "match_method": "playerid",
+      "source_player_id": "33482",
+      "matched_player_id": "33482",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "DET": [
@@ -810,12 +883,14 @@
       "bb9": "1.52",
       "stuff_plus": "116",
       "location_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22267",
       "matched_player_id": "22267",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -827,12 +902,14 @@
       "bb9": "3.19",
       "stuff_plus": "108",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17295",
       "matched_player_id": "17295",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -844,12 +921,14 @@
       "bb9": "3.30",
       "stuff_plus": "98",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17479",
       "matched_player_id": "17479",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -861,12 +940,14 @@
       "bb9": "3.08",
       "stuff_plus": "106",
       "location_plus": "93",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "8700",
       "matched_player_id": "8700",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -878,12 +959,14 @@
       "bb9": "2.17",
       "stuff_plus": "96",
       "location_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20492",
       "matched_player_id": "20492",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "HOU": [
@@ -897,15 +980,17 @@
       "bb9": "2.77",
       "stuff_plus": "107",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25880",
       "matched_player_id": "25880",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
-      "role": "sp2",
+      "role": "sp3",
       "name": "Cristian Javier",
       "url": "https://www.fangraphs.com/players/cristian-javier/17606/stats/pitching",
       "era": "4.62",
@@ -914,15 +999,17 @@
       "bb9": "3.65",
       "stuff_plus": "95",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17606",
       "matched_player_id": "17606",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
-      "role": "sp3",
+      "role": "sp4",
       "name": "Tatsuya Imai",
       "url": "https://www.fangraphs.com/players/tatsuya-imai/sa3062955/stats/pitching",
       "era": "",
@@ -936,10 +1023,12 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
-      "role": "sp4",
+      "role": "sp2",
       "name": "Mike Burrows",
       "url": "https://www.fangraphs.com/players/mike-burrows/24728/stats/pitching",
       "era": "3.94",
@@ -948,12 +1037,14 @@
       "bb9": "2.91",
       "stuff_plus": "95",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24728",
       "matched_player_id": "24728",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -965,29 +1056,14 @@
       "bb9": "6.34",
       "stuff_plus": "102",
       "location_plus": "90",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14120",
       "matched_player_id": "14120",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp6",
-      "name": "Ryan Weiss",
-      "url": "https://www.fangraphs.com/players/ryan-weiss/sa3007778/stats/pitching",
-      "era": "",
-      "whip": "",
-      "k9": "",
-      "bb9": "",
-      "stuff_plus": "",
-      "location_plus": "",
-      "match_method": "unmatched",
-      "source_player_id": "sa3007778",
-      "matched_player_id": "",
-      "source_id_found_in_stats": false,
-      "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "KCR": [
@@ -1001,12 +1077,14 @@
       "bb9": "2.92",
       "stuff_plus": "109",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21846",
       "matched_player_id": "21846",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1018,12 +1096,14 @@
       "bb9": "2.35",
       "stuff_plus": "98",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14078",
       "matched_player_id": "14078",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1035,12 +1115,14 @@
       "bb9": "3.41",
       "stuff_plus": "94",
       "location_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12447",
       "matched_player_id": "12447",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1052,12 +1134,14 @@
       "bb9": "3.02",
       "stuff_plus": "93",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21455",
       "matched_player_id": "21455",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1069,12 +1153,14 @@
       "bb9": "2.80",
       "stuff_plus": "94",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30184",
       "matched_player_id": "30184",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "LAA": [
@@ -1088,12 +1174,14 @@
       "bb9": "4.15",
       "stuff_plus": "95",
       "location_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22100",
       "matched_player_id": "22100",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1105,12 +1193,14 @@
       "bb9": "3.73",
       "stuff_plus": "95",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20633",
       "matched_player_id": "20633",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1122,12 +1212,14 @@
       "bb9": "3.53",
       "stuff_plus": "112",
       "location_plus": "112",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27468",
       "matched_player_id": "27468",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1139,12 +1231,14 @@
       "bb9": "4.70",
       "stuff_plus": "93",
       "location_plus": "90",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27688",
       "matched_player_id": "27688",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1156,12 +1250,14 @@
       "bb9": "3.07",
       "stuff_plus": "103",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "35325",
       "matched_player_id": "35325",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "LAD": [
@@ -1175,12 +1271,14 @@
       "bb9": "3.06",
       "stuff_plus": "98",
       "location_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "33825",
       "matched_player_id": "33825",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1192,12 +1290,14 @@
       "bb9": "4.28",
       "stuff_plus": "98",
       "location_plus": "91",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14374",
       "matched_player_id": "14374",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1209,12 +1309,14 @@
       "bb9": "1.72",
       "stuff_plus": "119",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19755",
       "matched_player_id": "19755",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1226,12 +1328,14 @@
       "bb9": "2.70",
       "stuff_plus": "102",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29839",
       "matched_player_id": "29839",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1243,12 +1347,14 @@
       "bb9": "5.45",
       "stuff_plus": "91",
       "location_plus": "92",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "35323",
       "matched_player_id": "35323",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "MIA": [
@@ -1262,12 +1368,14 @@
       "bb9": "2.94",
       "stuff_plus": "108",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18684",
       "matched_player_id": "18684",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1279,12 +1387,14 @@
       "bb9": "3.02",
       "stuff_plus": "118",
       "location_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27768",
       "matched_player_id": "27768",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1296,12 +1406,14 @@
       "bb9": "2.78",
       "stuff_plus": "97",
       "location_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27474",
       "matched_player_id": "27474",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1313,12 +1425,14 @@
       "bb9": "2.11",
       "stuff_plus": "92",
       "location_plus": "112",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20099",
       "matched_player_id": "20099",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1330,12 +1444,14 @@
       "bb9": "1.06",
       "stuff_plus": "94",
       "location_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23301",
       "matched_player_id": "23301",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "MIL": [
@@ -1349,12 +1465,14 @@
       "bb9": "4.23",
       "stuff_plus": "119",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31623",
       "matched_player_id": "31623",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1366,12 +1484,14 @@
       "bb9": "3.01",
       "stuff_plus": "105",
       "location_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30113",
       "matched_player_id": "30113",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1383,12 +1503,14 @@
       "bb9": "1.95",
       "stuff_plus": "96",
       "location_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16162",
       "matched_player_id": "16162",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1400,12 +1522,14 @@
       "bb9": "3.53",
       "stuff_plus": "97",
       "location_plus": "112",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27758",
       "matched_player_id": "27758",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1417,12 +1541,14 @@
       "bb9": "3.05",
       "stuff_plus": "112",
       "location_plus": "85",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "33850",
       "matched_player_id": "33850",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "MIN": [
@@ -1436,12 +1562,14 @@
       "bb9": "2.05",
       "stuff_plus": "103",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21390",
       "matched_player_id": "21390",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1453,12 +1581,14 @@
       "bb9": "1.91",
       "stuff_plus": "94",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21224",
       "matched_player_id": "21224",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1470,12 +1600,14 @@
       "bb9": "3.72",
       "stuff_plus": "88",
       "location_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24494",
       "matched_player_id": "24494",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1487,12 +1619,14 @@
       "bb9": "3.53",
       "stuff_plus": "102",
       "location_plus": "90",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22543",
       "matched_player_id": "22543",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1504,12 +1638,14 @@
       "bb9": "3.69",
       "stuff_plus": "109",
       "location_plus": "96",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27756",
       "matched_player_id": "27756",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "NYM": [
@@ -1523,32 +1659,17 @@
       "bb9": "3.36",
       "stuff_plus": "102",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18679",
       "matched_player_id": "18679",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
-      "name": "Nolan McLean",
-      "url": "https://www.fangraphs.com/players/nolan-mclean/33703/stats/pitching",
-      "era": "2.06",
-      "whip": "1.04",
-      "k9": "10.69",
-      "bb9": "3.00",
-      "stuff_plus": "117",
-      "location_plus": "95",
-      "match_method": "exact_name",
-      "source_player_id": "33703",
-      "matched_player_id": "33703",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp3",
       "name": "David Peterson",
       "url": "https://www.fangraphs.com/players/david-peterson/20302/stats/pitching",
       "era": "4.22",
@@ -1557,12 +1678,33 @@
       "bb9": "3.47",
       "stuff_plus": "90",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20302",
       "matched_player_id": "20302",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "sp3",
+      "name": "Nolan McLean",
+      "url": "https://www.fangraphs.com/players/nolan-mclean/33703/stats/pitching",
+      "era": "2.06",
+      "whip": "1.04",
+      "k9": "10.69",
+      "bb9": "3.00",
+      "stuff_plus": "117",
+      "location_plus": "95",
+      "match_method": "playerid",
+      "source_player_id": "33703",
+      "matched_player_id": "33703",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1574,32 +1716,17 @@
       "bb9": "3.59",
       "stuff_plus": "104",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13649",
       "matched_player_id": "13649",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
-      "name": "Sean Manaea",
-      "url": "https://www.fangraphs.com/players/sean-manaea/15873/stats/pitching",
-      "era": "5.64",
-      "whip": "1.22",
-      "k9": "11.13",
-      "bb9": "1.78",
-      "stuff_plus": "103",
-      "location_plus": "101",
-      "match_method": "exact_name",
-      "source_player_id": "15873",
-      "matched_player_id": "15873",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
-    },
-    {
-      "role": "sp6",
       "name": "Kodai Senga",
       "url": "https://www.fangraphs.com/players/kodai-senga/31838/stats/pitching",
       "era": "3.02",
@@ -1608,12 +1735,14 @@
       "bb9": "4.37",
       "stuff_plus": "94",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31838",
       "matched_player_id": "31838",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "NYY": [
@@ -1627,12 +1756,14 @@
       "bb9": "2.35",
       "stuff_plus": "111",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13743",
       "matched_player_id": "13743",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1644,12 +1775,14 @@
       "bb9": "3.82",
       "stuff_plus": "114",
       "location_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "32095",
       "matched_player_id": "32095",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1661,12 +1794,14 @@
       "bb9": "3.60",
       "stuff_plus": "100",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30182",
       "matched_player_id": "30182",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1678,12 +1813,14 @@
       "bb9": "2.82",
       "stuff_plus": "103",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23796",
       "matched_player_id": "23796",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1695,12 +1832,14 @@
       "bb9": "5.21",
       "stuff_plus": "100",
       "location_plus": "93",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21052",
       "matched_player_id": "21052",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "PHI": [
@@ -1714,12 +1853,14 @@
       "bb9": "1.96",
       "stuff_plus": "114",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20778",
       "matched_player_id": "20778",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1731,12 +1872,14 @@
       "bb9": "2.67",
       "stuff_plus": "105",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16149",
       "matched_player_id": "16149",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1748,12 +1891,14 @@
       "bb9": "2.79",
       "stuff_plus": "102",
       "location_plus": "112",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19959",
       "matched_player_id": "19959",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1765,12 +1910,14 @@
       "bb9": "3.06",
       "stuff_plus": "90",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "11836",
       "matched_player_id": "11836",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1787,7 +1934,9 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "PIT": [
@@ -1801,12 +1950,14 @@
       "bb9": "2.01",
       "stuff_plus": "107",
       "location_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "33677",
       "matched_player_id": "33677",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1818,12 +1969,14 @@
       "bb9": "2.60",
       "stuff_plus": "95",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17594",
       "matched_player_id": "17594",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1835,12 +1988,14 @@
       "bb9": "3.10",
       "stuff_plus": "105",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23793",
       "matched_player_id": "23793",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1852,29 +2007,33 @@
       "bb9": "1.15",
       "stuff_plus": "109",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29868",
       "matched_player_id": "29868",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
-      "name": "José Urquidy",
-      "url": "https://www.fangraphs.com/players/jose-urquidy/18413/stats/pitching",
-      "era": "7.71",
-      "whip": "3.00",
-      "k9": "11.57",
-      "bb9": "11.57",
-      "stuff_plus": "92",
-      "location_plus": "90",
-      "match_method": "exact_name",
-      "source_player_id": "18413",
-      "matched_player_id": "18413",
+      "name": "Carmen Mlodzinski",
+      "url": "https://www.fangraphs.com/players/carmen-mlodzinski/27572/stats/pitching",
+      "era": "3.55",
+      "whip": "1.30",
+      "k9": "8.09",
+      "bb9": "2.45",
+      "stuff_plus": "104",
+      "location_plus": "100",
+      "match_method": "playerid",
+      "source_player_id": "27572",
+      "matched_player_id": "27572",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "SDP": [
@@ -1888,12 +2047,14 @@
       "bb9": "3.19",
       "stuff_plus": "99",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19853",
       "matched_player_id": "19853",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1905,12 +2066,14 @@
       "bb9": "2.48",
       "stuff_plus": "98",
       "location_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15454",
       "matched_player_id": "15454",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -1922,12 +2085,14 @@
       "bb9": "3.50",
       "stuff_plus": "97",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24719",
       "matched_player_id": "24719",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -1939,12 +2104,14 @@
       "bb9": "3.42",
       "stuff_plus": "88",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15038",
       "matched_player_id": "15038",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -1956,12 +2123,14 @@
       "bb9": "4.36",
       "stuff_plus": "97",
       "location_plus": "92",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19374",
       "matched_player_id": "19374",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "SFG": [
@@ -1975,12 +2144,14 @@
       "bb9": "2.00",
       "stuff_plus": "105",
       "location_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17995",
       "matched_player_id": "17995",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -1992,12 +2163,14 @@
       "bb9": "3.60",
       "stuff_plus": "97",
       "location_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "11486",
       "matched_player_id": "11486",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2009,12 +2182,14 @@
       "bb9": "3.01",
       "stuff_plus": "91",
       "location_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16358",
       "matched_player_id": "16358",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2026,12 +2201,14 @@
       "bb9": "2.74",
       "stuff_plus": "93",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12718",
       "matched_player_id": "12718",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2043,12 +2220,14 @@
       "bb9": "3.80",
       "stuff_plus": "97",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30076",
       "matched_player_id": "30076",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "SEA": [
@@ -2062,12 +2241,14 @@
       "bb9": "2.13",
       "stuff_plus": "96",
       "location_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22250",
       "matched_player_id": "22250",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2079,12 +2260,14 @@
       "bb9": "1.74",
       "stuff_plus": "105",
       "location_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30279",
       "matched_player_id": "30279",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2096,12 +2279,14 @@
       "bb9": "2.29",
       "stuff_plus": "96",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15689",
       "matched_player_id": "15689",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2113,12 +2298,14 @@
       "bb9": "2.07",
       "stuff_plus": "98",
       "location_plus": "112",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25436",
       "matched_player_id": "25436",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2130,12 +2317,14 @@
       "bb9": "3.10",
       "stuff_plus": "89",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27470",
       "matched_player_id": "27470",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "STL": [
@@ -2149,12 +2338,14 @@
       "bb9": "2.37",
       "stuff_plus": "96",
       "location_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22294",
       "matched_player_id": "22294",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2166,12 +2357,14 @@
       "bb9": "1.88",
       "stuff_plus": "90",
       "location_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29869",
       "matched_player_id": "29869",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2183,12 +2376,14 @@
       "bb9": "3.81",
       "stuff_plus": "101",
       "location_plus": "96",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19716",
       "matched_player_id": "19716",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2200,12 +2395,14 @@
       "bb9": "2.86",
       "stuff_plus": "101",
       "location_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24763",
       "matched_player_id": "24763",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2217,12 +2414,14 @@
       "bb9": "3.43",
       "stuff_plus": "94",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26108",
       "matched_player_id": "26108",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "TBR": [
@@ -2236,12 +2435,14 @@
       "bb9": "2.22",
       "stuff_plus": "112",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25385",
       "matched_player_id": "25385",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2253,12 +2454,14 @@
       "bb9": "3.27",
       "stuff_plus": "109",
       "location_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26221",
       "matched_player_id": "26221",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2275,7 +2478,9 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2287,12 +2492,14 @@
       "bb9": "2.28",
       "stuff_plus": "91",
       "location_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12730",
       "matched_player_id": "12730",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2304,12 +2511,14 @@
       "bb9": "1.29",
       "stuff_plus": "103",
       "location_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13361",
       "matched_player_id": "13361",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "TEX": [
@@ -2323,12 +2532,14 @@
       "bb9": "1.45",
       "stuff_plus": "97",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "9132",
       "matched_player_id": "9132",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2340,12 +2551,14 @@
       "bb9": "1.93",
       "stuff_plus": "111",
       "location_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "10954",
       "matched_player_id": "10954",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2357,12 +2570,14 @@
       "bb9": "3.61",
       "stuff_plus": "98",
       "location_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22201",
       "matched_player_id": "22201",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2374,12 +2589,14 @@
       "bb9": "3.98",
       "stuff_plus": "107",
       "location_plus": "91",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30146",
       "matched_player_id": "30146",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2391,12 +2608,14 @@
       "bb9": "3.89",
       "stuff_plus": "103",
       "location_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21306",
       "matched_player_id": "21306",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "TOR": [
@@ -2410,12 +2629,14 @@
       "bb9": "2.33",
       "stuff_plus": "100",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14107",
       "matched_player_id": "14107",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2427,12 +2648,14 @@
       "bb9": "3.80",
       "stuff_plus": "108",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18525",
       "matched_player_id": "18525",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2444,12 +2667,14 @@
       "bb9": "2.24",
       "stuff_plus": "92",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19316",
       "matched_player_id": "19316",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2466,7 +2691,9 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2478,12 +2705,14 @@
       "bb9": "2.44",
       "stuff_plus": "96",
       "location_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "3137",
       "matched_player_id": "3137",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "WSN": [
@@ -2497,12 +2726,14 @@
       "bb9": "2.77",
       "stuff_plus": "108",
       "location_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27473",
       "matched_player_id": "27473",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2514,12 +2745,14 @@
       "bb9": "2.13",
       "stuff_plus": "89",
       "location_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "9803",
       "matched_player_id": "9803",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2536,7 +2769,9 @@
       "matched_player_id": "",
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false
+      "normalized_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2548,12 +2783,14 @@
       "bb9": "3.10",
       "stuff_plus": "94",
       "location_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21504",
       "matched_player_id": "21504",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2565,12 +2802,14 @@
       "bb9": "1.54",
       "stuff_plus": "85",
       "location_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15823",
       "matched_player_id": "15823",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "ATH": [
@@ -2584,12 +2823,14 @@
       "bb9": "2.77",
       "stuff_plus": "110",
       "location_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15890",
       "matched_player_id": "15890",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp2",
@@ -2601,12 +2842,14 @@
       "bb9": "2.84",
       "stuff_plus": "94",
       "location_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17677",
       "matched_player_id": "17677",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp3",
@@ -2618,12 +2861,14 @@
       "bb9": "2.91",
       "stuff_plus": "98",
       "location_plus": "89",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19479",
       "matched_player_id": "19479",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp4",
@@ -2635,12 +2880,14 @@
       "bb9": "3.59",
       "stuff_plus": "93",
       "location_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25098",
       "matched_player_id": "25098",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "sp5",
@@ -2652,12 +2899,14 @@
       "bb9": "3.33",
       "stuff_plus": "103",
       "location_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "32227",
       "matched_player_id": "32227",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true
+      "normalized_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ]
 }

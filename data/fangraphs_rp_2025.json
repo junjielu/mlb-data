@@ -9,13 +9,15 @@
       "bb9": "2.75",
       "k_pct": "24.7%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13892",
       "matched_player_id": "13892",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -26,50 +28,18 @@
       "bb9": "1.46",
       "k_pct": "21.4%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17611",
       "matched_player_id": "17611",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
-      "name": "Ryan Thompson",
-      "url": "https://www.fangraphs.com/players/ryan-thompson/16647/stats/pitching",
-      "era": "3.92",
-      "k9": "7.84",
-      "bb9": "2.83",
-      "k_pct": "20.6%",
-      "stuff_plus": "116",
-      "match_method": "exact_name",
-      "source_player_id": "16647",
-      "matched_player_id": "16647",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "MID",
-      "name": "Kevin Ginkel",
-      "url": "https://www.fangraphs.com/players/kevin-ginkel/19876/stats/pitching",
-      "era": "7.36",
-      "k9": "10.17",
-      "bb9": "4.56",
-      "k_pct": "24.0%",
-      "stuff_plus": "90",
-      "match_method": "exact_name",
-      "source_player_id": "19876",
-      "matched_player_id": "19876",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "MID",
       "name": "Jonathan Loaisiga",
       "url": "https://www.fangraphs.com/players/jonathan-loaisiga/stats/pitching",
       "era": "4.25",
@@ -83,7 +53,47 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Ryan Thompson",
+      "url": "https://www.fangraphs.com/players/ryan-thompson/16647/stats/pitching",
+      "era": "3.92",
+      "k9": "7.84",
+      "bb9": "2.83",
+      "k_pct": "20.6%",
+      "stuff_plus": "116",
+      "match_method": "playerid",
+      "source_player_id": "16647",
+      "matched_player_id": "16647",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Kevin Ginkel",
+      "url": "https://www.fangraphs.com/players/kevin-ginkel/19876/stats/pitching",
+      "era": "7.36",
+      "k9": "10.17",
+      "bb9": "4.56",
+      "k_pct": "24.0%",
+      "stuff_plus": "90",
+      "match_method": "playerid",
+      "source_player_id": "19876",
+      "matched_player_id": "19876",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -94,13 +104,15 @@
       "bb9": "7.36",
       "k_pct": "27.8%",
       "stuff_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "33821",
       "matched_player_id": "33821",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -111,13 +123,15 @@
       "bb9": "5.24",
       "k_pct": "23.7%",
       "stuff_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21924",
       "matched_player_id": "21924",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -128,13 +142,15 @@
       "bb9": "7.50",
       "k_pct": "19.7%",
       "stuff_plus": "92",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29633",
       "matched_player_id": "29633",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "ATL": [
@@ -147,13 +163,15 @@
       "bb9": "2.14",
       "k_pct": "27.4%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17130",
       "matched_player_id": "17130",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -164,13 +182,15 @@
       "bb9": "2.07",
       "k_pct": "27.9%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30115",
       "matched_player_id": "30115",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -181,13 +201,15 @@
       "bb9": "1.84",
       "k_pct": "28.6%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19996",
       "matched_player_id": "19996",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -198,13 +220,15 @@
       "bb9": "4.09",
       "k_pct": "23.7%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18297",
       "matched_player_id": "18297",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -215,13 +239,15 @@
       "bb9": "2.82",
       "k_pct": "21.7%",
       "stuff_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16258",
       "matched_player_id": "16258",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -232,30 +258,34 @@
       "bb9": "3.08",
       "k_pct": "20.5%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14332",
       "matched_player_id": "14332",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Dylan Dodd",
-      "url": "https://www.fangraphs.com/players/dylan-dodd/29928/stats/pitching",
-      "era": "3.60",
-      "k9": "7.71",
-      "bb9": "1.29",
-      "k_pct": "22.1%",
-      "stuff_plus": "100",
-      "match_method": "exact_name",
-      "source_player_id": "29928",
-      "matched_player_id": "29928",
+      "name": "Didier Fuentes",
+      "url": "https://www.fangraphs.com/players/didier-fuentes/30661/stats/pitching",
+      "era": "13.85",
+      "k9": "8.31",
+      "bb9": "4.15",
+      "k_pct": "17.4%",
+      "stuff_plus": "110",
+      "match_method": "playerid",
+      "source_player_id": "30661",
+      "matched_player_id": "30661",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -272,7 +302,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "BAL": [
@@ -285,13 +317,15 @@
       "bb9": "4.02",
       "k_pct": "25.0%",
       "stuff_plus": "127",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18138",
       "matched_player_id": "18138",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -302,13 +336,15 @@
       "bb9": "4.69",
       "k_pct": "22.0%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19362",
       "matched_player_id": "19362",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -319,13 +355,34 @@
       "bb9": "3.72",
       "k_pct": "21.1%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25911",
       "matched_player_id": "25911",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Tyler Wells",
+      "url": "https://www.fangraphs.com/players/tyler-wells/20000/stats/pitching",
+      "era": "2.91",
+      "k9": "7.48",
+      "bb9": "0.83",
+      "k_pct": "22.0%",
+      "stuff_plus": "96",
+      "match_method": "playerid",
+      "source_player_id": "20000",
+      "matched_player_id": "20000",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -336,13 +393,15 @@
       "bb9": "2.91",
       "k_pct": "24.5%",
       "stuff_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13932",
       "matched_player_id": "13932",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -353,13 +412,15 @@
       "bb9": "2.62",
       "k_pct": "26.8%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20023",
       "matched_player_id": "20023",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -370,30 +431,34 @@
       "bb9": "5.06",
       "k_pct": "23.3%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21623",
       "matched_player_id": "21623",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
-      "name": "Tyler Wells",
-      "url": "https://www.fangraphs.com/players/tyler-wells/20000/stats/pitching",
-      "era": "2.91",
-      "k9": "7.48",
-      "bb9": "0.83",
-      "k_pct": "22.0%",
+      "name": "Jackson Kowar",
+      "url": "https://www.fangraphs.com/players/jackson-kowar/21549/stats/pitching",
+      "era": "4.24",
+      "k9": "7.94",
+      "bb9": "3.71",
+      "k_pct": "21.1%",
       "stuff_plus": "96",
-      "match_method": "exact_name",
-      "source_player_id": "20000",
-      "matched_player_id": "20000",
+      "match_method": "playerid",
+      "source_player_id": "21549",
+      "matched_player_id": "21549",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "BOS": [
@@ -406,13 +471,15 @@
       "bb9": "2.20",
       "k_pct": "37.3%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "10233",
       "matched_player_id": "10233",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -423,13 +490,15 @@
       "bb9": "3.00",
       "k_pct": "31.1%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20191",
       "matched_player_id": "20191",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -440,13 +509,15 @@
       "bb9": "2.65",
       "k_pct": "18.2%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25648",
       "matched_player_id": "25648",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -457,13 +528,15 @@
       "bb9": "2.82",
       "k_pct": "20.5%",
       "stuff_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20375",
       "matched_player_id": "20375",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -474,13 +547,15 @@
       "bb9": "3.77",
       "k_pct": "24.4%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13293",
       "matched_player_id": "13293",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -491,13 +566,15 @@
       "bb9": "3.06",
       "k_pct": "23.0%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20349",
       "matched_player_id": "20349",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -514,7 +591,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -531,7 +610,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CHC": [
@@ -544,13 +625,15 @@
       "bb9": "2.73",
       "k_pct": "28.4%",
       "stuff_plus": "116",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27914",
       "matched_player_id": "27914",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -561,13 +644,15 @@
       "bb9": "3.38",
       "k_pct": "32.7%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "18064",
       "matched_player_id": "18064",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -578,13 +663,15 @@
       "bb9": "0.84",
       "k_pct": "28.2%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15507",
       "matched_player_id": "15507",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -595,13 +682,15 @@
       "bb9": "2.02",
       "k_pct": "25.5%",
       "stuff_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "10078",
       "matched_player_id": "10078",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -612,13 +701,15 @@
       "bb9": "2.59",
       "k_pct": "21.7%",
       "stuff_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19274",
       "matched_player_id": "19274",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -629,13 +720,15 @@
       "bb9": "2.69",
       "k_pct": "19.8%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13346",
       "matched_player_id": "13346",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -646,13 +739,15 @@
       "bb9": "2.92",
       "k_pct": "15.0%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21741",
       "matched_player_id": "21741",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -663,13 +758,15 @@
       "bb9": "2.49",
       "k_pct": "19.2%",
       "stuff_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12317",
       "matched_player_id": "12317",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CHW": [
@@ -688,7 +785,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -699,13 +798,15 @@
       "bb9": "4.20",
       "k_pct": "30.1%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29950",
       "matched_player_id": "29950",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -716,13 +817,15 @@
       "bb9": "3.68",
       "k_pct": "34.4%",
       "stuff_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "33927",
       "matched_player_id": "33927",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -733,30 +836,34 @@
       "bb9": "3.02",
       "k_pct": "23.3%",
       "stuff_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16943",
       "matched_player_id": "16943",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Chris Murphy",
-      "url": "https://www.fangraphs.com/players/chris-murphy/26214/stats/pitching",
-      "era": "3.12",
-      "k9": "7.79",
-      "bb9": "5.19",
-      "k_pct": "20.3%",
-      "stuff_plus": "99",
-      "match_method": "exact_name",
-      "source_player_id": "26214",
-      "matched_player_id": "26214",
+      "name": "Brandon Eisert",
+      "url": "https://www.fangraphs.com/players/brandon-eisert/27668/stats/pitching",
+      "era": "4.39",
+      "k9": "9.56",
+      "bb9": "3.23",
+      "k_pct": "24.2%",
+      "stuff_plus": "79",
+      "match_method": "playerid",
+      "source_player_id": "27668",
+      "matched_player_id": "27668",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -767,30 +874,34 @@
       "bb9": "4.28",
       "k_pct": "18.5%",
       "stuff_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19618",
       "matched_player_id": "19618",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Ryan Borucki",
-      "url": "https://www.fangraphs.com/players/ryan-borucki/16350/stats/pitching",
-      "era": "4.63",
-      "k9": "8.23",
-      "bb9": "4.11",
-      "k_pct": "22.1%",
-      "stuff_plus": "107",
-      "match_method": "exact_name",
-      "source_player_id": "16350",
-      "matched_player_id": "16350",
+      "name": "Chris Murphy",
+      "url": "https://www.fangraphs.com/players/chris-murphy/26214/stats/pitching",
+      "era": "3.12",
+      "k9": "7.79",
+      "bb9": "5.19",
+      "k_pct": "20.3%",
+      "stuff_plus": "99",
+      "match_method": "playerid",
+      "source_player_id": "26214",
+      "matched_player_id": "26214",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -807,7 +918,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CIN": [
@@ -826,7 +939,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -837,13 +952,15 @@
       "bb9": "3.54",
       "k_pct": "24.9%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19926",
       "matched_player_id": "19926",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -854,13 +971,15 @@
       "bb9": "3.44",
       "k_pct": "22.5%",
       "stuff_plus": "122",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27552",
       "matched_player_id": "27552",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -871,13 +990,15 @@
       "bb9": "2.90",
       "k_pct": "24.8%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13435",
       "matched_player_id": "13435",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -888,13 +1009,15 @@
       "bb9": "2.63",
       "k_pct": "20.2%",
       "stuff_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17968",
       "matched_player_id": "17968",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -905,13 +1028,15 @@
       "bb9": "4.32",
       "k_pct": "32.7%",
       "stuff_plus": "117",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27649",
       "matched_player_id": "27649",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -922,13 +1047,15 @@
       "bb9": "4.91",
       "k_pct": "27.2%",
       "stuff_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14874",
       "matched_player_id": "14874",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -945,7 +1072,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "CLE": [
@@ -958,33 +1087,18 @@
       "bb9": "2.32",
       "k_pct": "34.7%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27867",
       "matched_player_id": "27867",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
-      "name": "Hunter Gaddis",
-      "url": "https://www.fangraphs.com/players/hunter-gaddis/25636/stats/pitching",
-      "era": "3.11",
-      "k9": "9.86",
-      "bb9": "2.84",
-      "k_pct": "26.6%",
-      "stuff_plus": "95",
-      "match_method": "exact_name",
-      "source_player_id": "25636",
-      "matched_player_id": "25636",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "SU7",
       "name": "Shawn Armstrong",
       "url": "https://www.fangraphs.com/players/shawn-armstrong/12857/stats/pitching",
       "era": "2.31",
@@ -992,16 +1106,18 @@
       "bb9": "2.43",
       "k_pct": "26.1%",
       "stuff_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12857",
       "matched_player_id": "12857",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
-      "role": "MID",
+      "role": "SU7",
       "name": "Erik Sabrowski",
       "url": "https://www.fangraphs.com/players/erik-sabrowski/24978/stats/pitching",
       "era": "1.84",
@@ -1009,13 +1125,15 @@
       "bb9": "6.44",
       "k_pct": "34.7%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24978",
       "matched_player_id": "24978",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1026,13 +1144,15 @@
       "bb9": "2.47",
       "k_pct": "24.8%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19330",
       "matched_player_id": "19330",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1043,13 +1163,15 @@
       "bb9": "6.33",
       "k_pct": "23.2%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25139",
       "matched_player_id": "25139",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1060,13 +1182,34 @@
       "bb9": "3.45",
       "k_pct": "24.6%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21205",
       "matched_player_id": "21205",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Colin Holderman",
+      "url": "https://www.fangraphs.com/players/colin-holderman/22361/stats/pitching",
+      "era": "7.01",
+      "k9": "6.31",
+      "bb9": "5.61",
+      "k_pct": "14.4%",
+      "stuff_plus": "115",
+      "match_method": "playerid",
+      "source_player_id": "22361",
+      "matched_player_id": "22361",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -1083,7 +1226,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "COL": [
@@ -1096,13 +1241,15 @@
       "bb9": "4.62",
       "k_pct": "22.8%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24614",
       "matched_player_id": "24614",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -1113,13 +1260,15 @@
       "bb9": "2.81",
       "k_pct": "23.3%",
       "stuff_plus": "93",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17556",
       "matched_player_id": "17556",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -1136,7 +1285,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1147,13 +1298,15 @@
       "bb9": "4.88",
       "k_pct": "13.8%",
       "stuff_plus": "91",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31552",
       "matched_player_id": "31552",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1164,13 +1317,15 @@
       "bb9": "4.53",
       "k_pct": "19.2%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16835",
       "matched_player_id": "16835",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1181,13 +1336,15 @@
       "bb9": "4.63",
       "k_pct": "22.6%",
       "stuff_plus": "93",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12777",
       "matched_player_id": "12777",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1204,7 +1361,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -1215,13 +1374,15 @@
       "bb9": "3.25",
       "k_pct": "11.8%",
       "stuff_plus": "85",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15488",
       "matched_player_id": "15488",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "DET": [
@@ -1234,13 +1395,15 @@
       "bb9": "2.90",
       "k_pct": "24.4%",
       "stuff_plus": "114",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "3096",
       "matched_player_id": "3096",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -1251,13 +1414,15 @@
       "bb9": "2.88",
       "k_pct": "26.4%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19769",
       "matched_player_id": "19769",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -1268,13 +1433,15 @@
       "bb9": "2.84",
       "k_pct": "24.0%",
       "stuff_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15009",
       "matched_player_id": "15009",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1285,13 +1452,15 @@
       "bb9": "1.94",
       "k_pct": "20.5%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26231",
       "matched_player_id": "26231",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1308,7 +1477,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1319,13 +1490,15 @@
       "bb9": "2.10",
       "k_pct": "15.4%",
       "stuff_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22304",
       "matched_player_id": "22304",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1336,13 +1509,15 @@
       "bb9": "3.86",
       "k_pct": "24.5%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30133",
       "matched_player_id": "30133",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -1359,7 +1534,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "HOU": [
@@ -1372,13 +1549,15 @@
       "bb9": "3.93",
       "k_pct": "35.5%",
       "stuff_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16609",
       "matched_player_id": "16609",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -1389,16 +1568,56 @@
       "bb9": "1.46",
       "k_pct": "25.1%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25890",
       "matched_player_id": "25890",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
+      "name": "Enyel De Los Santos",
+      "url": "https://www.fangraphs.com/players/enyel-de-los-santos/18403/stats/pitching",
+      "era": "4.36",
+      "k9": "8.45",
+      "bb9": "3.27",
+      "k_pct": "22.1%",
+      "stuff_plus": "93",
+      "match_method": "playerid",
+      "source_player_id": "18403",
+      "matched_player_id": "18403",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Steven Okert",
+      "url": "https://www.fangraphs.com/players/steven-okert/13580/stats/pitching",
+      "era": "3.01",
+      "k9": "10.55",
+      "bb9": "2.39",
+      "k_pct": "30.4%",
+      "stuff_plus": "115",
+      "match_method": "playerid",
+      "source_player_id": "13580",
+      "matched_player_id": "13580",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
       "name": "Roddery Munoz",
       "url": "https://www.fangraphs.com/players/roddery-munoz/stats/pitching",
       "era": "8.18",
@@ -1412,24 +1631,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "MID",
-      "name": "Steven Okert",
-      "url": "https://www.fangraphs.com/players/steven-okert/13580/stats/pitching",
-      "era": "3.01",
-      "k9": "10.55",
-      "bb9": "2.39",
-      "k_pct": "30.4%",
-      "stuff_plus": "115",
-      "match_method": "exact_name",
-      "source_player_id": "13580",
-      "matched_player_id": "13580",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1440,13 +1644,15 @@
       "bb9": "9.00",
       "k_pct": "25.0%",
       "stuff_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27662",
       "matched_player_id": "27662",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1457,30 +1663,34 @@
       "bb9": "5.16",
       "k_pct": "28.1%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24282",
       "matched_player_id": "24282",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
-      "name": "A.J. Blubaugh",
-      "url": "https://www.fangraphs.com/players/a.j.-blubaugh/stats/pitching",
-      "era": "1.69",
-      "k9": "9.84",
-      "bb9": "3.09",
-      "k_pct": "28.2%",
-      "stuff_plus": "105",
-      "match_method": "playerid",
-      "source_player_id": "31764",
-      "matched_player_id": "31764",
-      "source_id_found_in_stats": true,
+      "name": "Ryan Weiss",
+      "url": "https://www.fangraphs.com/players/ryan-weiss/sa3007778/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "sa3007778",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "KCR": [
@@ -1499,7 +1709,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -1510,13 +1722,15 @@
       "bb9": "2.64",
       "k_pct": "19.3%",
       "stuff_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19360",
       "matched_player_id": "19360",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -1527,13 +1741,15 @@
       "bb9": "2.89",
       "k_pct": "27.3%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13799",
       "matched_player_id": "13799",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1544,13 +1760,15 @@
       "bb9": "2.67",
       "k_pct": "23.4%",
       "stuff_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20020",
       "matched_player_id": "20020",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1561,13 +1779,15 @@
       "bb9": "2.06",
       "k_pct": "20.8%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25376",
       "matched_player_id": "25376",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1584,7 +1804,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1595,13 +1817,15 @@
       "bb9": "9.00",
       "k_pct": "16.7%",
       "stuff_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19883",
       "matched_player_id": "19883",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -1612,13 +1836,15 @@
       "bb9": "3.30",
       "k_pct": "15.6%",
       "stuff_plus": "96",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20070",
       "matched_player_id": "20070",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "LAA": [
@@ -1631,13 +1857,15 @@
       "bb9": "3.70",
       "k_pct": "29.2%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "9073",
       "matched_player_id": "9073",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -1648,13 +1876,15 @@
       "bb9": "2.72",
       "k_pct": "28.1%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "11426",
       "matched_player_id": "11426",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -1665,13 +1895,15 @@
       "bb9": "3.59",
       "k_pct": "25.1%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16122",
       "matched_player_id": "16122",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1682,13 +1914,15 @@
       "bb9": "5.53",
       "k_pct": "28.4%",
       "stuff_plus": "121",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25420",
       "matched_player_id": "25420",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1699,13 +1933,15 @@
       "bb9": "2.39",
       "k_pct": "18.2%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13942",
       "matched_player_id": "13942",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1716,33 +1952,18 @@
       "bb9": "4.43",
       "k_pct": "19.1%",
       "stuff_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29754",
       "matched_player_id": "29754",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Nick Sandlin",
-      "url": "https://www.fangraphs.com/players/nick-sandlin/20517/stats/pitching",
-      "era": "2.20",
-      "k9": "8.82",
-      "bb9": "4.41",
-      "k_pct": "23.2%",
-      "stuff_plus": "102",
-      "match_method": "exact_name",
-      "source_player_id": "20517",
-      "matched_player_id": "20517",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "LR",
       "name": "Chase Silseth",
       "url": "https://www.fangraphs.com/players/chase-silseth/30074/stats/pitching",
       "era": "1.64",
@@ -1750,13 +1971,34 @@
       "bb9": "4.91",
       "k_pct": "26.5%",
       "stuff_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30074",
       "matched_player_id": "30074",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "LR",
+      "name": "Walbert Urena",
+      "url": "https://www.fangraphs.com/players/walbert-urena/sa3018298/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "sa3018298",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false,
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "LAD": [
@@ -1775,7 +2017,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -1786,13 +2030,15 @@
       "bb9": "2.84",
       "k_pct": "25.2%",
       "stuff_plus": "117",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17586",
       "matched_player_id": "17586",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -1803,13 +2049,15 @@
       "bb9": "3.32",
       "k_pct": "33.8%",
       "stuff_plus": "119",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25007",
       "matched_player_id": "25007",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1820,13 +2068,15 @@
       "bb9": "5.87",
       "k_pct": "30.0%",
       "stuff_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27787",
       "matched_player_id": "27787",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1837,13 +2087,15 @@
       "bb9": "6.41",
       "k_pct": "27.9%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "12572",
       "matched_player_id": "12572",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1854,13 +2106,15 @@
       "bb9": "2.83",
       "k_pct": "24.1%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30249",
       "matched_player_id": "30249",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1871,13 +2125,15 @@
       "bb9": "2.37",
       "k_pct": "23.1%",
       "stuff_plus": "131",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26944",
       "matched_player_id": "26944",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1888,13 +2144,15 @@
       "bb9": "2.30",
       "k_pct": "27.1%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31204",
       "matched_player_id": "31204",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -1905,13 +2163,15 @@
       "bb9": "2.43",
       "k_pct": "21.3%",
       "stuff_plus": "116",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30085",
       "matched_player_id": "30085",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "MIA": [
@@ -1930,7 +2190,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -1941,13 +2203,15 @@
       "bb9": "3.58",
       "k_pct": "23.1%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20116",
       "matched_player_id": "20116",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -1958,13 +2222,15 @@
       "bb9": "2.78",
       "k_pct": "16.6%",
       "stuff_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20629",
       "matched_player_id": "20629",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1975,13 +2241,15 @@
       "bb9": "3.78",
       "k_pct": "20.6%",
       "stuff_plus": "115",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19742",
       "matched_player_id": "19742",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -1992,13 +2260,15 @@
       "bb9": "3.46",
       "k_pct": "18.7%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31815",
       "matched_player_id": "31815",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2015,7 +2285,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2026,30 +2298,34 @@
       "bb9": "2.61",
       "k_pct": "12.6%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22051",
       "matched_player_id": "22051",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
-      "name": "Janson Junk",
-      "url": "https://www.fangraphs.com/players/janson-junk/23301/stats/pitching",
-      "era": "4.17",
-      "k9": "6.30",
-      "bb9": "1.06",
-      "k_pct": "17.2%",
-      "stuff_plus": "94",
-      "match_method": "exact_name",
-      "source_player_id": "23301",
-      "matched_player_id": "23301",
+      "name": "Lake Bachar",
+      "url": "https://www.fangraphs.com/players/lake-bachar/19222/stats/pitching",
+      "era": "3.93",
+      "k9": "9.51",
+      "bb9": "3.80",
+      "k_pct": "25.3%",
+      "stuff_plus": "101",
+      "match_method": "playerid",
+      "source_player_id": "19222",
+      "matched_player_id": "19222",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "MIL": [
@@ -2062,13 +2338,15 @@
       "bb9": "3.23",
       "k_pct": "30.2%",
       "stuff_plus": "117",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25327",
       "matched_player_id": "25327",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -2079,13 +2357,15 @@
       "bb9": "3.26",
       "k_pct": "31.2%",
       "stuff_plus": "128",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17722",
       "matched_player_id": "17722",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2096,13 +2376,15 @@
       "bb9": "2.73",
       "k_pct": "25.4%",
       "stuff_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27517",
       "matched_player_id": "27517",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2113,13 +2395,15 @@
       "bb9": "3.24",
       "k_pct": "28.1%",
       "stuff_plus": "123",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23550",
       "matched_player_id": "23550",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2130,13 +2414,15 @@
       "bb9": "3.06",
       "k_pct": "21.1%",
       "stuff_plus": "117",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22717",
       "matched_player_id": "22717",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2147,13 +2433,15 @@
       "bb9": "3.75",
       "k_pct": "24.7%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20546",
       "matched_player_id": "20546",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2164,13 +2452,15 @@
       "bb9": "3.96",
       "k_pct": "17.4%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22207",
       "matched_player_id": "22207",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -2181,13 +2471,15 @@
       "bb9": "3.07",
       "k_pct": "21.0%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22176",
       "matched_player_id": "22176",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "MIN": [
@@ -2200,13 +2492,15 @@
       "bb9": "4.09",
       "k_pct": "24.0%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13449",
       "matched_player_id": "13449",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2217,13 +2511,15 @@
       "bb9": "3.95",
       "k_pct": "21.9%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24993",
       "matched_player_id": "24993",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2234,30 +2530,15 @@
       "bb9": "2.38",
       "k_pct": "21.4%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21461",
       "matched_player_id": "21461",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "MID",
-      "name": "Anthony Banda",
-      "url": "https://www.fangraphs.com/players/anthony-banda/14706/stats/pitching",
-      "era": "3.18",
-      "k9": "8.45",
-      "bb9": "4.71",
-      "k_pct": "22.8%",
-      "stuff_plus": "102",
-      "match_method": "exact_name",
-      "source_player_id": "14706",
-      "matched_player_id": "14706",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2268,13 +2549,53 @@
       "bb9": "2.70",
       "k_pct": "18.3%",
       "stuff_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15145",
       "matched_player_id": "15145",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Anthony Banda",
+      "url": "https://www.fangraphs.com/players/anthony-banda/14706/stats/pitching",
+      "era": "3.18",
+      "k9": "8.45",
+      "bb9": "4.71",
+      "k_pct": "22.8%",
+      "stuff_plus": "102",
+      "match_method": "playerid",
+      "source_player_id": "14706",
+      "matched_player_id": "14706",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Cody Laweryson",
+      "url": "https://www.fangraphs.com/players/cody-laweryson/26429/stats/pitching",
+      "era": "1.17",
+      "k9": "8.22",
+      "bb9": "0.00",
+      "k_pct": "26.9%",
+      "stuff_plus": "95",
+      "match_method": "playerid",
+      "source_player_id": "26429",
+      "matched_player_id": "26429",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2285,47 +2606,34 @@
       "bb9": "4.10",
       "k_pct": "22.5%",
       "stuff_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27626",
       "matched_player_id": "27626",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "MID",
-      "name": "Andrew Chafin",
-      "url": "https://www.fangraphs.com/players/andrew-chafin/12988/stats/pitching",
-      "era": "2.41",
-      "k9": "9.62",
-      "bb9": "5.08",
-      "k_pct": "25.2%",
-      "stuff_plus": "95",
-      "match_method": "exact_name",
-      "source_player_id": "12988",
-      "matched_player_id": "12988",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
-      "name": "Travis Adams",
-      "url": "https://www.fangraphs.com/players/travis-adams/30180/stats/pitching",
-      "era": "7.49",
-      "k9": "8.29",
-      "bb9": "4.54",
-      "k_pct": "19.6%",
-      "stuff_plus": "99",
-      "match_method": "exact_name",
-      "source_player_id": "30180",
-      "matched_player_id": "30180",
+      "name": "Zak Kent",
+      "url": "https://www.fangraphs.com/players/zak-kent/25703/stats/pitching",
+      "era": "4.58",
+      "k9": "8.15",
+      "bb9": "4.08",
+      "k_pct": "21.1%",
+      "stuff_plus": "92",
+      "match_method": "playerid",
+      "source_player_id": "25703",
+      "matched_player_id": "25703",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "NYM": [
@@ -2338,13 +2646,15 @@
       "bb9": "3.63",
       "k_pct": "34.7%",
       "stuff_plus": "114",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15816",
       "matched_player_id": "15816",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2355,13 +2665,15 @@
       "bb9": "2.78",
       "k_pct": "27.5%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16918",
       "matched_player_id": "16918",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2372,30 +2684,34 @@
       "bb9": "2.10",
       "k_pct": "25.3%",
       "stuff_plus": "118",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "10061",
       "matched_player_id": "10061",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
       "name": "Luis Garcia",
       "url": "https://www.fangraphs.com/players/luis-garcia/stats/pitching",
-      "era": "3.52",
-      "k9": "8.22",
-      "bb9": "1.17",
-      "k_pct": "25.0%",
-      "stuff_plus": "89",
-      "match_method": "exact_name",
+      "era": "3.42",
+      "k9": "7.81",
+      "bb9": "4.23",
+      "k_pct": "20.6%",
+      "stuff_plus": "109",
+      "match_method": "playerid",
       "source_player_id": "6984",
-      "matched_player_id": "23735",
+      "matched_player_id": "6984",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2412,27 +2728,12 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Bryan M. Hudson",
-      "url": "https://www.fangraphs.com/players/bryan-m.-hudson/stats/pitching",
-      "era": "4.80",
-      "k9": "11.40",
-      "bb9": "7.80",
-      "k_pct": "25.3%",
-      "stuff_plus": "93",
-      "match_method": "playerid",
-      "source_player_id": "19924",
-      "matched_player_id": "19924",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": false,
-      "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "LR",
       "name": "Tobias Myers",
       "url": "https://www.fangraphs.com/players/tobias-myers/22191/stats/pitching",
       "era": "3.55",
@@ -2440,13 +2741,53 @@
       "bb9": "2.66",
       "k_pct": "17.3%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22191",
       "matched_player_id": "22191",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Richard Lovelady",
+      "url": "https://www.fangraphs.com/players/richard-lovelady/19337/stats/pitching",
+      "era": "8.49",
+      "k9": "9.26",
+      "bb9": "4.63",
+      "k_pct": "21.1%",
+      "stuff_plus": "99",
+      "match_method": "playerid",
+      "source_player_id": "19337",
+      "matched_player_id": "19337",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "LR",
+      "name": "Sean Manaea",
+      "url": "https://www.fangraphs.com/players/sean-manaea/15873/stats/pitching",
+      "era": "5.64",
+      "k9": "11.13",
+      "bb9": "1.78",
+      "k_pct": "28.5%",
+      "stuff_plus": "103",
+      "match_method": "playerid",
+      "source_player_id": "15873",
+      "matched_player_id": "15873",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "NYY": [
@@ -2459,13 +2800,15 @@
       "bb9": "2.73",
       "k_pct": "34.3%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19569",
       "matched_player_id": "19569",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2476,13 +2819,15 @@
       "bb9": "4.82",
       "k_pct": "25.9%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21992",
       "matched_player_id": "21992",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2499,7 +2844,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2510,13 +2857,15 @@
       "bb9": "2.15",
       "k_pct": "13.8%",
       "stuff_plus": "122",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16814",
       "matched_player_id": "16814",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2527,13 +2876,15 @@
       "bb9": "4.07",
       "k_pct": "26.6%",
       "stuff_plus": "117",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21267",
       "matched_player_id": "21267",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2544,13 +2895,15 @@
       "bb9": "2.77",
       "k_pct": "19.4%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14739",
       "matched_player_id": "14739",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2561,13 +2914,15 @@
       "bb9": "2.67",
       "k_pct": "20.8%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16502",
       "matched_player_id": "16502",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -2584,7 +2939,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "PHI": [
@@ -2597,13 +2954,15 @@
       "bb9": "2.44",
       "k_pct": "27.9%",
       "stuff_plus": "125",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21029",
       "matched_player_id": "21029",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2620,7 +2979,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2631,13 +2992,15 @@
       "bb9": "2.84",
       "k_pct": "27.2%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15734",
       "matched_player_id": "15734",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2648,13 +3011,15 @@
       "bb9": "4.05",
       "k_pct": "24.4%",
       "stuff_plus": "122",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31776",
       "matched_player_id": "31776",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2665,13 +3030,15 @@
       "bb9": "1.60",
       "k_pct": "22.8%",
       "stuff_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "16990",
       "matched_player_id": "16990",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2682,13 +3049,15 @@
       "bb9": "3.45",
       "k_pct": "25.6%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24607",
       "matched_player_id": "24607",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2699,13 +3068,15 @@
       "bb9": "2.84",
       "k_pct": "19.1%",
       "stuff_plus": "105",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29615",
       "matched_player_id": "29615",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -2722,7 +3093,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "PIT": [
@@ -2735,13 +3108,15 @@
       "bb9": "2.18",
       "k_pct": "22.2%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17878",
       "matched_player_id": "17878",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2752,13 +3127,15 @@
       "bb9": "3.58",
       "k_pct": "25.1%",
       "stuff_plus": "116",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19677",
       "matched_player_id": "19677",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2769,13 +3146,15 @@
       "bb9": "3.59",
       "k_pct": "22.7%",
       "stuff_plus": "96",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20385",
       "matched_player_id": "20385",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2786,13 +3165,15 @@
       "bb9": "4.08",
       "k_pct": "33.3%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17639",
       "matched_player_id": "17639",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2803,13 +3184,15 @@
       "bb9": "5.28",
       "k_pct": "30.1%",
       "stuff_plus": "125",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29770",
       "matched_player_id": "29770",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2826,7 +3209,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2837,30 +3222,34 @@
       "bb9": "6.75",
       "k_pct": "11.8%",
       "stuff_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23479",
       "matched_player_id": "23479",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
-      "name": "Carmen Mlodzinski",
-      "url": "https://www.fangraphs.com/players/carmen-mlodzinski/27572/stats/pitching",
-      "era": "3.55",
-      "k9": "8.09",
-      "bb9": "2.45",
-      "k_pct": "21.2%",
-      "stuff_plus": "104",
-      "match_method": "exact_name",
-      "source_player_id": "27572",
-      "matched_player_id": "27572",
+      "name": "Jose Urquidy",
+      "url": "https://www.fangraphs.com/players/jose-urquidy/stats/pitching",
+      "era": "7.71",
+      "k9": "11.57",
+      "bb9": "11.57",
+      "k_pct": "21.4%",
+      "stuff_plus": "92",
+      "match_method": "playerid",
+      "source_player_id": "18413",
+      "matched_player_id": "18413",
       "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
+      "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "SDP": [
@@ -2873,13 +3262,15 @@
       "bb9": "4.09",
       "k_pct": "44.4%",
       "stuff_plus": "123",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31757",
       "matched_player_id": "31757",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -2890,13 +3281,15 @@
       "bb9": "2.08",
       "k_pct": "24.5%",
       "stuff_plus": "120",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20039",
       "matched_player_id": "20039",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -2907,13 +3300,15 @@
       "bb9": "3.33",
       "k_pct": "35.5%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22210",
       "matched_player_id": "22210",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2924,13 +3319,15 @@
       "bb9": "4.37",
       "k_pct": "25.9%",
       "stuff_plus": "115",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31616",
       "matched_player_id": "31616",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2941,13 +3338,15 @@
       "bb9": "3.77",
       "k_pct": "20.1%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14295",
       "matched_player_id": "14295",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2958,13 +3357,15 @@
       "bb9": "3.52",
       "k_pct": "29.0%",
       "stuff_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29107",
       "matched_player_id": "29107",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -2975,13 +3376,15 @@
       "bb9": "2.72",
       "k_pct": "20.7%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19646",
       "matched_player_id": "19646",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -2992,13 +3395,15 @@
       "bb9": "3.38",
       "k_pct": "28.6%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23488",
       "matched_player_id": "23488",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "SFG": [
@@ -3011,13 +3416,15 @@
       "bb9": "2.64",
       "k_pct": "22.6%",
       "stuff_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20423",
       "matched_player_id": "20423",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -3028,13 +3435,15 @@
       "bb9": "6.00",
       "k_pct": "17.2%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26252",
       "matched_player_id": "26252",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -3051,7 +3460,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3062,13 +3473,15 @@
       "bb9": "2.78",
       "k_pct": "17.8%",
       "stuff_plus": "99",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "30226",
       "matched_player_id": "30226",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3079,47 +3492,53 @@
       "bb9": "3.48",
       "k_pct": "19.7%",
       "stuff_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17381",
       "matched_player_id": "17381",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Trevor McDonald",
-      "url": "https://www.fangraphs.com/players/trevor-mcdonald/26448/stats/pitching",
-      "era": "1.80",
-      "k9": "8.40",
-      "bb9": "1.20",
-      "k_pct": "23.3%",
-      "stuff_plus": "95",
-      "match_method": "exact_name",
-      "source_player_id": "26448",
-      "matched_player_id": "26448",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "name": "Caleb Kilian",
+      "url": "https://www.fangraphs.com/players/caleb-kilian/26213/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "26213",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false,
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Keaton Winn",
-      "url": "https://www.fangraphs.com/players/keaton-winn/23499/stats/pitching",
-      "era": "4.50",
-      "k9": "8.10",
-      "bb9": "1.80",
-      "k_pct": "21.4%",
-      "stuff_plus": "97",
-      "match_method": "exact_name",
-      "source_player_id": "23499",
-      "matched_player_id": "23499",
+      "name": "Ryan Borucki",
+      "url": "https://www.fangraphs.com/players/ryan-borucki/16350/stats/pitching",
+      "era": "4.63",
+      "k9": "8.23",
+      "bb9": "4.11",
+      "k_pct": "22.1%",
+      "stuff_plus": "107",
+      "match_method": "playerid",
+      "source_player_id": "16350",
+      "matched_player_id": "16350",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -3130,13 +3549,15 @@
       "bb9": "3.77",
       "k_pct": "18.8%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17578",
       "matched_player_id": "17578",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "SEA": [
@@ -3155,7 +3576,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -3166,13 +3589,15 @@
       "bb9": "3.42",
       "k_pct": "29.1%",
       "stuff_plus": "112",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25756",
       "matched_player_id": "25756",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -3183,13 +3608,15 @@
       "bb9": "1.89",
       "k_pct": "21.9%",
       "stuff_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24017",
       "matched_player_id": "24017",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3200,13 +3627,15 @@
       "bb9": "3.09",
       "k_pct": "26.2%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20997",
       "matched_player_id": "20997",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3217,13 +3646,15 @@
       "bb9": "1.60",
       "k_pct": "33.7%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17170",
       "matched_player_id": "17170",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3240,7 +3671,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3251,13 +3684,15 @@
       "bb9": "4.53",
       "k_pct": "25.1%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "25921",
       "matched_player_id": "25921",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -3268,13 +3703,15 @@
       "bb9": "2.55",
       "k_pct": "11.2%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24975",
       "matched_player_id": "24975",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "STL": [
@@ -3287,13 +3724,15 @@
       "bb9": "4.13",
       "k_pct": "22.6%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20348",
       "matched_player_id": "20348",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3304,13 +3743,15 @@
       "bb9": "4.28",
       "k_pct": "21.6%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19574",
       "matched_player_id": "19574",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3321,13 +3762,15 @@
       "bb9": "2.98",
       "k_pct": "29.1%",
       "stuff_plus": "110",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "29629",
       "matched_player_id": "29629",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3338,13 +3781,15 @@
       "bb9": "5.14",
       "k_pct": "22.7%",
       "stuff_plus": "116",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15947",
       "matched_player_id": "15947",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3355,16 +3800,56 @@
       "bb9": "4.61",
       "k_pct": "27.7%",
       "stuff_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23779",
       "matched_player_id": "23779",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
+      "name": "George Soriano",
+      "url": "https://www.fangraphs.com/players/george-soriano/21863/stats/pitching",
+      "era": "8.35",
+      "k9": "8.84",
+      "bb9": "4.66",
+      "k_pct": "20.8%",
+      "stuff_plus": "99",
+      "match_method": "playerid",
+      "source_player_id": "21863",
+      "matched_player_id": "21863",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
+      "name": "Chris Roycroft",
+      "url": "https://www.fangraphs.com/players/chris-roycroft/31261/stats/pitching",
+      "era": "7.84",
+      "k9": "6.53",
+      "bb9": "5.23",
+      "k_pct": "14.9%",
+      "stuff_plus": "102",
+      "match_method": "playerid",
+      "source_player_id": "31261",
+      "matched_player_id": "31261",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "LR",
       "name": "Matt Pushard",
       "url": "https://www.fangraphs.com/players/matthew-pushard/sa3019955/stats/pitching",
       "era": "",
@@ -3378,41 +3863,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
-    },
-    {
-      "role": "MID",
-      "name": "George Soriano",
-      "url": "https://www.fangraphs.com/players/george-soriano/21863/stats/pitching",
-      "era": "8.35",
-      "k9": "8.84",
-      "bb9": "4.66",
-      "k_pct": "20.8%",
-      "stuff_plus": "99",
-      "match_method": "exact_name",
-      "source_player_id": "21863",
-      "matched_player_id": "21863",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "LR",
-      "name": "Gordon Graceffo",
-      "url": "https://www.fangraphs.com/players/gordon-graceffo/29519/stats/pitching",
-      "era": "6.28",
-      "k9": "8.37",
-      "bb9": "2.72",
-      "k_pct": "20.7%",
-      "stuff_plus": "93",
-      "match_method": "exact_name",
-      "source_player_id": "29519",
-      "matched_player_id": "29519",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "TBR": [
@@ -3425,13 +3878,15 @@
       "bb9": "2.86",
       "k_pct": "35.0%",
       "stuff_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "20253",
       "matched_player_id": "20253",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3442,13 +3897,15 @@
       "bb9": "2.64",
       "k_pct": "33.7%",
       "stuff_plus": "111",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17897",
       "matched_player_id": "17897",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3459,13 +3916,15 @@
       "bb9": "2.23",
       "k_pct": "30.3%",
       "stuff_plus": "108",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19804",
       "matched_player_id": "19804",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3476,13 +3935,15 @@
       "bb9": "2.22",
       "k_pct": "23.8%",
       "stuff_plus": "98",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22288",
       "matched_player_id": "22288",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3493,13 +3954,15 @@
       "bb9": "3.00",
       "k_pct": "20.0%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26259",
       "matched_player_id": "26259",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3510,13 +3973,15 @@
       "bb9": "3.00",
       "k_pct": "26.4%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27932",
       "matched_player_id": "27932",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3527,13 +3992,15 @@
       "bb9": "2.78",
       "k_pct": "24.4%",
       "stuff_plus": "97",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15256",
       "matched_player_id": "15256",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -3550,7 +4017,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "TEX": [
@@ -3563,13 +4032,15 @@
       "bb9": "3.09",
       "k_pct": "25.3%",
       "stuff_plus": "103",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23363",
       "matched_player_id": "23363",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -3580,13 +4051,15 @@
       "bb9": "1.70",
       "k_pct": "24.7%",
       "stuff_plus": "113",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "11847",
       "matched_player_id": "11847",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -3597,13 +4070,15 @@
       "bb9": "3.67",
       "k_pct": "21.6%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "22113",
       "matched_player_id": "22113",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3620,7 +4095,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3631,13 +4108,15 @@
       "bb9": "2.43",
       "k_pct": "20.1%",
       "stuff_plus": "94",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "13619",
       "matched_player_id": "13619",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3648,13 +4127,15 @@
       "bb9": "3.14",
       "k_pct": "20.3%",
       "stuff_plus": "95",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17192",
       "matched_player_id": "17192",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3671,7 +4152,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -3682,13 +4165,15 @@
       "bb9": "2.76",
       "k_pct": "19.4%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17735",
       "matched_player_id": "17735",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "TOR": [
@@ -3701,13 +4186,15 @@
       "bb9": "3.57",
       "k_pct": "29.3%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "17432",
       "matched_player_id": "17432",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU8",
@@ -3718,13 +4205,15 @@
       "bb9": "0.81",
       "k_pct": "16.1%",
       "stuff_plus": "128",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15541",
       "matched_player_id": "15541",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "SU7",
@@ -3741,7 +4230,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3752,13 +4243,15 @@
       "bb9": "5.93",
       "k_pct": "30.8%",
       "stuff_plus": "117",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21574",
       "matched_player_id": "21574",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3769,13 +4262,15 @@
       "bb9": "3.42",
       "k_pct": "30.7%",
       "stuff_plus": "106",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "24609",
       "matched_player_id": "24609",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3786,13 +4281,15 @@
       "bb9": "1.99",
       "k_pct": "25.4%",
       "stuff_plus": "100",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "19178",
       "matched_player_id": "19178",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3803,13 +4300,15 @@
       "bb9": "4.10",
       "k_pct": "26.0%",
       "stuff_plus": "118",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "31553",
       "matched_player_id": "31553",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -3826,7 +4325,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "WSN": [
@@ -3839,13 +4340,15 @@
       "bb9": "6.39",
       "k_pct": "31.7%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27494",
       "matched_player_id": "27494",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3856,16 +4359,37 @@
       "bb9": "5.47",
       "k_pct": "21.6%",
       "stuff_plus": "107",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27570",
       "matched_player_id": "27570",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
-      "role": "SU7",
+      "role": "CL",
+      "name": "Brad Lord",
+      "url": "https://www.fangraphs.com/players/brad-lord/31972/stats/pitching",
+      "era": "4.34",
+      "k9": "7.44",
+      "bb9": "2.96",
+      "k_pct": "19.8%",
+      "stuff_plus": "86",
+      "match_method": "playerid",
+      "source_player_id": "31972",
+      "matched_player_id": "31972",
+      "source_id_found_in_stats": true,
+      "exact_name_found_in_stats": true,
+      "normalized_name_found_in_stats": true,
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "MID",
       "name": "PJ Poulin",
       "url": "https://www.fangraphs.com/players/pj-poulin/23394/stats/pitching",
       "era": "3.65",
@@ -3873,30 +4397,15 @@
       "bb9": "4.74",
       "k_pct": "24.5%",
       "stuff_plus": "101",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "23394",
       "matched_player_id": "23394",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
-    },
-    {
-      "role": "MID",
-      "name": "Jackson Rutledge",
-      "url": "https://www.fangraphs.com/players/jackson-rutledge/26215/stats/pitching",
-      "era": "5.77",
-      "k9": "7.98",
-      "bb9": "2.95",
-      "k_pct": "19.7%",
-      "stuff_plus": "103",
-      "match_method": "exact_name",
-      "source_player_id": "26215",
-      "matched_player_id": "26215",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3913,7 +4422,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -3924,16 +4435,37 @@
       "bb9": "6.29",
       "k_pct": "20.8%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "26247",
       "matched_player_id": "26247",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
+      "name": "Ken Waldichuk",
+      "url": "https://www.fangraphs.com/players/ken-waldichuk/27681/stats/pitching",
+      "era": "",
+      "k9": "",
+      "bb9": "",
+      "k_pct": "",
+      "stuff_plus": "",
+      "match_method": "unmatched",
+      "source_player_id": "27681",
+      "matched_player_id": "",
+      "source_id_found_in_stats": false,
+      "exact_name_found_in_stats": false,
+      "normalized_name_found_in_stats": false,
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
+    },
+    {
+      "role": "LR",
       "name": "Griff McGarry",
       "url": "https://www.fangraphs.com/players/griffin-mcgarry/sa3017130/stats/pitching",
       "era": "",
@@ -3947,24 +4479,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
-    },
-    {
-      "role": "LR",
-      "name": "Brad Lord",
-      "url": "https://www.fangraphs.com/players/brad-lord/31972/stats/pitching",
-      "era": "4.34",
-      "k9": "7.44",
-      "bb9": "2.96",
-      "k_pct": "19.8%",
-      "stuff_plus": "86",
-      "match_method": "exact_name",
-      "source_player_id": "31972",
-      "matched_player_id": "31972",
-      "source_id_found_in_stats": true,
-      "exact_name_found_in_stats": true,
-      "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ],
   "ATH": [
@@ -3977,13 +4494,15 @@
       "bb9": "4.59",
       "k_pct": "23.5%",
       "stuff_plus": "96",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21520",
       "matched_player_id": "21520",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -3994,13 +4513,15 @@
       "bb9": "2.91",
       "k_pct": "26.3%",
       "stuff_plus": "109",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "27694",
       "matched_player_id": "27694",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "CL",
@@ -4011,13 +4532,15 @@
       "bb9": "3.17",
       "k_pct": "24.7%",
       "stuff_plus": "88",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "15551",
       "matched_player_id": "15551",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -4028,13 +4551,15 @@
       "bb9": "5.93",
       "k_pct": "24.8%",
       "stuff_plus": "102",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "14993",
       "matched_player_id": "14993",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -4051,7 +4576,9 @@
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
@@ -4062,30 +4589,34 @@
       "bb9": "4.68",
       "k_pct": "27.3%",
       "stuff_plus": "104",
-      "match_method": "exact_name",
+      "match_method": "playerid",
       "source_player_id": "21662",
       "matched_player_id": "21662",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "MID",
-      "name": "Tyler Ferguson",
-      "url": "https://www.fangraphs.com/players/tyler-ferguson/19481/stats/pitching",
-      "era": "4.66",
-      "k9": "8.38",
-      "bb9": "5.28",
-      "k_pct": "22.0%",
-      "stuff_plus": "109",
-      "match_method": "exact_name",
-      "source_player_id": "19481",
-      "matched_player_id": "19481",
+      "name": "Nick Anderson",
+      "url": "https://www.fangraphs.com/players/nick-anderson/18337/stats/pitching",
+      "era": "6.14",
+      "k9": "6.14",
+      "bb9": "1.23",
+      "k_pct": "16.4%",
+      "stuff_plus": "87",
+      "match_method": "playerid",
+      "source_player_id": "18337",
+      "matched_player_id": "18337",
       "source_id_found_in_stats": true,
       "exact_name_found_in_stats": true,
       "normalized_name_found_in_stats": true,
-      "loose_name_found_in_stats": true
+      "loose_name_found_in_stats": true,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     },
     {
       "role": "LR",
@@ -4102,7 +4633,9 @@
       "source_id_found_in_stats": false,
       "exact_name_found_in_stats": false,
       "normalized_name_found_in_stats": false,
-      "loose_name_found_in_stats": false
+      "loose_name_found_in_stats": false,
+      "identity_mismatch_found": false,
+      "mismatch_candidate_player_id": ""
     }
   ]
 }

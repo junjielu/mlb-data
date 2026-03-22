@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": "1.0.0",
     "season": 2025,
-    "generatedAt": "2026-03-21T10:14:46Z",
-    "buildId": "20260321-101446",
+    "generatedAt": "2026-03-22T08:15:13Z",
+    "buildId": "20260322-081513",
     "source": "fangraphs"
   },
   "teams": [
@@ -12,49 +12,10 @@
       "name": "Arizona Diamondbacks",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/ari.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
-          "name": "Geraldo Perdomo",
-          "position": "SS",
-          "url": "https://www.fangraphs.com/players/geraldo-perdomo/22799/stats/batting",
-          "runs": "98",
-          "hr": "20",
-          "rbi": "100",
-          "sb": "27",
-          "wrc_plus": "138",
-          "avg": ".290",
-          "obp": ".389",
-          "slg": ".462",
-          "playerId": "22799",
-          "history": [
-            {
-              "season": 2024,
-              "runs": "61",
-              "hr": "3",
-              "rbi": "37",
-              "sb": "9",
-              "avg": ".273",
-              "obp": ".344",
-              "slg": ".374",
-              "wrc_plus": "102"
-            },
-            {
-              "season": 2023,
-              "runs": "71",
-              "hr": "6",
-              "rbi": "47",
-              "sb": "16",
-              "avg": ".246",
-              "obp": ".353",
-              "slg": ".359",
-              "wrc_plus": "98"
-            }
-          ]
-        },
-        {
-          "order": "2",
           "name": "Ketel Marte",
           "position": "2B",
           "url": "https://www.fangraphs.com/players/ketel-marte/13613/stats/batting",
@@ -93,7 +54,7 @@
           ]
         },
         {
-          "order": "3",
+          "order": "2",
           "name": "Corbin Carroll",
           "position": "RF",
           "url": "https://www.fangraphs.com/players/corbin-carroll/25878/stats/batting",
@@ -128,6 +89,45 @@
               "obp": ".362",
               "slg": ".506",
               "wrc_plus": "133"
+            }
+          ]
+        },
+        {
+          "order": "3",
+          "name": "Geraldo Perdomo",
+          "position": "SS",
+          "url": "https://www.fangraphs.com/players/geraldo-perdomo/22799/stats/batting",
+          "runs": "98",
+          "hr": "20",
+          "rbi": "100",
+          "sb": "27",
+          "wrc_plus": "138",
+          "avg": ".290",
+          "obp": ".389",
+          "slg": ".462",
+          "playerId": "22799",
+          "history": [
+            {
+              "season": 2024,
+              "runs": "61",
+              "hr": "3",
+              "rbi": "37",
+              "sb": "9",
+              "avg": ".273",
+              "obp": ".344",
+              "slg": ".374",
+              "wrc_plus": "102"
+            },
+            {
+              "season": 2023,
+              "runs": "71",
+              "hr": "6",
+              "rbi": "47",
+              "sb": "16",
+              "avg": ".246",
+              "obp": ".353",
+              "slg": ".359",
+              "wrc_plus": "98"
             }
           ]
         },
@@ -465,38 +465,6 @@
         },
         {
           "role": "sp4",
-          "name": "Brandon Pfaadt",
-          "url": "https://www.fangraphs.com/players/brandon-pfaadt/27782/stats/pitching",
-          "era": "5.25",
-          "whip": "1.33",
-          "k9": "7.49",
-          "bb9": "1.88",
-          "stuff_plus": "97",
-          "location_plus": "104",
-          "playerId": "27782",
-          "history": [
-            {
-              "season": 2024,
-              "era": "4.71",
-              "whip": "1.24",
-              "k9": "9.17",
-              "bb9": "2.08",
-              "stuff_plus": "103",
-              "location_plus": "107"
-            },
-            {
-              "season": 2023,
-              "era": "5.72",
-              "whip": "1.41",
-              "k9": "8.81",
-              "bb9": "2.44",
-              "stuff_plus": "100",
-              "location_plus": "106"
-            }
-          ]
-        },
-        {
-          "role": "sp5",
           "name": "Michael Soroka",
           "url": "https://www.fangraphs.com/players/michael-soroka/18383/stats/pitching",
           "era": "4.52",
@@ -524,6 +492,38 @@
               "bb9": "3.34",
               "stuff_plus": "88",
               "location_plus": "104"
+            }
+          ]
+        },
+        {
+          "role": "sp5",
+          "name": "Brandon Pfaadt",
+          "url": "https://www.fangraphs.com/players/brandon-pfaadt/27782/stats/pitching",
+          "era": "5.25",
+          "whip": "1.33",
+          "k9": "7.49",
+          "bb9": "1.88",
+          "stuff_plus": "97",
+          "location_plus": "104",
+          "playerId": "27782",
+          "history": [
+            {
+              "season": 2024,
+              "era": "4.71",
+              "whip": "1.24",
+              "k9": "9.17",
+              "bb9": "2.08",
+              "stuff_plus": "103",
+              "location_plus": "107"
+            },
+            {
+              "season": 2023,
+              "era": "5.72",
+              "whip": "1.41",
+              "k9": "8.81",
+              "bb9": "2.44",
+              "stuff_plus": "100",
+              "location_plus": "106"
             }
           ]
         }
@@ -589,6 +589,35 @@
         },
         {
           "role": "SU7",
+          "name": "Jonathan Loaisiga",
+          "url": "https://www.fangraphs.com/players/jonathan-loaisiga/stats/pitching",
+          "era": "4.25",
+          "k9": "7.58",
+          "bb9": "3.03",
+          "k_pct": "18.5%",
+          "stuff_plus": "114",
+          "playerId": "19753",
+          "history": [
+            {
+              "season": 2024,
+              "era": "0.00",
+              "k9": "6.75",
+              "bb9": "2.25",
+              "k_pct": "15.0%",
+              "stuff_plus": "133"
+            },
+            {
+              "season": 2023,
+              "era": "3.06",
+              "k9": "3.06",
+              "bb9": "0.51",
+              "k_pct": "8.7%",
+              "stuff_plus": "131"
+            }
+          ]
+        },
+        {
+          "role": "MID",
           "name": "Ryan Thompson",
           "url": "https://www.fangraphs.com/players/ryan-thompson/16647/stats/pitching",
           "era": "3.92",
@@ -642,35 +671,6 @@
               "bb9": "3.17",
               "k_pct": "27.6%",
               "stuff_plus": "95"
-            }
-          ]
-        },
-        {
-          "role": "MID",
-          "name": "Jonathan Loaisiga",
-          "url": "https://www.fangraphs.com/players/jonathan-loaisiga/stats/pitching",
-          "era": "4.25",
-          "k9": "7.58",
-          "bb9": "3.03",
-          "k_pct": "18.5%",
-          "stuff_plus": "114",
-          "playerId": "19753",
-          "history": [
-            {
-              "season": 2024,
-              "era": "0.00",
-              "k9": "6.75",
-              "bb9": "2.25",
-              "k_pct": "15.0%",
-              "stuff_plus": "133"
-            },
-            {
-              "season": 2023,
-              "era": "3.06",
-              "k9": "3.06",
-              "bb9": "0.51",
-              "k_pct": "8.7%",
-              "stuff_plus": "131"
             }
           ]
         },
@@ -768,7 +768,7 @@
       "name": "Atlanta Braves",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/atl.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -1461,30 +1461,30 @@
         },
         {
           "role": "MID",
-          "name": "Dylan Dodd",
-          "url": "https://www.fangraphs.com/players/dylan-dodd/29928/stats/pitching",
-          "era": "3.60",
-          "k9": "7.71",
-          "bb9": "1.29",
-          "k_pct": "22.1%",
-          "stuff_plus": "100",
-          "playerId": "29928",
+          "name": "Didier Fuentes",
+          "url": "https://www.fangraphs.com/players/didier-fuentes/30661/stats/pitching",
+          "era": "13.85",
+          "k9": "8.31",
+          "bb9": "4.15",
+          "k_pct": "17.4%",
+          "stuff_plus": "110",
+          "playerId": "30661",
           "history": [
             {
               "season": 2024,
-              "era": "9.00",
-              "k9": "9.00",
-              "bb9": "4.50",
-              "k_pct": "22.2%",
-              "stuff_plus": "98"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             },
             {
               "season": 2023,
-              "era": "7.60",
-              "k9": "3.93",
-              "bb9": "3.15",
-              "k_pct": "9.1%",
-              "stuff_plus": "91"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             }
           ]
         },
@@ -1524,7 +1524,7 @@
       "name": "Baltimore Orioles",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/bal.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -2038,38 +2038,6 @@
               "location_plus": "107"
             }
           ]
-        },
-        {
-          "role": "sp6",
-          "name": "Dean Kremer",
-          "url": "https://www.fangraphs.com/players/dean-kremer/19350/stats/pitching",
-          "era": "4.19",
-          "whip": "1.21",
-          "k9": "7.44",
-          "bb9": "2.36",
-          "stuff_plus": "95",
-          "location_plus": "101",
-          "playerId": "19350",
-          "history": [
-            {
-              "season": 2024,
-              "era": "4.10",
-              "whip": "1.24",
-              "k9": "8.54",
-              "bb9": "3.54",
-              "stuff_plus": "96",
-              "location_plus": "100"
-            },
-            {
-              "season": 2023,
-              "era": "4.12",
-              "whip": "1.31",
-              "k9": "8.18",
-              "bb9": "2.87",
-              "stuff_plus": "102",
-              "location_plus": "98"
-            }
-          ]
         }
       ],
       "rp": [
@@ -2162,6 +2130,35 @@
         },
         {
           "role": "MID",
+          "name": "Tyler Wells",
+          "url": "https://www.fangraphs.com/players/tyler-wells/20000/stats/pitching",
+          "era": "2.91",
+          "k9": "7.48",
+          "bb9": "0.83",
+          "k_pct": "22.0%",
+          "stuff_plus": "96",
+          "playerId": "20000",
+          "history": [
+            {
+              "season": 2024,
+              "era": "5.87",
+              "k9": "7.63",
+              "bb9": "1.76",
+              "k_pct": "19.4%",
+              "stuff_plus": "93"
+            },
+            {
+              "season": 2023,
+              "era": "3.64",
+              "k9": "8.87",
+              "bb9": "2.58",
+              "k_pct": "24.9%",
+              "stuff_plus": "94"
+            }
+          ]
+        },
+        {
+          "role": "MID",
           "name": "Dietrich Enns",
           "url": "https://www.fangraphs.com/players/dietrich-enns/13932/stats/pitching",
           "era": "4.08",
@@ -2249,30 +2246,30 @@
         },
         {
           "role": "LR",
-          "name": "Tyler Wells",
-          "url": "https://www.fangraphs.com/players/tyler-wells/20000/stats/pitching",
-          "era": "2.91",
-          "k9": "7.48",
-          "bb9": "0.83",
-          "k_pct": "22.0%",
+          "name": "Jackson Kowar",
+          "url": "https://www.fangraphs.com/players/jackson-kowar/21549/stats/pitching",
+          "era": "4.24",
+          "k9": "7.94",
+          "bb9": "3.71",
+          "k_pct": "21.1%",
           "stuff_plus": "96",
-          "playerId": "20000",
+          "playerId": "21549",
           "history": [
             {
               "season": 2024,
-              "era": "5.87",
-              "k9": "7.63",
-              "bb9": "1.76",
-              "k_pct": "19.4%",
-              "stuff_plus": "93"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             },
             {
               "season": 2023,
-              "era": "3.64",
-              "k9": "8.87",
-              "bb9": "2.58",
-              "k_pct": "24.9%",
-              "stuff_plus": "94"
+              "era": "6.43",
+              "k9": "9.32",
+              "bb9": "6.43",
+              "k_pct": "21.2%",
+              "stuff_plus": "104"
             }
           ]
         }
@@ -2283,7 +2280,7 @@
       "name": "Boston Red Sox",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -3039,7 +3036,7 @@
       "name": "Chicago Cubs",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -3795,7 +3792,7 @@
       "name": "Chicago White Sox",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -4430,30 +4427,30 @@
         },
         {
           "role": "MID",
-          "name": "Chris Murphy",
-          "url": "https://www.fangraphs.com/players/chris-murphy/26214/stats/pitching",
-          "era": "3.12",
-          "k9": "7.79",
-          "bb9": "5.19",
-          "k_pct": "20.3%",
-          "stuff_plus": "99",
-          "playerId": "26214",
+          "name": "Brandon Eisert",
+          "url": "https://www.fangraphs.com/players/brandon-eisert/27668/stats/pitching",
+          "era": "4.39",
+          "k9": "9.56",
+          "bb9": "3.23",
+          "k_pct": "24.2%",
+          "stuff_plus": "79",
+          "playerId": "27668",
           "history": [
             {
               "season": 2024,
+              "era": "4.05",
+              "k9": "2.70",
+              "bb9": "5.40",
+              "k_pct": "7.7%",
+              "stuff_plus": "90"
+            },
+            {
+              "season": 2023,
               "era": "",
               "k9": "",
               "bb9": "",
               "k_pct": "",
               "stuff_plus": ""
-            },
-            {
-              "season": 2023,
-              "era": "4.91",
-              "k9": "9.25",
-              "bb9": "3.21",
-              "k_pct": "23.1%",
-              "stuff_plus": "95"
             }
           ]
         },
@@ -4488,30 +4485,30 @@
         },
         {
           "role": "MID",
-          "name": "Ryan Borucki",
-          "url": "https://www.fangraphs.com/players/ryan-borucki/16350/stats/pitching",
-          "era": "4.63",
-          "k9": "8.23",
-          "bb9": "4.11",
-          "k_pct": "22.1%",
-          "stuff_plus": "107",
-          "playerId": "16350",
+          "name": "Chris Murphy",
+          "url": "https://www.fangraphs.com/players/chris-murphy/26214/stats/pitching",
+          "era": "3.12",
+          "k9": "7.79",
+          "bb9": "5.19",
+          "k_pct": "20.3%",
+          "stuff_plus": "99",
+          "playerId": "26214",
           "history": [
             {
               "season": 2024,
-              "era": "7.36",
-              "k9": "10.64",
-              "bb9": "3.27",
-              "k_pct": "25.5%",
-              "stuff_plus": "100"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             },
             {
               "season": 2023,
-              "era": "2.45",
-              "k9": "7.36",
-              "bb9": "0.89",
-              "k_pct": "21.7%",
-              "stuff_plus": "101"
+              "era": "4.91",
+              "k9": "9.25",
+              "bb9": "3.21",
+              "k_pct": "23.1%",
+              "stuff_plus": "95"
             }
           ]
         },
@@ -4551,7 +4548,7 @@
       "name": "Cincinnati Reds",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -4789,40 +4786,40 @@
         },
         {
           "order": "7",
-          "name": "JJ Bleday",
+          "name": "Will Benson",
           "position": "LF",
-          "url": "https://www.fangraphs.com/players/jj-bleday/26368/stats/batting",
-          "runs": "48",
-          "hr": "14",
-          "rbi": "39",
-          "sb": "1",
-          "wrc_plus": "90",
-          "avg": ".212",
-          "obp": ".294",
-          "slg": ".404",
-          "playerId": "26368",
+          "url": "https://www.fangraphs.com/players/will-benson/21853/stats/batting",
+          "runs": "31",
+          "hr": "12",
+          "rbi": "41",
+          "sb": "2",
+          "wrc_plus": "85",
+          "avg": ".226",
+          "obp": ".273",
+          "slg": ".435",
+          "playerId": "21853",
           "history": [
             {
               "season": 2024,
-              "runs": "74",
-              "hr": "20",
-              "rbi": "60",
-              "sb": "2",
-              "avg": ".243",
-              "obp": ".324",
-              "slg": ".437",
-              "wrc_plus": "120"
+              "runs": "41",
+              "hr": "14",
+              "rbi": "43",
+              "sb": "16",
+              "avg": ".187",
+              "obp": ".274",
+              "slg": ".376",
+              "wrc_plus": "76"
             },
             {
               "season": 2023,
-              "runs": "35",
-              "hr": "10",
-              "rbi": "27",
-              "sb": "5",
-              "avg": ".195",
-              "obp": ".310",
-              "slg": ".355",
-              "wrc_plus": "91"
+              "runs": "51",
+              "hr": "11",
+              "rbi": "31",
+              "sb": "19",
+              "avg": ".275",
+              "obp": ".365",
+              "slg": ".498",
+              "wrc_plus": "128"
             }
           ]
         },
@@ -5307,7 +5304,7 @@
       "name": "Cleveland Guardians",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/cle.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -5760,38 +5757,6 @@
         },
         {
           "role": "sp4",
-          "name": "Logan Allen",
-          "url": "https://www.fangraphs.com/players/logan-allen/27589/stats/pitching",
-          "era": "4.25",
-          "whip": "1.40",
-          "k9": "7.01",
-          "bb9": "3.56",
-          "stuff_plus": "92",
-          "location_plus": "97",
-          "playerId": "27589",
-          "history": [
-            {
-              "season": 2024,
-              "era": "5.73",
-              "whip": "1.58",
-              "k9": "7.30",
-              "bb9": "3.79",
-              "stuff_plus": "93",
-              "location_plus": "93"
-            },
-            {
-              "season": 2023,
-              "era": "3.81",
-              "whip": "1.40",
-              "k9": "8.55",
-              "bb9": "3.45",
-              "stuff_plus": "92",
-              "location_plus": "103"
-            }
-          ]
-        },
-        {
-          "role": "sp5",
           "name": "Joey Cantillo",
           "url": "https://www.fangraphs.com/players/joey-cantillo/23335/stats/pitching",
           "era": "3.21",
@@ -5810,6 +5775,38 @@
               "bb9": "3.49",
               "stuff_plus": "92",
               "location_plus": "99"
+            },
+            {
+              "season": 2023,
+              "era": "",
+              "whip": "",
+              "k9": "",
+              "bb9": "",
+              "stuff_plus": "",
+              "location_plus": ""
+            }
+          ]
+        },
+        {
+          "role": "sp5",
+          "name": "Parker Messick",
+          "url": "https://www.fangraphs.com/players/parker-messick/31986/stats/pitching",
+          "era": "2.72",
+          "whip": "1.31",
+          "k9": "8.62",
+          "bb9": "1.36",
+          "stuff_plus": "96",
+          "location_plus": "109",
+          "playerId": "31986",
+          "history": [
+            {
+              "season": 2024,
+              "era": "",
+              "whip": "",
+              "k9": "",
+              "bb9": "",
+              "stuff_plus": "",
+              "location_plus": ""
             },
             {
               "season": 2023,
@@ -5855,35 +5852,6 @@
         },
         {
           "role": "SU8",
-          "name": "Hunter Gaddis",
-          "url": "https://www.fangraphs.com/players/hunter-gaddis/25636/stats/pitching",
-          "era": "3.11",
-          "k9": "9.86",
-          "bb9": "2.84",
-          "k_pct": "26.6%",
-          "stuff_plus": "95",
-          "playerId": "25636",
-          "history": [
-            {
-              "season": 2024,
-              "era": "1.57",
-              "k9": "7.96",
-              "bb9": "1.69",
-              "k_pct": "23.7%",
-              "stuff_plus": "99"
-            },
-            {
-              "season": 2023,
-              "era": "4.50",
-              "k9": "5.14",
-              "bb9": "3.00",
-              "k_pct": "13.2%",
-              "stuff_plus": "94"
-            }
-          ]
-        },
-        {
-          "role": "SU7",
           "name": "Shawn Armstrong",
           "url": "https://www.fangraphs.com/players/shawn-armstrong/12857/stats/pitching",
           "era": "2.31",
@@ -5912,7 +5880,7 @@
           ]
         },
         {
-          "role": "MID",
+          "role": "SU7",
           "name": "Erik Sabrowski",
           "url": "https://www.fangraphs.com/players/erik-sabrowski/24978/stats/pitching",
           "era": "1.84",
@@ -6028,6 +5996,35 @@
           ]
         },
         {
+          "role": "MID",
+          "name": "Colin Holderman",
+          "url": "https://www.fangraphs.com/players/colin-holderman/22361/stats/pitching",
+          "era": "7.01",
+          "k9": "6.31",
+          "bb9": "5.61",
+          "k_pct": "14.4%",
+          "stuff_plus": "115",
+          "playerId": "22361",
+          "history": [
+            {
+              "season": 2024,
+              "era": "3.16",
+              "k9": "9.82",
+              "bb9": "4.38",
+              "k_pct": "25.1%",
+              "stuff_plus": "113"
+            },
+            {
+              "season": 2023,
+              "era": "3.86",
+              "k9": "9.32",
+              "bb9": "3.21",
+              "k_pct": "24.2%",
+              "stuff_plus": "117"
+            }
+          ]
+        },
+        {
           "role": "LR",
           "name": "Peyton Pallette",
           "url": "https://www.fangraphs.com/players/peyton-pallette/sa3020742/stats/pitching",
@@ -6063,7 +6060,7 @@
       "name": "Colorado Rockies",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/col.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -6516,15 +6513,15 @@
         },
         {
           "role": "sp4",
-          "name": "Chase Dollander",
-          "url": "https://www.fangraphs.com/players/chase-dollander/33482/stats/pitching",
-          "era": "6.52",
-          "whip": "1.55",
-          "k9": "7.53",
-          "bb9": "4.50",
-          "stuff_plus": "102",
-          "location_plus": "92",
-          "playerId": "33482",
+          "name": "Tomoyuki Sugano",
+          "url": "https://www.fangraphs.com/players/tomoyuki-sugano/35321/stats/pitching",
+          "era": "4.64",
+          "whip": "1.33",
+          "k9": "6.08",
+          "bb9": "2.06",
+          "stuff_plus": "92",
+          "location_plus": "106",
+          "playerId": "35321",
           "history": [
             {
               "season": 2024,
@@ -6548,15 +6545,15 @@
         },
         {
           "role": "sp5",
-          "name": "Tomoyuki Sugano",
-          "url": "https://www.fangraphs.com/players/tomoyuki-sugano/35321/stats/pitching",
-          "era": "4.64",
-          "whip": "1.33",
-          "k9": "6.08",
-          "bb9": "2.06",
-          "stuff_plus": "92",
-          "location_plus": "106",
-          "playerId": "35321",
+          "name": "Chase Dollander",
+          "url": "https://www.fangraphs.com/players/chase-dollander/33482/stats/pitching",
+          "era": "6.52",
+          "whip": "1.55",
+          "k9": "7.53",
+          "bb9": "4.50",
+          "stuff_plus": "102",
+          "location_plus": "92",
+          "playerId": "33482",
           "history": [
             {
               "season": 2024,
@@ -6819,7 +6816,7 @@
       "name": "Detroit Tigers",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/det.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -7575,7 +7572,7 @@
       "name": "Houston Astros",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -7963,7 +7960,7 @@
           ]
         },
         {
-          "role": "sp2",
+          "role": "sp3",
           "name": "Cristian Javier",
           "url": "https://www.fangraphs.com/players/cristian-javier/17606/stats/pitching",
           "era": "4.62",
@@ -7995,7 +7992,7 @@
           ]
         },
         {
-          "role": "sp3",
+          "role": "sp4",
           "name": "Tatsuya Imai",
           "url": "https://www.fangraphs.com/players/tatsuya-imai/sa3062955/stats/pitching",
           "era": "",
@@ -8027,7 +8024,7 @@
           ]
         },
         {
-          "role": "sp4",
+          "role": "sp2",
           "name": "Mike Burrows",
           "url": "https://www.fangraphs.com/players/mike-burrows/24728/stats/pitching",
           "era": "3.94",
@@ -8069,38 +8066,6 @@
           "stuff_plus": "102",
           "location_plus": "90",
           "playerId": "14120",
-          "history": [
-            {
-              "season": 2024,
-              "era": "",
-              "whip": "",
-              "k9": "",
-              "bb9": "",
-              "stuff_plus": "",
-              "location_plus": ""
-            },
-            {
-              "season": 2023,
-              "era": "",
-              "whip": "",
-              "k9": "",
-              "bb9": "",
-              "stuff_plus": "",
-              "location_plus": ""
-            }
-          ]
-        },
-        {
-          "role": "sp6",
-          "name": "Ryan Weiss",
-          "url": "https://www.fangraphs.com/players/ryan-weiss/sa3007778/stats/pitching",
-          "era": "",
-          "whip": "",
-          "k9": "",
-          "bb9": "",
-          "stuff_plus": "",
-          "location_plus": "",
-          "playerId": "sa3007778",
           "history": [
             {
               "season": 2024,
@@ -8184,30 +8149,30 @@
         },
         {
           "role": "SU7",
-          "name": "Roddery Munoz",
-          "url": "https://www.fangraphs.com/players/roddery-munoz/stats/pitching",
-          "era": "8.18",
-          "k9": "11.45",
-          "bb9": "7.36",
-          "k_pct": "27.5%",
-          "stuff_plus": "104",
-          "playerId": "25311",
+          "name": "Enyel De Los Santos",
+          "url": "https://www.fangraphs.com/players/enyel-de-los-santos/18403/stats/pitching",
+          "era": "4.36",
+          "k9": "8.45",
+          "bb9": "3.27",
+          "k_pct": "22.1%",
+          "stuff_plus": "93",
+          "playerId": "18403",
           "history": [
             {
               "season": 2024,
-              "era": "6.53",
-              "k9": "7.62",
-              "bb9": "4.57",
-              "k_pct": "18.5%",
-              "stuff_plus": "96"
+              "era": "5.20",
+              "k9": "9.28",
+              "bb9": "3.52",
+              "k_pct": "23.7%",
+              "stuff_plus": "94"
             },
             {
               "season": 2023,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
+              "era": "3.29",
+              "k9": "8.50",
+              "bb9": "3.43",
+              "k_pct": "23.7%",
+              "stuff_plus": "95"
             }
           ]
         },
@@ -8237,6 +8202,35 @@
               "bb9": "3.68",
               "k_pct": "29.6%",
               "stuff_plus": "111"
+            }
+          ]
+        },
+        {
+          "role": "MID",
+          "name": "Roddery Munoz",
+          "url": "https://www.fangraphs.com/players/roddery-munoz/stats/pitching",
+          "era": "8.18",
+          "k9": "11.45",
+          "bb9": "7.36",
+          "k_pct": "27.5%",
+          "stuff_plus": "104",
+          "playerId": "25311",
+          "history": [
+            {
+              "season": 2024,
+              "era": "6.53",
+              "k9": "7.62",
+              "bb9": "4.57",
+              "k_pct": "18.5%",
+              "stuff_plus": "96"
+            },
+            {
+              "season": 2023,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             }
           ]
         },
@@ -8300,14 +8294,14 @@
         },
         {
           "role": "LR",
-          "name": "A.J. Blubaugh",
-          "url": "https://www.fangraphs.com/players/a.j.-blubaugh/stats/pitching",
-          "era": "1.69",
-          "k9": "9.84",
-          "bb9": "3.09",
-          "k_pct": "28.2%",
-          "stuff_plus": "105",
-          "playerId": "31764",
+          "name": "Ryan Weiss",
+          "url": "https://www.fangraphs.com/players/ryan-weiss/sa3007778/stats/pitching",
+          "era": "",
+          "k9": "",
+          "bb9": "",
+          "k_pct": "",
+          "stuff_plus": "",
+          "playerId": "sa3007778",
           "history": [
             {
               "season": 2024,
@@ -8334,7 +8328,7 @@
       "name": "Kansas City Royals",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/kc.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -9090,7 +9084,7 @@
       "name": "Los Angeles Angels",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/laa.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -9783,35 +9777,6 @@
         },
         {
           "role": "MID",
-          "name": "Nick Sandlin",
-          "url": "https://www.fangraphs.com/players/nick-sandlin/20517/stats/pitching",
-          "era": "2.20",
-          "k9": "8.82",
-          "bb9": "4.41",
-          "k_pct": "23.2%",
-          "stuff_plus": "102",
-          "playerId": "20517",
-          "history": [
-            {
-              "season": 2024,
-              "era": "3.75",
-              "k9": "10.61",
-              "bb9": "4.21",
-              "k_pct": "27.6%",
-              "stuff_plus": "100"
-            },
-            {
-              "season": 2023,
-              "era": "3.75",
-              "k9": "9.90",
-              "bb9": "3.60",
-              "k_pct": "27.6%",
-              "stuff_plus": "108"
-            }
-          ]
-        },
-        {
-          "role": "LR",
           "name": "Chase Silseth",
           "url": "https://www.fangraphs.com/players/chase-silseth/30074/stats/pitching",
           "era": "1.64",
@@ -9838,6 +9803,35 @@
               "stuff_plus": "94"
             }
           ]
+        },
+        {
+          "role": "LR",
+          "name": "Walbert Urena",
+          "url": "https://www.fangraphs.com/players/walbert-urena/sa3018298/stats/pitching",
+          "era": "",
+          "k9": "",
+          "bb9": "",
+          "k_pct": "",
+          "stuff_plus": "",
+          "playerId": "sa3018298",
+          "history": [
+            {
+              "season": 2024,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
+            },
+            {
+              "season": 2023,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
+            }
+          ]
         }
       ]
     },
@@ -9846,7 +9840,7 @@
       "name": "Los Angeles Dodgers",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/lad.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -10631,7 +10625,7 @@
       "name": "Miami Marlins",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/mia.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -11353,30 +11347,30 @@
         },
         {
           "role": "LR",
-          "name": "Janson Junk",
-          "url": "https://www.fangraphs.com/players/janson-junk/23301/stats/pitching",
-          "era": "4.17",
-          "k9": "6.30",
-          "bb9": "1.06",
-          "k_pct": "17.2%",
-          "stuff_plus": "94",
-          "playerId": "23301",
+          "name": "Lake Bachar",
+          "url": "https://www.fangraphs.com/players/lake-bachar/19222/stats/pitching",
+          "era": "3.93",
+          "k9": "9.51",
+          "bb9": "3.80",
+          "k_pct": "25.3%",
+          "stuff_plus": "101",
+          "playerId": "19222",
           "history": [
             {
               "season": 2024,
-              "era": "14.62",
-              "k9": "9.00",
-              "bb9": "4.50",
-              "k_pct": "16.7%",
+              "era": "3.86",
+              "k9": "10.61",
+              "bb9": "3.86",
+              "k_pct": "27.5%",
               "stuff_plus": "96"
             },
             {
               "season": 2023,
-              "era": "4.91",
-              "k9": "6.14",
-              "bb9": "2.45",
-              "k_pct": "15.2%",
-              "stuff_plus": "94"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             }
           ]
         }
@@ -11387,7 +11381,7 @@
       "name": "Milwaukee Brewers",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -12143,7 +12137,7 @@
       "name": "Minnesota Twins",
       "division": "AL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/min.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -12749,6 +12743,35 @@
         },
         {
           "role": "MID",
+          "name": "Justin Topa",
+          "url": "https://www.fangraphs.com/players/justin-topa/15145/stats/pitching",
+          "era": "3.90",
+          "k9": "7.35",
+          "bb9": "2.70",
+          "k_pct": "18.3%",
+          "stuff_plus": "98",
+          "playerId": "15145",
+          "history": [
+            {
+              "season": 2024,
+              "era": "0.00",
+              "k9": "7.71",
+              "bb9": "0.00",
+              "k_pct": "25.0%",
+              "stuff_plus": "97"
+            },
+            {
+              "season": 2023,
+              "era": "2.61",
+              "k9": "7.96",
+              "bb9": "2.35",
+              "k_pct": "21.9%",
+              "stuff_plus": "113"
+            }
+          ]
+        },
+        {
+          "role": "MID",
           "name": "Anthony Banda",
           "url": "https://www.fangraphs.com/players/anthony-banda/14706/stats/pitching",
           "era": "3.18",
@@ -12778,30 +12801,30 @@
         },
         {
           "role": "MID",
-          "name": "Justin Topa",
-          "url": "https://www.fangraphs.com/players/justin-topa/15145/stats/pitching",
-          "era": "3.90",
-          "k9": "7.35",
-          "bb9": "2.70",
-          "k_pct": "18.3%",
-          "stuff_plus": "98",
-          "playerId": "15145",
+          "name": "Cody Laweryson",
+          "url": "https://www.fangraphs.com/players/cody-laweryson/26429/stats/pitching",
+          "era": "1.17",
+          "k9": "8.22",
+          "bb9": "0.00",
+          "k_pct": "26.9%",
+          "stuff_plus": "95",
+          "playerId": "26429",
           "history": [
             {
               "season": 2024,
-              "era": "0.00",
-              "k9": "7.71",
-              "bb9": "0.00",
-              "k_pct": "25.0%",
-              "stuff_plus": "97"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             },
             {
               "season": 2023,
-              "era": "2.61",
-              "k9": "7.96",
-              "bb9": "2.35",
-              "k_pct": "21.9%",
-              "stuff_plus": "113"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             }
           ]
         },
@@ -12835,44 +12858,15 @@
           ]
         },
         {
-          "role": "MID",
-          "name": "Andrew Chafin",
-          "url": "https://www.fangraphs.com/players/andrew-chafin/12988/stats/pitching",
-          "era": "2.41",
-          "k9": "9.62",
-          "bb9": "5.08",
-          "k_pct": "25.2%",
-          "stuff_plus": "95",
-          "playerId": "12988",
-          "history": [
-            {
-              "season": 2024,
-              "era": "3.51",
-              "k9": "11.18",
-              "bb9": "4.95",
-              "k_pct": "28.5%",
-              "stuff_plus": "97"
-            },
-            {
-              "season": 2023,
-              "era": "4.73",
-              "k9": "11.05",
-              "bb9": "4.91",
-              "k_pct": "28.1%",
-              "stuff_plus": "92"
-            }
-          ]
-        },
-        {
           "role": "LR",
-          "name": "Travis Adams",
-          "url": "https://www.fangraphs.com/players/travis-adams/30180/stats/pitching",
-          "era": "7.49",
-          "k9": "8.29",
-          "bb9": "4.54",
-          "k_pct": "19.6%",
-          "stuff_plus": "99",
-          "playerId": "30180",
+          "name": "Zak Kent",
+          "url": "https://www.fangraphs.com/players/zak-kent/25703/stats/pitching",
+          "era": "4.58",
+          "k9": "8.15",
+          "bb9": "4.08",
+          "k_pct": "21.1%",
+          "stuff_plus": "92",
+          "playerId": "25703",
           "history": [
             {
               "season": 2024,
@@ -12899,7 +12893,7 @@
       "name": "New York Mets",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/nym.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -13288,38 +13282,6 @@
         },
         {
           "role": "sp2",
-          "name": "Nolan McLean",
-          "url": "https://www.fangraphs.com/players/nolan-mclean/33703/stats/pitching",
-          "era": "2.06",
-          "whip": "1.04",
-          "k9": "10.69",
-          "bb9": "3.00",
-          "stuff_plus": "117",
-          "location_plus": "95",
-          "playerId": "33703",
-          "history": [
-            {
-              "season": 2024,
-              "era": "",
-              "whip": "",
-              "k9": "",
-              "bb9": "",
-              "stuff_plus": "",
-              "location_plus": ""
-            },
-            {
-              "season": 2023,
-              "era": "",
-              "whip": "",
-              "k9": "",
-              "bb9": "",
-              "stuff_plus": "",
-              "location_plus": ""
-            }
-          ]
-        },
-        {
-          "role": "sp3",
           "name": "David Peterson",
           "url": "https://www.fangraphs.com/players/david-peterson/20302/stats/pitching",
           "era": "4.22",
@@ -13347,6 +13309,38 @@
               "bb9": "4.05",
               "stuff_plus": "91",
               "location_plus": "98"
+            }
+          ]
+        },
+        {
+          "role": "sp3",
+          "name": "Nolan McLean",
+          "url": "https://www.fangraphs.com/players/nolan-mclean/33703/stats/pitching",
+          "era": "2.06",
+          "whip": "1.04",
+          "k9": "10.69",
+          "bb9": "3.00",
+          "stuff_plus": "117",
+          "location_plus": "95",
+          "playerId": "33703",
+          "history": [
+            {
+              "season": 2024,
+              "era": "",
+              "whip": "",
+              "k9": "",
+              "bb9": "",
+              "stuff_plus": "",
+              "location_plus": ""
+            },
+            {
+              "season": 2023,
+              "era": "",
+              "whip": "",
+              "k9": "",
+              "bb9": "",
+              "stuff_plus": "",
+              "location_plus": ""
             }
           ]
         },
@@ -13384,38 +13378,6 @@
         },
         {
           "role": "sp5",
-          "name": "Sean Manaea",
-          "url": "https://www.fangraphs.com/players/sean-manaea/15873/stats/pitching",
-          "era": "5.64",
-          "whip": "1.22",
-          "k9": "11.13",
-          "bb9": "1.78",
-          "stuff_plus": "103",
-          "location_plus": "101",
-          "playerId": "15873",
-          "history": [
-            {
-              "season": 2024,
-              "era": "3.47",
-              "whip": "1.08",
-              "k9": "9.12",
-              "bb9": "3.12",
-              "stuff_plus": "98",
-              "location_plus": "97"
-            },
-            {
-              "season": 2023,
-              "era": "4.44",
-              "whip": "1.24",
-              "k9": "9.79",
-              "bb9": "3.21",
-              "stuff_plus": "98",
-              "location_plus": "102"
-            }
-          ]
-        },
-        {
-          "role": "sp6",
           "name": "Kodai Senga",
           "url": "https://www.fangraphs.com/players/kodai-senga/31838/stats/pitching",
           "era": "3.02",
@@ -13539,28 +13501,28 @@
           "role": "MID",
           "name": "Luis Garcia",
           "url": "https://www.fangraphs.com/players/luis-garcia/stats/pitching",
-          "era": "3.52",
-          "k9": "8.22",
-          "bb9": "1.17",
-          "k_pct": "25.0%",
-          "stuff_plus": "89",
-          "playerId": "23735",
+          "era": "3.42",
+          "k9": "7.81",
+          "bb9": "4.23",
+          "k_pct": "20.6%",
+          "stuff_plus": "109",
+          "playerId": "6984",
           "history": [
             {
               "season": 2024,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
+              "era": "4.88",
+              "k9": "8.08",
+              "bb9": "2.29",
+              "k_pct": "20.9%",
+              "stuff_plus": "105"
             },
             {
               "season": 2023,
-              "era": "4.00",
-              "k9": "10.33",
-              "bb9": "3.33",
-              "k_pct": "27.0%",
-              "stuff_plus": "99"
+              "era": "4.07",
+              "k9": "7.99",
+              "bb9": "3.62",
+              "k_pct": "19.9%",
+              "stuff_plus": "112"
             }
           ]
         },
@@ -13595,35 +13557,6 @@
         },
         {
           "role": "MID",
-          "name": "Bryan M. Hudson",
-          "url": "https://www.fangraphs.com/players/bryan-m.-hudson/stats/pitching",
-          "era": "4.80",
-          "k9": "11.40",
-          "bb9": "7.80",
-          "k_pct": "25.3%",
-          "stuff_plus": "93",
-          "playerId": "19924",
-          "history": [
-            {
-              "season": 2024,
-              "era": "1.73",
-              "k9": "8.95",
-              "bb9": "2.45",
-              "k_pct": "26.8%",
-              "stuff_plus": "100"
-            },
-            {
-              "season": 2023,
-              "era": "7.27",
-              "k9": "7.27",
-              "bb9": "4.15",
-              "k_pct": "15.9%",
-              "stuff_plus": "106"
-            }
-          ]
-        },
-        {
-          "role": "LR",
           "name": "Tobias Myers",
           "url": "https://www.fangraphs.com/players/tobias-myers/22191/stats/pitching",
           "era": "3.55",
@@ -13650,6 +13583,64 @@
               "stuff_plus": ""
             }
           ]
+        },
+        {
+          "role": "MID",
+          "name": "Richard Lovelady",
+          "url": "https://www.fangraphs.com/players/richard-lovelady/19337/stats/pitching",
+          "era": "8.49",
+          "k9": "9.26",
+          "bb9": "4.63",
+          "k_pct": "21.1%",
+          "stuff_plus": "99",
+          "playerId": "19337",
+          "history": [
+            {
+              "season": 2024,
+              "era": "4.46",
+              "k9": "6.82",
+              "bb9": "2.88",
+              "k_pct": "17.7%",
+              "stuff_plus": "104"
+            },
+            {
+              "season": 2023,
+              "era": "4.63",
+              "k9": "9.26",
+              "bb9": "3.86",
+              "k_pct": "25.0%",
+              "stuff_plus": "92"
+            }
+          ]
+        },
+        {
+          "role": "LR",
+          "name": "Sean Manaea",
+          "url": "https://www.fangraphs.com/players/sean-manaea/15873/stats/pitching",
+          "era": "5.64",
+          "k9": "11.13",
+          "bb9": "1.78",
+          "k_pct": "28.5%",
+          "stuff_plus": "103",
+          "playerId": "15873",
+          "history": [
+            {
+              "season": 2024,
+              "era": "3.47",
+              "k9": "9.12",
+              "bb9": "3.12",
+              "k_pct": "24.9%",
+              "stuff_plus": "98"
+            },
+            {
+              "season": 2023,
+              "era": "4.44",
+              "k9": "9.79",
+              "bb9": "3.21",
+              "k_pct": "25.7%",
+              "stuff_plus": "98"
+            }
+          ]
         }
       ]
     },
@@ -13658,7 +13649,7 @@
       "name": "New York Yankees",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/nyy.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -14414,7 +14405,7 @@
       "name": "Philadelphia Phillies",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/phi.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -15170,7 +15161,7 @@
       "name": "Pittsburgh Pirates",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -15655,33 +15646,33 @@
         },
         {
           "role": "sp5",
-          "name": "José Urquidy",
-          "url": "https://www.fangraphs.com/players/jose-urquidy/18413/stats/pitching",
-          "era": "7.71",
-          "whip": "3.00",
-          "k9": "11.57",
-          "bb9": "11.57",
-          "stuff_plus": "92",
-          "location_plus": "90",
-          "playerId": "18413",
+          "name": "Carmen Mlodzinski",
+          "url": "https://www.fangraphs.com/players/carmen-mlodzinski/27572/stats/pitching",
+          "era": "3.55",
+          "whip": "1.30",
+          "k9": "8.09",
+          "bb9": "2.45",
+          "stuff_plus": "104",
+          "location_plus": "100",
+          "playerId": "27572",
           "history": [
             {
               "season": 2024,
-              "era": "",
-              "whip": "",
-              "k9": "",
-              "bb9": "",
-              "stuff_plus": "",
-              "location_plus": ""
+              "era": "3.38",
+              "whip": "1.18",
+              "k9": "8.17",
+              "bb9": "3.38",
+              "stuff_plus": "105",
+              "location_plus": "99"
             },
             {
               "season": 2023,
-              "era": "5.29",
-              "whip": "1.43",
-              "k9": "6.43",
-              "bb9": "3.57",
+              "era": "2.25",
+              "whip": "1.28",
+              "k9": "8.50",
+              "bb9": "4.50",
               "stuff_plus": "98",
-              "location_plus": "101"
+              "location_plus": "100"
             }
           ]
         }
@@ -15892,29 +15883,29 @@
         },
         {
           "role": "LR",
-          "name": "Carmen Mlodzinski",
-          "url": "https://www.fangraphs.com/players/carmen-mlodzinski/27572/stats/pitching",
-          "era": "3.55",
-          "k9": "8.09",
-          "bb9": "2.45",
-          "k_pct": "21.2%",
-          "stuff_plus": "104",
-          "playerId": "27572",
+          "name": "Jose Urquidy",
+          "url": "https://www.fangraphs.com/players/jose-urquidy/stats/pitching",
+          "era": "7.71",
+          "k9": "11.57",
+          "bb9": "11.57",
+          "k_pct": "21.4%",
+          "stuff_plus": "92",
+          "playerId": "18413",
           "history": [
             {
               "season": 2024,
-              "era": "3.38",
-              "k9": "8.17",
-              "bb9": "3.38",
-              "k_pct": "22.0%",
-              "stuff_plus": "105"
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             },
             {
               "season": 2023,
-              "era": "2.25",
-              "k9": "8.50",
-              "bb9": "4.50",
-              "k_pct": "22.4%",
+              "era": "5.29",
+              "k9": "6.43",
+              "bb9": "3.57",
+              "k_pct": "16.4%",
               "stuff_plus": "98"
             }
           ]
@@ -15926,7 +15917,7 @@
       "name": "San Diego Padres",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sd.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -16682,166 +16673,10 @@
       "name": "San Francisco Giants",
       "division": "NL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
-          "name": "Luis Arraez",
-          "position": "2B",
-          "url": "https://www.fangraphs.com/players/luis-arraez/18568/stats/batting",
-          "runs": "66",
-          "hr": "8",
-          "rbi": "61",
-          "sb": "11",
-          "wrc_plus": "104",
-          "avg": ".292",
-          "obp": ".327",
-          "slg": ".392",
-          "playerId": "18568",
-          "history": [
-            {
-              "season": 2024,
-              "runs": "83",
-              "hr": "4",
-              "rbi": "46",
-              "sb": "9",
-              "avg": ".314",
-              "obp": ".346",
-              "slg": ".392",
-              "wrc_plus": "109"
-            },
-            {
-              "season": 2023,
-              "runs": "71",
-              "hr": "10",
-              "rbi": "69",
-              "sb": "3",
-              "avg": ".354",
-              "obp": ".393",
-              "slg": ".469",
-              "wrc_plus": "131"
-            }
-          ]
-        },
-        {
-          "order": "2",
-          "name": "Rafael Devers",
-          "position": "1B",
-          "url": "https://www.fangraphs.com/players/rafael-devers/17350/stats/batting",
-          "runs": "99",
-          "hr": "35",
-          "rbi": "109",
-          "sb": "1",
-          "wrc_plus": "135",
-          "avg": ".252",
-          "obp": ".372",
-          "slg": ".479",
-          "playerId": "17350",
-          "history": [
-            {
-              "season": 2024,
-              "runs": "87",
-              "hr": "28",
-              "rbi": "83",
-              "sb": "3",
-              "avg": ".272",
-              "obp": ".354",
-              "slg": ".516",
-              "wrc_plus": "136"
-            },
-            {
-              "season": 2023,
-              "runs": "90",
-              "hr": "33",
-              "rbi": "100",
-              "sb": "5",
-              "avg": ".271",
-              "obp": ".351",
-              "slg": ".500",
-              "wrc_plus": "126"
-            }
-          ]
-        },
-        {
-          "order": "3",
-          "name": "Willy Adames",
-          "position": "SS",
-          "url": "https://www.fangraphs.com/players/willy-adames/15986/stats/batting",
-          "runs": "94",
-          "hr": "30",
-          "rbi": "87",
-          "sb": "12",
-          "wrc_plus": "108",
-          "avg": ".225",
-          "obp": ".318",
-          "slg": ".421",
-          "playerId": "15986",
-          "history": [
-            {
-              "season": 2024,
-              "runs": "93",
-              "hr": "32",
-              "rbi": "112",
-              "sb": "21",
-              "avg": ".251",
-              "obp": ".331",
-              "slg": ".462",
-              "wrc_plus": "120"
-            },
-            {
-              "season": 2023,
-              "runs": "73",
-              "hr": "24",
-              "rbi": "80",
-              "sb": "5",
-              "avg": ".217",
-              "obp": ".310",
-              "slg": ".407",
-              "wrc_plus": "95"
-            }
-          ]
-        },
-        {
-          "order": "4",
-          "name": "Matt Chapman",
-          "position": "3B",
-          "url": "https://www.fangraphs.com/players/matt-chapman/16505/stats/batting",
-          "runs": "76",
-          "hr": "21",
-          "rbi": "61",
-          "sb": "9",
-          "wrc_plus": "118",
-          "avg": ".231",
-          "obp": ".340",
-          "slg": ".430",
-          "playerId": "16505",
-          "history": [
-            {
-              "season": 2024,
-              "runs": "98",
-              "hr": "27",
-              "rbi": "78",
-              "sb": "15",
-              "avg": ".247",
-              "obp": ".328",
-              "slg": ".463",
-              "wrc_plus": "121"
-            },
-            {
-              "season": 2023,
-              "runs": "66",
-              "hr": "17",
-              "rbi": "54",
-              "sb": "4",
-              "avg": ".240",
-              "obp": ".330",
-              "slg": ".424",
-              "wrc_plus": "109"
-            }
-          ]
-        },
-        {
-          "order": "5",
           "name": "Jung Hoo Lee",
           "position": "RF",
           "url": "https://www.fangraphs.com/players/jung-hoo-lee/33824/stats/batting",
@@ -16880,7 +16715,85 @@
           ]
         },
         {
-          "order": "6",
+          "order": "2",
+          "name": "Matt Chapman",
+          "position": "3B",
+          "url": "https://www.fangraphs.com/players/matt-chapman/16505/stats/batting",
+          "runs": "76",
+          "hr": "21",
+          "rbi": "61",
+          "sb": "9",
+          "wrc_plus": "118",
+          "avg": ".231",
+          "obp": ".340",
+          "slg": ".430",
+          "playerId": "16505",
+          "history": [
+            {
+              "season": 2024,
+              "runs": "98",
+              "hr": "27",
+              "rbi": "78",
+              "sb": "15",
+              "avg": ".247",
+              "obp": ".328",
+              "slg": ".463",
+              "wrc_plus": "121"
+            },
+            {
+              "season": 2023,
+              "runs": "66",
+              "hr": "17",
+              "rbi": "54",
+              "sb": "4",
+              "avg": ".240",
+              "obp": ".330",
+              "slg": ".424",
+              "wrc_plus": "109"
+            }
+          ]
+        },
+        {
+          "order": "3",
+          "name": "Rafael Devers",
+          "position": "1B",
+          "url": "https://www.fangraphs.com/players/rafael-devers/17350/stats/batting",
+          "runs": "99",
+          "hr": "35",
+          "rbi": "109",
+          "sb": "1",
+          "wrc_plus": "135",
+          "avg": ".252",
+          "obp": ".372",
+          "slg": ".479",
+          "playerId": "17350",
+          "history": [
+            {
+              "season": 2024,
+              "runs": "87",
+              "hr": "28",
+              "rbi": "83",
+              "sb": "3",
+              "avg": ".272",
+              "obp": ".354",
+              "slg": ".516",
+              "wrc_plus": "136"
+            },
+            {
+              "season": 2023,
+              "runs": "90",
+              "hr": "33",
+              "rbi": "100",
+              "sb": "5",
+              "avg": ".271",
+              "obp": ".351",
+              "slg": ".500",
+              "wrc_plus": "126"
+            }
+          ]
+        },
+        {
+          "order": "4",
           "name": "Heliot Ramos",
           "position": "LF",
           "url": "https://www.fangraphs.com/players/heliot-ramos/22515/stats/batting",
@@ -16919,46 +16832,85 @@
           ]
         },
         {
-          "order": "7",
-          "name": "Harrison Bader",
-          "position": "CF",
-          "url": "https://www.fangraphs.com/players/harrison-bader/18030/stats/batting",
-          "runs": "61",
-          "hr": "17",
-          "rbi": "54",
+          "order": "5",
+          "name": "Luis Arraez",
+          "position": "2B",
+          "url": "https://www.fangraphs.com/players/luis-arraez/18568/stats/batting",
+          "runs": "66",
+          "hr": "8",
+          "rbi": "61",
           "sb": "11",
-          "wrc_plus": "122",
-          "avg": ".277",
-          "obp": ".347",
-          "slg": ".449",
-          "playerId": "18030",
+          "wrc_plus": "104",
+          "avg": ".292",
+          "obp": ".327",
+          "slg": ".392",
+          "playerId": "18568",
           "history": [
             {
               "season": 2024,
-              "runs": "57",
-              "hr": "12",
-              "rbi": "51",
-              "sb": "17",
-              "avg": ".236",
-              "obp": ".284",
-              "slg": ".373",
-              "wrc_plus": "85"
+              "runs": "83",
+              "hr": "4",
+              "rbi": "46",
+              "sb": "9",
+              "avg": ".314",
+              "obp": ".346",
+              "slg": ".392",
+              "wrc_plus": "109"
             },
             {
               "season": 2023,
-              "runs": "44",
-              "hr": "7",
-              "rbi": "40",
-              "sb": "20",
-              "avg": ".232",
-              "obp": ".274",
-              "slg": ".348",
-              "wrc_plus": "69"
+              "runs": "71",
+              "hr": "10",
+              "rbi": "69",
+              "sb": "3",
+              "avg": ".354",
+              "obp": ".393",
+              "slg": ".469",
+              "wrc_plus": "131"
             }
           ]
         },
         {
-          "order": "8",
+          "order": "6",
+          "name": "Willy Adames",
+          "position": "SS",
+          "url": "https://www.fangraphs.com/players/willy-adames/15986/stats/batting",
+          "runs": "94",
+          "hr": "30",
+          "rbi": "87",
+          "sb": "12",
+          "wrc_plus": "108",
+          "avg": ".225",
+          "obp": ".318",
+          "slg": ".421",
+          "playerId": "15986",
+          "history": [
+            {
+              "season": 2024,
+              "runs": "93",
+              "hr": "32",
+              "rbi": "112",
+              "sb": "21",
+              "avg": ".251",
+              "obp": ".331",
+              "slg": ".462",
+              "wrc_plus": "120"
+            },
+            {
+              "season": 2023,
+              "runs": "73",
+              "hr": "24",
+              "rbi": "80",
+              "sb": "5",
+              "avg": ".217",
+              "obp": ".310",
+              "slg": ".407",
+              "wrc_plus": "95"
+            }
+          ]
+        },
+        {
+          "order": "7",
           "name": "Will Brennan",
           "position": "DH",
           "url": "https://www.fangraphs.com/players/will-brennan/25660/stats/batting",
@@ -16993,6 +16945,45 @@
               "obp": ".299",
               "slg": ".356",
               "wrc_plus": "80"
+            }
+          ]
+        },
+        {
+          "order": "8",
+          "name": "Harrison Bader",
+          "position": "CF",
+          "url": "https://www.fangraphs.com/players/harrison-bader/18030/stats/batting",
+          "runs": "61",
+          "hr": "17",
+          "rbi": "54",
+          "sb": "11",
+          "wrc_plus": "122",
+          "avg": ".277",
+          "obp": ".347",
+          "slg": ".449",
+          "playerId": "18030",
+          "history": [
+            {
+              "season": 2024,
+              "runs": "57",
+              "hr": "12",
+              "rbi": "51",
+              "sb": "17",
+              "avg": ".236",
+              "obp": ".284",
+              "slg": ".373",
+              "wrc_plus": "85"
+            },
+            {
+              "season": 2023,
+              "runs": "44",
+              "hr": "7",
+              "rbi": "40",
+              "sb": "20",
+              "avg": ".232",
+              "obp": ".274",
+              "slg": ".348",
+              "wrc_plus": "69"
             }
           ]
         },
@@ -17346,59 +17337,59 @@
         },
         {
           "role": "MID",
-          "name": "Trevor McDonald",
-          "url": "https://www.fangraphs.com/players/trevor-mcdonald/26448/stats/pitching",
-          "era": "1.80",
-          "k9": "8.40",
-          "bb9": "1.20",
-          "k_pct": "23.3%",
-          "stuff_plus": "95",
-          "playerId": "26448",
+          "name": "Caleb Kilian",
+          "url": "https://www.fangraphs.com/players/caleb-kilian/26213/stats/pitching",
+          "era": "",
+          "k9": "",
+          "bb9": "",
+          "k_pct": "",
+          "stuff_plus": "",
+          "playerId": "26213",
           "history": [
             {
               "season": 2024,
-              "era": "0.00",
-              "k9": "3.00",
-              "bb9": "3.00",
-              "k_pct": "10.0%",
-              "stuff_plus": "95"
+              "era": "4.22",
+              "k9": "5.91",
+              "bb9": "5.06",
+              "k_pct": "14.6%",
+              "stuff_plus": "85"
             },
             {
               "season": 2023,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
+              "era": "16.88",
+              "k9": "8.44",
+              "bb9": "3.38",
+              "k_pct": "15.2%",
+              "stuff_plus": "90"
             }
           ]
         },
         {
           "role": "MID",
-          "name": "Keaton Winn",
-          "url": "https://www.fangraphs.com/players/keaton-winn/23499/stats/pitching",
-          "era": "4.50",
-          "k9": "8.10",
-          "bb9": "1.80",
-          "k_pct": "21.4%",
-          "stuff_plus": "97",
-          "playerId": "23499",
+          "name": "Ryan Borucki",
+          "url": "https://www.fangraphs.com/players/ryan-borucki/16350/stats/pitching",
+          "era": "4.63",
+          "k9": "8.23",
+          "bb9": "4.11",
+          "k_pct": "22.1%",
+          "stuff_plus": "107",
+          "playerId": "16350",
           "history": [
             {
               "season": 2024,
-              "era": "7.16",
-              "k9": "7.81",
-              "bb9": "3.25",
-              "k_pct": "20.2%",
-              "stuff_plus": "102"
+              "era": "7.36",
+              "k9": "10.64",
+              "bb9": "3.27",
+              "k_pct": "25.5%",
+              "stuff_plus": "100"
             },
             {
               "season": 2023,
-              "era": "4.68",
-              "k9": "7.44",
-              "bb9": "1.70",
-              "k_pct": "20.3%",
-              "stuff_plus": "107"
+              "era": "2.45",
+              "k9": "7.36",
+              "bb9": "0.89",
+              "k_pct": "21.7%",
+              "stuff_plus": "101"
             }
           ]
         },
@@ -17438,7 +17429,7 @@
       "name": "Seattle Mariners",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -18194,7 +18185,7 @@
       "name": "St. Louis Cardinals",
       "division": "NL Central",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -18858,35 +18849,6 @@
         },
         {
           "role": "MID",
-          "name": "Matt Pushard",
-          "url": "https://www.fangraphs.com/players/matthew-pushard/sa3019955/stats/pitching",
-          "era": "",
-          "k9": "",
-          "bb9": "",
-          "k_pct": "",
-          "stuff_plus": "",
-          "playerId": "sa3019955",
-          "history": [
-            {
-              "season": 2024,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
-            },
-            {
-              "season": 2023,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
-            }
-          ]
-        },
-        {
-          "role": "MID",
           "name": "George Soriano",
           "url": "https://www.fangraphs.com/players/george-soriano/21863/stats/pitching",
           "era": "8.35",
@@ -18915,23 +18877,52 @@
           ]
         },
         {
-          "role": "LR",
-          "name": "Gordon Graceffo",
-          "url": "https://www.fangraphs.com/players/gordon-graceffo/29519/stats/pitching",
-          "era": "6.28",
-          "k9": "8.37",
-          "bb9": "2.72",
-          "k_pct": "20.7%",
-          "stuff_plus": "93",
-          "playerId": "29519",
+          "role": "MID",
+          "name": "Chris Roycroft",
+          "url": "https://www.fangraphs.com/players/chris-roycroft/31261/stats/pitching",
+          "era": "7.84",
+          "k9": "6.53",
+          "bb9": "5.23",
+          "k_pct": "14.9%",
+          "stuff_plus": "102",
+          "playerId": "31261",
           "history": [
             {
               "season": 2024,
-              "era": "4.70",
-              "k9": "7.04",
-              "bb9": "2.35",
-              "k_pct": "19.4%",
-              "stuff_plus": "82"
+              "era": "4.19",
+              "k9": "8.65",
+              "bb9": "4.46",
+              "k_pct": "21.3%",
+              "stuff_plus": "109"
+            },
+            {
+              "season": 2023,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
+            }
+          ]
+        },
+        {
+          "role": "LR",
+          "name": "Matt Pushard",
+          "url": "https://www.fangraphs.com/players/matthew-pushard/sa3019955/stats/pitching",
+          "era": "",
+          "k9": "",
+          "bb9": "",
+          "k_pct": "",
+          "stuff_plus": "",
+          "playerId": "sa3019955",
+          "history": [
+            {
+              "season": 2024,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
             },
             {
               "season": 2023,
@@ -18950,7 +18941,7 @@
       "name": "Tampa Bay Rays",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -19032,6 +19023,45 @@
         },
         {
           "order": "3",
+          "name": "Gavin Lux",
+          "position": "2B",
+          "url": "https://www.fangraphs.com/players/gavin-lux/19955/stats/batting",
+          "runs": "49",
+          "hr": "5",
+          "rbi": "53",
+          "sb": "1",
+          "wrc_plus": "102",
+          "avg": ".269",
+          "obp": ".350",
+          "slg": ".374",
+          "playerId": "19955",
+          "history": [
+            {
+              "season": 2024,
+              "runs": "59",
+              "hr": "10",
+              "rbi": "50",
+              "sb": "5",
+              "avg": ".251",
+              "obp": ".320",
+              "slg": ".383",
+              "wrc_plus": "98"
+            },
+            {
+              "season": 2023,
+              "runs": "",
+              "hr": "",
+              "rbi": "",
+              "sb": "",
+              "avg": "",
+              "obp": "",
+              "slg": "",
+              "wrc_plus": ""
+            }
+          ]
+        },
+        {
+          "order": "4",
           "name": "Junior Caminero",
           "position": "3B",
           "url": "https://www.fangraphs.com/players/junior-caminero/28163/stats/batting",
@@ -19066,45 +19096,6 @@
               "obp": ".278",
               "slg": ".353",
               "wrc_plus": "76"
-            }
-          ]
-        },
-        {
-          "order": "4",
-          "name": "Cedric Mullins",
-          "position": "CF",
-          "url": "https://www.fangraphs.com/players/cedric-mullins/17929/stats/batting",
-          "runs": "58",
-          "hr": "17",
-          "rbi": "59",
-          "sb": "22",
-          "wrc_plus": "94",
-          "avg": ".216",
-          "obp": ".299",
-          "slg": ".391",
-          "playerId": "17929",
-          "history": [
-            {
-              "season": 2024,
-              "runs": "69",
-              "hr": "18",
-              "rbi": "54",
-              "sb": "32",
-              "avg": ".234",
-              "obp": ".305",
-              "slg": ".405",
-              "wrc_plus": "104"
-            },
-            {
-              "season": 2023,
-              "runs": "51",
-              "hr": "15",
-              "rbi": "74",
-              "sb": "19",
-              "avg": ".233",
-              "obp": ".305",
-              "slg": ".416",
-              "wrc_plus": "98"
             }
           ]
         },
@@ -19149,40 +19140,40 @@
         },
         {
           "order": "6",
-          "name": "Gavin Lux",
-          "position": "2B",
-          "url": "https://www.fangraphs.com/players/gavin-lux/19955/stats/batting",
-          "runs": "49",
-          "hr": "5",
-          "rbi": "53",
-          "sb": "1",
-          "wrc_plus": "102",
-          "avg": ".269",
-          "obp": ".350",
-          "slg": ".374",
-          "playerId": "19955",
+          "name": "Cedric Mullins",
+          "position": "CF",
+          "url": "https://www.fangraphs.com/players/cedric-mullins/17929/stats/batting",
+          "runs": "58",
+          "hr": "17",
+          "rbi": "59",
+          "sb": "22",
+          "wrc_plus": "94",
+          "avg": ".216",
+          "obp": ".299",
+          "slg": ".391",
+          "playerId": "17929",
           "history": [
             {
               "season": 2024,
-              "runs": "59",
-              "hr": "10",
-              "rbi": "50",
-              "sb": "5",
-              "avg": ".251",
-              "obp": ".320",
-              "slg": ".383",
-              "wrc_plus": "98"
+              "runs": "69",
+              "hr": "18",
+              "rbi": "54",
+              "sb": "32",
+              "avg": ".234",
+              "obp": ".305",
+              "slg": ".405",
+              "wrc_plus": "104"
             },
             {
               "season": 2023,
-              "runs": "",
-              "hr": "",
-              "rbi": "",
-              "sb": "",
-              "avg": "",
-              "obp": "",
-              "slg": "",
-              "wrc_plus": ""
+              "runs": "51",
+              "hr": "15",
+              "rbi": "74",
+              "sb": "19",
+              "avg": ".233",
+              "obp": ".305",
+              "slg": ".416",
+              "wrc_plus": "98"
             }
           ]
         },
@@ -19706,7 +19697,7 @@
       "name": "Texas Rangers",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -20462,7 +20453,7 @@
       "name": "Toronto Blue Jays",
       "division": "AL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -21218,7 +21209,7 @@
       "name": "Washington Nationals",
       "division": "NL East",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -21794,7 +21785,36 @@
           ]
         },
         {
-          "role": "SU7",
+          "role": "CL",
+          "name": "Brad Lord",
+          "url": "https://www.fangraphs.com/players/brad-lord/31972/stats/pitching",
+          "era": "4.34",
+          "k9": "7.44",
+          "bb9": "2.96",
+          "k_pct": "19.8%",
+          "stuff_plus": "86",
+          "playerId": "31972",
+          "history": [
+            {
+              "season": 2024,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
+            },
+            {
+              "season": 2023,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
+            }
+          ]
+        },
+        {
+          "role": "MID",
           "name": "PJ Poulin",
           "url": "https://www.fangraphs.com/players/pj-poulin/23394/stats/pitching",
           "era": "3.65",
@@ -21819,35 +21839,6 @@
               "bb9": "",
               "k_pct": "",
               "stuff_plus": ""
-            }
-          ]
-        },
-        {
-          "role": "MID",
-          "name": "Jackson Rutledge",
-          "url": "https://www.fangraphs.com/players/jackson-rutledge/26215/stats/pitching",
-          "era": "5.77",
-          "k9": "7.98",
-          "bb9": "2.95",
-          "k_pct": "19.7%",
-          "stuff_plus": "103",
-          "playerId": "26215",
-          "history": [
-            {
-              "season": 2024,
-              "era": "3.24",
-              "k9": "9.72",
-              "bb9": "2.16",
-              "k_pct": "26.5%",
-              "stuff_plus": "100"
-            },
-            {
-              "season": 2023,
-              "era": "6.75",
-              "k9": "5.40",
-              "bb9": "2.70",
-              "k_pct": "13.6%",
-              "stuff_plus": "89"
             }
           ]
         },
@@ -21911,6 +21902,35 @@
         },
         {
           "role": "MID",
+          "name": "Ken Waldichuk",
+          "url": "https://www.fangraphs.com/players/ken-waldichuk/27681/stats/pitching",
+          "era": "",
+          "k9": "",
+          "bb9": "",
+          "k_pct": "",
+          "stuff_plus": "",
+          "playerId": "27681",
+          "history": [
+            {
+              "season": 2024,
+              "era": "",
+              "k9": "",
+              "bb9": "",
+              "k_pct": "",
+              "stuff_plus": ""
+            },
+            {
+              "season": 2023,
+              "era": "5.36",
+              "k9": "8.43",
+              "bb9": "4.53",
+              "k_pct": "20.7%",
+              "stuff_plus": "91"
+            }
+          ]
+        },
+        {
+          "role": "LR",
           "name": "Griff McGarry",
           "url": "https://www.fangraphs.com/players/griffin-mcgarry/sa3017130/stats/pitching",
           "era": "",
@@ -21937,35 +21957,6 @@
               "stuff_plus": ""
             }
           ]
-        },
-        {
-          "role": "LR",
-          "name": "Brad Lord",
-          "url": "https://www.fangraphs.com/players/brad-lord/31972/stats/pitching",
-          "era": "4.34",
-          "k9": "7.44",
-          "bb9": "2.96",
-          "k_pct": "19.8%",
-          "stuff_plus": "86",
-          "playerId": "31972",
-          "history": [
-            {
-              "season": 2024,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
-            },
-            {
-              "season": 2023,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
-            }
-          ]
         }
       ]
     },
@@ -21974,7 +21965,7 @@
       "name": "Athletics",
       "division": "AL West",
       "logoUrl": "https://a.espncdn.com/i/teamlogos/mlb/500/oak.png",
-      "lastUpdated": "2026-03-21T10:14:46Z",
+      "lastUpdated": "2026-03-22T08:15:13Z",
       "batter": [
         {
           "order": "1",
@@ -22667,30 +22658,30 @@
         },
         {
           "role": "MID",
-          "name": "Tyler Ferguson",
-          "url": "https://www.fangraphs.com/players/tyler-ferguson/19481/stats/pitching",
-          "era": "4.66",
-          "k9": "8.38",
-          "bb9": "5.28",
-          "k_pct": "22.0%",
-          "stuff_plus": "109",
-          "playerId": "19481",
+          "name": "Nick Anderson",
+          "url": "https://www.fangraphs.com/players/nick-anderson/18337/stats/pitching",
+          "era": "6.14",
+          "k9": "6.14",
+          "bb9": "1.23",
+          "k_pct": "16.4%",
+          "stuff_plus": "87",
+          "playerId": "18337",
           "history": [
             {
               "season": 2024,
-              "era": "3.68",
-              "k9": "10.87",
-              "bb9": "4.21",
-              "k_pct": "30.0%",
-              "stuff_plus": "114"
+              "era": "4.04",
+              "k9": "7.32",
+              "bb9": "3.79",
+              "k_pct": "19.0%",
+              "stuff_plus": "90"
             },
             {
               "season": 2023,
-              "era": "",
-              "k9": "",
-              "bb9": "",
-              "k_pct": "",
-              "stuff_plus": ""
+              "era": "3.06",
+              "k9": "9.17",
+              "bb9": "2.29",
+              "k_pct": "25.5%",
+              "stuff_plus": "93"
             }
           ]
         },
